@@ -1,0 +1,53 @@
+Enum MSG = {null, reject, accept, entry};
+
+
+Global lToF1,lToF2,lToF3 : MSG;
+
+Global a1,a2,a3:BOOL;
+
+
+Process Leader{
+	committed: BOOL;
+	Initial: lToF1 == null && lToF2 == null && lToF3 == null && committed == false && a1 && a2 && a3;
+	Normative: true;
+		[sendEntry1] (lToF1 == null || lToF1 == reject) && committed == false && a1 -> lToF1 = entry, a1 = false;
+		[sendEntry2] (lToF2 == null || lToF2 == reject) && committed == false && a2 -> lToF2 = entry, a2 = false;
+		[sendEntry3] (lToF3 == null || lToF3 == reject) && committed == false && a3-> lToF3 = entry, a3 = false;
+		[sendEntry1] lToF1 == accept && committed == false && a1 -> lToF1 = accept, a1 = false ;
+		[sendEntry2] lToF2 == accept && committed == false && a2 -> lToF2 = accept, a2 = false;
+		[sendEntry3] lToF3 == accept && committed == false && a3 -> lToF3 = accept, a3 = false;
+		//[sendEntry1E] internal lToF1 == error && committed == false -> lToF1 = entry;
+		//[sendEntry2E] internal lToF2 == error && committed == false -> lToF2 = entry;
+		//[sendEntry3E] internal lToF3 == error && committed == false -> lToF3 = entry;
+		[commitEntry]  ((lToF1 == accept && lToF2 == accept) || (lToF1 == accept && lToF3 == accept) || (lToF3 == accept && lToF2 == accept)) && committed == false  -> committed = true;
+}
+
+
+Process Follower(recChan : MSG, a : BOOL){
+	available: BOOL;
+	Initial:  lToF1 == null && lToF2 == null && lToF3 == null && a1 && a2 && a3 && available;
+	Normative: true;
+		[receiveEntry] available && recChan == entry && !a -> recChan = accept, a = !a;
+		[rejectEntry] available && recChan == entry && !a -> recChan = reject, a = !a;
+
+		[receiveEntry] recChan == accept && !a -> recChan = accept, a = !a;
+		[rejectEntry] recChan == accept && !a -> recChan = accept, a = !a;
+
+		[receiveEntry] !available && recChan == entry && !a -> recChan = null, a = !a;
+		[rejectEntry] !available && recChan == entry && !a -> recChan = null, a = !a;
+
+		[crash] faulty available -> available = false;
+}
+
+
+
+Main(){
+    leader:Leader;
+    f1:Follower;
+    f2:Follower;
+    f3:Follower;
+    run leader();
+    run f1(lToF1,a1);
+    run f2(lToF2,a2);
+    run f3(lToF3,a3);
+}

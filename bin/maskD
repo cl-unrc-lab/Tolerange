@@ -1,0 +1,2 @@
+# A simple script for running the maskD tool
+java -Xmx1024m -jar $MASKD/maskD.jar $1 $2 $3 $4 $5 $6

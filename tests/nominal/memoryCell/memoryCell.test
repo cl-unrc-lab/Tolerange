@@ -1,0 +1,21 @@
+
+
+Process Memory {
+        w: BOOL; // the last value written, 
+	r: BOOL; // the value we can read from the memory
+        c0: BOOL; // the first bit
+  
+       	Initial: w && c0 && r;
+       	Normative:  w==r;
+	
+	[write] true -> w=!w, c0=!c0, r =!r;
+	[read0] !r -> r = r;
+	[read1] r -> r = r;    
+}
+
+Main(){
+	m1: Memory;
+	run m1();
+}
+
+

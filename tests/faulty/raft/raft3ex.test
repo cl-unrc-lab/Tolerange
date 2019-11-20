@@ -1,0 +1,51 @@
+Enum MSG = {null, accept, entry};
+
+
+Global lToF1,lToF2,lToF3 : MSG;
+
+Global a1,a2,a3:BOOL;
+
+
+Process Leader{
+	committed: BOOL;
+	Initial: lToF1 == null && lToF2 == null && lToF3 == null && committed == false && a1 && a2 && a3;
+	Normative: true;
+		[sendEntry1] (lToF1 == null) && committed == false && a1 -> lToF1 = entry, a1 = false;
+		[sendEntry2] (lToF2 == null) && committed == false && a2 -> lToF2 = entry, a2 = false;
+		[sendEntry3] (lToF3 == null) && committed == false && a3 -> lToF3 = entry, a3 = false;
+		[sendEntry1] lToF1 == accept && committed == false && a1 -> lToF1 = accept, a1 = false;
+		[sendEntry2] lToF2 == accept && committed == false && a2 -> lToF2 = accept, a2 = false;
+		[sendEntry3] lToF3 == accept && committed == false && a3 -> lToF3 = accept, a3 = false;
+		[commitEntry] ((lToF1 == accept && lToF2 == accept) || (lToF1 == accept && lToF3 == accept) || (lToF3 == accept && lToF2 == accept)) && committed == false  -> committed = true;
+		//[commitEntry] lToF1 == accept && lToF2 == accept && lToF3 == accept && committed == false  -> committed = true;
+}
+
+
+Process Follower(recChan : MSG, a : BOOL){
+	available: BOOL;
+	Initial:  lToF1 == null && lToF2 == null && lToF3 == null && a1 && a2 && a3 && available;
+	Normative: true;
+		[receiveEntry] available && recChan == entry && a==false -> recChan = accept, a = true;
+		[rejectEntry] available && recChan == entry && a==false -> recChan = null, a = true;
+
+		[receiveEntry] recChan == accept && a==false -> recChan = accept, a = true;
+		[rejectEntry] recChan == accept && a==false -> recChan = accept, a = true;
+
+		[receiveEntry] !available && recChan == entry && a==false -> recChan = null, a = true;
+		[rejectEntry] !available && recChan == entry && a==false -> recChan = null, a = true;
+
+		[crash] faulty available -> available = false;
+}
+
+
+
+Main(){
+    leader:Leader;
+    f1:Follower;
+    f2:Follower;
+    f3:Follower;
+    run leader();
+    run f1(lToF1,a1);
+    run f2(lToF2,a2);
+    run f3(lToF3,a3);
+}

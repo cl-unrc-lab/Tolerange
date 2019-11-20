@@ -1,0 +1,88 @@
+
+//N=3 number of chunks
+//MAX=5 number of retransmissions
+Global fs,ls,bs: BOOL;
+Global flagK,flagL: BOOL;
+
+Process Sender {
+    s0,s1,s2: BOOL; // state variables idle(000),nextframe(001),waitack(010),retransmit(011),success(100),error(101),waitsync(110)
+    srep0,srep1: BOOL; // srep variables bottom(00),nok(01),dk(10),ok(11)
+    sab: BOOL; // other variables
+
+    i0,i1: BOOL; // chunk1(00), chunk2(01),chunk3(10)
+    rt0,rt1,rt2: BOOL; // firstattempt(000),retransmission1(001),retransmission2(010),retransmission3(011), retransmission4(100),retransmission5(101)
+
+
+   	Initial: !s0 && !s1 && !s2 && !srep0 && !srep1 && !bs && !sab && !fs && !ls && !i0 && !i1 && !rt0 && !rt1 && !rt2 && !flagK && !flagL;
+   	Normative: true;
+	
+	//idle
+	[NewFile] !s0 && !s1 && !s2 -> s2 = true, srep0 = false, srep1 = false, i0 = false, i1 = false;  
+
+	//next frame
+	[sendChunk] !s0 && !s1 && s2 && !flagK -> s1 = true, s2 = false, fs = !i0 && !i1, ls = i0 && !i1, bs = sab, rt0 = false,  rt1 = false,  rt2 = false, flagK = true;
+
+	//wait ack
+	[receiveAck] !s0 && s1 && !s2 && !flagK && flagL -> s0 = true, s1 = false, sab = !sab, flagL = false; 
+	[TOMsg] faulty !s0 && s1 && !s2 && flagK -> s2 = true, flagK = false;
+
+	// retransmit
+	[sendChunk] internal !s0 && s1 && s2 && !rt0 && !rt1 && !rt2 && !flagK -> s2 = false, fs = !i0 && !i1, ls = i0 && !i1, bs = sab, rt2 = true, flagK = true; 
+	[sendChunk] internal !s0 && s1 && s2 && !rt0 && !rt1 && rt2 && !flagK -> s2 = false, fs = !i0 && !i1, ls = i0 && !i1, bs = sab, rt1 = true, rt2 = false, flagK = true;
+	[sendChunk] internal !s0 && s1 && s2 && !rt0 && rt1 && !rt2 && !flagK -> s2 = false, fs = !i0 && !i1, ls = i0 && !i1, bs = sab, rt2 = true, flagK = true;
+	[sendChunk] internal !s0 && s1 && s2 && !rt0 && rt1 && rt2 && !flagK -> s2 = false, fs = !i0 && !i1, ls = i0 && !i1, bs = sab, rt0 = true, rt1 = false, rt2 = false, flagK = true;
+	[sendChunk] internal !s0 && s1 && s2 && rt0 && !rt1 && !rt2 && !flagK -> s2 = false, fs = !i0 && !i1, ls = i0 && !i1, bs = sab, rt2 = true, flagK = true;
+	[error] internal !s0 && s1 && s2 && rt0 && !rt1 && rt2 && !(i0 && !i1) -> s0 = true, s1 = false, srep0 = false, srep1 = true;
+	[error] internal !s0 && s1 && s2 && rt0 && !rt1 && rt2 && i0 && !i1 -> s0 = true, s1 = false, srep0 = true, srep1 = false;
+
+	// success
+	[success] s0 && !s1 && !s2 && !i0 && !i1 -> s0 = false, s2 = true, i1 = true;
+	[success] s0 && !s1 && !s2 && !i0 && i1 -> s0 = false, s2 = true, i0 = true, i1 = false;
+	[success] s0 && !s1 && !s2 && i0 && !i1 -> s0 = false, srep0 = true, srep1 = true;
+
+	// error
+	[restart] s0 && !s1 && s2 -> s0 = false, s2 = false; 
+
+}
+
+Process Receiver {
+	r0,r1,r2: BOOL; // newfile(000), fstsafe(001), framereceived(010), framereported(011), idle(100), finish(101)
+	rrep0,rrep1,rrep2: BOOL; // bottom(000), fst(001), inc(010), ok(011), nok(100)
+	fr,lr,br,rab,recv: BOOL;
+
+	Initial: !r0 && !r1 && !r2 && !rrep0 && !rrep1 && !rrep2 && !fr && !lr && !br && !rab && !recv && !fs && !ls && !bs && !flagK && !flagL;
+   	Normative: true;
+	
+	// new_file
+	[receiveFirstChunk] !r0 && !r1 && !r2 && flagK && !flagL -> r2 = true, fr = fs, lr = ls, br = bs, recv = true, flagK = false;
+
+	// fst_safe_frame
+	[e] !r0 && !r1 && r2 && !flagL -> r1 = true, r2 = false, rab = br;
+
+	// frame_received
+	[setIndication] !r0 && r1 && !r2 && rab==br && fr && !lr  && !flagL-> r2 = true, rrep0 = false, rrep1 = false, rrep2 = true;
+	[setIndication] !r0 && r1 && !r2 && rab==br && !fr && !lr  && !flagL -> r2 = true, rrep0 = false, rrep1 = true, rrep2 = false;
+	[setIndication] !r0 && r1 && !r2 && rab==br && !fr && lr   && !flagL -> r2 = true, rrep0 = false, rrep1 = true, rrep2 = true;
+	[sendAck] !r0 && r1 && !r2 && !(rab==br)  && !flagL -> r0 = true, r1 = false, flagL = true;  
+
+	// frame_reported
+	[sendAck] !r0 && r1 && r2 && !flagL && !lr -> r0 = true, r1 = false, r2 = false, rab = !rab, flagL = true;
+	[sendAck] !r0 && r1 && r2 && !flagL && lr -> r0 = true, r1 = false, r2 = true, rab = !rab, flagL = true;
+
+	// idle
+	[receiveChunk] r0 && !r1 && !r2  && flagK && !flagL -> r0 = false, r1 = true, fr = fs, lr = ls, br = bs, recv = true,flagK = false;
+
+	//finish
+	[restart] r0 && !r1 && r2 -> r1 = false, r2 = false;
+
+}
+
+
+Main(){
+	s: Sender;
+	r: Receiver;
+	run s();
+	run r();
+}
+
+

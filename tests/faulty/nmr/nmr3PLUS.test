@@ -1,0 +1,38 @@
+Global v0i0,v0i1,v0i2:BOOL;
+Global v1i0,v1i1,v1i2:BOOL;
+Global v2i0,v2i1,v2i2:BOOL;
+Global i0,i1,i2:BOOL;
+
+Process Module(in:BOOL, out1:BOOL, out2:BOOL, out3:BOOL) {
+	Initial: !i0 && !i1 && !i2;
+	Normative: true;
+
+	[fail] faulty true -> out1 = !in, out2 = !in, out3 = !in;
+}
+
+Process Voter(out:BOOL, in1:BOOL, in2:BOOL, in3:BOOL){
+	Initial: !i0 && !i1 && !i2;
+	Normative: true;
+
+	[vote] true -> out = (in1&&in2)||(in2&&in3)||(in1&&ni3);
+	[vote] faulty true -> out = !((in1&&in2)||(in2&&in3)||(in1&&ni3));
+	
+}
+
+
+Main(){
+	m0: Module;
+	m1: Module;
+	m2: Module;
+	v0: Voter;
+	v1: Voter;
+	v2: Voter;
+	run m0(i0,v0i0,v1i0,v2i0);
+	run m1(i1,v0i1,v1i1,v2i1);
+	run m2(i2,v0i2,v1i2,v2i2);
+	run v0(i0);
+	run v1(i1);
+	run v2(i2);
+}
+
+
