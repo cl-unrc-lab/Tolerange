@@ -1,0 +1,108 @@
+package model;
+
+import java.util.*;
+
+import org.jgrapht.graph.DefaultEdge;
+
+import lang.*;
+
+
+public class Action {
+
+	private String label;
+	private Boolean isFaulty;
+	private Boolean isTau;
+	private Boolean isFromSpec;
+	private Boolean isMask;
+	private int reward;
+
+	public Action(String l, Boolean isF, Boolean isT, Boolean ifs){
+		label = l;
+		isFaulty = isF;
+		isTau = isT;
+		isFromSpec = ifs;
+		isMask = false;
+		reward = (l.endsWith("tick"))?1:0;
+	}
+
+	public Action(String l, Boolean isF, Boolean isT, Boolean ifs, Boolean isM){
+		label = l;
+		isFaulty = isF;
+		isTau = isT;
+		isFromSpec = ifs;
+		isMask = isM;
+		reward = (l.endsWith("tick"))?1:0;
+	}
+
+	public Action(String l, Boolean isF, Boolean isT, Boolean ifs, Boolean isM, int r){
+		label = l;
+		isFaulty = isF;
+		isTau = isT;
+		isFromSpec = ifs;
+		isMask = isM;
+		reward = r;
+	}
+
+	public String getLabel(){
+		return label;
+	}
+
+	public void setLabel(String l){
+		label = l;
+	}
+
+	public int getReward(){
+		return reward;
+	}
+
+	public void setReward(int r){
+		reward = r;
+	}
+
+	public void setIsMask(Boolean m){
+		isMask = m;
+	}
+
+	public Boolean isMask(){
+		return isMask;
+	}
+
+	public Boolean isFaulty(){
+		return isFaulty;
+	}
+
+	public Boolean isTau(){
+		return isTau;
+	}
+
+	public Boolean isFromSpec(){
+		return isFromSpec;
+	}
+
+	public Action cloneForSpec(boolean forSpec){ // this is an utility for the game graph creation
+		Action a = new Action (label, isFaulty, isTau, forSpec, isMask, reward);
+		return a;
+	}
+
+	@Override
+	public int hashCode(){
+	    return Objects.hash(label, isFaulty, isTau, isFromSpec);
+	}
+
+	@Override
+	public boolean equals(Object o){
+		if (o instanceof Action){
+			Action a = (Action)o;
+			if ( label.equals(a.getLabel()) && isFaulty.equals(a.isFaulty()) && isTau.equals(a.isTau()) && isFromSpec.equals(a.isFromSpec())){
+				//System.out.println(this.hashCode()==a.hashCode());
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public String toString(){
+		return label;
+	}
+
+}

@@ -9,8 +9,8 @@
   <property name="bin"     location="bin"     />
   <property name="java.mc"     location="java/mc"/>
   <property name="java.parserProgram"     location="java/parserProgram"/>
-  <property name="java.faulty"     location="java/faulty"/>
-  <property name="java.graph"     location="java/graph"/>
+  <property name="java.lang"     location="java/lang"/>
+  <property name="java.model"     location="java/model"/>
   <property name="java.maskingDistance"     location="java/maskingDistance"/>
   <property name="jar.file"       location="${dist}/${ant.project.name}.jar"/>
   <property name="jar.main.class" value="mc.MainMD"/>
@@ -44,13 +44,13 @@
   <!-- We also use JFlex -->
   <taskdef name="jflex" 
            classname="JFlex.anttask.JFlexTask" 
-           classpath="${bin}/JFlex.jar" 
+           classpath="${lib}/JFlex.jar" 
   />
    
   <!-- We also use CUP-11a -->
   <taskdef name="cup" 
            classname="java_cup.anttask.CUPTask" 
-           classpath="${bin}/java-cup-11a.jar"
+           classpath="${lib}/java-cup-11a.jar"
   />
 
   <target name="init">
@@ -58,12 +58,12 @@
     <mkdir dir="${java}"/>
     <mkdir dir="${dist}"/>
     <mkdir dir="${java.mc}"/>
-    <mkdir dir="${java.faulty}"/>
-    <mkdir dir="${java.graph}"/>
+    <mkdir dir="${java.lang}"/>
+    <mkdir dir="${java.model}"/>
     <mkdir dir="${java.maskingDistance}"/>
       
-    <copy todir="${java.faulty}">
-          <fileset dir="src/faulty" includes="**.java"/>
+    <copy todir="${java.lang}">
+          <fileset dir="src/lang" includes="**.java"/>
     </copy>
     <copy todir="${java.mc}">
           <fileset dir="src/mc" includes=".java"/>
@@ -72,8 +72,8 @@
     <copy todir="${java.mc}">
           <fileset dir="src/mc" includes="**.java"/>
     </copy>
-    <copy todir="${java.graph}">
-          <fileset dir="src/graph" includes="**.java"/>
+    <copy todir="${java.model}">
+          <fileset dir="src/model" includes="**.java"/>
     </copy>
     <copy todir="${java.maskingDistance}">
           <fileset dir="src/maskingDistance" includes="**.java"/>

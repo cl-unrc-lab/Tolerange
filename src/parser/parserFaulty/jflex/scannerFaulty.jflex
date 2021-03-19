@@ -29,6 +29,7 @@ digit=[0-9]
 char=[a-zA-Z]
 id = {char}({char}|{digit})*	
 integer = {digit}{digit}*	
+double =  1|(0\.({digit}+))
 comment=("//"(.)*)|"/*"(((([^*/])*"*"[^/])*)|((([^*])*"/"[^*/])*)|([^*/])*)*"*/"
 /* To ignore */
 end_of_line   = \r|\n|\r\n
@@ -42,6 +43,9 @@ white_space     = {end_of_line} | [ \t\f]
 
 "+" {   //System.out.println("SUMA:"+ yytext()); 
         return new Symbol(symFaulty.PLUS,yyline,yycolumn,yytext());
+    }
+"++" {   //System.out.println("SUMASUMA:"+ yytext()); 
+        return new Symbol(symFaulty.PLUSPLUS,yyline,yycolumn,yytext());
     }
     
 "-" {    //System.out.println("RESTA:"+ yytext()); 
@@ -101,6 +105,14 @@ white_space     = {end_of_line} | [ \t\f]
 "<" {    //System.out.println(" MENOR :"+ yytext());
         return new Symbol(symFaulty.LT,yyline,yycolumn,yytext());
     }
+
+">=" {    //System.out.println("MAYORIGUAL :"+ yytext());
+        return new Symbol(symFaulty.GEQ,yyline,yycolumn,yytext());
+    }
+    
+"<=" {    //System.out.println(" MENORIGUAL :"+ yytext());
+        return new Symbol(symFaulty.LEQ,yyline,yycolumn,yytext());
+    }
     
 "!" {    //System.out.println(" NEG:"+ yytext());
         return new Symbol(symFaulty.EXCLAMATION,yyline,yycolumn,yytext());
@@ -121,10 +133,6 @@ white_space     = {end_of_line} | [ \t\f]
 "]" {    //System.out.println(" CORCHETE CIERRA:"+ yytext());
         return new Symbol(symFaulty.RBRACKET,yyline,yycolumn,yytext());
     }
-
-"." {   //System.out.println(" PUNTO :"+ yytext());
-        return new Symbol(symFaulty.POINT,yyline,yycolumn,yytext());
-    }
     
 "true"  {   //System.out.println(" TRUE :"+ yytext()); 
            return new Symbol(symFaulty.TRUE,yyline,yycolumn, yytext());
@@ -141,6 +149,7 @@ white_space     = {end_of_line} | [ \t\f]
 "INT" {  //System.out.println(" INT:"+ yytext());
          return new Symbol(symFaulty.INT,yyline,yycolumn,yytext());
       }
+
       
 "Global" { //System.out.println(" GLOBAL :"+ yytext());
            return new Symbol(symFaulty.GLOBAL,yyline,yycolumn,yytext());
@@ -156,29 +165,9 @@ white_space     = {end_of_line} | [ \t\f]
             return new Symbol(symFaulty.INIT,yyline,yycolumn,yytext());
           }
 
-"Normative" { //System.out.println(" NORMATIVE:"+ yytext());
-              return new Symbol(symFaulty.NORMATIVE,yyline,yycolumn,yytext());
-            }
-       
-"put" {   //System.out.println(" PUT :"+ yytext());
-          return new Symbol(symFaulty.PUT,yyline,yycolumn,yytext());
-       }
-
-"get" {    //System.out.println(" GET:"+ yytext());
-           return new Symbol(symFaulty.GET,yyline,yycolumn,yytext());
-       }
-
-"of" {   //System.out.println(" OF :"+ yytext());
-         return new Symbol(symFaulty.OF,yyline,yycolumn,yytext());
-     }
-       
 "Process" { //System.out.println(" PROCESS :"+ yytext());
             return new Symbol(symFaulty.PROCESS,yyline,yycolumn,yytext());
           }
-
-"uses" {   //System.out.println(" USES:"+ yytext());
-           return new Symbol(symFaulty.USES,yyline,yycolumn,yytext());
-       }
        
 
 "Main" {  //System.out.println(" MAIN :"+ yytext());
@@ -189,10 +178,6 @@ white_space     = {end_of_line} | [ \t\f]
 "run" {   //System.out.println(" RUN:"+ yytext());
           return new Symbol(symFaulty.RUN,yyline,yycolumn,yytext());
        }
-       
-"Channel" {  //System.out.println(" CHANNEL:"+ yytext()); 
-             return new Symbol(symFaulty.CHANNEL,yyline,yycolumn,yytext());
-          }
           
 "faulty"  {  //System.out.println("FAULTY :  "+ yytext());
          return new Symbol(symFaulty.FAULTY,yyline,yycolumn,yytext());
@@ -210,6 +195,11 @@ white_space     = {end_of_line} | [ \t\f]
 {integer} {  //System.out.println(" VALORINT:"+ yytext());
             Integer value = new Integer(yytext());
             return new Symbol(symFaulty.INTEGER,yyline,yycolumn,value);
+          }
+
+{double} {  //System.out.println(" VALORPROB:"+ yytext());
+            Double value = new Double(yytext());
+            return new Symbol(symFaulty.DOUBLE,yyline,yycolumn,value);
           }
           
 {white_space} {/* Ignore */} 

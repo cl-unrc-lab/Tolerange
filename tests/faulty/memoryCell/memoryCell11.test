@@ -15,9 +15,9 @@ Process Memory {
 
 
    	Initial: w && c0 && c1 && c2 && c3 && c4 && c5 && c6 && c7 && c8 && c9 && c10 && r;
-   	Normative: (c0==c1) && (c1==c2) && (c0==c2) && (c0==c3) && (c0==c4) && (c4==c5) && (c5==c6) && (c6==c7) && (c7==c8) && (c8 == c9) && (c9 == c10);
 	
-	[write] true -> w=!w, c0=!c0, c1=!c1, c2=!c2, c3=!c3, c4=!c4,c5=!c5, c6=!c6, c7=!c7, c8=!c8, c9 = !c9, c10 = !c10, r=!r;
+	[write1] true -> w=true, c0=true, c1=true, c2=true, c3=true, c4=true,c5=true, c6=true, c7=true, c8=true, c9 = true, c10 = true, r=true;
+    [write0] true -> w=false, c0=false, c1=false, c2=false, c3=false, c4=false,c5=false, c6=false, c7=false, c8=false, c9 = false, c10 = false, r=false;
     [read0] !r -> r = r;
     [read1] r -> r = r;
 

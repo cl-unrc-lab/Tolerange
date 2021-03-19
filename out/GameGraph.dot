@@ -1,100 +1,1367 @@
 digraph model {
 
     node [style=filled];
-    ERR_STATE [color="red"];
-    SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 [color="pink"];
-    SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 -> SPEC·m1sselect·_m1insertCoinS_IMP·m1spay·_V_VALUE2 [label = "m1insertCoinS"];
-    SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 -> SPEC·m1spay·_m1insertCoinI_IMP·m1sselect·_V_VALUE2 [label = "m1insertCoinI"];
-    SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 -> SPEC·m1spay·_TAUS_IMP·m1spay·_V_VALUE2 [style=dashed,label = "&S"];
-    SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 -> SPEC·m1spay·_TAUI_IMP·m1spay·_V_VALUE2 [style=dashed,label = "&I"];
-    SPEC·m1spay·_m1insertCoinI_IMP·m1sselect·_V_VALUE2 [color="lightblue"];
-    SPEC·m1spay·_m1insertCoinI_IMP·m1sselect·_V_VALUE2 -> SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 [label = "m1insertCoinS"];
-    SPEC·m1spay·_TAUI_IMP·m1spay·_V_VALUE2 [color="lightblue"];
-    SPEC·m1spay·_TAUI_IMP·m1spay·_V_VALUE2 -> SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 [style=dashed,label = "&S"];
-    SPEC·m1sselect·_m1insertCoinS_IMP·m1spay·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sselect·_m1insertCoinS_IMP·m1spay·_V_VALUE2 -> SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 [label = "m1insertCoinI"];
-    SPEC·m1spay·_TAUS_IMP·m1spay·_V_VALUE2 [color="lightblue"];
-    SPEC·m1spay·_TAUS_IMP·m1spay·_V_VALUE2 -> SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 [style=dashed,label = "&I"];
-    SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 [color="grey"];
-    SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 -> SPEC·m1sselect·_TAUI_IMP·m1sselect·_V_VALUE2 [style=dashed,label = "&I"];
-    SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 -> SPEC·m1sselect·_m1aI_IMP·m1ssoda·_V_VALUE2 [label = "m1aI"];
-    SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 -> SPEC·m1sbeer·_m1aS_IMP·m1sselect·_V_VALUE2 [label = "m1aS"];
-    SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 -> SPEC·m1sselect·_TAUS_IMP·m1sselect·_V_VALUE2 [style=dashed,label = "&S"];
-    SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 -> SPEC·m1sselect·_m1aI_IMP·m1sbeer·_V_VALUE2 [label = "m1aI"];
-    SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 -> SPEC·m1ssoda·_m1aS_IMP·m1sselect·_V_VALUE2 [label = "m1aS"];
-    SPEC·m1sselect·_m1aI_IMP·m1ssoda·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sselect·_m1aI_IMP·m1ssoda·_V_VALUE2 -> SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 [label = "m1aS"];
-    SPEC·m1sselect·_m1aI_IMP·m1ssoda·_V_VALUE2 -> SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 [label = "m1aS"];
-    SPEC·m1sselect·_m1aI_IMP·m1sbeer·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sselect·_m1aI_IMP·m1sbeer·_V_VALUE2 -> SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 [label = "m1aS"];
-    SPEC·m1sselect·_m1aI_IMP·m1sbeer·_V_VALUE2 -> SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 [label = "m1aS"];
-    SPEC·m1sselect·_TAUI_IMP·m1sselect·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sselect·_TAUI_IMP·m1sselect·_V_VALUE2 -> SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 [style=dashed,label = "&S"];
-    SPEC·m1ssoda·_m1aS_IMP·m1sselect·_V_VALUE2 [color="lightblue"];
-    SPEC·m1ssoda·_m1aS_IMP·m1sselect·_V_VALUE2 -> SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 [label = "m1aI"];
-    SPEC·m1ssoda·_m1aS_IMP·m1sselect·_V_VALUE2 -> SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 [label = "m1aI"];
-    SPEC·m1sbeer·_m1aS_IMP·m1sselect·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sbeer·_m1aS_IMP·m1sselect·_V_VALUE2 -> SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 [label = "m1aI"];
-    SPEC·m1sbeer·_m1aS_IMP·m1sselect·_V_VALUE2 -> SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 [label = "m1aI"];
-    SPEC·m1sselect·_TAUS_IMP·m1sselect·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sselect·_TAUS_IMP·m1sselect·_V_VALUE2 -> SPEC·m1sselect·_I_IMP·m1sselect·_R_VALUE2 [style=dashed,label = "&I"];
-    SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 [color="grey"];
-    SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 -> SPEC·m1sbeer·_TAUI_IMP·m1ssoda·_V_VALUE1 [style=dashed,label = "&I"];
-    SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 -> SPEC·m1sbeer·_m1getSodaI_IMP·m1spay·_V_VALUE1 [label = "m1getSodaI"];
-    SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 -> SPEC·m1sbeer·_m1failI_IMP·m1sbeer·_V_VALUE3 [color="red",label = "m1failI"];
-    SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 -> SPEC·m1sbeer·_TAUS_IMP·m1ssoda·_V_VALUE1 [style=dashed,label = "&S"];
-    SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 -> SPEC·m1spay·_m1getBeerS_IMP·m1ssoda·_V_VALUE1 [label = "m1getBeerS"];
-    SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 [color="grey"];
-    SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 -> SPEC·m1sbeer·_TAUS_IMP·m1sbeer·_V_VALUE2 [style=dashed,label = "&S"];
-    SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 -> SPEC·m1sbeer·_TAUI_IMP·m1sbeer·_V_VALUE2 [style=dashed,label = "&I"];
-    SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 -> SPEC·m1spay·_m1getBeerS_IMP·m1sbeer·_V_VALUE2 [label = "m1getBeerS"];
-    SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 -> SPEC·m1sbeer·_m1getBeerI_IMP·m1spay·_V_VALUE2 [label = "m1getBeerI"];
-    SPEC·m1sbeer·_TAUI_IMP·m1sbeer·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sbeer·_TAUI_IMP·m1sbeer·_V_VALUE2 -> SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 [style=dashed,label = "&S"];
-    SPEC·m1sbeer·_m1getBeerI_IMP·m1spay·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sbeer·_m1getBeerI_IMP·m1spay·_V_VALUE2 -> SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 [label = "m1getBeerS"];
-    SPEC·m1sbeer·_TAUS_IMP·m1sbeer·_V_VALUE2 [color="lightblue"];
-    SPEC·m1sbeer·_TAUS_IMP·m1sbeer·_V_VALUE2 -> SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 [style=dashed,label = "&I"];
-    SPEC·m1spay·_m1getBeerS_IMP·m1sbeer·_V_VALUE2 [color="lightblue"];
-    SPEC·m1spay·_m1getBeerS_IMP·m1sbeer·_V_VALUE2 -> SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 [label = "m1getBeerI"];
-    SPEC·m1sbeer·_TAUI_IMP·m1ssoda·_V_VALUE1 [color="lightblue"];
-    SPEC·m1sbeer·_TAUI_IMP·m1ssoda·_V_VALUE1 -> SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 [style=dashed,label = "&S"];
-    SPEC·m1sbeer·_m1failI_IMP·m1sbeer·_V_VALUE3 [color="lightblue"];
-    SPEC·m1sbeer·_m1failI_IMP·m1sbeer·_V_VALUE3 -> SPEC·m1sbeer·_I_IMP·m1sbeer·_R_VALUE2 [color="green",label = "Mm1failS"];
-    SPEC·m1sbeer·_m1getSodaI_IMP·m1spay·_V_VALUE1 [color="lightblue"];
-    SPEC·m1sbeer·_m1getSodaI_IMP·m1spay·_V_VALUE1 -> ERR_STATE [label = "ERRI"];
-    SPEC·m1sbeer·_TAUS_IMP·m1ssoda·_V_VALUE1 [color="lightblue"];
-    SPEC·m1sbeer·_TAUS_IMP·m1ssoda·_V_VALUE1 -> SPEC·m1sbeer·_I_IMP·m1ssoda·_R_VALUE1 [style=dashed,label = "&I"];
-    SPEC·m1spay·_m1getBeerS_IMP·m1ssoda·_V_VALUE1 [color="lightblue"];
-    SPEC·m1spay·_m1getBeerS_IMP·m1ssoda·_V_VALUE1 -> ERR_STATE [label = "ERRI"];
-    SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 [color="grey"];
-    SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 -> SPEC·m1ssoda·_m1failI_IMP·m1sbeer·_V_VALUE2 [color="red",label = "m1failI"];
-    SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 -> SPEC·m1ssoda·_TAUS_IMP·m1ssoda·_V_VALUE2 [style=dashed,label = "&S"];
-    SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 -> SPEC·m1ssoda·_m1getSodaI_IMP·m1spay·_V_VALUE2 [label = "m1getSodaI"];
-    SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 -> SPEC·m1spay·_m1getSodaS_IMP·m1ssoda·_V_VALUE2 [label = "m1getSodaS"];
-    SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 -> SPEC·m1ssoda·_TAUI_IMP·m1ssoda·_V_VALUE2 [style=dashed,label = "&I"];
-    SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 [color="grey"];
-    SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 -> SPEC·m1spay·_m1getSodaS_IMP·m1sbeer·_V_VALUE1 [label = "m1getSodaS"];
-    SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 -> SPEC·m1ssoda·_TAUS_IMP·m1sbeer·_V_VALUE1 [style=dashed,label = "&S"];
-    SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 -> SPEC·m1ssoda·_TAUI_IMP·m1sbeer·_V_VALUE1 [style=dashed,label = "&I"];
-    SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 -> SPEC·m1ssoda·_m1getBeerI_IMP·m1spay·_V_VALUE1 [label = "m1getBeerI"];
-    SPEC·m1ssoda·_TAUI_IMP·m1sbeer·_V_VALUE1 [color="lightblue"];
-    SPEC·m1ssoda·_TAUI_IMP·m1sbeer·_V_VALUE1 -> SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 [style=dashed,label = "&S"];
-    SPEC·m1ssoda·_m1getBeerI_IMP·m1spay·_V_VALUE1 [color="lightblue"];
-    SPEC·m1ssoda·_m1getBeerI_IMP·m1spay·_V_VALUE1 -> ERR_STATE [label = "ERRI"];
-    SPEC·m1ssoda·_TAUS_IMP·m1sbeer·_V_VALUE1 [color="lightblue"];
-    SPEC·m1ssoda·_TAUS_IMP·m1sbeer·_V_VALUE1 -> SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 [style=dashed,label = "&I"];
-    SPEC·m1spay·_m1getSodaS_IMP·m1sbeer·_V_VALUE1 [color="lightblue"];
-    SPEC·m1spay·_m1getSodaS_IMP·m1sbeer·_V_VALUE1 -> ERR_STATE [label = "ERRI"];
-    SPEC·m1ssoda·_TAUI_IMP·m1ssoda·_V_VALUE2 [color="lightblue"];
-    SPEC·m1ssoda·_TAUI_IMP·m1ssoda·_V_VALUE2 -> SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 [style=dashed,label = "&S"];
-    SPEC·m1ssoda·_m1failI_IMP·m1sbeer·_V_VALUE2 [color="lightblue"];
-    SPEC·m1ssoda·_m1failI_IMP·m1sbeer·_V_VALUE2 -> SPEC·m1ssoda·_I_IMP·m1sbeer·_R_VALUE1 [color="green",label = "Mm1failS"];
-    SPEC·m1ssoda·_m1getSodaI_IMP·m1spay·_V_VALUE2 [color="lightblue"];
-    SPEC·m1ssoda·_m1getSodaI_IMP·m1spay·_V_VALUE2 -> SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 [label = "m1getSodaS"];
-    SPEC·m1ssoda·_TAUS_IMP·m1ssoda·_V_VALUE2 [color="lightblue"];
-    SPEC·m1ssoda·_TAUS_IMP·m1ssoda·_V_VALUE2 -> SPEC·m1ssoda·_I_IMP·m1ssoda·_R_VALUE2 [style=dashed,label = "&I"];
-    SPEC·m1spay·_m1getSodaS_IMP·m1ssoda·_V_VALUE2 [color="lightblue"];
-    SPEC·m1spay·_m1getSodaS_IMP·m1ssoda·_V_VALUE2 -> SPEC·m1spay·_I_IMP·m1spay·_R_VALUE2 [label = "m1getSodaI"];
+    0 [label="ERR_STATE",color="red"];
+    1 [label="Spec: m1v0·m1s0·
+Symbol: 
+Imp: m1v0·m1s0·
+Player: R
+Value: 2147483647",color="pink"];
+    1 -> 8;
+    1 -> 3;
+    1 -> 11;
+    1 -> 2;
+    1 -> 5;
+    1 -> 4;
+    1 -> 10;
+    1 -> 9;
+    2 [label="Spec: m1v0·m1s0·
+Symbol: m1w0_I
+Imp: m1v0·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    2 -> 1332;
+    3 [label="Spec: m1v0·m1s0·
+Symbol: m1r0_I
+Imp: m1v0·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    3 -> 1330;
+    4 [label="Spec: m1v0·m1s0·
+Symbol: m1tick_I
+Imp: m1v0·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    4 -> 1322;
+    5 [label="Spec: m1v0·m1s0·
+Symbol: m1w1_I
+Imp: m1v0·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    5 -> 1320;
+    8 [label="Spec: m1v0·m1s0·
+Symbol: m1w1_S
+Imp: m1v0·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    8 -> 1318;
+    9 [label="Spec: m1v0·m1s0·
+Symbol: m1w0_S
+Imp: m1v0·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    9 -> 1316;
+    10 [label="Spec: m1v0·m1s0·
+Symbol: m1r0_S
+Imp: m1v0·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    10 -> 1314;
+    11 [label="Spec: m1v0·m1s0·
+Symbol: m1tick_S
+Imp: m1v0·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    11 -> 13;
+    13 [label="Spec: m1v0·m1s0·
+Symbol: m1tick_S
+Imp: m1v0·m1s0·
+Player: P
+Value: 2147483647",color="orange"];
+    13 -> 20;
+    13 -> 19;
+    13 -> 21;
+    13 -> 18;
+    13 -> 1;
+    13 -> 17;
+    17 [label="Spec: m1v0·m1s1·
+Symbol: 
+Imp: m1v0·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    17 -> 1308;
+    17 -> 1310;
+    17 -> 1307;
+    17 -> 1309;
+    17 -> 1313;
+    18 [label="Spec: m1v0·m1s0·
+Symbol: 
+Imp: m1v0·m1s1·
+Player: R
+Value: 2147483647",color="grey"];
+    18 -> 53;
+    18 -> 57;
+    18 -> 60;
+    18 -> 55;
+    18 -> 62;
+    18 -> 56;
+    18 -> 58;
+    18 -> 61;
+    18 -> 63;
+    18 -> 54;
+    19 [label="Spec: m1v0·m1s1·
+Symbol: 
+Imp: m1v0·m1s1·
+Player: R
+Value: 2147483647",color="grey"];
+    19 -> 34;
+    19 -> 38;
+    19 -> 36;
+    19 -> 39;
+    19 -> 37;
+    19 -> 41;
+    19 -> 35;
+    20 [label="Spec: m1v0·m1s0·
+Symbol: 
+Imp: m1v0·m1s2·
+Player: R
+Value: 2147483647",color="grey"];
+    20 -> 28;
+    20 -> 29;
+    20 -> 31;
+    20 -> 30;
+    20 -> 32;
+    21 [label="Spec: m1v0·m1s1·
+Symbol: 
+Imp: m1v0·m1s2·
+Player: R
+Value: 2147483647",color="grey"];
+    21 -> 22;
+    21 -> 23;
+    22 [label="Spec: m1v0·m1s1·
+Symbol: m1refresh_I
+Imp: m1v0·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    22 -> 26;
+    23 [label="Spec: m1v0·m1s1·
+Symbol: m1refresh_S
+Imp: m1v0·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    23 -> 24;
+    24 [label="Spec: m1v0·m1s1·
+Symbol: m1refresh_S
+Imp: m1v0·m1s2·
+Player: P
+Value: 2147483647",color="orange"];
+    24 -> 1;
+    26 [label="Spec: m1v0·m1s1·
+Symbol: m1refresh_I
+Imp: m1v0·m1s2·
+Player: P
+Value: 2147483647",color="orange"];
+    26 -> 1;
+    28 [label="Spec: m1v0·m1s0·
+Symbol: m1refresh_I
+Imp: m1v0·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    28 -> 0;
+    29 [label="Spec: m1v0·m1s0·
+Symbol: m1w1_S
+Imp: m1v0·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    29 -> 0;
+    30 [label="Spec: m1v0·m1s0·
+Symbol: m1w0_S
+Imp: m1v0·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    30 -> 0;
+    31 [label="Spec: m1v0·m1s0·
+Symbol: m1r0_S
+Imp: m1v0·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    31 -> 0;
+    32 [label="Spec: m1v0·m1s0·
+Symbol: m1tick_S
+Imp: m1v0·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    32 -> 0;
+    34 [label="Spec: m1v0·m1s1·
+Symbol: m1fault1_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    34 -> 51;
+    35 [label="Spec: m1v0·m1s1·
+Symbol: m1fault2_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    35 -> 42;
+    36 [label="Spec: m1v0·m1s1·
+Symbol: m1w0_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    36 -> 0;
+    37 [label="Spec: m1v0·m1s1·
+Symbol: m1w1_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    37 -> 0;
+    38 [label="Spec: m1v0·m1s1·
+Symbol: m1r0_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    38 -> 0;
+    39 [label="Spec: m1v0·m1s1·
+Symbol: m1tick_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    39 -> 0;
+    41 [label="Spec: m1v0·m1s1·
+Symbol: m1refresh_S
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    41 -> 0;
+    42 [label="Spec: m1v0·m1s1·
+Symbol: m1fault2_I
+Imp: m1v0·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    42 -> 43;
+    43 [label="Spec: m1v0·m1s1·
+Symbol: 
+Imp: m1v1·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    43 -> 50;
+    43 -> 44;
+    43 -> 48;
+    43 -> 46;
+    43 -> 45;
+    44 [label="Spec: m1v0·m1s1·
+Symbol: m1r0_I
+Imp: m1v1·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    44 -> 0;
+    45 [label="Spec: m1v0·m1s1·
+Symbol: m1tick_I
+Imp: m1v1·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    45 -> 0;
+    46 [label="Spec: m1v0·m1s1·
+Symbol: m1w0_I
+Imp: m1v1·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    46 -> 0;
+    48 [label="Spec: m1v0·m1s1·
+Symbol: m1w1_I
+Imp: m1v1·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    48 -> 0;
+    50 [label="Spec: m1v0·m1s1·
+Symbol: m1refresh_S
+Imp: m1v1·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    50 -> 0;
+    51 [label="Spec: m1v0·m1s1·
+Symbol: m1fault1_I
+Imp: m1v0·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    51 -> 43;
+    53 [label="Spec: m1v0·m1s0·
+Symbol: m1fault1_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    53 -> 1303;
+    54 [label="Spec: m1v0·m1s0·
+Symbol: m1fault2_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    54 -> 755;
+    55 [label="Spec: m1v0·m1s0·
+Symbol: m1w0_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    55 -> 753;
+    56 [label="Spec: m1v0·m1s0·
+Symbol: m1w1_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    56 -> 751;
+    57 [label="Spec: m1v0·m1s0·
+Symbol: m1r0_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    57 -> 749;
+    58 [label="Spec: m1v0·m1s0·
+Symbol: m1tick_I
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    58 -> 743;
+    60 [label="Spec: m1v0·m1s0·
+Symbol: m1w1_S
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    60 -> 75;
+    61 [label="Spec: m1v0·m1s0·
+Symbol: m1w0_S
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    61 -> 73;
+    62 [label="Spec: m1v0·m1s0·
+Symbol: m1r0_S
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    62 -> 71;
+    63 [label="Spec: m1v0·m1s0·
+Symbol: m1tick_S
+Imp: m1v0·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    63 -> 65;
+    65 [label="Spec: m1v0·m1s0·
+Symbol: m1tick_S
+Imp: m1v0·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    65 -> 20;
+    65 -> 19;
+    65 -> 21;
+    65 -> 18;
+    71 [label="Spec: m1v0·m1s0·
+Symbol: m1r0_S
+Imp: m1v0·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    71 -> 18;
+    73 [label="Spec: m1v0·m1s0·
+Symbol: m1w0_S
+Imp: m1v0·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    73 -> 1;
+    75 [label="Spec: m1v0·m1s0·
+Symbol: m1w1_S
+Imp: m1v0·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    75 -> 76;
+    76 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v5·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    76 -> 84;
+    76 -> 86;
+    76 -> 79;
+    76 -> 80;
+    76 -> 85;
+    76 -> 78;
+    76 -> 77;
+    76 -> 83;
+    77 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_I
+Imp: m1v5·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    77 -> 735;
+    78 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_I
+Imp: m1v5·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    78 -> 733;
+    79 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_I
+Imp: m1v5·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    79 -> 731;
+    80 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_I
+Imp: m1v5·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    80 -> 729;
+    83 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v5·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    83 -> 727;
+    84 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v5·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    84 -> 725;
+    85 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v5·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    85 -> 90;
+    86 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v5·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    86 -> 88;
+    88 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v5·m1s0·
+Player: P
+Value: 2147483647",color="orange"];
+    88 -> 1;
+    90 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v5·m1s0·
+Player: P
+Value: 2147483647",color="orange"];
+    90 -> 96;
+    90 -> 94;
+    90 -> 97;
+    90 -> 76;
+    90 -> 98;
+    90 -> 93;
+    93 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v5·m1s2·
+Player: R
+Value: 2147483647",color="grey"];
+    93 -> 720;
+    93 -> 722;
+    93 -> 721;
+    93 -> 719;
+    93 -> 723;
+    94 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v5·m1s2·
+Player: R
+Value: 2147483647",color="grey"];
+    94 -> 714;
+    94 -> 713;
+    96 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v5·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    96 -> 708;
+    96 -> 709;
+    96 -> 712;
+    96 -> 707;
+    96 -> 706;
+    97 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v5·m1s1·
+Player: R
+Value: 2147483647",color="grey"];
+    97 -> 127;
+    97 -> 126;
+    97 -> 120;
+    97 -> 124;
+    97 -> 123;
+    97 -> 119;
+    97 -> 121;
+    97 -> 118;
+    97 -> 128;
+    97 -> 125;
+    98 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v5·m1s1·
+Player: R
+Value: 2147483647",color="grey"];
+    98 -> 101;
+    98 -> 102;
+    98 -> 106;
+    98 -> 104;
+    98 -> 105;
+    98 -> 100;
+    98 -> 99;
+    99 [label="Spec: m1v1·m1s1·
+Symbol: m1tick_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    99 -> 0;
+    100 [label="Spec: m1v1·m1s1·
+Symbol: m1w0_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    100 -> 0;
+    101 [label="Spec: m1v1·m1s1·
+Symbol: m1w1_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    101 -> 0;
+    102 [label="Spec: m1v1·m1s1·
+Symbol: m1r1_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    102 -> 0;
+    104 [label="Spec: m1v1·m1s1·
+Symbol: m1fault1_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    104 -> 116;
+    105 [label="Spec: m1v1·m1s1·
+Symbol: m1fault2_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    105 -> 107;
+    106 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    106 -> 0;
+    107 [label="Spec: m1v1·m1s1·
+Symbol: m1fault2_I
+Imp: m1v5·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    107 -> 108;
+    108 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v4·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    108 -> 112;
+    108 -> 113;
+    108 -> 115;
+    108 -> 111;
+    108 -> 109;
+    109 [label="Spec: m1v1·m1s1·
+Symbol: m1tick_I
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    109 -> 0;
+    111 [label="Spec: m1v1·m1s1·
+Symbol: m1w0_I
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    111 -> 0;
+    112 [label="Spec: m1v1·m1s1·
+Symbol: m1w1_I
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    112 -> 0;
+    113 [label="Spec: m1v1·m1s1·
+Symbol: m1r1_I
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    113 -> 0;
+    115 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    115 -> 0;
+    116 [label="Spec: m1v1·m1s1·
+Symbol: m1fault1_I
+Imp: m1v5·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    116 -> 108;
+    118 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    118 -> 700;
+    119 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    119 -> 698;
+    120 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    120 -> 696;
+    121 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    121 -> 694;
+    123 [label="Spec: m1v1·m1s0·
+Symbol: m1fault1_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    123 -> 690;
+    124 [label="Spec: m1v1·m1s0·
+Symbol: m1fault2_I
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    124 -> 142;
+    125 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    125 -> 140;
+    126 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    126 -> 138;
+    127 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    127 -> 132;
+    128 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v5·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    128 -> 130;
+    130 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v5·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    130 -> 1;
+    132 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v5·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    132 -> 94;
+    132 -> 97;
+    132 -> 98;
+    132 -> 93;
+    138 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v5·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    138 -> 97;
+    140 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v5·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    140 -> 76;
+    142 [label="Spec: m1v1·m1s0·
+Symbol: m1fault2_I
+Imp: m1v5·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    142 -> 143;
+    143 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v4·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    143 -> 154;
+    143 -> 153;
+    143 -> 149;
+    143 -> 148;
+    143 -> 150;
+    143 -> 146;
+    143 -> 155;
+    143 -> 152;
+    146 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_I
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    146 -> 682;
+    148 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_I
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    148 -> 680;
+    149 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_I
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    149 -> 678;
+    150 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_I
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    150 -> 676;
+    152 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    152 -> 674;
+    153 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    153 -> 672;
+    154 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    154 -> 159;
+    155 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v4·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    155 -> 157;
+    157 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v4·m1s0·
+Player: P
+Value: 2147483647",color="orange"];
+    157 -> 1;
+    159 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v4·m1s0·
+Player: P
+Value: 2147483647",color="orange"];
+    159 -> 163;
+    159 -> 143;
+    159 -> 108;
+    159 -> 164;
+    159 -> 162;
+    159 -> 165;
+    162 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v4·m1s1·
+Player: R
+Value: 2147483647",color="grey"];
+    162 -> 206;
+    162 -> 208;
+    162 -> 207;
+    162 -> 205;
+    162 -> 203;
+    162 -> 204;
+    162 -> 199;
+    162 -> 202;
+    162 -> 200;
+    162 -> 209;
+    163 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v4·m1s1·
+Player: R
+Value: 2147483647",color="grey"];
+    163 -> 185;
+    163 -> 184;
+    163 -> 187;
+    163 -> 183;
+    163 -> 180;
+    163 -> 186;
+    163 -> 181;
+    164 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v4·m1s2·
+Player: R
+Value: 2147483647",color="grey"];
+    164 -> 175;
+    164 -> 177;
+    164 -> 176;
+    164 -> 178;
+    164 -> 174;
+    165 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v4·m1s2·
+Player: R
+Value: 2147483647",color="grey"];
+    165 -> 169;
+    165 -> 168;
+    168 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_I
+Imp: m1v4·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    168 -> 172;
+    169 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v4·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    169 -> 170;
+    170 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v4·m1s2·
+Player: P
+Value: 2147483647",color="orange"];
+    170 -> 76;
+    172 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_I
+Imp: m1v4·m1s2·
+Player: P
+Value: 2147483647",color="orange"];
+    172 -> 76;
+    174 [label="Spec: m1v1·m1s0·
+Symbol: m1refresh_I
+Imp: m1v4·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    174 -> 0;
+    175 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v4·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    175 -> 0;
+    176 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v4·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    176 -> 0;
+    177 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v4·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    177 -> 0;
+    178 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v4·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    178 -> 0;
+    180 [label="Spec: m1v1·m1s1·
+Symbol: m1r1_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    180 -> 0;
+    181 [label="Spec: m1v1·m1s1·
+Symbol: m1tick_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    181 -> 0;
+    183 [label="Spec: m1v1·m1s1·
+Symbol: m1w0_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    183 -> 0;
+    184 [label="Spec: m1v1·m1s1·
+Symbol: m1w1_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    184 -> 0;
+    185 [label="Spec: m1v1·m1s1·
+Symbol: m1fault1_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    185 -> 197;
+    186 [label="Spec: m1v1·m1s1·
+Symbol: m1fault2_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    186 -> 188;
+    187 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    187 -> 0;
+    188 [label="Spec: m1v1·m1s1·
+Symbol: m1fault2_I
+Imp: m1v4·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    188 -> 189;
+    189 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v3·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    189 -> 190;
+    189 -> 191;
+    189 -> 196;
+    189 -> 193;
+    189 -> 192;
+    190 [label="Spec: m1v1·m1s1·
+Symbol: m1w0_I
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    190 -> 0;
+    191 [label="Spec: m1v1·m1s1·
+Symbol: m1w1_I
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    191 -> 0;
+    192 [label="Spec: m1v1·m1s1·
+Symbol: m1r1_I
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    192 -> 0;
+    193 [label="Spec: m1v1·m1s1·
+Symbol: m1tick_I
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    193 -> 0;
+    196 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    196 -> 0;
+    197 [label="Spec: m1v1·m1s1·
+Symbol: m1fault1_I
+Imp: m1v4·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    197 -> 96;
+    199 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    199 -> 670;
+    200 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    200 -> 664;
+    202 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    202 -> 662;
+    203 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    203 -> 660;
+    204 [label="Spec: m1v1·m1s0·
+Symbol: m1fault1_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    204 -> 656;
+    205 [label="Spec: m1v1·m1s0·
+Symbol: m1fault2_I
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    205 -> 223;
+    206 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    206 -> 221;
+    207 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    207 -> 219;
+    208 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    208 -> 213;
+    209 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v4·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    209 -> 211;
+    211 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v4·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    211 -> 1;
+    213 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v4·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    213 -> 163;
+    213 -> 164;
+    213 -> 162;
+    213 -> 165;
+    219 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v4·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    219 -> 162;
+    221 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v4·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    221 -> 76;
+    223 [label="Spec: m1v1·m1s0·
+Symbol: m1fault2_I
+Imp: m1v4·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    223 -> 224;
+    224 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v3·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    224 -> 233;
+    224 -> 227;
+    224 -> 234;
+    224 -> 228;
+    224 -> 230;
+    224 -> 236;
+    224 -> 229;
+    224 -> 235;
+    227 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_I
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    227 -> 654;
+    228 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_I
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    228 -> 652;
+    229 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_I
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    229 -> 650;
+    230 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_I
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    230 -> 642;
+    233 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    233 -> 640;
+    234 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    234 -> 638;
+    235 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    235 -> 240;
+    236 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v3·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    236 -> 238;
+    238 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v3·m1s0·
+Player: P
+Value: 2147483647",color="orange"];
+    238 -> 1;
+    240 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v3·m1s0·
+Player: P
+Value: 2147483647",color="orange"];
+    240 -> 245;
+    240 -> 248;
+    240 -> 224;
+    240 -> 246;
+    240 -> 247;
+    240 -> 189;
+    245 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v3·m1s1·
+Player: R
+Value: 2147483647",color="grey"];
+    245 -> 285;
+    245 -> 280;
+    245 -> 284;
+    245 -> 287;
+    245 -> 288;
+    245 -> 290;
+    245 -> 281;
+    245 -> 282;
+    245 -> 283;
+    245 -> 289;
+    246 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v3·m1s1·
+Player: R
+Value: 2147483647",color="grey"];
+    246 -> 263;
+    246 -> 261;
+    246 -> 268;
+    246 -> 262;
+    246 -> 265;
+    246 -> 264;
+    246 -> 266;
+    247 [label="Spec: m1v1·m1s0·
+Symbol: 
+Imp: m1v3·m1s2·
+Player: R
+Value: 2147483647",color="grey"];
+    247 -> 255;
+    247 -> 256;
+    247 -> 257;
+    247 -> 259;
+    247 -> 258;
+    248 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v3·m1s2·
+Player: R
+Value: 2147483647",color="grey"];
+    248 -> 249;
+    248 -> 250;
+    249 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_I
+Imp: m1v3·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    249 -> 253;
+    250 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v3·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    250 -> 251;
+    251 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v3·m1s2·
+Player: P
+Value: 2147483647",color="orange"];
+    251 -> 76;
+    253 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_I
+Imp: m1v3·m1s2·
+Player: P
+Value: 2147483647",color="orange"];
+    253 -> 76;
+    255 [label="Spec: m1v1·m1s0·
+Symbol: m1refresh_I
+Imp: m1v3·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    255 -> 0;
+    256 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v3·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    256 -> 0;
+    257 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v3·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    257 -> 0;
+    258 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_S
+Imp: m1v3·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    258 -> 0;
+    259 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_S
+Imp: m1v3·m1s2·
+Player: V
+Value: 2147483647",color="lightblue"];
+    259 -> 0;
+    261 [label="Spec: m1v1·m1s1·
+Symbol: m1w0_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    261 -> 0;
+    262 [label="Spec: m1v1·m1s1·
+Symbol: m1w1_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    262 -> 0;
+    263 [label="Spec: m1v1·m1s1·
+Symbol: m1fault1_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    263 -> 278;
+    264 [label="Spec: m1v1·m1s1·
+Symbol: m1r1_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    264 -> 0;
+    265 [label="Spec: m1v1·m1s1·
+Symbol: m1tick_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    265 -> 0;
+    266 [label="Spec: m1v1·m1s1·
+Symbol: m1fault2_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    266 -> 269;
+    268 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    268 -> 0;
+    269 [label="Spec: m1v1·m1s1·
+Symbol: m1fault2_I
+Imp: m1v3·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    269 -> 270;
+    270 [label="Spec: m1v1·m1s1·
+Symbol: 
+Imp: m1v2·m1s0·
+Player: R
+Value: 2147483647",color="grey"];
+    270 -> 273;
+    270 -> 271;
+    270 -> 277;
+    270 -> 272;
+    270 -> 274;
+    271 [label="Spec: m1v1·m1s1·
+Symbol: m1w0_I
+Imp: m1v2·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    271 -> 0;
+    272 [label="Spec: m1v1·m1s1·
+Symbol: m1w1_I
+Imp: m1v2·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    272 -> 0;
+    273 [label="Spec: m1v1·m1s1·
+Symbol: m1r0_I
+Imp: m1v2·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    273 -> 0;
+    274 [label="Spec: m1v1·m1s1·
+Symbol: m1tick_I
+Imp: m1v2·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    274 -> 0;
+    277 [label="Spec: m1v1·m1s1·
+Symbol: m1refresh_S
+Imp: m1v2·m1s0·
+Player: V
+Value: 2147483647",color="lightblue"];
+    277 -> 0;
+    278 [label="Spec: m1v1·m1s1·
+Symbol: m1fault1_I
+Imp: m1v3·m1s1·
+Player: P
+Value: 2147483647",color="orange"];
+    278 -> 108;
+    280 [label="Spec: m1v1·m1s0·
+Symbol: m1w0_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    280 -> 636;
+    281 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    281 -> 634;
+    282 [label="Spec: m1v1·m1s0·
+Symbol: m1fault1_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    282 -> 630;
+    283 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    283 -> 628;
+    284 [label="Spec: m1v1·m1s0·
+Symbol: m1tick_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    284 -> 622;
+    285 [label="Spec: m1v1·m1s0·
+Symbol: m1fault2_I
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    285 -> 304;
+    287 [label="Spec: m1v1·m1s0·
+Symbol: m1w1_S
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    287 -> 302;
+    288 [label="Spec: m1v1·m1s0·
+Symbol: m1r1_S
+Imp: m1v3·m1s1·
+Player: V
+Value: 2147483647",color="lightblue"];
+    288 -> 300;
 
 }

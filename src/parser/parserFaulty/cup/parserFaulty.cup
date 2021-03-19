@@ -1,8 +1,7 @@
 package parserProgram;
 
 import java_cup.runtime.*;
-import net.sf.javabdd.*;
-import faulty.*;
+import lang.*;
 import java.util.*;
 
 parser code {:
@@ -22,10 +21,11 @@ parser code {:
 
 
 terminal PLUS;
+terminal PLUSPLUS;
 terminal MINUS;
 terminal ASTERISK;
-terminal POINT;
 terminal SLASH;
+terminal EXCLAMATION;
 terminal LPARENT;
 terminal RPARENT;
 terminal LBRACE;
@@ -42,24 +42,20 @@ terminal OR;
 terminal AND;
 terminal GT;
 terminal LT;
-terminal EXCLAMATION;
+terminal GEQ;
+terminal LEQ;
 terminal INT;
 terminal BOOL;
 terminal INIT;
-terminal NORMATIVE;
 terminal PROCESS;
-terminal OF;
-terminal USES;
 terminal RUN;
 terminal MAIN;
-terminal CHANNEL;
-terminal PUT;
-terminal GET;
 terminal GLOBAL;
 terminal ENUM;
-  
+
 
 terminal Integer INTEGER;
+terminal Double DOUBLE;
 terminal TRUE,FALSE;
 terminal String ID;
 terminal String FAULTY,INTERNAL;         
@@ -72,7 +68,7 @@ non terminal Code assignation;
 non terminal LinkedList<Code> assigList;
 non terminal Branch branch;
 non terminal LinkedList<Branch> branchList;
-non terminal Expression initialCond, normCond;
+non terminal Expression initialCond;
 non terminal LinkedList<Var> declList;
 non terminal LinkedList<Var> decl;
 non terminal LinkedList<String> varDecls;
@@ -80,10 +76,8 @@ non terminal Proc process, bodyProcess;
 non terminal LinkedList<Param> paramList;
 non terminal Param param;
 non terminal ProcessCollection processList;
-non terminal ChannelCollection channelList;
 non terminal LinkedList<Var> globalDecl;
 non terminal GlobalVarCollection globalVarList;
-non terminal Channel chanDecl;
 non terminal Program specification;
 non terminal LinkedList<InvkProcess> processInvk;
 non terminal InvkProcess invk;
@@ -99,9 +93,11 @@ non terminal LinkedList<EnumType> enumList;
 non terminal String label;
 non terminal Boolean faulty;
 non terminal Boolean internal;
+non terminal Code assignationProb;
+non terminal LinkedList<Code> assigListProb;
 
 
-precedence left GT,LT,DOUBLE_EQUAL,AND,OR;
+precedence left GT,LT,GEQ,LEQ,DOUBLE_EQUAL,AND,OR;
 precedence left PLUS, MINUS;
 precedence left ASTERISK, SLASH;
 precedence left LPARENT, RPARENT;
@@ -114,17 +110,7 @@ mainSpecification ::= specification:prog {: RESULT = prog;
                                          :}
                     ;
 
-specification ::=  enumList:eList SEMICOLON globalVarList:vList SEMICOLON channelList:cList SEMICOLON processList:pList program:main  
-                                                                                                {: // EnumTypes + GlobalVars + Channels
-                                                                                                   Program prog = new Program(eList,vList,cList,pList, main);
-                                                                                                   RESULT = prog;
-                                                                                                :}
-                  | globalVarList:vList SEMICOLON channelList:cList SEMICOLON processList:pList program:main  
-                                                                                                {: // GlobalVars + Channels
-                                                                                                   Program prog = new Program(vList,cList,pList, main);
-                                                                                                   RESULT = prog;
-                                                                                                :}
-                  | enumList:eList SEMICOLON globalVarList:vList SEMICOLON  processList:pList program:main  
+specification ::=  enumList:eList SEMICOLON globalVarList:vList SEMICOLON  processList:pList program:main  
                                                                                                 {: // EnumTypes + GlobalVars
                                                                                                    Program prog = new Program(eList,vList,pList, main);
                                                                                                    RESULT = prog;
@@ -135,17 +121,6 @@ specification ::=  enumList:eList SEMICOLON globalVarList:vList SEMICOLON channe
                                                                                     Program prog = new Program(vList,pList, main);
                                                                                     RESULT = prog;
                                                                                  :}
-
-                  | enumList:eList SEMICOLON channelList:cList SEMICOLON processList:pList program:main  
-                                                                                {: // EnumTypes + Channels
-                                                                                   Program prog = new Program(eList, cList,pList, main);
-                                                                                   RESULT = prog;
-                                                                                :}
-                  
-                  | channelList:cList SEMICOLON processList:pList program:main  {: // Channels
-                                                                                   Program prog = new Program(cList,pList, main);
-                                                                                   RESULT = prog;
-                                                                                :}
                   
                   |  enumList:eList SEMICOLON processList:pList program:main  
                                                                     {:  // EnumTypes
@@ -153,7 +128,7 @@ specification ::=  enumList:eList SEMICOLON globalVarList:vList SEMICOLON channe
                                                                         RESULT = prog;
                                                                     :}
                                                                 
-                  |  processList:pList program:main  {:  // not EnumTypes & not GlobalVars & not Channels
+                  |  processList:pList program:main  {:  // not EnumTypes & not GlobalVars 
                                                          Program prog = new Program(pList, main);
                                                          RESULT = prog;
                                                      :}
@@ -260,51 +235,6 @@ globalDecl ::= GLOBAL varDecls:listNames COLON type:t {:  LinkedList<Var> list =
 
 
 
-channelList ::= chanDecl:c {:     ChannelCollection list = new ChannelCollection();
-                                  if(c.getType().isBoolean()){
-                                      list.addBoolChannel(c);
-                                  }
-                                  else{
-                                       if(c.getType().isInt()){
-                                           list.addIntChannel(c);
-                                       }
-                                       else{
-                                           list.addEnumChannel(c);
-                                       }
-                                  }
-                                 
-                                  RESULT = list; 
-                           :}
-              | channelList:list SEMICOLON chanDecl:c  {: 
-                                                          if(c.getType().isBoolean()){
-                                                             list.addBoolChannel(c);
-                                                          }
-                                                          else{
-                                                              if(c.getType().isInt()){
-                                                                  list.addIntChannel(c);
-                                                              }else{
-                                                                  list.addEnumChannel(c);
-                                                              }
-                                                          }
-                                                          RESULT = list; 
-                                                       :}
-              ;
-              
-chanDecl ::= CHANNEL ID:name LBRACKET INTEGER:size RBRACKET OF type:t  {:  
-                                                                           if (t.isInt()){
-                                                                               RESULT = new Channel( name, size , Type.INT);
-                                                                           }
-                                                                           else{
-                                                                               if (t.isBoolean()){
-                                                                                   RESULT = new Channel( name, size, Type.BOOL);
-                                                                               }
-                                                                               else{
-                                                                                   RESULT = new Channel( name, size, t);
-                                                                               
-                                                                               }
-                                                                           }
-                                                                        :}
-            ;
 
 processList  ::= process:p  {: 
                                   ProcessCollection list = new ProcessCollection();
@@ -317,26 +247,14 @@ processList  ::= process:p  {:
                                             :}
               ;
 
-process ::= PROCESS ID:name USES varDecls:listC bodyProcess:proc {: proc.setName(name);
-                                                                                     proc.setChannelIds(listC);
+process ::= PROCESS ID:name bodyProcess:proc {: proc.setName(name);
                                                                                      RESULT = proc;  
                                                                                   :}
-           | PROCESS ID:name LPARENT paramList:listP RPARENT USES varDecls:listC bodyProcess:proc {: proc.setName(name);
-                                                                                                     proc.setChannelIds(listC);
+           | PROCESS ID:name LPARENT paramList:listP RPARENT bodyProcess:proc {: proc.setName(name);
                                                                                                      proc.setParamList(listP);
                                                                                                      RESULT = proc;
                                                                                                   :}
 
-           | PROCESS ID:name LPARENT paramList:listP RPARENT  bodyProcess:proc                  {: proc.setName(name);
-                                                                                                     proc.setParamList(listP);
-                                                                                                     RESULT = proc;
-                                                                                                  :}
-
-
-
-           | PROCESS ID:name bodyProcess:proc {: proc.setName(name);
-                                                                 RESULT = proc;
-                                                              :}
            ;
 
 paramList ::= param:p {:
@@ -375,12 +293,12 @@ param ::= ID:name COLON type:t {:  Param p;
 
 
 
-bodyProcess::= LBRACE declList:listD  SEMICOLON initialCond:init SEMICOLON normCond:norm SEMICOLON  branchList:listB SEMICOLON RBRACE {: Proc proc = new Proc(init,norm,listD,listB);
+bodyProcess::= LBRACE declList:listD  SEMICOLON initialCond:init SEMICOLON  branchList:listB SEMICOLON RBRACE {: Proc proc = new Proc(init,listD,listB);
                                                                                                                                          RESULT = proc;
                                                                                                                                           
                                                                                                                                       :}
           
-             | LBRACE initialCond:init SEMICOLON normCond:norm SEMICOLON  branchList:listB SEMICOLON RBRACE {: Proc proc = new Proc(init,norm,listB);
+             | LBRACE initialCond:init SEMICOLON branchList:listB SEMICOLON RBRACE {: Proc proc = new Proc(init,listB);
                                                                                                                                          RESULT = proc;
                                                                                                                                           
                                                                                                                                       :}
@@ -388,9 +306,6 @@ bodyProcess::= LBRACE declList:listD  SEMICOLON initialCond:init SEMICOLON normC
 
 initialCond ::= INIT COLON expr:e {: RESULT = e;  :} 
               ;
-
-normCond ::= NORMATIVE COLON expr:e {: RESULT = e; :}
-           ;
 
 
 declList ::= decl:listD {:  
@@ -470,12 +385,12 @@ branchList ::= branch:b  {:  LinkedList<Branch> list = new LinkedList<Branch>();
                                                     :}
                ; 
 
-branch ::= label:l faulty:f internal:i expr:e  RIGHTARROW assigList:list {:   //ListAssign l = new ListAssign(list);
-                                                  Branch b = new Branch(e,list,f,i,l);
+branch ::=  label:l faulty:f internal:i  expr:e  RIGHTARROW assigListProb:list {:  // Probabilistic branch
+                                                  Branch b = new Branch(e,list,f,i,l,true);
                                                   RESULT = b;
                                              :}
-          | faulty:f internal:i expr:e  RIGHTARROW assigList:list {:   //ListAssign l = new ListAssign(list);
-                                                  Branch b = new Branch(e,list,f,i);
+            | label:l faulty:f internal:i expr:e  RIGHTARROW assigList:list {: 
+                                                  Branch b = new Branch(e,list,f,i,l,false);
                                                   RESULT = b;
                                              :}
         ;
@@ -491,6 +406,19 @@ internal ::= INTERNAL {: RESULT = true; :}
         | {: RESULT = false; :}
         ;    
 
+assigListProb ::= assignationProb:pa {: LinkedList<Code> list = new LinkedList<Code>();
+                                                          list.add(pa);
+                                                           RESULT = list;
+                                                        :}
+                | assigListProb:list PLUSPLUS assignationProb:pa {: list.add(pa);
+                                                          RESULT = list;
+                                                       :}    
+               ;
+
+assignationProb ::=  DOUBLE:p COLON assigList:l {:
+                                                    RESULT = new ProbAssign(p,l);
+                                                :} 
+                ;
 assigList ::=  assignation:assign {: LinkedList<Code> list = new LinkedList<Code>();
                                      list.add(assign);
                                      RESULT = list; 
@@ -500,13 +428,14 @@ assigList ::=  assignation:assign {: LinkedList<Code> list = new LinkedList<Code
                                                        :}
              ; 
             
-                              
+                            
 assignation ::= ID:i EQUAL expr:value {:   
                                            Var var = new Var(i);
                                            RESULT = new VarAssign(var,value);
                                       :}
-              | ID:nameCh POINT PUT LPARENT expr:value RPARENT  {: RESULT = new ChanAssign(nameCh, value); :}
-              ;                             
+              ;  
+
+                      
  
                                             
 expr ::= disjunction :val {:  RESULT = val; :}
@@ -535,6 +464,12 @@ relation    ::= addition:val {:  RESULT = val; :}
                                                 RESULT = expr;
                                              :}
               | addition:op1 GT addition:op2 {: GreaterBoolExp expr = new GreaterBoolExp(op1,op2); 
+                                                RESULT = expr;
+                                             :}
+              | addition:op1 GEQ addition:op2 {: GreaterOrEqualBoolExp expr = new GreaterOrEqualBoolExp(op1,op2); 
+                                                RESULT = expr;
+                                             :}
+              | addition:op1 LEQ addition:op2 {: LessOrEqualBoolExp expr = new LessOrEqualBoolExp(op1,op2); 
                                                 RESULT = expr;
                                              :}
               ; 
@@ -584,10 +519,6 @@ primary ::= INTEGER:v  {:  ConsIntExp value = new ConsIntExp(v);
                     Var value = new Var(id);
                     RESULT= value; 
                   :}
-          | ID:id POINT GET LPARENT RPARENT {: 
-                                              ChanAccess chanAcc = new ChanAccess(id);
-                                              RESULT = chanAcc; 
-                                            :} 
           | LPARENT expr:ex RPARENT {: 
                                        RESULT = ex;
                                     :}

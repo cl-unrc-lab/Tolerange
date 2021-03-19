@@ -1,9 +1,11 @@
 package mc;
 
 import java_cup.runtime.*;
+import lang.*;
+
 import java.io.*;
 import java.util.LinkedList;
-import faulty.*;
+
 import parserProgram.*;
 
 /**
@@ -12,7 +14,7 @@ import parserProgram.*;
 public class ProgramParser {
 	
 	private parserFaulty parser;	// Parser
-	private static LinkedList<faulty.Error> errorList; // Errors
+	private static LinkedList<lang.Error> errorList; // Errors
     private static SymbolsTable symbolsTable;
     private static FileReader programFile;
     
@@ -25,34 +27,6 @@ public class ProgramParser {
     
     
 
-    public String parseJava(String NameFile){
-        try {
-            programFile = new FileReader(NameFile);
-           
-
-            // Read file
-            parser = new parserFaulty(new scannerFaulty(programFile));
-            Program program = (Program)parser.parse().value;
-
-             
-            
-            // Check Types
-            Type result = checkTypes(program);
-            if(result == Type.ERROR){
-                for(int i=0; i<errorList.size(); i++){
-                    System.out.println(errorList.get(i).getErrorMsg());
-                }               
-            }
-            else
-                return program.toJava(); 
-        } catch (Exception e) {         
-            System.out.println("Program Error." + e.getMessage());
-            e.printStackTrace(System.out);
-        }
-        
-        return null;
-        
-    }
 
     public Program parseAux(String NameFile){
         try {

@@ -1,7 +1,7 @@
 package maskingDistance;
 
 import java.util.*;
-import graph.*;
+import model.*;
 import java.io.*;
 
 public class GameGraph{
@@ -108,33 +108,39 @@ public class GameGraph{
 		return preList.get(v);
 	}
 
-	public String createDot(){
+	public String createDot(int lineLimit){
 		String res = "digraph model {\n\n";
 		res += "    node [style=filled];\n";
+		int lineCount = 0;
 		for (GameNode v : nodes){
+			if (lineCount > lineLimit)
+				break;
+			lineCount++;
 			if (v.getPlayer().equals("V"))
-				res += "    "+v.toStringDot()+" [color=\"lightblue\"];\n";
+				res += "    "+ v.getId() +" [label=\""+v.toStringDot()+"\",color=\"lightblue\"];\n";
+			if (v.getPlayer().equals("P"))
+				res += "    "+ v.getId() +" [label=\""+v.toStringDot()+"\",color=\"orange\"];\n";
 			if (v.getPlayer().equals("R"))
 				if (v == initial)
-					res += "    "+v.toStringDot()+" [color=\"pink\"];\n";
+					res += "    "+ v.getId() +" [label=\""+v.toStringDot()+"\",color=\"pink\"];\n";
 				else
-					res += "    "+v.toStringDot()+" [color=\"grey\"];\n";
+					res += "    "+ v.getId() +" [label=\""+v.toStringDot()+"\",color=\"grey\"];\n";
 			if (v.getPlayer().equals(""))
-				res += "    "+v.toStringDot()+" [color=\"red\"];\n";
+				res += "    "+v.getId()+" [label=\""+v.toStringDot()+"\",color=\"red\"];\n";
 			for (GameNode u : succList.get(v)){
 				Pair edge = new Pair(v,u);
 				if (actions.get(edge) != null)
 					for (int i=0; i < actions.get(edge).size(); i++){
 						if (actions.get(edge).get(i).isMask())
-							res += "    "+v.toStringDot()+" -> "+ u.toStringDot() +" [color=\"green\",label = \""+actions.get(edge).get(i).getLabel()+(actions.get(edge).get(i).isFromSpec()?"S":"I")+"\"]"+";\n";
+							res += "    "+v.getId()+" -> "+ u.getId() +" [color=\"green\"]"+";\n";
 						else
 							if (actions.get(edge).get(i).isFaulty())
-								res += "    "+v.toStringDot()+" -> "+ u.toStringDot() +" [color=\"red\",label = \""+actions.get(edge).get(i).getLabel()+(actions.get(edge).get(i).isFromSpec()?"S":"I")+"\"]"+";\n";
+								res += "    "+v.getId()+" -> "+ u.getId() +" [color=\"red\"]"+";\n";
 							else
 								if (actions.get(edge).get(i).isTau())
-									res += "    "+v.toStringDot()+" -> "+ u.toStringDot() + " [style=dashed,label = \""+actions.get(edge).get(i).getLabel()+(actions.get(edge).get(i).isFromSpec()?"S":"I")+"\"]"+";\n";
+									res += "    "+v.getId()+" -> "+ u.getId() + " [style=dashed]"+";\n";
 								else
-									res += "    "+v.toStringDot()+" -> "+ u.toStringDot() +" [label = \""+actions.get(edge).get(i).getLabel()+(actions.get(edge).get(i).isFromSpec()?"S":"I")+"\"]"+";\n";
+									res += "    "+v.getId()+" -> "+ u.getId() + ";\n";
 					}			
 			}
 		}

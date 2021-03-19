@@ -1,13 +1,13 @@
 package maskingDistance;
 
 import java.util.*;
-import graph.*;
+import model.*;
 import java.io.*;
 
 public class GameNode implements Comparable{
 
-	CompositeNode specState; // Current state of the Specification
-	CompositeNode impState; // Current state of the Implementation
+	ModelState specState; // Current state of the Specification
+	ModelState impState; // Current state of the Implementation
 	Action symbol; // The action that lead to this state
 	String player; // The player that has to play from here
 	boolean mask; // True if the player has to mask this.symbol
@@ -15,13 +15,19 @@ public class GameNode implements Comparable{
 	int distanceValue; // Value of the game for this node
 	GameNode previousNodeInPath; // Previous Node in Shortest path to errState
 	boolean numbered; // True if marked with a temp mask distance
+	int id;
+	private static int idCounter = 0;
+	//EXPANSION SET
+	Double[] values; // for value iteration
 
 	public GameNode(){
 		visited = false;
 		distanceValue = 0;
+		values = new Double[2];
+		id = idCounter++;
 	}
 
-	public GameNode(CompositeNode s, CompositeNode i, Action sym, String p){
+	public GameNode(ModelState s, ModelState i, Action sym, String p){
 		specState = s;
 		impState = i;
 		symbol = sym;
@@ -29,13 +35,15 @@ public class GameNode implements Comparable{
 		visited = false;
 		distanceValue = Integer.MAX_VALUE;
 		numbered = false;
+		values = new Double[2];
+		id = idCounter++;
 	}
 
-	public CompositeNode getSpecState(){
+	public ModelState getSpecState(){
 		return specState;
 	}
 
-	public CompositeNode getImpState(){
+	public ModelState getImpState(){
 		return impState;
 	}
 
@@ -49,6 +57,10 @@ public class GameNode implements Comparable{
 
 	public boolean getMask(){
 		return mask;
+	}
+
+	public int getId(){
+		return id;
 	}
 
 	public void setMask(boolean m){
@@ -83,12 +95,29 @@ public class GameNode implements Comparable{
 		return player.equals("V");
 	}
 
+	public boolean isRefuter(){
+		return player.equals("R") || isErrState();
+	}
+
 	public boolean isNumbered(){
 		return numbered;
 	}
 
 	public void setNumbered(boolean b){
 		numbered = b;
+	}
+
+	//EXPANSION SET
+	public boolean isProbabilistic(){
+		return player.equals("P");
+	}
+	//EXPANSION SET
+  	public void setValue(int i, double val){
+  		values[i] = val;
+  	}
+  	//EXPANSION SET
+  	public Double[] getValues(){
+	    return values;
 	}
 
 	@Override
@@ -128,8 +157,8 @@ public class GameNode implements Comparable{
 		if (this.isErrState())
 			res = "ERR_STATE";
 		else{
-			String s = symbol.getLabel().replaceAll("&","TAU")+(symbol.isFromSpec()?"S":"I");
-			res = "SPEC·"+specState.toStringDot()+"_"+s+"_"+"IMP·"+impState.toStringDot()+"_"+player+"_VALUE"+distanceValue;
+			String s = symbol.getLabel().equals("")?"":(symbol.getLabel()+(symbol.isFromSpec()?"_S":"_I"));
+			res = "Spec: "+specState.toStringDot()+"\nSymbol: "+s+"\nImp: "+impState.toStringDot()+"\nPlayer: "+player+"\nValue: "+distanceValue;
 		}
 		return res;
 	}

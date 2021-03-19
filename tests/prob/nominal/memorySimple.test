@@ -1,0 +1,22 @@
+Process Memory {
+    v:INT; //0..1
+    s:INT; //0..1    0=normal, 1=refreshing
+  
+    Initial: v==0 && s==0;
+	
+	[w0] !(s==1) -> v=0,s=0;
+	[w1] !(s==1) -> v=1,s=0;
+	[r0] !(s==1) && v==0 -> v = v;
+	[r1] !(s==1) && v==1 -> v = v;
+	[tick] !(s==1) -> 0.5 : v=v
+					++ 0.5 : s=1;
+	[refresh] s==1 && v==0-> s=0, v=0; 
+	[refresh] s==1 && v==1 -> s=0, v=1;
+}
+
+Main(){
+	m1: Memory;
+	run m1();
+}
+
+
