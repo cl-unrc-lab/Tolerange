@@ -11,6 +11,7 @@ public class Branch extends ProgramNode {
 	    boolean isTau;  // is the branch internal?
 	    boolean isProb;
 	    String label;
+	    int reward;
 	    
 	    public Branch(Expression guard,  LinkedList<Code> assignList, boolean isFaulty, boolean isTau){
 	    	
@@ -19,10 +20,11 @@ public class Branch extends ProgramNode {
 	    	this.isFaulty = isFaulty;
 	    	this.isTau = isTau;
 	    	this.label = "";
+	    	reward = 0;
 	    	
 	    }
 
-	    public Branch(Expression guard,  LinkedList<Code> assignList, boolean isFaulty, boolean isTau, String label, boolean isProb){
+	    public Branch(Expression guard,  LinkedList<Code> assignList, boolean isFaulty, boolean isTau, String label, int reward, boolean isProb){
 	    	
 	    	this.guard = guard;
 	    	this.assignList = assignList;
@@ -30,6 +32,7 @@ public class Branch extends ProgramNode {
 	    	this.isTau = isTau;
 	    	this.label = label;
 	    	this.isProb = isProb;
+	    	this.reward = reward;
 	    	
 	    }
 	    
@@ -55,6 +58,10 @@ public class Branch extends ProgramNode {
 
 	    public String getLabel(){
 	    	return this.label;
+	    }
+
+	    public int getReward(){
+	    	return this.reward;
 	    }
 	    
 		public void accept(LangVisitor v){

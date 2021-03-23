@@ -1,16 +1,9 @@
 digraph model {
 
-    STATEm1v0·m1s0· -> STATEm1v1·m1s0· [label = "m1w1"];
-    STATEm1v0·m1s0· -> STATEm1v0·m1s0· [label = "m1w0"];
-    STATEm1v0·m1s0· -> STATEm1v0·m1s0· [label = "m1r0"];
-    STATEm1v0·m1s0· -> STATEm1v0·m1s0· [label = "m1tick"];
-    STATEm1v0·m1s0· -> STATEm1v0·m1s1· [label = "m1tick"];
-    STATEm1v1·m1s0· -> STATEm1v1·m1s0· [label = "m1w1"];
-    STATEm1v1·m1s0· -> STATEm1v1·m1s0· [label = "m1r1"];
-    STATEm1v1·m1s0· -> STATEm1v1·m1s0· [label = "m1tick"];
-    STATEm1v1·m1s0· -> STATEm1v0·m1s0· [label = "m1w0"];
-    STATEm1v1·m1s0· -> STATEm1v1·m1s1· [label = "m1tick"];
-    STATEm1v0·m1s1· -> STATEm1v0·m1s0· [label = "m1refresh"];
-    STATEm1v1·m1s1· -> STATEm1v1·m1s0· [label = "m1refresh"];
+    STATEzv5·zs0· -> STATEzv5·zs1· [label = "ztick"];
+    STATEzv5·zs0· -> STATEzv5·zs2· [label = "ztick"];
+    STATEzv5·zs1· -> STATEzv5·zs0· [label = "ztick"];
+    STATEzv5·zs2· -> STATEzv5·zs0· [label = "zdisconnect"];
+    STATEzv5·zs2· -> STATEzv5·zs2· [label = "ztick"];
 
 }

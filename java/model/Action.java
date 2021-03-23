@@ -16,13 +16,31 @@ public class Action {
 	private Boolean isMask;
 	private int reward;
 
+	public Action(String l, Boolean isF, Boolean isT, int r, Boolean ifs){
+		label = l;
+		isFaulty = isF;
+		isTau = isT;
+		isFromSpec = ifs;
+		isMask = false;
+		reward = r;
+	}
+
+	public Action(String l, Boolean isF, Boolean isT, int r, Boolean ifs, Boolean isM){
+		label = l;
+		isFaulty = isF;
+		isTau = isT;
+		isFromSpec = ifs;
+		isMask = isM;
+		reward = r;
+	}
+
 	public Action(String l, Boolean isF, Boolean isT, Boolean ifs){
 		label = l;
 		isFaulty = isF;
 		isTau = isT;
 		isFromSpec = ifs;
 		isMask = false;
-		reward = (l.endsWith("tick"))?1:0;
+		reward = 0;
 	}
 
 	public Action(String l, Boolean isF, Boolean isT, Boolean ifs, Boolean isM){
@@ -31,16 +49,7 @@ public class Action {
 		isTau = isT;
 		isFromSpec = ifs;
 		isMask = isM;
-		reward = (l.endsWith("tick"))?1:0;
-	}
-
-	public Action(String l, Boolean isF, Boolean isT, Boolean ifs, Boolean isM, int r){
-		label = l;
-		isFaulty = isF;
-		isTau = isT;
-		isFromSpec = ifs;
-		isMask = isM;
-		reward = r;
+		reward = 0;
 	}
 
 	public String getLabel(){
@@ -80,7 +89,7 @@ public class Action {
 	}
 
 	public Action cloneForSpec(boolean forSpec){ // this is an utility for the game graph creation
-		Action a = new Action (label, isFaulty, isTau, forSpec, isMask, reward);
+		Action a = new Action (label, isFaulty, isTau, reward, forSpec, isMask);
 		return a;
 	}
 

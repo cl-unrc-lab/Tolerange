@@ -20,6 +20,9 @@ public class MainMD {
        boolean deadlockIsError = false;
        boolean noBisim = false;
        boolean deterministic = false;
+       boolean verbose = false;
+       int precision = 10;
+       int bound = Integer.MAX_VALUE;
        int algorithm = 0;
        
        if (args.length < 3){
@@ -81,12 +84,23 @@ public class MainMD {
                 if (args[i].equals("-d")){
                   toDot = true;
                 }
+                if (args[i].equals("-v")){
+                  verbose = true;
+                }
+                if (args[i].startsWith("p=")){
+                  String[] splits = args[i].split("=");
+                  precision = Integer.parseInt(splits[1]);
+                }
+                if (args[i].startsWith("b=")){
+                  String[] splits = args[i].split("=");
+                  bound = Integer.parseInt(splits[1]);
+                }
               }
               Program spec = prog.parseAux(args[args.length - 2]);
               Program imp = prog.parseAux(args[args.length - 1]);
               AlmostSureMaskingDistance md = new AlmostSureMaskingDistance(spec,imp);
               try{
-                System.out.println("Almost Sure Failing Masking Distance: "+md.valueIteration(4,100,true));
+                System.out.println("Almost Sure Failing Masking Distance: "+md.valueIteration(precision,bound,verbose));
                 if (toDot)
                   md.createDot(200);
               }

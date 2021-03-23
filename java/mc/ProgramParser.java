@@ -13,7 +13,7 @@ import parserProgram.*;
  */
 public class ProgramParser {
 	
-	private parserFaulty parser;	// Parser
+	private parserLang parser;	// Parser
 	private static LinkedList<lang.Error> errorList; // Errors
     private static SymbolsTable symbolsTable;
     private static FileReader programFile;
@@ -33,7 +33,7 @@ public class ProgramParser {
             programFile = new FileReader(NameFile);
         
             // Read file
-            parser = new parserFaulty(new scannerFaulty(programFile));
+            parser = new parserLang(new scannerLang(programFile));
             Program program = (Program)parser.parse().value;
             
             // Check Types

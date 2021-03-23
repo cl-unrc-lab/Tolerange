@@ -1,6 +1,6 @@
 <project name="maskD" default="jar" basedir=".">
-  <property name="cupProgram"     location="src/parser/parserFaulty/cup" />
-  <property name="jflexProgram"   location="src/parser/parserFaulty/jflex"/>
+  <property name="cupProgram"     location="src/parser/cup" />
+  <property name="jflexProgram"   location="src/parser/jflex"/>
   <property name="src"     location="src"     />
   <property name="java"    location="java"    />
   <property name="classes" location="classes" />
@@ -83,17 +83,17 @@
 
 
   <target name="cup" depends="init">
-    <cup srcfile="${cupProgram}/parserFaulty.cup"
+    <cup srcfile="${cupProgram}/parserLang.cup"
          destdir="${java}" 
          interface="true"
-	     parser="parserFaulty"
-         symbols="symFaulty"
+	     parser="parserLang"
+         symbols="symLang"
     />
 
   </target>
 
   <target name="jflex" depends="init">
-    <jflex file="${jflexProgram}/scannerFaulty.jflex" destdir="${java}" />
+    <jflex file="${jflexProgram}/scannerLang.jflex" destdir="${java}" />
   </target>
   
   <!-- copy manual edited sources to automatically generated ones -->

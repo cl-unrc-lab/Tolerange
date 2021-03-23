@@ -143,7 +143,8 @@ public class Program extends ProgramNode{
                         //create global successor curr_
                         if (b.getIsProb()){ //its a probabilistic branch
                             //ProbabilisticAction act = new ProbabilisticAction(m.getProcDecls().get(i)+b.getLabel(),b.getIsFaulty(),b.getIsTau(),isSpec, null);
-                            Action act = new Action(m.getProcDecls().get(i)+b.getLabel(),b.getIsFaulty(),b.getIsTau(),isSpec);
+                            Action act = new Action(m.getProcDecls().get(i)+b.getLabel(),b.getIsFaulty(),b.getIsTau(),b.getReward(),isSpec);
+                            //System.out.println(act.toString() + b.getReward());
                             //LinkedList<Double> probs = new LinkedList<Double>();
                             for (Code c : b.getAssignList()){ // each prob. of a single action
                                 ProbAssign pa = (ProbAssign)c;
@@ -161,12 +162,12 @@ public class Program extends ProgramNode{
                                     m.addProbEdge(curr, toOld, act, pa.getProbability());
                                 }
                             }
-                            //act.setProbabilities(probs); //ESPERO QUE ESTO FUNCIONE, DEBERIA YA QUE CADA ARCO NUEVO TIENE LA MISMA REFERENCIA A ACT
                         }
                         else{ // its a pure branch
                             ModelState curr_ = curr.createSuccessor(b.getAssignList(),i);
                             ModelState toOld = m.search(curr_);
-                            Action act = new Action(m.getProcDecls().get(i)+b.getLabel(),b.getIsFaulty(),b.getIsTau(),isSpec);
+                            Action act = new Action(m.getProcDecls().get(i)+b.getLabel(),b.getIsFaulty(),b.getIsTau(),b.getReward(),isSpec);
+                            //System.out.println(act.toString() + b.getReward());
                             //System.out.println(b.getLabel());
                             if (toOld == null){
                                 m.addNode(curr_);
