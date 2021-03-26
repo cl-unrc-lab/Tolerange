@@ -64,19 +64,46 @@ public class MainMD {
                     md.simulateGame();
                 }
                 else{
+                  if (toDot)
+                    md.createDot(2000);
                   if (!deterministic)
                     System.out.println("Masking Distance: "+md.calculateDistance());
                   else
                     System.out.println("Masking Distance: "+md.calculateDistanceBFS());
                 }
               }
-              if (toDot)
-                md.createDot(2000);
+              
           }
            
            if (args[0].equals("--sssf")){
               algorithm = 1;
-              Program test = prog.parseAux(args[args.length - 2]);
+              Program test = prog.parseAux(args[args.length - 1]);
+              for (int i = 1; i < args.length; i++){
+                if (args[i].equals("-d")){
+                  toDot = true;
+                }
+                if (args[i].equals("-v")){
+                  verbose = true;
+                }
+                if (args[i].startsWith("p=")){
+                  String[] splits = args[i].split("=");
+                  precision = Integer.parseInt(splits[1]);
+                }
+                if (args[i].startsWith("b=")){
+                  String[] splits = args[i].split("=");
+                  bound = Integer.parseInt(splits[1]);
+                }
+              }
+              StrategySynthesis md = new StrategySynthesis(test);
+              try{
+                if (toDot)
+                  md.createDot(200);
+                System.out.println("Almost Sure Failing Distance: "+md.valueIteration(precision,bound,verbose));
+                
+              }
+              catch(Exception e){
+                System.out.println(e);
+              }
            }
            if (args[0].equals("--smd")){
               algorithm = 2;
@@ -100,9 +127,9 @@ public class MainMD {
               Program imp = prog.parseAux(args[args.length - 1]);
               AlmostSureMaskingDistance md = new AlmostSureMaskingDistance(spec,imp);
               try{
-                System.out.println("Almost Sure Failing Masking Distance: "+md.valueIteration(precision,bound,verbose));
                 if (toDot)
                   md.createDot(200);
+                System.out.println("Almost Sure Failing Masking Distance: "+md.valueIteration(precision,bound,verbose));      
               }
               catch(Exception e){
                 System.out.println(e);

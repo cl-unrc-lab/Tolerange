@@ -32,6 +32,7 @@ public interface LangVisitor {
 	public void visit(ProcessDecl a);
     public void visit(InvkProcess a);
 	public void visit(ProbAssign a);
+	public void visit(Reward a);
 	
 	
 }

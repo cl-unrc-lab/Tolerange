@@ -144,6 +144,7 @@ public class Program extends ProgramNode{
                         if (b.getIsProb()){ //its a probabilistic branch
                             //ProbabilisticAction act = new ProbabilisticAction(m.getProcDecls().get(i)+b.getLabel(),b.getIsFaulty(),b.getIsTau(),isSpec, null);
                             Action act = new Action(m.getProcDecls().get(i)+b.getLabel(),b.getIsFaulty(),b.getIsTau(),b.getReward(),isSpec);
+                            act.setIsProbabilistic(true);
                             //System.out.println(act.toString() + b.getReward());
                             //LinkedList<Double> probs = new LinkedList<Double>();
                             for (Code c : b.getAssignList()){ // each prob. of a single action
@@ -185,5 +186,7 @@ public class Program extends ProgramNode{
         }
         return m;
     }
+
+
 
 }

@@ -22,6 +22,9 @@ public class Proc extends ProgramNode {
 	Expression initialCond; // the initial valuations of the local variables.
 	LinkedList<String> processInstanceNames; // Names of the differents process Instances
 	LinkedList<InvkProcess> processInvkParameters; // Invocation Parameters of each process instance.
+    LinkedList<Reward> rewards;
+    Expression controllerCond;
+    Expression goalCond;
 	
 	
 	public Proc(String name){
@@ -33,6 +36,8 @@ public class Proc extends ProgramNode {
         enumVars = new LinkedList<Var>();
 		branches = new LinkedList<Branch>();
 	    initialCond = null;
+        controllerCond = null;
+        goalCond = null;
 	    processInstanceNames= new LinkedList<String>();
         processInvkParameters = new LinkedList<InvkProcess>();
 		
@@ -42,7 +47,9 @@ public class Proc extends ProgramNode {
 	public Proc(String name,Expression iniC,LinkedList<Var> varList,LinkedList<Branch> branchList){
 		this.processName = name;
 		paramList = new LinkedList<Param>();
-        initialCond =iniC;
+        initialCond = iniC;
+        controllerCond = null;
+        goalCond = null;
 		branches = branchList;
 		intVars = new LinkedList<Var>();
 		boolVars = new LinkedList<Var>();
@@ -71,13 +78,16 @@ public class Proc extends ProgramNode {
 	public Proc(Expression iniC,LinkedList<Var> varList,LinkedList<Branch> branchList){
 		this.processName = new String();
         paramList = new LinkedList<Param>();
-		initialCond =iniC;
+		initialCond = iniC;
+        controllerCond = null;
+        goalCond = null;
 		branches = branchList;
 		intVars = new LinkedList<Var>();
 		boolVars = new LinkedList<Var>();
         enumVars = new LinkedList<Var>();
 		processInstanceNames= new LinkedList<String>();
         processInvkParameters= new LinkedList<InvkProcess>();
+        rewards = new LinkedList<Reward>();
 		
 		
 		/* --- Adding the Declarated Vbles according the type ---*/
@@ -101,15 +111,66 @@ public class Proc extends ProgramNode {
 	public Proc(Expression iniC,LinkedList<Branch> branchList){
 		this.processName = new String();
         paramList = new LinkedList<Param>();
-		initialCond =iniC;
+		initialCond = iniC;
+        controllerCond = null;
+        goalCond = null;
 		branches = branchList;
 		intVars = new LinkedList<Var>();
 		boolVars = new LinkedList<Var>();
         enumVars = new LinkedList<Var>();
 		processInstanceNames= new LinkedList<String>();
         processInvkParameters= new LinkedList<InvkProcess>();
+        rewards = new LinkedList<Reward>();
 		
 	}
+
+    public Proc(Expression iniC,LinkedList<Var> varList,LinkedList<Branch> branchList, LinkedList<Reward> rewardList, Expression player1, Expression goal){
+        this.processName = new String();
+        paramList = new LinkedList<Param>();
+        initialCond = iniC;
+        branches = branchList;
+        intVars = new LinkedList<Var>();
+        boolVars = new LinkedList<Var>();
+        enumVars = new LinkedList<Var>();
+        processInstanceNames= new LinkedList<String>();
+        processInvkParameters= new LinkedList<InvkProcess>();
+        rewards = rewardList;
+        controllerCond = player1;
+        goalCond = goal;
+        
+        
+        /* --- Adding the Declarated Vbles according the type ---*/
+        for (int i = 0; i < varList.size(); i++){
+            
+            if ( varList.get(i).getType().isBoolean() ){
+                boolVars.add(varList.get(i));
+            }
+            else{
+                if ( varList.get(i).getType().isInt() ){
+                    intVars.add(varList.get(i));
+                }else{
+                    enumVars.add(varList.get(i));
+                }
+            }
+        }
+        
+        
+    }
+    
+    public Proc(Expression iniC,LinkedList<Branch> branchList, LinkedList<Reward> rewardList, Expression player1, Expression goal){
+        this.processName = new String();
+        paramList = new LinkedList<Param>();
+        initialCond =iniC;
+        branches = branchList;
+        intVars = new LinkedList<Var>();
+        boolVars = new LinkedList<Var>();
+        enumVars = new LinkedList<Var>();
+        processInstanceNames= new LinkedList<String>();
+        processInvkParameters= new LinkedList<InvkProcess>();
+        rewards = rewardList;
+        controllerCond = player1;
+        goalCond = goal;
+    }
 	
 	public String getName(){
 		
@@ -147,6 +208,18 @@ public class Proc extends ProgramNode {
     public Expression getInitialCond(){
     	return initialCond;
     	
+    }
+
+    public Expression getControllerCond(){
+        return controllerCond;    
+    }
+
+    public Expression getGoalCond(){
+        return goalCond;    
+    }
+
+    public LinkedList<Reward> getRewards(){
+        return rewards;
     }
 
     

@@ -52,6 +52,9 @@ terminal RUN;
 terminal MAIN;
 terminal GLOBAL;
 terminal ENUM;
+terminal REWARDS;
+terminal CONTROLLER;
+terminal GOAL;
 
 
 terminal Integer INTEGER;
@@ -68,7 +71,7 @@ non terminal Code assignation;
 non terminal LinkedList<Code> assigList;
 non terminal Branch branch;
 non terminal LinkedList<Branch> branchList;
-non terminal Expression initialCond;
+non terminal Expression initialCond, controllerCond, goalCond;
 non terminal LinkedList<Var> declList;
 non terminal LinkedList<Var> decl;
 non terminal LinkedList<String> varDecls;
@@ -96,6 +99,7 @@ non terminal Boolean internal;
 non terminal Code assignationProb;
 non terminal LinkedList<Code> assigListProb;
 non terminal Integer actionReward;
+non terminal LinkedList<Reward> rewardList;
 
 
 precedence left GT,LT,GEQ,LEQ,DOUBLE_EQUAL,AND,OR;
@@ -294,7 +298,7 @@ param ::= ID:name COLON type:t {:  Param p;
 
 
 
-bodyProcess::= LBRACE declList:listD  SEMICOLON initialCond:init SEMICOLON  branchList:listB SEMICOLON RBRACE {: Proc proc = new Proc(init,listD,listB);
+bodyProcess::= LBRACE declList:listD SEMICOLON initialCond:init SEMICOLON  branchList:listB SEMICOLON RBRACE {: Proc proc = new Proc(init,listD,listB);
                                                                                                                                          RESULT = proc;
                                                                                                                                           
                                                                                                                                       :}
@@ -303,12 +307,37 @@ bodyProcess::= LBRACE declList:listD  SEMICOLON initialCond:init SEMICOLON  bran
                                                                                                                                          RESULT = proc;
                                                                                                                                           
                                                                                                                                       :}
+             | LBRACE declList:listD  SEMICOLON REWARDS COLON rewardList:listR SEMICOLON controllerCond:ctrl SEMICOLON goalCond:goal SEMICOLON initialCond:init SEMICOLON  branchList:listB SEMICOLON RBRACE {: Proc proc = new Proc(init,listD,listB,listR,ctrl,goal);
+                                                                                                                                         RESULT = proc;
+                                                                                                                                          
+                                                                                                                                      :}
+          
+             | LBRACE REWARDS COLON rewardList:listR SEMICOLON controllerCond:ctrl SEMICOLON goalCond:goal SEMICOLON initialCond:init SEMICOLON branchList:listB SEMICOLON RBRACE {: Proc proc = new Proc(init,listB,listR,ctrl,goal);
+                                                                                                                                         RESULT = proc;
+                                                                                                                                          
+                                                                                                                                      :}                 
           ;                
 
 initialCond ::= INIT COLON expr:e {: RESULT = e;  :} 
               ;
 
+controllerCond ::= CONTROLLER COLON expr:e {: RESULT = e;  :} 
+              ;
 
+goalCond ::= GOAL COLON expr:e {: RESULT = e;  :} 
+              ;
+
+
+rewardList ::= expr:e COLON INTEGER:i {: Reward r = new Reward(e,i); 
+                                        LinkedList<Reward> list = new LinkedList<Reward>();
+                                        list.add(r);
+                                        RESULT = list;
+                                      :}
+            | rewardList:list COMMA expr:e COLON INTEGER:i {: Reward r = new Reward(e,i); 
+                                                            list.add(r);
+                                                            RESULT = list;
+                                                        :}
+            ;
 declList ::= decl:listD {:  
                              LinkedList<Var> list = new LinkedList<Var>();
                              for (int i = 0; i < listD.size(); i++){

@@ -27,7 +27,7 @@ return  new Symbol(symLang.EOF,yyline,yycolumn,"");
 
 digit=[0-9]
 char=[a-zA-Z]
-id = {char}({char}|{digit})*	
+id = {char}({char}|{digit}|"_")*	
 integer = {digit}{digit}*	
 double =  1|(0\.({digit}+))
 comment=("//"(.)*)|"/*"(((([^*/])*"*"[^/])*)|((([^*])*"/"[^*/])*)|([^*/])*)*"*/"
@@ -172,6 +172,18 @@ white_space     = {end_of_line} | [ \t\f]
 
 "Main" {  //System.out.println(" MAIN :"+ yytext());
           return new Symbol(symLang.MAIN,yyline,yycolumn,yytext());
+       }
+
+"Rewards" {  //System.out.println(" REWARDS :"+ yytext());
+          return new Symbol(symLang.REWARDS,yyline,yycolumn,yytext());
+       }
+
+"Controller" {  //System.out.println(" CONTROLLER :"+ yytext());
+          return new Symbol(symLang.CONTROLLER,yyline,yycolumn,yytext());
+       }
+
+"Goal" {  //System.out.println(" GOAL :"+ yytext());
+          return new Symbol(symLang.GOAL,yyline,yycolumn,yytext());
        }
 
 

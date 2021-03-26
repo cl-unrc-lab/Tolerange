@@ -1,1367 +1,2989 @@
 digraph model {
 
     node [style=filled];
-    0 [label="ERR_STATE",color="red"];
-    1 [label="Spec: m1v0·m1s0·
+    0 [label="State: robotcol0·robotrow0·robotlight0·
 Symbol: 
-Imp: m1v0·m1s0·
-Player: R
-Value: 2147483647",color="pink"];
-    1 -> 8;
-    1 -> 3;
-    1 -> 11;
-    1 -> 2;
-    1 -> 5;
-    1 -> 4;
-    1 -> 10;
-    1 -> 9;
-    2 [label="Spec: m1v0·m1s0·
-Symbol: m1w0_I
-Imp: m1v0·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    2 -> 1332;
-    3 [label="Spec: m1v0·m1s0·
-Symbol: m1r0_I
-Imp: m1v0·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    3 -> 1330;
-    4 [label="Spec: m1v0·m1s0·
-Symbol: m1tick_I
-Imp: m1v0·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    4 -> 1322;
-    5 [label="Spec: m1v0·m1s0·
-Symbol: m1w1_I
-Imp: m1v0·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    5 -> 1320;
-    8 [label="Spec: m1v0·m1s0·
-Symbol: m1w1_S
-Imp: m1v0·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    8 -> 1318;
-    9 [label="Spec: m1v0·m1s0·
-Symbol: m1w0_S
-Imp: m1v0·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    9 -> 1316;
-    10 [label="Spec: m1v0·m1s0·
-Symbol: m1r0_S
-Imp: m1v0·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    10 -> 1314;
-    11 [label="Spec: m1v0·m1s0·
-Symbol: m1tick_S
-Imp: m1v0·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    11 -> 13;
-    13 [label="Spec: m1v0·m1s0·
-Symbol: m1tick_S
-Imp: m1v0·m1s0·
-Player: P
-Value: 2147483647",color="orange"];
-    13 -> 20;
-    13 -> 19;
-    13 -> 21;
-    13 -> 18;
-    13 -> 1;
+Player: 2",color="pink"];
+    0 -> 1;
+    0 -> 2;
+    1 [label="State: robotcol0·robotrow0·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1 -> 1431;
+    1 -> 6;
+    2 [label="State: robotcol0·robotrow0·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    2 -> 5;
+    2 -> 6;
+    5 [label="State: robotcol0·robotrow0·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    5 -> 1423;
+    5 -> 1424;
+    6 [label="State: robotcol0·robotrow0·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    6 -> 8;
+    6 -> 9;
+    6 -> 7;
+    7 [label="State: robotcol0·robotrow0·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    7 -> 0;
+    7 -> 1359;
+    8 [label="State: robotcol0·robotrow0·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    8 -> 1187;
+    8 -> 0;
+    9 [label="State: robotcol0·robotrow0·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    9 -> 13;
+    9 -> 0;
+    13 [label="State: robotcol0·robotrow1·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    13 -> 15;
     13 -> 17;
-    17 [label="Spec: m1v0·m1s1·
+    15 [label="State: robotcol0·robotrow1·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    15 -> 1181;
+    15 -> 19;
+    17 [label="State: robotcol0·robotrow1·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    17 -> 19;
+    17 -> 20;
+    19 [label="State: robotcol0·robotrow1·robotlight3·
 Symbol: 
-Imp: m1v0·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    17 -> 1308;
-    17 -> 1310;
-    17 -> 1307;
-    17 -> 1309;
-    17 -> 1313;
-    18 [label="Spec: m1v0·m1s0·
+Player: 1",color="lightblue"];
+    19 -> 1126;
+    19 -> 1125;
+    20 [label="State: robotcol0·robotrow1·robotlight2·
 Symbol: 
-Imp: m1v0·m1s1·
-Player: R
-Value: 2147483647",color="grey"];
-    18 -> 53;
-    18 -> 57;
-    18 -> 60;
-    18 -> 55;
-    18 -> 62;
-    18 -> 56;
-    18 -> 58;
-    18 -> 61;
-    18 -> 63;
-    18 -> 54;
-    19 [label="Spec: m1v0·m1s1·
-Symbol: 
-Imp: m1v0·m1s1·
-Player: R
-Value: 2147483647",color="grey"];
-    19 -> 34;
-    19 -> 38;
-    19 -> 36;
-    19 -> 39;
-    19 -> 37;
-    19 -> 41;
-    19 -> 35;
-    20 [label="Spec: m1v0·m1s0·
-Symbol: 
-Imp: m1v0·m1s2·
-Player: R
-Value: 2147483647",color="grey"];
-    20 -> 28;
-    20 -> 29;
-    20 -> 31;
-    20 -> 30;
-    20 -> 32;
-    21 [label="Spec: m1v0·m1s1·
-Symbol: 
-Imp: m1v0·m1s2·
-Player: R
-Value: 2147483647",color="grey"];
-    21 -> 22;
+Player: 1",color="lightblue"];
+    20 -> 21;
+    21 [label="State: robotcol0·robotrow1·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    21 -> 13;
     21 -> 23;
-    22 [label="Spec: m1v0·m1s1·
-Symbol: m1refresh_I
-Imp: m1v0·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    22 -> 26;
-    23 [label="Spec: m1v0·m1s1·
-Symbol: m1refresh_S
-Imp: m1v0·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    23 -> 24;
-    24 [label="Spec: m1v0·m1s1·
-Symbol: m1refresh_S
-Imp: m1v0·m1s2·
-Player: P
-Value: 2147483647",color="orange"];
-    24 -> 1;
-    26 [label="Spec: m1v0·m1s1·
-Symbol: m1refresh_I
-Imp: m1v0·m1s2·
-Player: P
-Value: 2147483647",color="orange"];
-    26 -> 1;
-    28 [label="Spec: m1v0·m1s0·
-Symbol: m1refresh_I
-Imp: m1v0·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    28 -> 0;
-    29 [label="Spec: m1v0·m1s0·
-Symbol: m1w1_S
-Imp: m1v0·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    29 -> 0;
-    30 [label="Spec: m1v0·m1s0·
-Symbol: m1w0_S
-Imp: m1v0·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    30 -> 0;
-    31 [label="Spec: m1v0·m1s0·
-Symbol: m1r0_S
-Imp: m1v0·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    31 -> 0;
-    32 [label="Spec: m1v0·m1s0·
-Symbol: m1tick_S
-Imp: m1v0·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    32 -> 0;
-    34 [label="Spec: m1v0·m1s1·
-Symbol: m1fault1_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    34 -> 51;
-    35 [label="Spec: m1v0·m1s1·
-Symbol: m1fault2_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    35 -> 42;
-    36 [label="Spec: m1v0·m1s1·
-Symbol: m1w0_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    36 -> 0;
-    37 [label="Spec: m1v0·m1s1·
-Symbol: m1w1_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    37 -> 0;
-    38 [label="Spec: m1v0·m1s1·
-Symbol: m1r0_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    38 -> 0;
-    39 [label="Spec: m1v0·m1s1·
-Symbol: m1tick_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    39 -> 0;
-    41 [label="Spec: m1v0·m1s1·
-Symbol: m1refresh_S
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    41 -> 0;
-    42 [label="Spec: m1v0·m1s1·
-Symbol: m1fault2_I
-Imp: m1v0·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    42 -> 43;
-    43 [label="Spec: m1v0·m1s1·
+    23 [label="State: robotcol0·robotrow2·robotlight0·
 Symbol: 
-Imp: m1v1·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    43 -> 50;
-    43 -> 44;
-    43 -> 48;
-    43 -> 46;
+Player: 2",color="grey"];
+    23 -> 25;
+    23 -> 26;
+    25 [label="State: robotcol0·robotrow2·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    25 -> 29;
+    25 -> 1120;
+    26 [label="State: robotcol0·robotrow2·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    26 -> 29;
+    26 -> 30;
+    29 [label="State: robotcol0·robotrow2·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    29 -> 1055;
+    29 -> 1056;
+    30 [label="State: robotcol0·robotrow2·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    30 -> 31;
+    31 [label="State: robotcol0·robotrow2·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    31 -> 34;
+    31 -> 23;
+    34 [label="State: robotcol0·robotrow3·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    34 -> 35;
+    34 -> 36;
+    35 [label="State: robotcol0·robotrow3·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    35 -> 39;
+    35 -> 1046;
+    36 [label="State: robotcol0·robotrow3·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    36 -> 39;
+    36 -> 40;
+    39 [label="State: robotcol0·robotrow3·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    39 -> 882;
+    39 -> 883;
+    39 -> 881;
+    40 [label="State: robotcol0·robotrow3·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    40 -> 41;
+    41 [label="State: robotcol0·robotrow3·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    41 -> 43;
+    41 -> 34;
+    43 [label="State: robotcol0·robotrow4·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
     43 -> 45;
-    44 [label="Spec: m1v0·m1s1·
-Symbol: m1r0_I
-Imp: m1v1·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    44 -> 0;
-    45 [label="Spec: m1v0·m1s1·
-Symbol: m1tick_I
-Imp: m1v1·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    45 -> 0;
-    46 [label="Spec: m1v0·m1s1·
-Symbol: m1w0_I
-Imp: m1v1·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    46 -> 0;
-    48 [label="Spec: m1v0·m1s1·
-Symbol: m1w1_I
-Imp: m1v1·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    48 -> 0;
-    50 [label="Spec: m1v0·m1s1·
-Symbol: m1refresh_S
-Imp: m1v1·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    50 -> 0;
-    51 [label="Spec: m1v0·m1s1·
-Symbol: m1fault1_I
-Imp: m1v0·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    51 -> 43;
-    53 [label="Spec: m1v0·m1s0·
-Symbol: m1fault1_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    53 -> 1303;
-    54 [label="Spec: m1v0·m1s0·
-Symbol: m1fault2_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    54 -> 755;
-    55 [label="Spec: m1v0·m1s0·
-Symbol: m1w0_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    55 -> 753;
-    56 [label="Spec: m1v0·m1s0·
-Symbol: m1w1_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    56 -> 751;
-    57 [label="Spec: m1v0·m1s0·
-Symbol: m1r0_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    57 -> 749;
-    58 [label="Spec: m1v0·m1s0·
-Symbol: m1tick_I
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    58 -> 743;
-    60 [label="Spec: m1v0·m1s0·
-Symbol: m1w1_S
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    60 -> 75;
-    61 [label="Spec: m1v0·m1s0·
-Symbol: m1w0_S
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    61 -> 73;
-    62 [label="Spec: m1v0·m1s0·
-Symbol: m1r0_S
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    62 -> 71;
-    63 [label="Spec: m1v0·m1s0·
-Symbol: m1tick_S
-Imp: m1v0·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    63 -> 65;
-    65 [label="Spec: m1v0·m1s0·
-Symbol: m1tick_S
-Imp: m1v0·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    65 -> 20;
-    65 -> 19;
-    65 -> 21;
-    65 -> 18;
-    71 [label="Spec: m1v0·m1s0·
-Symbol: m1r0_S
-Imp: m1v0·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    71 -> 18;
-    73 [label="Spec: m1v0·m1s0·
-Symbol: m1w0_S
-Imp: m1v0·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    73 -> 1;
-    75 [label="Spec: m1v0·m1s0·
-Symbol: m1w1_S
-Imp: m1v0·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    75 -> 76;
-    76 [label="Spec: m1v1·m1s0·
+    43 -> 46;
+    45 [label="State: robotcol0·robotrow4·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    45 -> 876;
+    45 -> 49;
+    46 [label="State: robotcol0·robotrow4·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    46 -> 50;
+    46 -> 49;
+    49 [label="State: robotcol0·robotrow4·robotlight3·
 Symbol: 
-Imp: m1v5·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    76 -> 84;
-    76 -> 86;
+Player: 1",color="lightblue"];
+    49 -> 812;
+    49 -> 811;
+    50 [label="State: robotcol0·robotrow4·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    50 -> 51;
+    51 [label="State: robotcol0·robotrow4·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    51 -> 53;
+    51 -> 43;
+    53 [label="State: robotcol0·robotrow5·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    53 -> 55;
+    53 -> 56;
+    55 [label="State: robotcol0·robotrow5·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    55 -> 802;
+    55 -> 59;
+    56 [label="State: robotcol0·robotrow5·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    56 -> 59;
+    56 -> 60;
+    59 [label="State: robotcol0·robotrow5·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    59 -> 685;
+    59 -> 686;
+    59 -> 687;
+    60 [label="State: robotcol0·robotrow5·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    60 -> 61;
+    61 [label="State: robotcol0·robotrow5·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    61 -> 53;
+    61 -> 63;
+    63 [label="State: robotcol0·robotrow6·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    63 -> 65;
+    63 -> 66;
+    65 [label="State: robotcol0·robotrow6·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    65 -> 69;
+    65 -> 676;
+    66 [label="State: robotcol0·robotrow6·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    66 -> 69;
+    66 -> 70;
+    69 [label="State: robotcol0·robotrow6·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    69 -> 561;
+    69 -> 559;
+    69 -> 560;
+    70 [label="State: robotcol0·robotrow6·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    70 -> 71;
+    71 [label="State: robotcol0·robotrow6·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    71 -> 73;
+    71 -> 63;
+    73 [label="State: robotcol0·robotrow7·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    73 -> 75;
+    73 -> 76;
+    75 [label="State: robotcol0·robotrow7·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    75 -> 79;
+    75 -> 554;
+    76 [label="State: robotcol0·robotrow7·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
     76 -> 79;
     76 -> 80;
-    76 -> 85;
-    76 -> 78;
-    76 -> 77;
-    76 -> 83;
-    77 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_I
-Imp: m1v5·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    77 -> 735;
-    78 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_I
-Imp: m1v5·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    78 -> 733;
-    79 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_I
-Imp: m1v5·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    79 -> 731;
-    80 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_I
-Imp: m1v5·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    80 -> 729;
-    83 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v5·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    83 -> 727;
-    84 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v5·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    84 -> 725;
-    85 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v5·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
+    79 [label="State: robotcol0·robotrow7·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    79 -> 426;
+    79 -> 425;
+    80 [label="State: robotcol0·robotrow7·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    80 -> 81;
+    81 [label="State: robotcol0·robotrow7·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    81 -> 83;
+    81 -> 73;
+    83 [label="State: robotcol0·robotrow8·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    83 -> 85;
+    83 -> 86;
+    85 [label="State: robotcol0·robotrow8·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    85 -> 419;
     85 -> 90;
-    86 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v5·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    86 -> 88;
-    88 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v5·m1s0·
-Player: P
-Value: 2147483647",color="orange"];
-    88 -> 1;
-    90 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v5·m1s0·
-Player: P
-Value: 2147483647",color="orange"];
-    90 -> 96;
-    90 -> 94;
-    90 -> 97;
-    90 -> 76;
-    90 -> 98;
-    90 -> 93;
-    93 [label="Spec: m1v1·m1s0·
+    86 [label="State: robotcol0·robotrow8·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    86 -> 89;
+    86 -> 90;
+    89 [label="State: robotcol0·robotrow8·robotlight1·
 Symbol: 
-Imp: m1v5·m1s2·
-Player: R
-Value: 2147483647",color="grey"];
-    93 -> 720;
-    93 -> 722;
-    93 -> 721;
-    93 -> 719;
-    93 -> 723;
-    94 [label="Spec: m1v1·m1s1·
+Player: 1",color="lightblue"];
+    89 -> 415;
+    90 [label="State: robotcol0·robotrow8·robotlight3·
 Symbol: 
-Imp: m1v5·m1s2·
-Player: R
-Value: 2147483647",color="grey"];
-    94 -> 714;
-    94 -> 713;
-    96 [label="Spec: m1v1·m1s1·
+Player: 1",color="lightblue"];
+    90 -> 91;
+    90 -> 92;
+    91 [label="State: robotcol0·robotrow8·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    91 -> 369;
+    91 -> 83;
+    92 [label="State: robotcol0·robotrow8·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    92 -> 83;
+    92 -> 96;
+    96 [label="State: robotcol4·robotrow8·robotlight0·
 Symbol: 
-Imp: m1v5·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    96 -> 708;
-    96 -> 709;
-    96 -> 712;
-    96 -> 707;
-    96 -> 706;
-    97 [label="Spec: m1v1·m1s0·
-Symbol: 
-Imp: m1v5·m1s1·
-Player: R
-Value: 2147483647",color="grey"];
-    97 -> 127;
-    97 -> 126;
-    97 -> 120;
-    97 -> 124;
-    97 -> 123;
-    97 -> 119;
-    97 -> 121;
-    97 -> 118;
-    97 -> 128;
-    97 -> 125;
-    98 [label="Spec: m1v1·m1s1·
-Symbol: 
-Imp: m1v5·m1s1·
-Player: R
-Value: 2147483647",color="grey"];
-    98 -> 101;
+Player: 2",color="grey"];
+    96 -> 97;
+    96 -> 98;
+    97 [label="State: robotcol4·robotrow8·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    97 -> 364;
+    97 -> 101;
+    98 [label="State: robotcol4·robotrow8·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
     98 -> 102;
-    98 -> 106;
-    98 -> 104;
-    98 -> 105;
-    98 -> 100;
-    98 -> 99;
-    99 [label="Spec: m1v1·m1s1·
-Symbol: m1tick_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    99 -> 0;
-    100 [label="Spec: m1v1·m1s1·
-Symbol: m1w0_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    100 -> 0;
-    101 [label="Spec: m1v1·m1s1·
-Symbol: m1w1_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    101 -> 0;
-    102 [label="Spec: m1v1·m1s1·
-Symbol: m1r1_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    102 -> 0;
-    104 [label="Spec: m1v1·m1s1·
-Symbol: m1fault1_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    104 -> 116;
-    105 [label="Spec: m1v1·m1s1·
-Symbol: m1fault2_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
+    98 -> 101;
+    101 [label="State: robotcol4·robotrow8·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    101 -> 196;
+    101 -> 195;
+    102 [label="State: robotcol4·robotrow8·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    102 -> 103;
+    103 [label="State: robotcol4·robotrow8·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    103 -> 105;
+    103 -> 96;
+    105 [label="State: robotcol4·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    105 [label="State: robotcol4·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="red"];
     105 -> 107;
-    106 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    106 -> 0;
-    107 [label="Spec: m1v1·m1s1·
-Symbol: m1fault2_I
-Imp: m1v5·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    107 -> 108;
-    108 [label="Spec: m1v1·m1s1·
-Symbol: 
-Imp: m1v4·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    108 -> 112;
-    108 -> 113;
-    108 -> 115;
+    105 -> 108;
+    107 [label="State: robotcol4·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    107 [label="State: robotcol4·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="red"];
+    107 -> 190;
+    107 -> 111;
+    108 [label="State: robotcol4·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    108 [label="State: robotcol4·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="red"];
     108 -> 111;
-    108 -> 109;
-    109 [label="Spec: m1v1·m1s1·
-Symbol: m1tick_I
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    109 -> 0;
-    111 [label="Spec: m1v1·m1s1·
-Symbol: m1w0_I
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    111 -> 0;
-    112 [label="Spec: m1v1·m1s1·
-Symbol: m1w1_I
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    112 -> 0;
-    113 [label="Spec: m1v1·m1s1·
-Symbol: m1r1_I
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    113 -> 0;
-    115 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    115 -> 0;
-    116 [label="Spec: m1v1·m1s1·
-Symbol: m1fault1_I
-Imp: m1v5·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    116 -> 108;
-    118 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    118 -> 700;
-    119 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    119 -> 698;
-    120 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    120 -> 696;
-    121 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    121 -> 694;
-    123 [label="Spec: m1v1·m1s0·
-Symbol: m1fault1_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    123 -> 690;
-    124 [label="Spec: m1v1·m1s0·
-Symbol: m1fault2_I
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    124 -> 142;
-    125 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    125 -> 140;
-    126 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    126 -> 138;
-    127 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    127 -> 132;
-    128 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v5·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    128 -> 130;
-    130 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v5·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    130 -> 1;
-    132 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v5·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    132 -> 94;
-    132 -> 97;
-    132 -> 98;
-    132 -> 93;
-    138 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v5·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    138 -> 97;
-    140 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v5·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    140 -> 76;
-    142 [label="Spec: m1v1·m1s0·
-Symbol: m1fault2_I
-Imp: m1v5·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    142 -> 143;
-    143 [label="Spec: m1v1·m1s0·
+    108 -> 112;
+    111 [label="State: robotcol4·robotrow9·robotlight3·
 Symbol: 
-Imp: m1v4·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    143 -> 154;
-    143 -> 153;
-    143 -> 149;
-    143 -> 148;
-    143 -> 150;
+Player: 1",color="lightblue"];
+    111 [label="State: robotcol4·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="red"];
+    111 -> 137;
+    111 -> 138;
+    112 [label="State: robotcol4·robotrow9·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    112 [label="State: robotcol4·robotrow9·robotlight2·
+Symbol: 
+Player: 1",color="red"];
+    112 -> 113;
+    113 [label="State: robotcol4·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    113 [label="State: robotcol4·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="red"];
+    113 -> 105;
+    113 -> 115;
+    115 [label="State: robotcol4·robotrow10·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    115 -> 117;
+    115 -> 121;
+    115 -> 118;
+    117 [label="State: robotcol4·robotrow10·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    117 -> 127;
+    117 -> 134;
+    118 [label="State: robotcol4·robotrow10·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    118 -> 127;
+    118 -> 128;
+    121 [label="State: robotcol4·robotrow10·robotlight0·
+Symbol: robotr_f
+Player: 2",color="grey"];
+    121 -> 117;
+    121 -> 121;
+    121 -> 118;
+    127 [label="State: robotcol4·robotrow10·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    127 -> 131;
+    128 [label="State: robotcol4·robotrow10·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    128 -> 129;
+    129 [label="State: robotcol4·robotrow10·robotlight2·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    129 -> 129;
+    131 [label="State: robotcol4·robotrow10·robotlight3·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    131 -> 131;
+    134 [label="State: robotcol4·robotrow10·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    134 -> 135;
+    135 [label="State: robotcol4·robotrow10·robotlight1·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    135 -> 135;
+    137 [label="State: robotcol4·robotrow9·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    137 [label="State: robotcol4·robotrow9·robotlight3·
+Symbol: robotr_l
+Player: 3",color="red"];
+    137 -> 143;
+    137 -> 105;
+    138 [label="State: robotcol4·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    138 [label="State: robotcol4·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="red"];
+    138 -> 105;
+    138 -> 115;
+    143 [label="State: robotcol3·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    143 [label="State: robotcol3·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="red"];
+    143 -> 145;
     143 -> 146;
-    143 -> 155;
-    143 -> 152;
-    146 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_I
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    146 -> 682;
-    148 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_I
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    148 -> 680;
-    149 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_I
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    149 -> 678;
-    150 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_I
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    150 -> 676;
-    152 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    152 -> 674;
-    153 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    153 -> 672;
-    154 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    154 -> 159;
-    155 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v4·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    155 -> 157;
-    157 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v4·m1s0·
-Player: P
-Value: 2147483647",color="orange"];
-    157 -> 1;
-    159 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v4·m1s0·
-Player: P
-Value: 2147483647",color="orange"];
-    159 -> 163;
-    159 -> 143;
-    159 -> 108;
+    145 [label="State: robotcol3·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    145 [label="State: robotcol3·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="red"];
+    145 -> 183;
+    145 -> 150;
+    146 [label="State: robotcol3·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    146 [label="State: robotcol3·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="red"];
+    146 -> 149;
+    146 -> 150;
+    149 [label="State: robotcol3·robotrow9·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    149 [label="State: robotcol3·robotrow9·robotlight1·
+Symbol: 
+Player: 1",color="red"];
+    149 -> 179;
+    150 [label="State: robotcol3·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    150 [label="State: robotcol3·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="red"];
+    150 -> 151;
+    150 -> 152;
+    151 [label="State: robotcol3·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    151 [label="State: robotcol3·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="red"];
+    151 -> 157;
+    151 -> 143;
+    152 [label="State: robotcol3·robotrow9·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    152 [label="State: robotcol3·robotrow9·robotlight3·
+Symbol: robotr_r
+Player: 3",color="red"];
+    152 -> 143;
+    152 -> 105;
+    157 [label="State: robotcol3·robotrow10·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    157 -> 162;
+    157 -> 160;
+    157 -> 159;
+    159 [label="State: robotcol3·robotrow10·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    159 -> 175;
     159 -> 164;
-    159 -> 162;
-    159 -> 165;
-    162 [label="Spec: m1v1·m1s0·
+    160 [label="State: robotcol3·robotrow10·robotlight0·
+Symbol: robotr_f
+Player: 2",color="grey"];
+    160 -> 162;
+    160 -> 160;
+    160 -> 159;
+    162 [label="State: robotcol3·robotrow10·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    162 -> 164;
+    162 -> 165;
+    164 [label="State: robotcol3·robotrow10·robotlight3·
 Symbol: 
-Imp: m1v4·m1s1·
-Player: R
-Value: 2147483647",color="grey"];
-    162 -> 206;
-    162 -> 208;
-    162 -> 207;
-    162 -> 205;
-    162 -> 203;
-    162 -> 204;
-    162 -> 199;
-    162 -> 202;
-    162 -> 200;
-    162 -> 209;
-    163 [label="Spec: m1v1·m1s1·
+Player: 1",color="lightblue"];
+    164 -> 168;
+    165 [label="State: robotcol3·robotrow10·robotlight2·
 Symbol: 
-Imp: m1v4·m1s1·
-Player: R
-Value: 2147483647",color="grey"];
-    163 -> 185;
-    163 -> 184;
-    163 -> 187;
-    163 -> 183;
-    163 -> 180;
-    163 -> 186;
-    163 -> 181;
-    164 [label="Spec: m1v1·m1s0·
+Player: 1",color="lightblue"];
+    165 -> 166;
+    166 [label="State: robotcol3·robotrow10·robotlight2·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    166 -> 166;
+    168 [label="State: robotcol3·robotrow10·robotlight3·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    168 -> 168;
+    175 [label="State: robotcol3·robotrow10·robotlight1·
 Symbol: 
-Imp: m1v4·m1s2·
-Player: R
-Value: 2147483647",color="grey"];
-    164 -> 175;
-    164 -> 177;
-    164 -> 176;
-    164 -> 178;
-    164 -> 174;
-    165 [label="Spec: m1v1·m1s1·
+Player: 1",color="lightblue"];
+    175 -> 177;
+    177 [label="State: robotcol3·robotrow10·robotlight1·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    177 -> 177;
+    179 [label="State: robotcol3·robotrow9·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    179 [label="State: robotcol3·robotrow9·robotlight1·
+Symbol: robotr_r
+Player: 3",color="red"];
+    179 -> 143;
+    179 -> 105;
+    183 [label="State: robotcol3·robotrow9·robotlight2·
 Symbol: 
-Imp: m1v4·m1s2·
-Player: R
-Value: 2147483647",color="grey"];
-    165 -> 169;
-    165 -> 168;
-    168 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_I
-Imp: m1v4·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    168 -> 172;
-    169 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v4·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    169 -> 170;
-    170 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v4·m1s2·
-Player: P
-Value: 2147483647",color="orange"];
-    170 -> 76;
-    172 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_I
-Imp: m1v4·m1s2·
-Player: P
-Value: 2147483647",color="orange"];
-    172 -> 76;
-    174 [label="Spec: m1v1·m1s0·
-Symbol: m1refresh_I
-Imp: m1v4·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    174 -> 0;
-    175 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v4·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    175 -> 0;
-    176 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v4·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    176 -> 0;
-    177 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v4·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    177 -> 0;
-    178 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v4·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    178 -> 0;
-    180 [label="Spec: m1v1·m1s1·
-Symbol: m1r1_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    180 -> 0;
-    181 [label="Spec: m1v1·m1s1·
-Symbol: m1tick_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    181 -> 0;
-    183 [label="Spec: m1v1·m1s1·
-Symbol: m1w0_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    183 -> 0;
-    184 [label="Spec: m1v1·m1s1·
-Symbol: m1w1_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    184 -> 0;
-    185 [label="Spec: m1v1·m1s1·
-Symbol: m1fault1_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    185 -> 197;
-    186 [label="Spec: m1v1·m1s1·
-Symbol: m1fault2_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    186 -> 188;
-    187 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    187 -> 0;
-    188 [label="Spec: m1v1·m1s1·
-Symbol: m1fault2_I
-Imp: m1v4·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    188 -> 189;
-    189 [label="Spec: m1v1·m1s1·
+Player: 1",color="lightblue"];
+    183 [label="State: robotcol3·robotrow9·robotlight2·
 Symbol: 
-Imp: m1v3·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    189 -> 190;
-    189 -> 191;
-    189 -> 196;
-    189 -> 193;
-    189 -> 192;
-    190 [label="Spec: m1v1·m1s1·
-Symbol: m1w0_I
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    190 -> 0;
-    191 [label="Spec: m1v1·m1s1·
-Symbol: m1w1_I
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    191 -> 0;
-    192 [label="Spec: m1v1·m1s1·
-Symbol: m1r1_I
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    192 -> 0;
-    193 [label="Spec: m1v1·m1s1·
-Symbol: m1tick_I
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    193 -> 0;
-    196 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    196 -> 0;
-    197 [label="Spec: m1v1·m1s1·
-Symbol: m1fault1_I
-Imp: m1v4·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    197 -> 96;
-    199 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    199 -> 670;
-    200 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    200 -> 664;
-    202 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    202 -> 662;
-    203 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    203 -> 660;
-    204 [label="Spec: m1v1·m1s0·
-Symbol: m1fault1_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    204 -> 656;
-    205 [label="Spec: m1v1·m1s0·
-Symbol: m1fault2_I
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    205 -> 223;
-    206 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    206 -> 221;
-    207 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    207 -> 219;
-    208 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    208 -> 213;
-    209 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v4·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    209 -> 211;
-    211 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v4·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    211 -> 1;
-    213 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v4·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    213 -> 163;
-    213 -> 164;
-    213 -> 162;
-    213 -> 165;
-    219 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v4·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    219 -> 162;
-    221 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v4·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    221 -> 76;
-    223 [label="Spec: m1v1·m1s0·
-Symbol: m1fault2_I
-Imp: m1v4·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    223 -> 224;
-    224 [label="Spec: m1v1·m1s0·
+Player: 1",color="red"];
+    183 -> 185;
+    185 [label="State: robotcol3·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    185 [label="State: robotcol3·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="red"];
+    185 -> 157;
+    185 -> 143;
+    190 [label="State: robotcol4·robotrow9·robotlight1·
 Symbol: 
-Imp: m1v3·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    224 -> 233;
-    224 -> 227;
-    224 -> 234;
-    224 -> 228;
-    224 -> 230;
-    224 -> 236;
-    224 -> 229;
-    224 -> 235;
-    227 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_I
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    227 -> 654;
-    228 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_I
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    228 -> 652;
-    229 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_I
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    229 -> 650;
-    230 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_I
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    230 -> 642;
-    233 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    233 -> 640;
-    234 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    234 -> 638;
-    235 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    235 -> 240;
-    236 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v3·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    236 -> 238;
-    238 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v3·m1s0·
-Player: P
-Value: 2147483647",color="orange"];
-    238 -> 1;
-    240 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v3·m1s0·
-Player: P
-Value: 2147483647",color="orange"];
-    240 -> 245;
-    240 -> 248;
-    240 -> 224;
-    240 -> 246;
-    240 -> 247;
-    240 -> 189;
-    245 [label="Spec: m1v1·m1s0·
+Player: 1",color="lightblue"];
+    190 [label="State: robotcol4·robotrow9·robotlight1·
 Symbol: 
-Imp: m1v3·m1s1·
-Player: R
-Value: 2147483647",color="grey"];
-    245 -> 285;
-    245 -> 280;
-    245 -> 284;
-    245 -> 287;
-    245 -> 288;
-    245 -> 290;
-    245 -> 281;
-    245 -> 282;
-    245 -> 283;
-    245 -> 289;
-    246 [label="Spec: m1v1·m1s1·
+Player: 1",color="red"];
+    190 -> 191;
+    191 [label="State: robotcol4·robotrow9·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    191 [label="State: robotcol4·robotrow9·robotlight1·
+Symbol: robotr_l
+Player: 3",color="red"];
+    191 -> 143;
+    191 -> 105;
+    195 [label="State: robotcol4·robotrow8·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    195 -> 96;
+    195 -> 201;
+    196 [label="State: robotcol4·robotrow8·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    196 -> 105;
+    196 -> 96;
+    201 [label="State: robotcol3·robotrow8·robotlight0·
 Symbol: 
-Imp: m1v3·m1s1·
-Player: R
-Value: 2147483647",color="grey"];
-    246 -> 263;
-    246 -> 261;
-    246 -> 268;
-    246 -> 262;
-    246 -> 265;
-    246 -> 264;
-    246 -> 266;
-    247 [label="Spec: m1v1·m1s0·
+Player: 2",color="grey"];
+    201 -> 203;
+    201 -> 204;
+    203 [label="State: robotcol3·robotrow8·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    203 -> 207;
+    203 -> 358;
+    204 [label="State: robotcol3·robotrow8·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    204 -> 207;
+    204 -> 208;
+    207 [label="State: robotcol3·robotrow8·robotlight3·
 Symbol: 
-Imp: m1v3·m1s2·
-Player: R
-Value: 2147483647",color="grey"];
-    247 -> 255;
-    247 -> 256;
-    247 -> 257;
-    247 -> 259;
-    247 -> 258;
-    248 [label="Spec: m1v1·m1s1·
+Player: 1",color="lightblue"];
+    207 -> 213;
+    207 -> 214;
+    208 [label="State: robotcol3·robotrow8·robotlight2·
 Symbol: 
-Imp: m1v3·m1s2·
-Player: R
-Value: 2147483647",color="grey"];
-    248 -> 249;
-    248 -> 250;
-    249 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_I
-Imp: m1v3·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
+Player: 1",color="lightblue"];
+    208 -> 209;
+    209 [label="State: robotcol3·robotrow8·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    209 -> 143;
+    209 -> 201;
+    213 [label="State: robotcol3·robotrow8·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    213 -> 143;
+    213 -> 201;
+    214 [label="State: robotcol3·robotrow8·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    214 -> 201;
+    214 -> 218;
+    218 [label="State: robotcol2·robotrow8·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    218 -> 219;
+    218 -> 220;
+    219 [label="State: robotcol2·robotrow8·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    219 -> 223;
+    219 -> 350;
+    220 [label="State: robotcol2·robotrow8·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    220 -> 223;
+    220 -> 224;
+    223 [label="State: robotcol2·robotrow8·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    223 -> 273;
+    223 -> 274;
+    224 [label="State: robotcol2·robotrow8·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    224 -> 225;
+    225 [label="State: robotcol2·robotrow8·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    225 -> 227;
+    225 -> 218;
+    227 [label="State: robotcol2·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    227 [label="State: robotcol2·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="red"];
+    227 -> 229;
+    227 -> 230;
+    229 [label="State: robotcol2·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    229 [label="State: robotcol2·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="red"];
+    229 -> 233;
+    229 -> 268;
+    230 [label="State: robotcol2·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    230 [label="State: robotcol2·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="red"];
+    230 -> 233;
+    230 -> 234;
+    233 [label="State: robotcol2·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    233 [label="State: robotcol2·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="red"];
+    233 -> 260;
+    233 -> 259;
+    234 [label="State: robotcol2·robotrow9·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    234 [label="State: robotcol2·robotrow9·robotlight2·
+Symbol: 
+Player: 1",color="red"];
+    234 -> 235;
+    235 [label="State: robotcol2·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    235 [label="State: robotcol2·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="red"];
+    235 -> 237;
+    235 -> 227;
+    237 [label="State: robotcol2·robotrow10·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    237 -> 239;
+    237 -> 240;
+    237 -> 241;
+    239 [label="State: robotcol2·robotrow10·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    239 -> 255;
+    239 -> 250;
+    240 [label="State: robotcol2·robotrow10·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    240 -> 249;
+    240 -> 250;
+    241 [label="State: robotcol2·robotrow10·robotlight0·
+Symbol: robotr_f
+Player: 2",color="grey"];
+    241 -> 239;
+    241 -> 240;
+    241 -> 241;
+    249 [label="State: robotcol2·robotrow10·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
     249 -> 253;
-    250 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v3·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    250 -> 251;
-    251 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v3·m1s2·
-Player: P
-Value: 2147483647",color="orange"];
-    251 -> 76;
-    253 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_I
-Imp: m1v3·m1s2·
-Player: P
-Value: 2147483647",color="orange"];
-    253 -> 76;
-    255 [label="Spec: m1v1·m1s0·
-Symbol: m1refresh_I
-Imp: m1v3·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    255 -> 0;
-    256 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v3·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    256 -> 0;
-    257 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v3·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    257 -> 0;
-    258 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_S
-Imp: m1v3·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    258 -> 0;
-    259 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_S
-Imp: m1v3·m1s2·
-Player: V
-Value: 2147483647",color="lightblue"];
-    259 -> 0;
-    261 [label="Spec: m1v1·m1s1·
-Symbol: m1w0_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    261 -> 0;
-    262 [label="Spec: m1v1·m1s1·
-Symbol: m1w1_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    262 -> 0;
-    263 [label="Spec: m1v1·m1s1·
-Symbol: m1fault1_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    263 -> 278;
-    264 [label="Spec: m1v1·m1s1·
-Symbol: m1r1_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    264 -> 0;
-    265 [label="Spec: m1v1·m1s1·
-Symbol: m1tick_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    265 -> 0;
-    266 [label="Spec: m1v1·m1s1·
-Symbol: m1fault2_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    266 -> 269;
-    268 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    268 -> 0;
-    269 [label="Spec: m1v1·m1s1·
-Symbol: m1fault2_I
-Imp: m1v3·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    269 -> 270;
-    270 [label="Spec: m1v1·m1s1·
+    250 [label="State: robotcol2·robotrow10·robotlight3·
 Symbol: 
-Imp: m1v2·m1s0·
-Player: R
-Value: 2147483647",color="grey"];
-    270 -> 273;
-    270 -> 271;
-    270 -> 277;
-    270 -> 272;
-    270 -> 274;
-    271 [label="Spec: m1v1·m1s1·
-Symbol: m1w0_I
-Imp: m1v2·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    271 -> 0;
-    272 [label="Spec: m1v1·m1s1·
-Symbol: m1w1_I
-Imp: m1v2·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    272 -> 0;
-    273 [label="Spec: m1v1·m1s1·
-Symbol: m1r0_I
-Imp: m1v2·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    273 -> 0;
-    274 [label="Spec: m1v1·m1s1·
-Symbol: m1tick_I
-Imp: m1v2·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    274 -> 0;
-    277 [label="Spec: m1v1·m1s1·
-Symbol: m1refresh_S
-Imp: m1v2·m1s0·
-Player: V
-Value: 2147483647",color="lightblue"];
-    277 -> 0;
-    278 [label="Spec: m1v1·m1s1·
-Symbol: m1fault1_I
-Imp: m1v3·m1s1·
-Player: P
-Value: 2147483647",color="orange"];
-    278 -> 108;
-    280 [label="Spec: m1v1·m1s0·
-Symbol: m1w0_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    280 -> 636;
-    281 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    281 -> 634;
-    282 [label="Spec: m1v1·m1s0·
-Symbol: m1fault1_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    282 -> 630;
-    283 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    283 -> 628;
-    284 [label="Spec: m1v1·m1s0·
-Symbol: m1tick_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    284 -> 622;
-    285 [label="Spec: m1v1·m1s0·
-Symbol: m1fault2_I
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    285 -> 304;
-    287 [label="Spec: m1v1·m1s0·
-Symbol: m1w1_S
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    287 -> 302;
-    288 [label="Spec: m1v1·m1s0·
-Symbol: m1r1_S
-Imp: m1v3·m1s1·
-Player: V
-Value: 2147483647",color="lightblue"];
-    288 -> 300;
+Player: 1",color="lightblue"];
+    250 -> 251;
+    251 [label="State: robotcol2·robotrow10·robotlight3·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    251 -> 251;
+    253 [label="State: robotcol2·robotrow10·robotlight1·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    253 -> 253;
+    255 [label="State: robotcol2·robotrow10·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    255 -> 257;
+    257 [label="State: robotcol2·robotrow10·robotlight2·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    257 -> 257;
+    259 [label="State: robotcol2·robotrow9·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    259 [label="State: robotcol2·robotrow9·robotlight3·
+Symbol: robotr_r
+Player: 3",color="red"];
+    259 -> 143;
+    259 -> 227;
+    260 [label="State: robotcol2·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    260 [label="State: robotcol2·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="red"];
+    260 -> 237;
+    260 -> 227;
+    268 [label="State: robotcol2·robotrow9·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    268 [label="State: robotcol2·robotrow9·robotlight1·
+Symbol: 
+Player: 1",color="red"];
+    268 -> 269;
+    269 [label="State: robotcol2·robotrow9·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    269 [label="State: robotcol2·robotrow9·robotlight1·
+Symbol: robotr_r
+Player: 3",color="red"];
+    269 -> 143;
+    269 -> 227;
+    273 [label="State: robotcol2·robotrow8·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    273 -> 279;
+    273 -> 218;
+    274 [label="State: robotcol2·robotrow8·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    274 -> 227;
+    274 -> 218;
+    279 [label="State: robotcol1·robotrow8·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    279 -> 283;
+    279 -> 281;
+    281 [label="State: robotcol1·robotrow8·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    281 -> 343;
+    281 -> 285;
+    283 [label="State: robotcol1·robotrow8·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    283 -> 285;
+    283 -> 286;
+    285 [label="State: robotcol1·robotrow8·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    285 -> 335;
+    285 -> 336;
+    286 [label="State: robotcol1·robotrow8·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    286 -> 287;
+    287 [label="State: robotcol1·robotrow8·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    287 -> 279;
+    287 -> 289;
+    289 [label="State: robotcol1·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    289 [label="State: robotcol1·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="red"];
+    289 -> 292;
+    289 -> 291;
+    291 [label="State: robotcol1·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    291 [label="State: robotcol1·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="red"];
+    291 -> 330;
+    291 -> 295;
+    292 [label="State: robotcol1·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    292 [label="State: robotcol1·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="red"];
+    292 -> 296;
+    292 -> 295;
+    295 [label="State: robotcol1·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    295 [label="State: robotcol1·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="red"];
+    295 -> 322;
+    295 -> 321;
+    296 [label="State: robotcol1·robotrow9·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    296 [label="State: robotcol1·robotrow9·robotlight2·
+Symbol: 
+Player: 1",color="red"];
+    296 -> 297;
+    297 [label="State: robotcol1·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    297 [label="State: robotcol1·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="red"];
+    297 -> 300;
+    297 -> 289;
+    300 [label="State: robotcol1·robotrow10·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    300 -> 305;
+    300 -> 302;
+    300 -> 301;
+    301 [label="State: robotcol1·robotrow10·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    301 -> 318;
+    301 -> 311;
+    302 [label="State: robotcol1·robotrow10·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    302 -> 311;
+    302 -> 312;
+    305 [label="State: robotcol1·robotrow10·robotlight0·
+Symbol: robotr_f
+Player: 2",color="grey"];
+    305 -> 305;
+    305 -> 302;
+    305 -> 301;
+    311 [label="State: robotcol1·robotrow10·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    311 -> 315;
+    312 [label="State: robotcol1·robotrow10·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    312 -> 313;
+    313 [label="State: robotcol1·robotrow10·robotlight2·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    313 -> 313;
+    315 [label="State: robotcol1·robotrow10·robotlight3·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    315 -> 315;
+    318 [label="State: robotcol1·robotrow10·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    318 -> 319;
+    319 [label="State: robotcol1·robotrow10·robotlight1·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    319 -> 319;
+    321 [label="State: robotcol1·robotrow9·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    321 [label="State: robotcol1·robotrow9·robotlight3·
+Symbol: robotr_r
+Player: 3",color="red"];
+    321 -> 289;
+    321 -> 227;
+    322 [label="State: robotcol1·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    322 [label="State: robotcol1·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="red"];
+    322 -> 300;
+    322 -> 289;
+    330 [label="State: robotcol1·robotrow9·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    330 [label="State: robotcol1·robotrow9·robotlight1·
+Symbol: 
+Player: 1",color="red"];
+    330 -> 331;
+    331 [label="State: robotcol1·robotrow9·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    331 [label="State: robotcol1·robotrow9·robotlight1·
+Symbol: robotr_r
+Player: 3",color="red"];
+    331 -> 289;
+    331 -> 227;
+    335 [label="State: robotcol1·robotrow8·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    335 -> 279;
+    335 -> 289;
+    336 [label="State: robotcol1·robotrow8·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    336 -> 279;
+    336 -> 218;
+    343 [label="State: robotcol1·robotrow8·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    343 -> 345;
+    345 [label="State: robotcol1·robotrow8·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    345 -> 279;
+    345 -> 218;
+    350 [label="State: robotcol2·robotrow8·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    350 -> 351;
+    351 [label="State: robotcol2·robotrow8·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    351 -> 279;
+    351 -> 218;
+    358 [label="State: robotcol3·robotrow8·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    358 -> 359;
+    359 [label="State: robotcol3·robotrow8·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    359 -> 201;
+    359 -> 218;
+    364 [label="State: robotcol4·robotrow8·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    364 -> 365;
+    365 [label="State: robotcol4·robotrow8·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    365 -> 96;
+    365 -> 201;
+    369 [label="State: robotcol0·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    369 [label="State: robotcol0·robotrow9·robotlight0·
+Symbol: 
+Player: 2",color="red"];
+    369 -> 373;
+    369 -> 371;
+    371 [label="State: robotcol0·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    371 [label="State: robotcol0·robotrow9·robotlight0·
+Symbol: robotl_y
+Player: 3",color="red"];
+    371 -> 409;
+    371 -> 375;
+    373 [label="State: robotcol0·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    373 [label="State: robotcol0·robotrow9·robotlight0·
+Symbol: robotl_r
+Player: 3",color="red"];
+    373 -> 375;
+    373 -> 376;
+    375 [label="State: robotcol0·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    375 [label="State: robotcol0·robotrow9·robotlight3·
+Symbol: 
+Player: 1",color="red"];
+    375 -> 402;
+    375 -> 401;
+    376 [label="State: robotcol0·robotrow9·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    376 [label="State: robotcol0·robotrow9·robotlight2·
+Symbol: 
+Player: 1",color="red"];
+    376 -> 377;
+    377 [label="State: robotcol0·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    377 [label="State: robotcol0·robotrow9·robotlight2·
+Symbol: robotr_f
+Player: 3",color="red"];
+    377 -> 369;
+    377 -> 379;
+    379 [label="State: robotcol0·robotrow10·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    379 -> 383;
+    379 -> 381;
+    379 -> 382;
+    381 [label="State: robotcol0·robotrow10·robotlight0·
+Symbol: robotr_f
+Player: 2",color="grey"];
+    381 -> 383;
+    381 -> 381;
+    381 -> 382;
+    382 [label="State: robotcol0·robotrow10·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    382 -> 393;
+    382 -> 386;
+    383 [label="State: robotcol0·robotrow10·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    383 -> 387;
+    383 -> 386;
+    386 [label="State: robotcol0·robotrow10·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    386 -> 390;
+    387 [label="State: robotcol0·robotrow10·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    387 -> 388;
+    388 [label="State: robotcol0·robotrow10·robotlight2·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    388 -> 388;
+    390 [label="State: robotcol0·robotrow10·robotlight3·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    390 -> 390;
+    393 [label="State: robotcol0·robotrow10·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    393 -> 394;
+    394 [label="State: robotcol0·robotrow10·robotlight1·
+Symbol: robotr_f
+Player: 1",color="lightblue"];
+    394 -> 394;
+    401 [label="State: robotcol0·robotrow9·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    401 [label="State: robotcol0·robotrow9·robotlight3·
+Symbol: robotr_r
+Player: 3",color="red"];
+    401 -> 369;
+    401 -> 289;
+    402 [label="State: robotcol0·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    402 [label="State: robotcol0·robotrow9·robotlight3·
+Symbol: robotr_f
+Player: 3",color="red"];
+    402 -> 369;
+    402 -> 379;
+    409 [label="State: robotcol0·robotrow9·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    409 [label="State: robotcol0·robotrow9·robotlight1·
+Symbol: 
+Player: 1",color="red"];
+    409 -> 411;
+    411 [label="State: robotcol0·robotrow9·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    411 [label="State: robotcol0·robotrow9·robotlight1·
+Symbol: robotr_r
+Player: 3",color="red"];
+    411 -> 369;
+    411 -> 289;
+    415 [label="State: robotcol0·robotrow8·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    415 -> 83;
+    415 -> 96;
+    419 [label="State: robotcol0·robotrow8·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    419 -> 421;
+    421 [label="State: robotcol0·robotrow8·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    421 -> 369;
+    421 -> 83;
+    425 [label="State: robotcol0·robotrow7·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    425 -> 431;
+    425 -> 73;
+    426 [label="State: robotcol0·robotrow7·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    426 -> 83;
+    426 -> 73;
+    431 [label="State: robotcol1·robotrow7·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    431 -> 433;
+    431 -> 434;
+    433 [label="State: robotcol1·robotrow7·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    433 -> 547;
+    433 -> 438;
+    434 [label="State: robotcol1·robotrow7·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    434 -> 437;
+    434 -> 438;
+    437 [label="State: robotcol1·robotrow7·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    437 -> 539;
+    437 -> 540;
+    438 [label="State: robotcol1·robotrow7·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    438 -> 439;
+    438 -> 440;
+    438 -> 441;
+    439 [label="State: robotcol1·robotrow7·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    439 -> 279;
+    439 -> 431;
+    440 [label="State: robotcol1·robotrow7·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    440 -> 431;
+    440 -> 73;
+    441 [label="State: robotcol1·robotrow7·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    441 -> 431;
+    441 -> 446;
+    446 [label="State: robotcol2·robotrow7·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    446 -> 447;
+    446 -> 448;
+    447 [label="State: robotcol2·robotrow7·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    447 -> 530;
+    447 -> 451;
+    448 [label="State: robotcol2·robotrow7·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    448 -> 451;
+    448 -> 452;
+    451 [label="State: robotcol2·robotrow7·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    451 -> 457;
+    451 -> 458;
+    452 [label="State: robotcol2·robotrow7·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    452 -> 453;
+    453 [label="State: robotcol2·robotrow7·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    453 -> 446;
+    453 -> 218;
+    457 [label="State: robotcol2·robotrow7·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    457 -> 446;
+    457 -> 463;
+    458 [label="State: robotcol2·robotrow7·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    458 -> 446;
+    458 -> 218;
+    463 [label="State: robotcol3·robotrow7·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    463 -> 465;
+    463 -> 466;
+    465 [label="State: robotcol3·robotrow7·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    465 -> 469;
+    465 -> 520;
+    466 [label="State: robotcol3·robotrow7·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    466 -> 469;
+    466 -> 470;
+    469 [label="State: robotcol3·robotrow7·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    469 -> 476;
+    469 -> 477;
+    469 -> 475;
+    470 [label="State: robotcol3·robotrow7·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    470 -> 471;
+    471 [label="State: robotcol3·robotrow7·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    471 -> 201;
+    471 -> 463;
+    475 [label="State: robotcol3·robotrow7·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    475 -> 201;
+    475 -> 463;
+    476 [label="State: robotcol3·robotrow7·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    476 -> 446;
+    476 -> 463;
+    477 [label="State: robotcol3·robotrow7·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    477 -> 463;
+    477 -> 482;
+    482 [label="State: robotcol4·robotrow7·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    482 -> 483;
+    482 -> 484;
+    483 [label="State: robotcol4·robotrow7·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    483 -> 487;
+    483 -> 506;
+    484 [label="State: robotcol4·robotrow7·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    484 -> 487;
+    484 -> 488;
+    487 [label="State: robotcol4·robotrow7·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    487 -> 493;
+    487 -> 495;
+    487 -> 494;
+    488 [label="State: robotcol4·robotrow7·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    488 -> 489;
+    489 [label="State: robotcol4·robotrow7·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    489 -> 96;
+    489 -> 482;
+    493 [label="State: robotcol4·robotrow7·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    493 -> 73;
+    493 -> 482;
+    494 [label="State: robotcol4·robotrow7·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    494 -> 463;
+    494 -> 482;
+    495 [label="State: robotcol4·robotrow7·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    495 -> 96;
+    495 -> 482;
+    506 [label="State: robotcol4·robotrow7·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    506 -> 507;
+    506 -> 508;
+    507 [label="State: robotcol4·robotrow7·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    507 -> 73;
+    507 -> 482;
+    508 [label="State: robotcol4·robotrow7·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    508 -> 463;
+    508 -> 482;
+    520 [label="State: robotcol3·robotrow7·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    520 -> 522;
+    520 -> 521;
+    521 [label="State: robotcol3·robotrow7·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    521 -> 446;
+    521 -> 463;
+    522 [label="State: robotcol3·robotrow7·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    522 -> 463;
+    522 -> 482;
+    530 [label="State: robotcol2·robotrow7·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    530 -> 531;
+    531 [label="State: robotcol2·robotrow7·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    531 -> 446;
+    531 -> 463;
+    539 [label="State: robotcol1·robotrow7·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    539 -> 431;
+    539 -> 73;
+    540 [label="State: robotcol1·robotrow7·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    540 -> 431;
+    540 -> 446;
+    547 [label="State: robotcol1·robotrow7·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    547 -> 549;
+    549 [label="State: robotcol1·robotrow7·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    549 -> 279;
+    549 -> 431;
+    554 [label="State: robotcol0·robotrow7·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    554 -> 555;
+    555 [label="State: robotcol0·robotrow7·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    555 -> 431;
+    555 -> 73;
+    559 [label="State: robotcol0·robotrow6·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    559 -> 593;
+    559 -> 63;
+    560 [label="State: robotcol0·robotrow6·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    560 -> 73;
+    560 -> 63;
+    561 [label="State: robotcol0·robotrow6·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    561 -> 63;
+    561 -> 565;
+    565 [label="State: robotcol4·robotrow6·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    565 -> 567;
+    565 -> 568;
+    567 [label="State: robotcol4·robotrow6·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    567 -> 571;
+    567 -> 586;
+    568 [label="State: robotcol4·robotrow6·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    568 -> 571;
+    568 -> 572;
+    571 [label="State: robotcol4·robotrow6·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    571 -> 577;
+    571 -> 578;
+    572 [label="State: robotcol4·robotrow6·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    572 -> 573;
+    573 [label="State: robotcol4·robotrow6·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    573 -> 482;
+    573 -> 565;
+    577 [label="State: robotcol4·robotrow6·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    577 -> 63;
+    577 -> 565;
+    578 [label="State: robotcol4·robotrow6·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    578 -> 482;
+    578 -> 565;
+    586 [label="State: robotcol4·robotrow6·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    586 -> 587;
+    587 [label="State: robotcol4·robotrow6·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    587 -> 63;
+    587 -> 565;
+    593 [label="State: robotcol1·robotrow6·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    593 -> 595;
+    593 -> 596;
+    595 [label="State: robotcol1·robotrow6·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    595 -> 599;
+    595 -> 666;
+    596 [label="State: robotcol1·robotrow6·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    596 -> 599;
+    596 -> 600;
+    599 [label="State: robotcol1·robotrow6·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    599 -> 605;
+    599 -> 606;
+    599 -> 607;
+    600 [label="State: robotcol1·robotrow6·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    600 -> 601;
+    601 [label="State: robotcol1·robotrow6·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    601 -> 431;
+    601 -> 593;
+    605 [label="State: robotcol1·robotrow6·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    605 -> 431;
+    605 -> 593;
+    606 [label="State: robotcol1·robotrow6·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    606 -> 593;
+    606 -> 63;
+    607 [label="State: robotcol1·robotrow6·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    607 -> 612;
+    607 -> 593;
+    612 [label="State: robotcol2·robotrow6·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    612 -> 613;
+    612 -> 614;
+    613 [label="State: robotcol2·robotrow6·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    613 -> 656;
+    613 -> 617;
+    614 [label="State: robotcol2·robotrow6·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    614 -> 618;
+    614 -> 617;
+    617 [label="State: robotcol2·robotrow6·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    617 -> 623;
+    617 -> 624;
+    618 [label="State: robotcol2·robotrow6·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    618 -> 619;
+    619 [label="State: robotcol2·robotrow6·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    619 -> 446;
+    619 -> 612;
+    623 [label="State: robotcol2·robotrow6·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    623 -> 629;
+    623 -> 612;
+    624 [label="State: robotcol2·robotrow6·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    624 -> 446;
+    624 -> 612;
+    629 [label="State: robotcol3·robotrow6·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    629 -> 631;
+    629 -> 632;
+    631 [label="State: robotcol3·robotrow6·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    631 -> 650;
+    631 -> 635;
+    632 [label="State: robotcol3·robotrow6·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    632 -> 635;
+    632 -> 636;
+    635 [label="State: robotcol3·robotrow6·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    635 -> 642;
+    635 -> 641;
+    636 [label="State: robotcol3·robotrow6·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    636 -> 637;
+    637 [label="State: robotcol3·robotrow6·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    637 -> 629;
+    637 -> 463;
+    641 [label="State: robotcol3·robotrow6·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    641 -> 629;
+    641 -> 463;
+    642 [label="State: robotcol3·robotrow6·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    642 -> 629;
+    642 -> 612;
+    650 [label="State: robotcol3·robotrow6·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    650 -> 651;
+    651 [label="State: robotcol3·robotrow6·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    651 -> 629;
+    651 -> 612;
+    656 [label="State: robotcol2·robotrow6·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    656 -> 657;
+    657 [label="State: robotcol2·robotrow6·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    657 -> 629;
+    657 -> 612;
+    666 [label="State: robotcol1·robotrow6·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    666 -> 667;
+    666 -> 668;
+    667 [label="State: robotcol1·robotrow6·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    667 -> 593;
+    667 -> 63;
+    668 [label="State: robotcol1·robotrow6·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    668 -> 612;
+    668 -> 593;
+    676 [label="State: robotcol0·robotrow6·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    676 -> 677;
+    676 -> 678;
+    677 [label="State: robotcol0·robotrow6·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    677 -> 593;
+    677 -> 63;
+    678 [label="State: robotcol0·robotrow6·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    678 -> 63;
+    678 -> 565;
+    685 [label="State: robotcol0·robotrow5·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    685 -> 53;
+    685 -> 719;
+    686 [label="State: robotcol0·robotrow5·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    686 -> 53;
+    686 -> 693;
+    687 [label="State: robotcol0·robotrow5·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    687 -> 53;
+    687 -> 63;
+    693 [label="State: robotcol1·robotrow5·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    693 -> 695;
+    693 -> 696;
+    695 [label="State: robotcol1·robotrow5·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    695 -> 699;
+    695 -> 714;
+    696 [label="State: robotcol1·robotrow5·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    696 -> 699;
+    696 -> 700;
+    699 [label="State: robotcol1·robotrow5·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    699 -> 706;
+    699 -> 705;
+    700 [label="State: robotcol1·robotrow5·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    700 -> 701;
+    701 [label="State: robotcol1·robotrow5·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    701 -> 593;
+    701 -> 693;
+    705 [label="State: robotcol1·robotrow5·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    705 -> 593;
+    705 -> 693;
+    706 [label="State: robotcol1·robotrow5·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    706 -> 53;
+    706 -> 693;
+    714 [label="State: robotcol1·robotrow5·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    714 -> 715;
+    715 [label="State: robotcol1·robotrow5·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    715 -> 53;
+    715 -> 693;
+    719 [label="State: robotcol4·robotrow5·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    719 -> 721;
+    719 -> 723;
+    721 [label="State: robotcol4·robotrow5·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    721 -> 791;
+    721 -> 725;
+    723 [label="State: robotcol4·robotrow5·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    723 -> 725;
+    723 -> 726;
+    725 [label="State: robotcol4·robotrow5·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    725 -> 733;
+    725 -> 731;
+    725 -> 732;
+    726 [label="State: robotcol4·robotrow5·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    726 -> 727;
+    727 [label="State: robotcol4·robotrow5·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    727 -> 719;
+    727 -> 565;
+    731 [label="State: robotcol4·robotrow5·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    731 -> 719;
+    731 -> 565;
+    732 [label="State: robotcol4·robotrow5·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    732 -> 740;
+    732 -> 719;
+    733 [label="State: robotcol4·robotrow5·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    733 -> 53;
+    733 -> 719;
+    740 [label="State: robotcol3·robotrow5·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    740 -> 741;
+    740 -> 742;
+    741 [label="State: robotcol3·robotrow5·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    741 -> 784;
+    741 -> 745;
+    742 [label="State: robotcol3·robotrow5·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    742 -> 746;
+    742 -> 745;
+    745 [label="State: robotcol3·robotrow5·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    745 -> 751;
+    745 -> 752;
+    746 [label="State: robotcol3·robotrow5·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    746 -> 747;
+    747 [label="State: robotcol3·robotrow5·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    747 -> 629;
+    747 -> 740;
+    751 [label="State: robotcol3·robotrow5·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    751 -> 629;
+    751 -> 740;
+    752 [label="State: robotcol3·robotrow5·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    752 -> 740;
+    752 -> 756;
+    756 [label="State: robotcol2·robotrow5·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    756 -> 757;
+    756 -> 758;
+    757 [label="State: robotcol2·robotrow5·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    757 -> 761;
+    757 -> 776;
+    758 [label="State: robotcol2·robotrow5·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    758 -> 761;
+    758 -> 762;
+    761 [label="State: robotcol2·robotrow5·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    761 -> 767;
+    761 -> 768;
+    762 [label="State: robotcol2·robotrow5·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    762 -> 763;
+    763 [label="State: robotcol2·robotrow5·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    763 -> 612;
+    763 -> 756;
+    767 [label="State: robotcol2·robotrow5·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    767 -> 740;
+    767 -> 756;
+    768 [label="State: robotcol2·robotrow5·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    768 -> 612;
+    768 -> 756;
+    776 [label="State: robotcol2·robotrow5·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    776 -> 777;
+    777 [label="State: robotcol2·robotrow5·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    777 -> 740;
+    777 -> 756;
+    784 [label="State: robotcol3·robotrow5·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    784 -> 785;
+    785 [label="State: robotcol3·robotrow5·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    785 -> 740;
+    785 -> 756;
+    791 [label="State: robotcol4·robotrow5·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    791 -> 794;
+    791 -> 793;
+    793 [label="State: robotcol4·robotrow5·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    793 -> 740;
+    793 -> 719;
+    794 [label="State: robotcol4·robotrow5·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    794 -> 53;
+    794 -> 719;
+    802 [label="State: robotcol0·robotrow5·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    802 -> 804;
+    802 -> 803;
+    803 [label="State: robotcol0·robotrow5·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    803 -> 53;
+    803 -> 719;
+    804 [label="State: robotcol0·robotrow5·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    804 -> 53;
+    804 -> 693;
+    811 [label="State: robotcol0·robotrow4·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    811 -> 43;
+    811 -> 817;
+    812 [label="State: robotcol0·robotrow4·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    812 -> 53;
+    812 -> 43;
+    817 [label="State: robotcol4·robotrow4·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    817 -> 819;
+    817 -> 820;
+    819 [label="State: robotcol4·robotrow4·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    819 -> 869;
+    819 -> 824;
+    820 [label="State: robotcol4·robotrow4·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    820 -> 823;
+    820 -> 824;
+    823 [label="State: robotcol4·robotrow4·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    823 -> 861;
+    823 -> 862;
+    824 [label="State: robotcol4·robotrow4·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    824 -> 827;
+    824 -> 825;
+    824 -> 826;
+    825 [label="State: robotcol4·robotrow4·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    825 -> 719;
+    825 -> 817;
+    826 [label="State: robotcol4·robotrow4·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    826 -> 817;
+    826 -> 834;
+    827 [label="State: robotcol4·robotrow4·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    827 -> 43;
+    827 -> 817;
+    834 [label="State: robotcol3·robotrow4·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    834 -> 835;
+    834 -> 836;
+    835 [label="State: robotcol3·robotrow4·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    835 -> 839;
+    835 -> 854;
+    836 [label="State: robotcol3·robotrow4·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    836 -> 839;
+    836 -> 840;
+    839 [label="State: robotcol3·robotrow4·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    839 -> 845;
+    839 -> 846;
+    840 [label="State: robotcol3·robotrow4·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    840 -> 841;
+    841 [label="State: robotcol3·robotrow4·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    841 -> 740;
+    841 -> 834;
+    845 [label="State: robotcol3·robotrow4·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    845 -> 817;
+    845 -> 834;
+    846 [label="State: robotcol3·robotrow4·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    846 -> 740;
+    846 -> 834;
+    854 [label="State: robotcol3·robotrow4·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    854 -> 855;
+    855 [label="State: robotcol3·robotrow4·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    855 -> 817;
+    855 -> 834;
+    861 [label="State: robotcol4·robotrow4·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    861 -> 817;
+    861 -> 834;
+    862 [label="State: robotcol4·robotrow4·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    862 -> 43;
+    862 -> 817;
+    869 [label="State: robotcol4·robotrow4·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    869 -> 871;
+    871 [label="State: robotcol4·robotrow4·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    871 -> 719;
+    871 -> 817;
+    876 [label="State: robotcol0·robotrow4·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    876 -> 877;
+    877 [label="State: robotcol0·robotrow4·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    877 -> 43;
+    877 -> 817;
+    881 [label="State: robotcol0·robotrow3·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    881 -> 34;
+    881 -> 1000;
+    882 [label="State: robotcol0·robotrow3·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    882 -> 889;
+    882 -> 34;
+    883 [label="State: robotcol0·robotrow3·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    883 -> 43;
+    883 -> 34;
+    889 [label="State: robotcol1·robotrow3·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    889 -> 891;
+    889 -> 892;
+    891 [label="State: robotcol1·robotrow3·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    891 -> 1038;
+    891 -> 895;
+    892 [label="State: robotcol1·robotrow3·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    892 -> 896;
+    892 -> 895;
+    895 [label="State: robotcol1·robotrow3·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    895 -> 957;
+    895 -> 958;
+    896 [label="State: robotcol1·robotrow3·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    896 -> 897;
+    897 [label="State: robotcol1·robotrow3·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    897 -> 899;
+    897 -> 889;
+    899 [label="State: robotcol1·robotrow4·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    899 -> 901;
+    899 -> 902;
+    901 [label="State: robotcol1·robotrow4·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    901 -> 948;
+    901 -> 905;
+    902 [label="State: robotcol1·robotrow4·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    902 -> 905;
+    902 -> 906;
+    905 [label="State: robotcol1·robotrow4·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    905 -> 913;
+    905 -> 911;
+    905 -> 912;
+    906 [label="State: robotcol1·robotrow4·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    906 -> 907;
+    907 [label="State: robotcol1·robotrow4·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    907 -> 899;
+    907 -> 693;
+    911 [label="State: robotcol1·robotrow4·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    911 -> 899;
+    911 -> 921;
+    912 [label="State: robotcol1·robotrow4·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    912 -> 899;
+    912 -> 693;
+    913 [label="State: robotcol1·robotrow4·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    913 -> 899;
+    913 -> 43;
+    921 [label="State: robotcol2·robotrow4·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    921 -> 923;
+    921 -> 924;
+    923 [label="State: robotcol2·robotrow4·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    923 -> 927;
+    923 -> 942;
+    924 [label="State: robotcol2·robotrow4·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    924 -> 927;
+    924 -> 928;
+    927 [label="State: robotcol2·robotrow4·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    927 -> 933;
+    927 -> 934;
+    928 [label="State: robotcol2·robotrow4·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    928 -> 929;
+    929 [label="State: robotcol2·robotrow4·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    929 -> 756;
+    929 -> 921;
+    933 [label="State: robotcol2·robotrow4·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    933 -> 834;
+    933 -> 921;
+    934 [label="State: robotcol2·robotrow4·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    934 -> 756;
+    934 -> 921;
+    942 [label="State: robotcol2·robotrow4·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    942 -> 943;
+    943 [label="State: robotcol2·robotrow4·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    943 -> 834;
+    943 -> 921;
+    948 [label="State: robotcol1·robotrow4·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    948 -> 949;
+    948 -> 950;
+    949 [label="State: robotcol1·robotrow4·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    949 -> 899;
+    949 -> 921;
+    950 [label="State: robotcol1·robotrow4·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    950 -> 899;
+    950 -> 43;
+    957 [label="State: robotcol1·robotrow3·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    957 -> 889;
+    957 -> 963;
+    958 [label="State: robotcol1·robotrow3·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    958 -> 899;
+    958 -> 889;
+    963 [label="State: robotcol2·robotrow3·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    963 -> 965;
+    963 -> 967;
+    965 [label="State: robotcol2·robotrow3·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    965 -> 1031;
+    965 -> 969;
+    967 [label="State: robotcol2·robotrow3·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    967 -> 969;
+    967 -> 970;
+    969 [label="State: robotcol2·robotrow3·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    969 -> 975;
+    969 -> 976;
+    970 [label="State: robotcol2·robotrow3·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    970 -> 971;
+    971 [label="State: robotcol2·robotrow3·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    971 -> 963;
+    971 -> 921;
+    975 [label="State: robotcol2·robotrow3·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    975 -> 963;
+    975 -> 981;
+    976 [label="State: robotcol2·robotrow3·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    976 -> 963;
+    976 -> 921;
+    981 [label="State: robotcol3·robotrow3·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    981 -> 983;
+    981 -> 984;
+    983 [label="State: robotcol3·robotrow3·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    983 -> 987;
+    983 -> 1026;
+    984 [label="State: robotcol3·robotrow3·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    984 -> 987;
+    984 -> 988;
+    987 [label="State: robotcol3·robotrow3·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    987 -> 993;
+    987 -> 994;
+    988 [label="State: robotcol3·robotrow3·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    988 -> 989;
+    989 [label="State: robotcol3·robotrow3·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    989 -> 834;
+    989 -> 981;
+    993 [label="State: robotcol3·robotrow3·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    993 -> 981;
+    993 -> 1000;
+    994 [label="State: robotcol3·robotrow3·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    994 -> 834;
+    994 -> 981;
+    1000 [label="State: robotcol4·robotrow3·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1000 -> 1002;
+    1000 -> 1001;
+    1001 [label="State: robotcol4·robotrow3·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1001 -> 1005;
+    1001 -> 1020;
+    1002 [label="State: robotcol4·robotrow3·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1002 -> 1005;
+    1002 -> 1006;
+    1005 [label="State: robotcol4·robotrow3·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1005 -> 1012;
+    1005 -> 1011;
+    1006 [label="State: robotcol4·robotrow3·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1006 -> 1007;
+    1007 [label="State: robotcol4·robotrow3·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1007 -> 817;
+    1007 -> 1000;
+    1011 [label="State: robotcol4·robotrow3·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1011 -> 817;
+    1011 -> 1000;
+    1012 [label="State: robotcol4·robotrow3·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1012 -> 34;
+    1012 -> 1000;
+    1020 [label="State: robotcol4·robotrow3·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1020 -> 1021;
+    1021 [label="State: robotcol4·robotrow3·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1021 -> 34;
+    1021 -> 1000;
+    1026 [label="State: robotcol3·robotrow3·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1026 -> 1027;
+    1027 [label="State: robotcol3·robotrow3·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1027 -> 981;
+    1027 -> 1000;
+    1031 [label="State: robotcol2·robotrow3·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1031 -> 1033;
+    1033 [label="State: robotcol2·robotrow3·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1033 -> 963;
+    1033 -> 981;
+    1038 [label="State: robotcol1·robotrow3·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1038 -> 1039;
+    1039 [label="State: robotcol1·robotrow3·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1039 -> 889;
+    1039 -> 963;
+    1046 [label="State: robotcol0·robotrow3·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1046 -> 1048;
+    1046 -> 1047;
+    1047 [label="State: robotcol0·robotrow3·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1047 -> 34;
+    1047 -> 1000;
+    1048 [label="State: robotcol0·robotrow3·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1048 -> 889;
+    1048 -> 34;
+    1055 [label="State: robotcol0·robotrow2·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1055 -> 1062;
+    1055 -> 23;
+    1056 [label="State: robotcol0·robotrow2·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1056 -> 34;
+    1056 -> 23;
+    1062 [label="State: robotcol1·robotrow2·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1062 -> 1063;
+    1062 -> 1064;
+    1063 [label="State: robotcol1·robotrow2·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1063 -> 1067;
+    1063 -> 1110;
+    1064 [label="State: robotcol1·robotrow2·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1064 -> 1067;
+    1064 -> 1068;
+    1067 [label="State: robotcol1·robotrow2·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1067 -> 1074;
+    1067 -> 1075;
+    1067 -> 1073;
+    1068 [label="State: robotcol1·robotrow2·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1068 -> 1069;
+    1069 [label="State: robotcol1·robotrow2·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1069 -> 889;
+    1069 -> 1062;
+    1073 [label="State: robotcol1·robotrow2·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1073 -> 1062;
+    1073 -> 23;
+    1074 [label="State: robotcol1·robotrow2·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1074 -> 1081;
+    1074 -> 1062;
+    1075 [label="State: robotcol1·robotrow2·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1075 -> 889;
+    1075 -> 1062;
+    1081 [label="State: robotcol2·robotrow2·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1081 -> 1083;
+    1081 -> 1084;
+    1083 [label="State: robotcol2·robotrow2·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1083 -> 1101;
+    1083 -> 1088;
+    1084 [label="State: robotcol2·robotrow2·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1084 -> 1087;
+    1084 -> 1088;
+    1087 [label="State: robotcol2·robotrow2·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1087 -> 1097;
+    1088 [label="State: robotcol2·robotrow2·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1088 -> 1089;
+    1088 -> 1090;
+    1089 [label="State: robotcol2·robotrow2·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1089 -> 963;
+    1089 -> 1081;
+    1090 [label="State: robotcol2·robotrow2·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1090 -> 1081;
+    1090 -> 1062;
+    1097 [label="State: robotcol2·robotrow2·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1097 -> 1081;
+    1097 -> 1062;
+    1101 [label="State: robotcol2·robotrow2·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1101 -> 1103;
+    1103 [label="State: robotcol2·robotrow2·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1103 -> 963;
+    1103 -> 1081;
+    1110 [label="State: robotcol1·robotrow2·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1110 -> 1112;
+    1110 -> 1111;
+    1111 [label="State: robotcol1·robotrow2·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1111 -> 1062;
+    1111 -> 23;
+    1112 [label="State: robotcol1·robotrow2·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1112 -> 1081;
+    1112 -> 1062;
+    1120 [label="State: robotcol0·robotrow2·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1120 -> 1121;
+    1121 [label="State: robotcol0·robotrow2·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1121 -> 1062;
+    1121 -> 23;
+    1125 [label="State: robotcol0·robotrow1·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1125 -> 13;
+    1125 -> 1131;
+    1126 [label="State: robotcol0·robotrow1·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1126 -> 13;
+    1126 -> 23;
+    1131 [label="State: robotcol4·robotrow1·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1131 -> 1135;
+    1131 -> 1133;
+    1133 [label="State: robotcol4·robotrow1·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1133 -> 1175;
+    1133 -> 1137;
+    1135 [label="State: robotcol4·robotrow1·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1135 -> 1137;
+    1135 -> 1138;
+    1137 [label="State: robotcol4·robotrow1·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1137 -> 1168;
+    1137 -> 1167;
+    1138 [label="State: robotcol4·robotrow1·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1138 -> 1139;
+    1139 [label="State: robotcol4·robotrow1·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1139 -> 1131;
+    1139 -> 1141;
+    1141 [label="State: robotcol4·robotrow2·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1141 -> 1144;
+    1141 -> 1143;
+    1143 [label="State: robotcol4·robotrow2·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1143 -> 1147;
+    1143 -> 1162;
+    1144 [label="State: robotcol4·robotrow2·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1144 -> 1147;
+    1144 -> 1148;
+    1147 [label="State: robotcol4·robotrow2·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1147 -> 1153;
+    1147 -> 1154;
+    1148 [label="State: robotcol4·robotrow2·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1148 -> 1149;
+    1149 [label="State: robotcol4·robotrow2·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1149 -> 1000;
+    1149 -> 1141;
+    1153 [label="State: robotcol4·robotrow2·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1153 -> 23;
+    1153 -> 1141;
+    1154 [label="State: robotcol4·robotrow2·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1154 -> 1000;
+    1154 -> 1141;
+    1162 [label="State: robotcol4·robotrow2·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1162 -> 1163;
+    1163 [label="State: robotcol4·robotrow2·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1163 -> 23;
+    1163 -> 1141;
+    1167 [label="State: robotcol4·robotrow1·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1167 -> 1131;
+    1167 -> 1141;
+    1168 [label="State: robotcol4·robotrow1·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1168 -> 13;
+    1168 -> 1131;
+    1175 [label="State: robotcol4·robotrow1·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1175 -> 1177;
+    1177 [label="State: robotcol4·robotrow1·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1177 -> 13;
+    1177 -> 1131;
+    1181 [label="State: robotcol0·robotrow1·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1181 -> 1183;
+    1183 [label="State: robotcol0·robotrow1·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1183 -> 13;
+    1183 -> 1131;
+    1187 [label="State: robotcol1·robotrow0·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1187 -> 1189;
+    1187 -> 1191;
+    1189 [label="State: robotcol1·robotrow0·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1189 -> 1411;
+    1189 -> 1193;
+    1191 [label="State: robotcol1·robotrow0·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1191 -> 1193;
+    1191 -> 1194;
+    1193 [label="State: robotcol1·robotrow0·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1193 -> 1255;
+    1193 -> 1256;
+    1193 -> 1257;
+    1194 [label="State: robotcol1·robotrow0·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1194 -> 1195;
+    1195 [label="State: robotcol1·robotrow0·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1195 -> 1187;
+    1195 -> 1197;
+    1197 [label="State: robotcol1·robotrow1·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1197 -> 1199;
+    1197 -> 1200;
+    1199 [label="State: robotcol1·robotrow1·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1199 -> 1203;
+    1199 -> 1246;
+    1200 [label="State: robotcol1·robotrow1·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1200 -> 1203;
+    1200 -> 1204;
+    1203 [label="State: robotcol1·robotrow1·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1203 -> 1210;
+    1203 -> 1211;
+    1203 -> 1209;
+    1204 [label="State: robotcol1·robotrow1·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1204 -> 1205;
+    1205 [label="State: robotcol1·robotrow1·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1205 -> 1062;
+    1205 -> 1197;
+    1209 [label="State: robotcol1·robotrow1·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1209 -> 13;
+    1209 -> 1197;
+    1210 [label="State: robotcol1·robotrow1·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1210 -> 1197;
+    1210 -> 1218;
+    1211 [label="State: robotcol1·robotrow1·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1211 -> 1062;
+    1211 -> 1197;
+    1218 [label="State: robotcol2·robotrow1·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1218 -> 1220;
+    1218 -> 1219;
+    1219 [label="State: robotcol2·robotrow1·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1219 -> 1223;
+    1219 -> 1238;
+    1220 [label="State: robotcol2·robotrow1·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1220 -> 1223;
+    1220 -> 1224;
+    1223 [label="State: robotcol2·robotrow1·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1223 -> 1230;
+    1223 -> 1229;
+    1224 [label="State: robotcol2·robotrow1·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1224 -> 1225;
+    1225 [label="State: robotcol2·robotrow1·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1225 -> 1081;
+    1225 -> 1218;
+    1229 [label="State: robotcol2·robotrow1·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1229 -> 1197;
+    1229 -> 1218;
+    1230 [label="State: robotcol2·robotrow1·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1230 -> 1081;
+    1230 -> 1218;
+    1238 [label="State: robotcol2·robotrow1·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1238 -> 1239;
+    1239 [label="State: robotcol2·robotrow1·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1239 -> 1197;
+    1239 -> 1218;
+    1246 [label="State: robotcol1·robotrow1·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1246 -> 1248;
+    1246 -> 1247;
+    1247 [label="State: robotcol1·robotrow1·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1247 -> 13;
+    1247 -> 1197;
+    1248 [label="State: robotcol1·robotrow1·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1248 -> 1197;
+    1248 -> 1218;
+    1255 [label="State: robotcol1·robotrow0·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1255 -> 1187;
+    1255 -> 1265;
+    1256 [label="State: robotcol1·robotrow0·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1256 -> 1187;
+    1256 -> 1197;
+    1257 [label="State: robotcol1·robotrow0·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1257 -> 1187;
+    1257 -> 0;
+    1265 [label="State: robotcol2·robotrow0·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1265 -> 1268;
+    1265 -> 1267;
+    1267 [label="State: robotcol2·robotrow0·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1267 -> 1271;
+    1267 -> 1406;
+    1268 [label="State: robotcol2·robotrow0·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1268 -> 1271;
+    1268 -> 1272;
+    1271 [label="State: robotcol2·robotrow0·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1271 -> 1277;
+    1271 -> 1278;
+    1272 [label="State: robotcol2·robotrow0·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1272 -> 1273;
+    1273 [label="State: robotcol2·robotrow0·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1273 -> 1218;
+    1273 -> 1265;
+    1277 [label="State: robotcol2·robotrow0·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1277 -> 1284;
+    1277 -> 1265;
+    1278 [label="State: robotcol2·robotrow0·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1278 -> 1218;
+    1278 -> 1265;
+    1284 [label="State: robotcol3·robotrow0·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1284 -> 1286;
+    1284 -> 1285;
+    1285 [label="State: robotcol3·robotrow0·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1285 -> 1289;
+    1285 -> 1396;
+    1286 [label="State: robotcol3·robotrow0·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1286 -> 1289;
+    1286 -> 1290;
+    1289 [label="State: robotcol3·robotrow0·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1289 -> 1352;
+    1289 -> 1353;
+    1289 -> 1351;
+    1290 [label="State: robotcol3·robotrow0·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1290 -> 1291;
+    1291 [label="State: robotcol3·robotrow0·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1291 -> 1293;
+    1291 -> 1284;
+    1293 [label="State: robotcol3·robotrow1·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1293 -> 1295;
+    1293 -> 1296;
+    1295 [label="State: robotcol3·robotrow1·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1295 -> 1345;
+    1295 -> 1300;
+    1296 [label="State: robotcol3·robotrow1·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1296 -> 1299;
+    1296 -> 1300;
+    1299 [label="State: robotcol3·robotrow1·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1299 -> 1338;
+    1299 -> 1337;
+    1300 [label="State: robotcol3·robotrow1·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1300 -> 1301;
+    1300 -> 1302;
+    1300 -> 1303;
+    1301 [label="State: robotcol3·robotrow1·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1301 -> 1293;
+    1301 -> 1131;
+    1302 [label="State: robotcol3·robotrow1·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1302 -> 1309;
+    1302 -> 1293;
+    1303 [label="State: robotcol3·robotrow1·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1303 -> 1293;
+    1303 -> 1218;
+    1309 [label="State: robotcol3·robotrow2·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1309 -> 1311;
+    1309 -> 1313;
+    1311 [label="State: robotcol3·robotrow2·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1311 -> 1329;
+    1311 -> 1315;
+    1313 [label="State: robotcol3·robotrow2·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1313 -> 1315;
+    1313 -> 1316;
+    1315 [label="State: robotcol3·robotrow2·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1315 -> 1321;
+    1315 -> 1322;
+    1316 [label="State: robotcol3·robotrow2·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1316 -> 1317;
+    1317 [label="State: robotcol3·robotrow2·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1317 -> 1309;
+    1317 -> 981;
+    1321 [label="State: robotcol3·robotrow2·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1321 -> 1309;
+    1321 -> 1141;
+    1322 [label="State: robotcol3·robotrow2·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1322 -> 1309;
+    1322 -> 981;
+    1329 [label="State: robotcol3·robotrow2·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1329 -> 1331;
+    1331 [label="State: robotcol3·robotrow2·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1331 -> 1309;
+    1331 -> 1141;
+    1337 [label="State: robotcol3·robotrow1·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1337 -> 1293;
+    1337 -> 1131;
+    1338 [label="State: robotcol3·robotrow1·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1338 -> 1293;
+    1338 -> 1218;
+    1345 [label="State: robotcol3·robotrow1·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1345 -> 1347;
+    1347 [label="State: robotcol3·robotrow1·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1347 -> 1309;
+    1347 -> 1293;
+    1351 [label="State: robotcol3·robotrow0·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1351 -> 1284;
+    1351 -> 1265;
+    1352 [label="State: robotcol3·robotrow0·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1352 -> 1359;
+    1352 -> 1284;
+    1353 [label="State: robotcol3·robotrow0·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1353 -> 1293;
+    1353 -> 1284;
+    1359 [label="State: robotcol4·robotrow0·robotlight0·
+Symbol: 
+Player: 2",color="grey"];
+    1359 -> 1362;
+    1359 -> 1361;
+    1361 [label="State: robotcol4·robotrow0·robotlight0·
+Symbol: robotl_r
+Player: 3",color="orange"];
+    1361 -> 1387;
+    1361 -> 1366;
+    1362 [label="State: robotcol4·robotrow0·robotlight0·
+Symbol: robotl_y
+Player: 3",color="orange"];
+    1362 -> 1365;
+    1362 -> 1366;
+    1365 [label="State: robotcol4·robotrow0·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1365 -> 1379;
+    1365 -> 1380;
+    1366 [label="State: robotcol4·robotrow0·robotlight3·
+Symbol: 
+Player: 1",color="lightblue"];
+    1366 -> 1368;
+    1366 -> 1369;
+    1366 -> 1367;
+    1367 [label="State: robotcol4·robotrow0·robotlight3·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1367 -> 1131;
+    1367 -> 1359;
+    1368 [label="State: robotcol4·robotrow0·robotlight3·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1368 -> 1359;
+    1368 -> 1284;
+    1369 [label="State: robotcol4·robotrow0·robotlight3·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1369 -> 0;
+    1369 -> 1359;
+    1379 [label="State: robotcol4·robotrow0·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1379 -> 1359;
+    1379 -> 1284;
+    1380 [label="State: robotcol4·robotrow0·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1380 -> 0;
+    1380 -> 1359;
+    1387 [label="State: robotcol4·robotrow0·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1387 -> 1389;
+    1389 [label="State: robotcol4·robotrow0·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1389 -> 1131;
+    1389 -> 1359;
+    1396 [label="State: robotcol3·robotrow0·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1396 -> 1397;
+    1396 -> 1398;
+    1397 [label="State: robotcol3·robotrow0·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1397 -> 1284;
+    1397 -> 1265;
+    1398 [label="State: robotcol3·robotrow0·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1398 -> 1359;
+    1398 -> 1284;
+    1406 [label="State: robotcol2·robotrow0·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1406 -> 1407;
+    1407 [label="State: robotcol2·robotrow0·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1407 -> 1284;
+    1407 -> 1265;
+    1411 [label="State: robotcol1·robotrow0·robotlight1·
+Symbol: 
+Player: 1",color="lightblue"];
+    1411 -> 1413;
+    1411 -> 1414;
+    1413 [label="State: robotcol1·robotrow0·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1413 -> 1187;
+    1413 -> 1265;
+    1414 [label="State: robotcol1·robotrow0·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1414 -> 1187;
+    1414 -> 0;
+    1423 [label="State: robotcol0·robotrow0·robotlight1·
+Symbol: robotr_l
+Player: 3",color="orange"];
+    1423 -> 0;
+    1423 -> 1359;
+    1424 [label="State: robotcol0·robotrow0·robotlight1·
+Symbol: robotr_r
+Player: 3",color="orange"];
+    1424 -> 1187;
+    1424 -> 0;
+    1431 [label="State: robotcol0·robotrow0·robotlight2·
+Symbol: 
+Player: 1",color="lightblue"];
+    1431 -> 1433;
+    1433 [label="State: robotcol0·robotrow0·robotlight2·
+Symbol: robotr_f
+Player: 3",color="orange"];
+    1433 -> 13;
+    1433 -> 0;
 
 }

@@ -176,34 +176,6 @@ public class AlmostSureMaskingDistance{
             }
 
             if (curr.getPlayer() == "P"){
-                /*for (ModelState succImp : imp.getSuccessors(curr.getImpState())){
-                    Pair p = new Pair(curr.getImpState(),succImp);
-                    if (imp.getActions().get(p) != null){
-                        for (int i=0; i < imp.getActions().get(p).size(); i++){
-                            Action impAction = imp.getActions().get(p).get(i);
-                            for (ModelState succSpec : spec.getSuccessors(curr.getSpecState())){
-                                Pair p_ = new Pair(curr.getSpecState(),succSpec);
-                                if (spec.getActions().get(p_) != null){
-                                    for (int j=0; j < spec.getActions().get(p_).size(); j++){
-                                        Action specAction = spec.getActions().get(p_).get(j);
-                                        if (specAction.getLabel().equals(impAction.getLabel()) || impAction.isFaulty()){ //matching action
-                                            GameNode curr_ = new GameNode(succSpec,succImp,new Action("", false, false, false), "R");
-                                            GameNode toOld = g.search(curr_);
-                                            if (toOld == null){
-                                                g.addNode(curr_);
-                                                g.addEdge(curr,curr_, new Action("", false, false, false)); 
-                                                iterSet.add(curr_);
-                                            }
-                                            else{
-                                                g.addEdge(curr,toOld, new Action("", false, false, false));
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }*/
                 Action symSpec = curr.getSymbol().cloneForSpec(true);
                 Action symImp = curr.getSymbol().cloneForSpec(false);
                 for (ModelState succImp : imp.getSuccessors(curr.getImpState())){

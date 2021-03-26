@@ -15,6 +15,7 @@ public class Action {
 	private Boolean isFromSpec;
 	private Boolean isMask;
 	private int reward;
+	private boolean isProbabilistic;
 
 	public Action(String l, Boolean isF, Boolean isT, int r, Boolean ifs){
 		label = l;
@@ -86,6 +87,14 @@ public class Action {
 
 	public Boolean isFromSpec(){
 		return isFromSpec;
+	}
+
+	public void setIsProbabilistic(boolean b){
+		isProbabilistic = true;
+	}
+
+	public boolean getIsProbabilistic(){
+		return isProbabilistic;
 	}
 
 	public Action cloneForSpec(boolean forSpec){ // this is an utility for the game graph creation

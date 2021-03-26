@@ -317,6 +317,19 @@ public class TypeCheckerVisitor implements LangVisitor{
 		}	
 	}
 
+	public void visit(Reward r){
+        Type exprT;
+        Expression expr = r.exp;
+        expr.accept(this);
+        exprT = this.getType();
+		if( exprT.isBoolean()){
+			type = exprT;
+		}
+		else{
+		    type = Type.ERROR;
+		    listError.add(new Error("ErrorType: Expression of reward must be boolean"));
+		}	
+	}
 	public void visit(Var a){
 		Type origT = a.getType();
         if(a.isDeclaration()){
