@@ -17,6 +17,7 @@ public class SimpleGameNode implements Comparable{
 	int reward;
 	int playerControl;
 	boolean isGoal;
+	SimpleGameNode strategy;
 
 	public SimpleGameNode(){
 		values = new Double[2];
@@ -24,6 +25,7 @@ public class SimpleGameNode implements Comparable{
 		reward = 0;
 		playerControl = 2;
 		isGoal = false;
+		strategy = null;
 	}
 
 	public SimpleGameNode(ModelState s, Action sym, boolean probabilistic){
@@ -37,6 +39,7 @@ public class SimpleGameNode implements Comparable{
 		else
 			playerControl = whoControlsThis();
 		isGoal = isThisTheGoal();
+		strategy = null;
 	}
 
 	public ModelState getState(){
@@ -57,6 +60,14 @@ public class SimpleGameNode implements Comparable{
 
 	public int getId(){
 		return id;
+	}
+
+	public SimpleGameNode getStrategy(){
+		return strategy;
+	}
+
+	public void setStrategy(SimpleGameNode strat){
+		strategy = strat;
 	}
 
 	private int calculateReward(){

@@ -107,7 +107,7 @@ public class StrategySynthesis{
     }
 
 
-  public double valueIteration(int precision, double upperBound, boolean verbose) throws Exception{
+  public double synthesizeStrategy(int precision, double upperBound, boolean verbose) throws Exception{
       SimpleGameNode init =  g.getInitial();
       boolean forceExit = false;
       int i = 0;
@@ -131,7 +131,7 @@ public class StrategySynthesis{
               switch (v.getPlayerControl()){
                 case 2:  val = v.getReward() + minValue(g.getSuccessors(v)); //Environment
                             break;
-                case 1:  val = v.getReward() + maxValue(g.getSuccessors(v)); //Controller
+                case 1:  val = v.getReward() + maxValue(v,g.getSuccessors(v)); //Controller
                             break;
                 case 3:  try{
                             val = sumProbs(v,g.getSuccessors(v)); //Probabilistic
@@ -148,6 +148,7 @@ public class StrategySynthesis{
               }
           }   
       }  while (thereIsNoFixPoint(precision) && !forceExit);
+      createControllerStrategy();
       return init.getValues()[1];
   }
   
@@ -179,12 +180,13 @@ public class StrategySynthesis{
   }
 
 
-  private double maxValue(Set<SimpleGameNode> vs) throws Exception{
+  private double maxValue(SimpleGameNode current, Set<SimpleGameNode> vs) throws Exception{
     double max = Double.NEGATIVE_INFINITY;
     for (SimpleGameNode v : vs){
         double val = v.getValues()[0];
         if (val > max){
           max = val;
+          current.setStrategy(v);
         }
     }
     return max;
@@ -196,6 +198,29 @@ public class StrategySynthesis{
       sum += v.getState().getModel().getProb(v.getState(),v_.getState(),v.getSymbol()) * v_.getValues()[0];
     }
     return sum;
+  }
+
+  public String createControllerStrategy(){
+    String res = "";
+    for (SimpleGameNode v : g.getNodes()){
+      if (v.isController()){
+        res += "In state: " + v.getState() + "\n\n";
+        //res += "        move to : " + v.getStrategy().getState() + "\n\n";
+        res += "        move by action : " + v.getStrategy().getSymbol() + "\n\n\n";
+      }
+    }
+    try{
+        File file = new File("../out/" + "Strategy" +".strat");
+        file.createNewFile();
+        FileWriter fw = new FileWriter(file);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(res);
+        bw.close();
+    }
+    catch(IOException e){
+        e.printStackTrace();
+    }
+    return res;
   }
 
 

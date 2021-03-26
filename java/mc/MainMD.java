@@ -98,8 +98,8 @@ public class MainMD {
               try{
                 if (toDot)
                   md.createDot(200);
-                System.out.println("Almost Sure Failing Distance: "+md.valueIteration(precision,bound,verbose));
-                
+                System.out.println("Almost Sure Failing Distance: "+md.synthesizeStrategy(precision,bound,verbose));
+                System.out.println("A strategy for the Controller has been synthesized! --> out/Strategy.strat");
               }
               catch(Exception e){
                 System.out.println(e);
