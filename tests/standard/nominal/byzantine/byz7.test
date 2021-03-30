@@ -20,7 +20,6 @@ Global R2,R3,R4,R5,R6,R7: BOOL; //The Retreat decision of each lieutenant
 Process Commander{
 	s0,s1: BOOL;
 	Initial: s0 && !s1;
-	Normative: true;
 		[sA] s0 -> g1g2A = true, g1g3A = true, g1g4A = true, g1g5A = true, g1g6A = true, g1g7A = true, s0= false, s1=true;
 		[sR] s0 -> g1g2R = true, g1g3R = true, g1g4R = true, g1g5R = true, g1g6R = true, g1g7R = true, s0= false, s1=true;
 }
@@ -29,7 +28,6 @@ Process Commander{
 Process Lieutenant(attack: BOOL, retreat: BOOL, fw1A: BOOL, fw2A:BOOL, fw3A:BOOL, fw4A:BOOL, fw5A:BOOL, fw1R:BOOL, fw2R:BOOL, fw3R:BOOL, fw4R:BOOL, fw5R:BOOL, a1:BOOL, a2:BOOL, a3:BOOL, a4:BOOL, a5:BOOL, r1:BOOL, r2:BOOL, r3:BOOL, r4:BOOL, r5:BOOL, dA:BOOL, dR:BOOL){ 
 	s0,s1,s2, isBetrayer: BOOL;
 	Initial: s0 && !s1 && !s2 && !isBetrayer;
-	Normative: true;
 		[fA] s0 && attack && !isBetrayer -> fw1A = true, fw2A= true, fw3A= true, fw4A= true, fw5A= true, s0 = false, s1 = true;
 		[fR] s0 && retreat && !isBetrayer -> fw1R = true, fw2R = true, fw3R = true, fw4R = true, fw5R = true, s0 = false, s1 = true;
 		[fA] s0 && attack && isBetrayer -> fw1R = true, fw2R = true, fw3R = true, fw4R = true, fw5R = true, s0 = false, s1 = true;

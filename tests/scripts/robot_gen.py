@@ -57,7 +57,7 @@ def writeRobotA(fileName) :
             mFile.write("       row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
     mFile.write("       row == "+str(length)+" : 0 ;\n\n")
     mFile.write("   Controller : !(light == 0);\n")
-    mFile.write("   Goal : row =="+str(length-1)+";\n")
+    mFile.write("   Goal : row =="+str(length)+";\n")
 
     mFile.write("    // Initially the robot is positioned in (0,0) and the light is ready to move\n")
     mFile.write("    Initial : col==0 && row==0 && light==0 ;\n")
@@ -115,7 +115,7 @@ def writeRobotB(fileName):
             mFile.write("       row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
     mFile.write("       row == "+str(length)+" : 0 ;\n\n")
     mFile.write("   Controller : !(light == 0);\n")
-    mFile.write("   Goal : row =="+str(length-1)+";\n")
+    mFile.write("   Goal : row =="+str(length)+";\n")
 
     mFile.write("    // Initially the robot is positioned in (0,0) and the light is ready to move\n")
     mFile.write("    Initial : col==0 && row==0 && light==0 ;\n")
@@ -173,7 +173,7 @@ def writeRobotC(fileName):
             mFile.write("       row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
     mFile.write("       row == "+str(length)+" : 0 ;\n\n")
     mFile.write("   Controller : !(light == 0);\n")
-    mFile.write("   Goal : row =="+str(length-1)+";\n")
+    mFile.write("   Goal : row =="+str(length)+";\n")
     
     mFile.write("    // Initially the robot is positioned in (0,0) and the light is ready to move\n")
     mFile.write("    Initial : col==0 && row==0 && light==0 ;\n")
@@ -248,7 +248,7 @@ def main(argv):
     probLight = 0.05
     seed = 0
     includeRewards = True
-    path = "../synthesis/"
+    path = "../tests/synthesis/"
 
 
     try:

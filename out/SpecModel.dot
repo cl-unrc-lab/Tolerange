@@ -1,9 +1,0 @@
-digraph model {
-
-    STATEzv5·zs0· -> STATEzv5·zs1· [label = "ztick"];
-    STATEzv5·zs0· -> STATEzv5·zs2· [label = "ztick"];
-    STATEzv5·zs1· -> STATEzv5·zs0· [label = "ztick"];
-    STATEzv5·zs2· -> STATEzv5·zs0· [label = "zdisconnect"];
-    STATEzv5·zs2· -> STATEzv5·zs2· [label = "ztick"];
-
-}

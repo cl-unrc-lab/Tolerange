@@ -69,7 +69,7 @@ def main(argv):
     global includeRewards
 
     includeRewards = True
-    path = "../stochastic/nominal/nmr/"
+    path = "../tests/stochastic/nominal/nmr/"
 
     try:
         opts, args = getopt.getopt(argv,"r")

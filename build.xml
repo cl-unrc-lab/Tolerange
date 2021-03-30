@@ -3,17 +3,19 @@
   <property name="jflexProgram"   location="src/parser/jflex"/>
   <property name="src"     location="src"     />
   <property name="java"    location="java"    />
+  <property name="out"    location="out"    />
   <property name="classes" location="classes" />
   <property name="dist"    location="jar"    />
   <property name="lib"     location="lib"     />
   <property name="bin"     location="bin"     />
-  <property name="java.mc"     location="java/mc"/>
+  <property name="java.md"     location="java/md"/>
   <property name="java.parserProgram"     location="java/parserProgram"/>
   <property name="java.lang"     location="java/lang"/>
   <property name="java.model"     location="java/model"/>
-  <property name="java.maskingDistance"     location="java/maskingDistance"/>
+  <property name="java.games"     location="java/games"/>
+  <property name="java.core"     location="java/core"/>
   <property name="jar.file"       location="${dist}/${ant.project.name}.jar"/>
-  <property name="jar.main.class" value="mc.MainMD"/>
+  <property name="jar.main.class" value="md.MainMD"/>
   <property environment="env" />
 
   <!-- We rely on CUP-11a  JFlex 1.4.1  -->
@@ -57,26 +59,31 @@
     <mkdir dir="${classes}"/>
     <mkdir dir="${java}"/>
     <mkdir dir="${dist}"/>
-    <mkdir dir="${java.mc}"/>
+    <mkdir dir="${out}"/>
+    <mkdir dir="${java.md}"/>
     <mkdir dir="${java.lang}"/>
     <mkdir dir="${java.model}"/>
-    <mkdir dir="${java.maskingDistance}"/>
+    <mkdir dir="${java.games}"/>
+    <mkdir dir="${java.core}"/>
       
     <copy todir="${java.lang}">
           <fileset dir="src/lang" includes="**.java"/>
     </copy>
-    <copy todir="${java.mc}">
-          <fileset dir="src/mc" includes=".java"/>
-    </copy>
+    <!--<copy todir="${java.md}">
+          <fileset dir="src/md" includes=".java"/>
+    </copy> -->
       
-    <copy todir="${java.mc}">
-          <fileset dir="src/mc" includes="**.java"/>
+    <copy todir="${java.md}">
+          <fileset dir="src/md" includes="**.java"/>
     </copy>
     <copy todir="${java.model}">
           <fileset dir="src/model" includes="**.java"/>
     </copy>
-    <copy todir="${java.maskingDistance}">
-          <fileset dir="src/maskingDistance" includes="**.java"/>
+    <copy todir="${java.games}">
+          <fileset dir="src/games" includes="**.java"/>
+    </copy>
+    <copy todir="${java.core}">
+          <fileset dir="src/core" includes="**.java"/>
     </copy>  
       
   </target>
@@ -134,27 +141,12 @@
     </copy>-->
     </target>
     
-    
-  <!-- Test the parser in a single run -->
-  <target name="runCircuit4" depends="jar">
-    <java jar="${jar.file}" fork="true">
-     <arg value="tests/circuit_4inputs/c-element_4inputs.test" />
-      <arg value="tests/circuit_4inputs/property2.test" />
-    </java>
-  </target>
-
-    <!-- Test the parser in a single run -->
-    <target name="runCircuit2" depends="jar">
-        <java jar="${jar.file}" fork="true">
-            <arg value="tests/circuit2-inputs/c-element_2inputs.test" />
-            <arg value="tests/circuit2-inputs/property1.test" />
-        </java>
-    </target>
    
   <target name="clean">
     <delete dir="${java}" />
     <delete dir="${classes}" />
     <delete dir="${dist}" />
+    <delete dir="${out}" />
   </target>
 
   

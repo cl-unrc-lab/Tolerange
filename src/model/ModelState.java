@@ -9,6 +9,7 @@ public class ModelState implements Comparable{
 	HashMap<String,String> stateEnums; // global state enum vars
 	HashMap<String,Integer> stateInts; // global state int vars
 	Model model; // Global model whose this state belongs to
+	boolean visited;
 
 	public ModelState(){
 
@@ -39,6 +40,14 @@ public class ModelState implements Comparable{
 				stateInts.put(model.getProcDecls().get(i)+v.getName(),0);
 			}
 		}
+	}
+
+	public void setVisited(boolean b){
+		visited = b;
+	}
+
+	public boolean getVisited(){
+		return visited;
 	}
 
 	@Override

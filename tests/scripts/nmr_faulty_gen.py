@@ -88,7 +88,7 @@ def main(argv):
     modules = 3
     probFault = 0.5
     includeRewards = True
-    path = "../stochastic/faulty/nmr/"
+    path = "../tests/stochastic/faulty/nmr/"
 
     try:
         opts, args = getopt.getopt(argv,"m:p:r",["modules=","prob_fault"])

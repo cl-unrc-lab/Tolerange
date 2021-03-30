@@ -135,7 +135,7 @@ def main(argv):
     probRefresh = 0.5
     seed = 0
     includeRewards = True
-    path = "../stochastic/nominal/memory/"
+    path = "../tests/stochastic/nominal/memory/"
 
     try:
         opts, args = getopt.getopt(argv,"q:r",["prob_refresh"])

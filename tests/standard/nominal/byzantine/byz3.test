@@ -12,7 +12,6 @@ Global b2,b3:BOOL;
 Process Commander{
 	s: STATE;
 	Initial: s==idle && g1g2==null && g1g3==null && g2g3==null && g3g2==null && d2==null && d3==null;
-	Normative: true;
 		[sA] s == idle -> g1g2 = attack, g1g3 = attack, s = sent;
 		//[sR] s == idle -> g1g2 = retreat, g1g3 = retreat, s = sent;
 		[consensus] !(d2==null) && !(d3==null) && ((d2 == attack && !b2 && d3 == attack && !b3))-> s = finished;
@@ -22,7 +21,6 @@ Process Commander{
 Process Lieutenant(order:ORDER, fw1:ORDER, r1:ORDER, d:ORDER, b:BOOL){
 	s: STATE;
 	Initial: s == idle && g1g2==null && g1g3==null && g2g3==null && g3g2==null && d2==null && d3==null && !b2 && !b3;
-	Normative: true;
 		[f] s == idle && order == attack && !b -> fw1 = attack, s = sent;
 		[f] s == idle && order == retreat && !b -> fw1 = retreat, s = sent;
 		[f] s == idle && !(order == null) && b -> fw1 = retreat, s = sent;

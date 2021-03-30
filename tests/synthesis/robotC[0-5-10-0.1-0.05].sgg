@@ -75,7 +75,7 @@ Process Robot {
        row == 10 : 0 ;
 
    Controller : !(light == 0);
-   Goal : row ==9;
+   Goal : row ==10;
     // Initially the robot is positioned in (0,0) and the light is ready to move
     Initial : col==0 && row==0 && light==0 ;
 

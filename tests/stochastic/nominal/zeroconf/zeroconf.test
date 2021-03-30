@@ -1,17 +1,11 @@
 Process Zeroconf {
-    v:INT; //0..3
     s:INT; //0..4   0=start, 1=trying, 2=ok, 3=error, 4=faulty
   
-    Initial: v==5 && s==0;
+    Initial: s==0;
 	
-	[tick] s==0 -> 0.5 : s=1
-					++ 0.5 : s=2;
-	[tick] s==1 && v>0 -> s=0,v=5;
-	[tick] s==1 && v==0 -> 0.9 : s=0,v=5
-					   ++ 0.1 : s=3;
-	[tick] s==4 || s==2 -> v=v;
-	[disconnect] <1> s==2 -> s=0;
-	[error] s==4 -> v=v;
+	[tick] <1> s==0 -> 0.6 : s=0
+					++ 0.4 : s=2;
+	[tick] <1> s==2 -> s=0;
 
 }
 

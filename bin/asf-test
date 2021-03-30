@@ -1,0 +1,190 @@
+#script for replicating experimental evaluation results
+
+echo "----------------------------Memory Cell test (Refresh Milestone)----------------------------"
+
+echo "3 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.5].mdp
+
+echo "5 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.5].mdp
+
+echo "7 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.5].mdp
+
+echo "3 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.5].mdp
+
+echo "5 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.5].mdp
+
+echo "7 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.5].mdp
+
+echo "3 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.5].mdp
+
+echo "5 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.5].mdp
+
+echo "7 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.5].mdp
+
+echo "3 bits, 0.1 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.1].mdp
+
+echo "5 bits, 0.1 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.1].mdp
+
+echo "7 bits, 0.1 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.1].mdp
+
+echo "3 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.1].mdp
+
+echo "5 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.1].mdp
+
+echo "7 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.1].mdp
+
+echo "3 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.1].mdp
+
+echo "5 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.1].mdp
+
+echo "7 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.1].mdp
+
+echo "3 bits, 0.05 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.05].mdp
+
+echo "5 bits, 0.05 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.05].mdp
+
+echo "7 bits, 0.05 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.05].mdp
+
+echo "3 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.05].mdp
+
+echo "5 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.05].mdp
+
+echo "7 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.05].mdp
+
+echo "3 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.05].mdp
+
+echo "5 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.05].mdp
+
+echo "7 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.05].mdp
+
+echo "----------------------------Memory Cell test (Tick Milestone)----------------------------"
+
+echo "3 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.5].mdp
+
+echo "5 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.5].mdp
+
+echo "7 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.5].mdp
+
+echo "3 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.5].mdp
+
+echo "5 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.5].mdp
+
+echo "7 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.5].mdp
+
+echo "3 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.5].mdp
+
+echo "5 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.5].mdp
+
+echo "7 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.5].mdp
+
+echo "3 bits, 0.1 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.1].mdp
+
+echo "5 bits, 0.1 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.1].mdp
+
+echo "7 bits, 0.1 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.1].mdp
+
+echo "3 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.1].mdp
+
+echo "5 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.1].mdp
+
+echo "7 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.1].mdp
+
+echo "3 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.1].mdp
+
+echo "5 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.1].mdp
+
+echo "7 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.1].mdp
+
+echo "3 bits, 0.05 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.05].mdp
+
+echo "5 bits, 0.05 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.05].mdp
+
+echo "7 bits, 0.05 probability of fault, 0.5 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.05].mdp
+
+echo "3 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.05].mdp
+
+echo "5 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.05].mdp
+
+echo "7 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.05].mdp
+
+echo "3 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.05].mdp
+
+echo "5 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.05].mdp
+
+echo "7 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./maskD  --a3 p=4 b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.05].mdp
+
+echo "----------------------------N-Modular Redundancy test (Tick Milestone)----------------------------"
+echo "3 modules, 0.5 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[3-0.5].mdp
+echo "5 modules, 0.5 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[5-0.5].mdp
+echo "7 modules, 0.5 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[7-0.5].mdp
+
+echo "3 modules, 0.1 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[3-0.1].mdp
+echo "5 modules, 0.1 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[5-0.1].mdp
+echo "7 modules, 0.1 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[7-0.1].mdp
+
+echo "3 modules, 0.05 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[3-0.05].mdp
+echo "5 modules, 0.05 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[5-0.05].mdp
+echo "7 modules, 0.05 probability of fault"
+time ./maskD  --a3 p=4 b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[7-0.05].mdp
+

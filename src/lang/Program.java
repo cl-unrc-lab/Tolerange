@@ -21,6 +21,7 @@ public class Program extends ProgramNode{
     ProcessCollection process;
     Main mainProgram;
     int maxEnumSize;
+    String name;
     
     /**  GlobalVars
      * @param gVars: Collection of all global variables classified by their type.
@@ -187,6 +188,12 @@ public class Program extends ProgramNode{
         return m;
     }
 
+    public void setName(String n){
+        name = n;
+    }
 
+    public String getName(){
+        return name;
+    }
 
 }

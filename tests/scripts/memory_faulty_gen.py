@@ -166,7 +166,7 @@ def main(argv):
     probRefresh = 0.5
     seed = 0
     includeRewards = True
-    path = "../stochastic/faulty/memory/"
+    path = "../tests/stochastic/faulty/memory/"
 
     try:
         opts, args = getopt.getopt(argv,"b:p:q:r",["bits=","prob_fault","prob_refresh"])
@@ -206,8 +206,8 @@ def main(argv):
             includeRewards = False
 
 
-    writeMemoryTickMilestone(path+"memoryTickMilestone["+str(bits)+"-"+str(probFault)+"-"+str(probRefresh)+("" if includeRewards else "-NR")+"].mdp")
-    writeMemoryRefreshMilestone(path+"memoryRefreshMilestone["+str(bits)+"-"+str(probFault)+"-"+str(probRefresh)+("" if includeRewards else "-NR")+"].mdp")
+    writeMemoryTickMilestone(path+"memoryTickMilestone["+str(bits)+"-"+str(probRefresh)+"-"+str(probFault)+("" if includeRewards else "-NR")+"].mdp")
+    writeMemoryRefreshMilestone(path+"memoryRefreshMilestone["+str(bits)+"-"+str(probRefresh)+"-"+str(probFault)+("" if includeRewards else "-NR")+"].mdp")
 
 
 
