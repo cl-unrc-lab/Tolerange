@@ -103,14 +103,19 @@ public class MainMD {
                 }
               }
               StrategySynthesis md = new StrategySynthesis(test,verbose);
-              try{
-                if (toDot)
+              if (toDot){
                   md.createDot(200);
-                System.out.println("Almost Sure Failing Distance: "+md.synthesizeStrategy(precision,bound));
-                System.out.println("A strategy for the Controller has been synthesized! --> out/<filename>.strat");
+                  System.out.println("Dot file created! --> out/<filename>.dot");
               }
-              catch(Exception e){
-                System.out.println(e);
+              else{
+                try{
+                  System.out.println("Almost Sure Failing Distance: "+md.synthesizeStrategy(precision,bound));
+                  //System.out.println("Expected Number of Decisions: "+md.expectedNumberOfDecisions(precision));
+                  System.out.println("A strategy for the Controller has been synthesized! --> out/<filename>.strat");
+                }
+                catch(Exception e){
+                  System.out.println(e);
+                }
               }
            }
            if (args[0].equals("--a3")){

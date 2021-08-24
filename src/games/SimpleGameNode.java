@@ -14,13 +14,16 @@ public class SimpleGameNode implements Comparable{
 	private static int idCounter = 0;
 	//EXPANSION SET
 	Double[] values; // for value iteration
+	Double[] expectedDecisions; // for robot Example experiments
 	int reward;
 	int playerControl;
 	boolean isGoal;
 	SimpleGameNode strategy;
+	boolean visited;
 
 	public SimpleGameNode(){
 		values = new Double[2];
+		expectedDecisions = new Double[2];
 		id = idCounter++;
 		reward = 0;
 		playerControl = 2;
@@ -32,6 +35,7 @@ public class SimpleGameNode implements Comparable{
 		state = s;
 		symbol = sym;
 		values = new Double[2];
+		expectedDecisions = new Double[2];
 		id = idCounter++;
 		reward = calculateReward();
 		if (probabilistic)
@@ -124,8 +128,24 @@ public class SimpleGameNode implements Comparable{
   		values[i] = val;
   	}
   	//EXPANSION SET
+  	public void setExpectedDecisions(int i, double val){
+  		expectedDecisions[i] = val;
+  	}
+  	//EXPANSION SET
   	public Double[] getValues(){
 	    return values;
+	}
+	//EXPANSION SET
+  	public Double[] getExpectedDecisions(){
+	    return expectedDecisions;
+	}
+
+	public boolean getVisited(){
+		return visited;
+	}
+
+	public void setVisited(boolean v){
+		visited = v;
 	}
 
 	@Override
@@ -144,7 +164,7 @@ public class SimpleGameNode implements Comparable{
 
 	public String toString(){
 		String res;
-		res = "STATE: "+state.toString()+", SYMBOL: "+symbol.getLabel()+", PLAYER: "+playerControl;
+		res = "[STATE: "+state.toString()+", SYMBOL: "+symbol.getLabel()+", PLAYER: "+playerControl+"]";
 		return res;
 	}
 

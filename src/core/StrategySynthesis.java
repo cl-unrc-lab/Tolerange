@@ -47,7 +47,7 @@ public class StrategySynthesis{
           System.out.println("Model states: "+m.getNumNodes());
           System.out.println("Model edges: "+m.getNumEdges());
         }
-        m.createDot(true);
+        //m.createDot(true);
         System.out.println("Building Game Graph...");
         g = new SimpleGameGraph();
 
@@ -119,6 +119,10 @@ public class StrategySynthesis{
       boolean forceExit = false;
       int i = 0;
       for (SimpleGameNode v : g.getNodes()) {
+          if (g.getSuccessors(v).isEmpty()){
+            createDot(200);
+            throw new Exception("ERROR: There are terminal nodes in the model:"+v.toString()+"\n See the generated dot file to debug.");
+          }
           if (v.getIsGoal()) {
               v.setValue(1,0);
           }
@@ -129,6 +133,7 @@ public class StrategySynthesis{
       do {
           i++;
           for (SimpleGameNode v : g.getNodes()) {
+              //System.out.println(v.getValues()[1]);
               v.setValue(0,v.getValues()[1]);
           }
           for (SimpleGameNode v : g.getNodes()) {
@@ -136,26 +141,36 @@ public class StrategySynthesis{
                     break;
               double val = 0;
               switch (v.getPlayerControl()){
-                case 2:  val = v.getReward() + minValue(g.getSuccessors(v)); //Environment
-                            break;
-                case 1:  val = v.getReward() + maxValue(v,g.getSuccessors(v)); //Controller
-                            break;
+                //Environment
+                case 2:  double minVal = minValue(v,g.getSuccessors(v));
+                         //val = v.getReward() + (minVal < v.getValues()[0]?minVal:v.getValues()[0]); 
+                         val = v.getReward() + minVal;
+                         break;
+                //Controller
+                case 1:  double maxVal = maxValue(v,g.getSuccessors(v));
+                         //val = v.getReward() + (maxVal > v.getValues()[0]?maxVal:v.getValues()[0]); 
+                         val = v.getReward() + maxVal;
+                         break;
+                //Probabilistic
                 case 3:  try{
-                            val = sumProbs(v,g.getSuccessors(v)); //Probabilistic
+                            val = sumProbs(v,g.getSuccessors(v)); 
                             } 
                             catch (Exception e){
-                              System.out.println("error en P");
+                              System.out.println("ERROR: Something failed in calculating the value of "+v.toString()+", possibly because the probabilities don't add to 1");
                             }
-                            break;
+                          break;
                 default: break;
               } 
+
               v.setValue(1,val);
               if (v.equals(init) && verbose) {
                     System.out.println("Initial state value at iteration "+i+": "+v.getValues()[1]);
               }
           }   
       }  while (thereIsNoFixPoint(precision) && !forceExit);
+      resolveStrategyConflicts();
       createControllerStrategy();
+      //createEnvironmentStrategy();
       return init.getValues()[1];
   }
   
@@ -165,9 +180,31 @@ public class StrategySynthesis{
         decimalFormat += "#";
       }
       DecimalFormat newFormat = new DecimalFormat(decimalFormat);
+        for (SimpleGameNode v : g.getNodes()){
+            try{
+                double currValue =  Double.valueOf(newFormat.format(v.getValues()[1]));
+                double oldValue = Double.valueOf(newFormat.format(v.getValues()[0]));
+               if (currValue != oldValue) {
+                   return true;
+               }
+             }
+             catch (NumberFormatException e){
+                System.out.println("ERROR: Nodes with value Infinity, possibly caused by states without outgoing transitions");
+                System.out.println("Node "+v+" has value: "+v.getValues()[0]);
+             }
+        }
+      return false;
+  }
+
+  private boolean thereIsNoFixPoint2(int precision) {
+      String decimalFormat = "#.";
+      for (int i = 0; i < precision; i++){
+        decimalFormat += "#";
+      }
+      DecimalFormat newFormat = new DecimalFormat(decimalFormat);
       for (SimpleGameNode v : g.getNodes()){  
-          double currValue =  Double.valueOf(newFormat.format(v.getValues()[1]));
-          double oldValue = Double.valueOf(newFormat.format(v.getValues()[0]));
+          double currValue =  Double.valueOf(newFormat.format(v.getExpectedDecisions()[1]));
+          double oldValue = Double.valueOf(newFormat.format(v.getExpectedDecisions()[0]));
          if (currValue != oldValue) {
              return true;
          }
@@ -175,12 +212,13 @@ public class StrategySynthesis{
       return false;
   }
 
-  private double minValue(Set<SimpleGameNode> vs) throws Exception{
+  private double minValue(SimpleGameNode current, Set<SimpleGameNode> vs) throws Exception{
     double min = Double.POSITIVE_INFINITY;
     for (SimpleGameNode v : vs){
       double val = v.getValues()[0];
       if (val < min){
         min = val;
+        current.setStrategy(v);
       }
     }
     return min;
@@ -207,6 +245,14 @@ public class StrategySynthesis{
     return sum;
   }
 
+  private double sumProbs2(SimpleGameNode v, Set<SimpleGameNode> vs) throws Exception{
+    double sum = 0;
+    for (SimpleGameNode v_ : vs){
+      sum += v.getState().getModel().getProb(v.getState(),v_.getState(),v.getSymbol()) * v_.getExpectedDecisions()[0];
+    }
+    return sum;
+  }
+
   public String createControllerStrategy(){
     String res = "";
     for (SimpleGameNode v : g.getNodes()){
@@ -229,6 +275,128 @@ public class StrategySynthesis{
         e.printStackTrace();
     }
     return res;
+  }
+
+  public void resolveStrategyConflicts(){
+      LinkedList<SimpleGameNode> q = new LinkedList<SimpleGameNode>();
+      for (SimpleGameNode v : g.getNodes()){
+        v.setVisited(false);
+        if (v.getIsGoal())
+          q.add(v);
+      }
+      while (!q.isEmpty()){
+        SimpleGameNode current = q.removeFirst();
+        current.setVisited(true);
+        //System.out.println(current);
+        for (SimpleGameNode v : g.getPredecessors(current)){
+          //System.out.println("----------------------"+v);
+          if (!v.getVisited()){
+            //System.out.println("preStrat:"+v.getStrategy());
+            //System.out.println("curr:"+current);
+            if (!v.isProbabilistic()){
+              if (v.getStrategy() != current && v.getStrategy().getValues()[1].equals(current.getValues()[1])){
+                //System.out.println("AAAAAAAA");
+                v.setStrategy(current);    
+              }
+            }
+            if (!q.contains(v))
+              q.add(v);
+          }
+        }
+      }
+  }
+
+  public String createEnvironmentStrategy(){
+    String res = "";
+    for (SimpleGameNode v : g.getNodes()){
+      if (v.isEnvironment() && !v.getState().getVisited()){
+        v.getState().setVisited(true);
+        res += "In state: " + v.getState() + "\n\n";
+        //res += "        move to : " + v.getStrategy().getState() + "\n\n";
+        res += "        move by action : " + v.getStrategy().getSymbol() + "\n\n\n";
+      }
+    }
+    try{
+        File file = new File("../out/" + p.getName() +".astrat");
+        file.createNewFile();
+        FileWriter fw = new FileWriter(file);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(res);
+        bw.close();
+    }
+    catch(IOException e){
+        e.printStackTrace();
+    }
+    return res;
+  }
+
+  private boolean canMoveBothWays(SimpleGameNode v){
+    boolean right = false;
+    boolean left = false;
+    for (SimpleGameNode v_ : g.getSuccessors(v)){
+      if (v_.getSymbol().getLabel().endsWith("r_r"))
+        right = true;
+      if (v_.getSymbol().getLabel().endsWith("r_l"))
+        left = true;
+    }
+    return right && left;
+  }
+  
+  public Double expectedNumberOfDecisions(int precision){
+    SimpleGameNode init =  g.getInitial();
+    for (SimpleGameNode v : g.getNodes()) {
+        v.setExpectedDecisions(1,0); 
+    }
+    do {
+        for (SimpleGameNode v : g.getNodes()) {
+            v.setVisited(false); 
+            v.setExpectedDecisions(0,v.getExpectedDecisions()[1]);
+        }
+        LinkedList<SimpleGameNode> q = new LinkedList<SimpleGameNode>();
+        q.add(init);
+        while (!q.isEmpty()){
+          SimpleGameNode v = q.removeFirst();
+          v.setVisited(true);
+          double val = 0;
+          switch (v.getPlayerControl()){
+                case 1:  //Controller
+                         if (v.getStrategy() != null){
+                            val = ((canMoveBothWays(v))?1:0)+v.getStrategy().getExpectedDecisions()[0];
+                            if (!v.getStrategy().getVisited() && !q.contains(v.getStrategy()))
+                                q.add(v.getStrategy());
+                          }
+                         else
+                            val = 0;
+                         break;
+                case 2:  //Environment
+                         if (v.getStrategy() != null){
+                            val = v.getStrategy().getExpectedDecisions()[0];
+                            if (!v.getStrategy().getVisited() && !q.contains(v.getStrategy()))
+                                q.add(v.getStrategy());
+                          }
+                          else
+                            val = 0;
+                         break;
+                case 3:  try{
+                            val = sumProbs2(v,g.getSuccessors(v)); //Probabilistic
+                            for (SimpleGameNode v_ : g.getSuccessors(v)){
+                                  if (!v_.getVisited() && !q.contains(v_))
+                                      q.add(v_);
+                              }
+                            } 
+                            catch (Exception e){
+                              System.out.println("error en P");
+                            }
+                            break;
+                default: break;
+          }
+          v.setExpectedDecisions(1,val);
+          //if (v.equals(init)) {
+          //          System.out.println(v.getExpectedDecisions()[1]);
+          //    }
+        }  
+    }  while (thereIsNoFixPoint2(precision));
+    return init.getExpectedDecisions()[1];
   }
 
 
