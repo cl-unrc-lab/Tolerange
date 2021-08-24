@@ -1,0 +1,126 @@
+// Board:
+//
+//   w1 - 1 - w2
+//   w1 - 2 - w6
+//   w2 - 1 - w3
+//   w2 - 2 - w5
+//   w2 - 2 - w6
+//   w3 - 0 - w4
+//   w4 - 0 - w5
+//   w5 - 1 - w6
+//
+//   !r8,!a2w5,!a1w3,!a2w3
+//   cw2,cw5,cw6
+
+Process UAVOperator {
+    wc : INT ;    // waypoint current, 0:null, 1-6
+    wd : INT ;    // waypoint destination, 0:null, 1-6
+    a : INT ;    // angles, 0:null, 1-8
+    r : INT ;    // length of road left to destination
+    photos : INT ;    // photos
+    state: INT ; // 0:init,1:low,2:high,3:bad,4:good,5:exit,6:del,7:ndel,9:flying
+    ctrl : BOOL ;  // player ctrl
+
+   Rewards :
+       state==4 && photos > 0 && (wc==2 || wc==5 || wc==6) : 1;
+
+   Controller : ctrl;
+   Goal : photos == 0;
+    // Initial configuration
+   Initial : wc==1 && wd==0 && r==0 && a==0 && ctrl && photos==10 && state==0;
+
+    // environment moves
+    [altitude] !ctrl && !(wc==0) && state == 0 -> 0.5: state = 1 ++ 0.5: state = 2;
+
+    [takePic] !ctrl && state == 1 -> 0.4: state = 3 ++  0.6: state = 4, photos = photos - 1;
+    [takePic] !ctrl && state == 2 -> 0.2: state = 3 ++  0.8: state = 4, photos = photos - 1;
+
+    [loiter] !ctrl && state == 3 -> state = 0;
+
+    [delegate] !ctrl && state == 5 && (wc==2 || wc==5 || wc==6) -> 0.5: state = 6,ctrl = true ++ 0.5: state = 7;
+    [delegate] !ctrl && state == 5 && !(wc==2 || wc==5 || wc==6) -> state = 7;
+
+    [finish] !ctrl && state == 4 && photos == 0 -> ctrl = true, state = 0;
+
+    [exit] !ctrl && state == 4 && photos > 0 && !(wc == 0) && a == 0 -> state = 5, a = 1;
+    [exit] !ctrl && state == 4 && photos > 0 && !(wc == 0) && a == 0 -> state = 5, a = 2;
+    [exit] !ctrl && state == 4 && photos > 0 && !(wc == 0) && a == 0 -> state = 5, a = 3;
+    [exit] !ctrl && state == 4 && photos > 0 && !(wc == 0) && a == 0 -> state = 5, a = 4;
+    [exit] !ctrl && state == 4 && photos > 0 && !(wc == 0) && a == 0 -> state = 5, a = 5;
+    [exit] !ctrl && state == 4 && photos > 0 && !(wc == 0) && a == 0 -> state = 5, a = 6;
+    [exit] !ctrl && state == 4 && photos > 0 && !(wc == 0) && a == 0 -> state = 5, a = 7;
+    [exit] !ctrl && state == 4 && photos > 0 && !(wc == 0) && a == 0 -> state = 5, a = 8;
+    
+    [fly] !ctrl && state == 7 && wc == 1 -> ctrl = true, state = 8, a = 0, r = 1, wd = 2;
+    [fly] !ctrl && state == 7 && wc == 1 -> ctrl = true, state = 8, a = 0, r = 2, wd = 6;
+    [fly] !ctrl && state == 7 && wc == 2 -> ctrl = true, state = 8, a = 0, r = 1, wd = 3;
+    [fly] !ctrl && state == 7 && wc == 2 -> ctrl = true, state = 8, a = 0, r = 2, wd = 5;
+    [fly] !ctrl && state == 7 && wc == 2 -> ctrl = true, state = 8, a = 0, r = 2, wd = 6;
+    [fly] !ctrl && state == 7 && wc == 2 -> ctrl = true, state = 8, a = 0, r = 1, wd = 1;
+    [fly] !ctrl && state == 7 && wc == 3 -> ctrl = true, state = 8, a = 0, r = 0, wd = 4;
+    [fly] !ctrl && state == 7 && wc == 3 -> ctrl = true, state = 8, a = 0, r = 1, wd = 2;
+    [fly] !ctrl && state == 7 && wc == 4 -> ctrl = true, state = 8, a = 0, r = 0, wd = 3;
+    [fly] !ctrl && state == 7 && wc == 4 -> ctrl = true, state = 8, a = 0, r = 0, wd = 5;
+    [fly] !ctrl && state == 7 && wc == 5 -> ctrl = true, state = 8, a = 0, r = 1, wd = 6;
+    [fly] !ctrl && state == 7 && wc == 5 -> ctrl = true, state = 8, a = 0, r = 2, wd = 2;
+    [fly] !ctrl && state == 7 && wc == 5 -> ctrl = true, state = 8, a = 0, r = 0, wd = 4;
+    [fly] !ctrl && state == 7 && wc == 6 -> ctrl = true, state = 8, a = 0, r = 1, wd = 5;
+    [fly] !ctrl && state == 7 && wc == 6 -> ctrl = true, state = 8, a = 0, r = 2, wd = 2;
+    [fly] !ctrl && state == 7 && wc == 6 -> ctrl = true, state = 8, a = 0, r = 2, wd = 1;
+
+
+    // player moves
+    [ready] ctrl && !(wc == 0) && state == 0 && photos > 0 -> ctrl = false, a = 0;
+    [finish] ctrl && !(wc == 0) && state == 0 && photos == 0 -> state = 0; // loop forever
+
+    [fly] ctrl && state == 6 && wc == 1 -> ctrl = true, state = 8, a = 0, r = 1, wd = 2;
+    [fly] ctrl && state == 6 && wc == 1 -> ctrl = true, state = 8, a = 0, r = 2, wd = 6;
+    [fly] ctrl && state == 6 && wc == 2 -> ctrl = true, state = 8, a = 0, r = 1, wd = 3;
+    [fly] ctrl && state == 6 && wc == 2 -> ctrl = true, state = 8, a = 0, r = 2, wd = 5;
+    [fly] ctrl && state == 6 && wc == 2 -> ctrl = true, state = 8, a = 0, r = 2, wd = 6;
+    [fly] ctrl && state == 6 && wc == 2 -> ctrl = true, state = 8, a = 0, r = 1, wd = 1;
+    [fly] ctrl && state == 6 && wc == 3 -> ctrl = true, state = 8, a = 0, r = 0, wd = 4;
+    [fly] ctrl && state == 6 && wc == 3 -> ctrl = true, state = 8, a = 0, r = 1, wd = 2;
+    [fly] ctrl && state == 6 && wc == 4 -> ctrl = true, state = 8, a = 0, r = 0, wd = 3;
+    [fly] ctrl && state == 6 && wc == 4 -> ctrl = true, state = 8, a = 0, r = 0, wd = 5;
+    [fly] ctrl && state == 6 && wc == 5 -> ctrl = true, state = 8, a = 0, r = 1, wd = 6;
+    [fly] ctrl && state == 6 && wc == 5 -> ctrl = true, state = 8, a = 0, r = 2, wd = 2;
+    [fly] ctrl && state == 6 && wc == 5 -> ctrl = true, state = 8, a = 0, r = 0, wd = 4;
+    [fly] ctrl && state == 6 && wc == 6 -> ctrl = true, state = 8, a = 0, r = 1, wd = 5;
+    [fly] ctrl && state == 6 && wc == 6 -> ctrl = true, state = 8, a = 0, r = 2, wd = 2;
+    [fly] ctrl && state == 6 && wc == 6 -> ctrl = true, state = 8, a = 0, r = 2, wd = 1;
+
+    [onroad] ctrl && state == 8 && r > 0 -> r = r-1;
+
+    [enter] ctrl && state == 8 && r == 0 && a == 0 -> a = 1;
+    [enter] ctrl && state == 8 && r == 0 && a == 0 -> a = 2;
+    [enter] ctrl && state == 8 && r == 0 && a == 0 -> a = 3;
+    [enter] ctrl && state == 8 && r == 0 && a == 0 -> a = 4;
+    [enter] ctrl && state == 8 && r == 0 && a == 0 -> a = 5;
+    [enter] ctrl && state == 8 && r == 0 && a == 0 -> a = 6;
+    [enter] ctrl && state == 8 && r == 0 && a == 0 -> a = 7;
+    [enter] ctrl && state == 8 && r == 0 && a == 0 -> a = 8;
+
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 1 && wd == 2 -> wd = 0, wc = 2, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 1 && wd == 6 -> wd = 0, wc = 6, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 2 && wd == 3 -> wd = 0, wc = 3, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 2 && wd == 5 -> wd = 0, wc = 5, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 2 && wd == 6 -> wd = 0, wc = 6, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 2 && wd == 1 -> wd = 0, wc = 1, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 3 && wd == 4 -> wd = 0, wc = 4, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 3 && wd == 2 -> wd = 0, wc = 2, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 4 && wd == 3 -> wd = 0, wc = 3, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 4 && wd == 5 -> wd = 0, wc = 5, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 5 && wd == 6 -> wd = 0, wc = 6, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 5 && wd == 2 -> wd = 0, wc = 2, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 5 && wd == 4 -> wd = 0, wc = 4, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 6 && wd == 5 -> wd = 0, wc = 5, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 6 && wd == 2 -> wd = 0, wc = 2, state = 0;
+    [waypoint] ctrl && state == 8 && !(a == 0) && wc == 6 && wd == 1 -> wd = 0, wc = 1, state = 0;
+    
+}
+
+Main() {
+    uav : UAVOperator ;
+    run uav() ;
+}

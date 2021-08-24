@@ -1,0 +1,466 @@
+// Board:
+//
+//   [.] [.] [.] [.] [C] [.] [.] [.] [.] [.] 
+//   [.] [.] [.] [.] [.] [.] [.] [.] [.] [.] 
+//   [.] [.] [.] [.] [.] [.] [.] [.] [.] [.] 
+//   [.] [.] [.] [.] [.] [.] [.] [.] [.] [.] 
+//   [.] [.] [.] [.] [.] [.] [.] [.] [.] [.] 
+//   [.] [.] [.] [.] [.] [.] [.] [.] [.] [.] 
+//   [.] [.] [.] [.] [X] [.] [M] [.] [.] [.] 
+//   [.] [.] [.] [.] [.] [.] [.] [.] [.] [.] 
+//   [.] [.] [.] [.] [.] [.] [.] [D] [.] [.] 
+//   [.] [.] [.] [.] [.] [.] [.] [.] [.] [.] 
+
+Process Robot {
+    col : INT ;    // col in [0,width-1] and row  in [0,length-1] indicate
+    row : INT ;    // the robot's position in the board
+
+    s_dog : BOOL ;  // sense dog
+    s_cat : BOOL ;  // sense cat
+    s_mouse : BOOL ;  // sense mouse
+    h_dog : BOOL ;  // herd dog
+    h_cat : BOOL ;  // herd cat
+    h_mouse : BOOL ;  // herd mouse
+    turn : BOOL ;  // player turn
+    dogs : INT ;  // number of dogs
+    cats : INT ;  // number of cats
+    mice : INT ;  // number of mice
+
+   Rewards :
+       true : -1 ,
+       row==6 && col==6 && h_mouse: 5 ,
+       row==0 && col==4 && h_cat: 5 ,
+       row==8 && col==7 && h_dog: 5 ;
+
+   Controller : turn;
+   Goal : dogs == 0 && cats == 0 && mice == 0;
+    // Initial configuration
+    Initial : col==6 && row==4 && !turn && !s_dog && !s_cat && !s_mouse && !h_dog && !h_cat && !h_mouse && mice==5 && dogs==5 && cats==5;
+
+    // animals movements
+
+    [a_appears] !turn && dogs > 0 -> 0.1: turn = true, s_dog = true
+    ++0.9: turn = true;
+    [a_appears] !turn && cats > 0 -> 0.1: turn = true, s_cat = true
+    ++0.9: turn = true;
+    [a_appears] !turn && mice > 0 -> 0.1: turn = true, s_mouse = true
+    ++0.9: turn = true;
+    [a_follow] !turn -> turn = true;
+    [a_unfollow] !turn && h_dog-> turn = true, h_dog = false;
+    [a_unfollow] !turn && h_cat-> turn = true, h_cat = false;
+    [a_unfollow] !turn && h_mouse-> turn = true, h_mouse = false;
+
+    // robot moves
+
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 0) -> turn = false, row = 9;
+    [r_d] turn && (row == 0) -> turn = false, row = 1;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 1) -> turn = false, row = 0;
+    [r_d] turn && (row == 1) -> turn = false, row = 2;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 2) -> turn = false, row = 1;
+    [r_d] turn && (row == 2) -> turn = false, row = 3;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 3) -> turn = false, row = 2;
+    [r_d] turn && (row == 3) -> turn = false, row = 4;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 4) -> turn = false, row = 3;
+    [r_d] turn && (row == 4) -> turn = false, row = 5;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 5) -> turn = false, row = 4;
+    [r_d] turn && (row == 5) -> turn = false, row = 6;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 6) -> turn = false, row = 5;
+    [r_d] turn && (row == 6) -> turn = false, row = 7;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 7) -> turn = false, row = 6;
+    [r_d] turn && (row == 7) -> turn = false, row = 8;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 8) -> turn = false, row = 7;
+    [r_d] turn && (row == 8) -> turn = false, row = 9;
+    [r_l] turn && (col == 0) -> turn = false, col = 9;
+    [r_r] turn && (col == 0) -> turn = false, col = 1;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 1) -> turn = false, col = 0;
+    [r_r] turn && (col == 1) -> turn = false, col = 2;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 2) -> turn = false, col = 1;
+    [r_r] turn && (col == 2) -> turn = false, col = 3;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 3) -> turn = false, col = 2;
+    [r_r] turn && (col == 3) -> turn = false, col = 4;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 4) -> turn = false, col = 3;
+    [r_r] turn && (col == 4) -> turn = false, col = 5;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 5) -> turn = false, col = 4;
+    [r_r] turn && (col == 5) -> turn = false, col = 6;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 6) -> turn = false, col = 5;
+    [r_r] turn && (col == 6) -> turn = false, col = 7;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 7) -> turn = false, col = 6;
+    [r_r] turn && (col == 7) -> turn = false, col = 8;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 8) -> turn = false, col = 7;
+    [r_r] turn && (col == 8) -> turn = false, col = 9;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_l] turn && (col == 9) -> turn = false, col = 8;
+    [r_r] turn && (col == 9) -> turn = false, col = 0;
+    [r_u] turn && (row == 9) -> turn = false, row = 8;
+    [r_d] turn && (row == 9) -> turn = false, row = 0;
+    [r_herd] turn && s_dog -> turn = false, h_dog = true, s_dog = false;
+    [r_herd] turn && s_cat -> turn = false, h_cat = true, s_cat = false;
+    [r_herd] turn && s_mouse -> turn = false, h_mouse = true, s_mouse = false;
+    [r_retrieve] turn && h_dog && (row == 8) && (col == 7) -> turn = false, h_dog = false, dogs = dogs -1;
+    [r_retrieve] turn && h_cat && (row == 0) && (col == 4) -> turn = false, h_cat = false, cats = cats -1;
+    [r_retrieve] turn && h_mouse && (row == 6) && (col == 6) -> turn = false, h_mouse = false, mice = mice -1;
+}
+
+Main() {
+    robot : Robot ;
+    run robot() ;
+}

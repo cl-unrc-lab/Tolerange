@@ -1,0 +1,86 @@
+// Board:
+//
+//   [X] [.] [M] [M] [.] 
+//   [M] [.] [M] [.] [.] 
+//   [.] [.] [M] [.] [.] 
+//   [M] [.] [.] [.] [.] 
+//   [M] [.] [.] [.] [.] 
+
+Process Safari {
+    col : INT ;    // col in [0,width-1] and row  in [0,length-1] indicate
+    row : INT ;    // the player's position in the board
+    balls : INT ;    // the player's pokeballs
+    bait : INT ;    // how much bait used in battle (max 3)
+
+    s_poke : BOOL ;  // sense pokemon
+    c_poke : BOOL ;  // catch pokemon
+    ctrl : BOOL ;  // player ctrl
+
+   Rewards :
+       c_poke : 10 ;
+
+   Controller : ctrl;
+   Goal : balls == 0;
+    // Initial configuration
+    Initial : col==0 && row==0 && ctrl && !s_poke && !c_poke && bait==0 && balls==5;
+
+    // environment moves
+
+    [e_appears] !ctrl && !s_poke && (row == 0) && (col == 0) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 0) && (col == 1) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 0) && (col == 2) -> 0.3: s_poke = true //if appears then first turn for pokemon
+    ++0.7: ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 0) && (col == 3) -> 0.3: s_poke = true //if appears then first turn for pokemon
+    ++0.7: ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 0) && (col == 4) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 1) && (col == 0) -> 0.3: s_poke = true //if appears then first turn for pokemon
+    ++0.7: ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 1) && (col == 1) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 1) && (col == 2) -> 0.3: s_poke = true //if appears then first turn for pokemon
+    ++0.7: ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 1) && (col == 3) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 1) && (col == 4) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 2) && (col == 0) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 2) && (col == 1) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 2) && (col == 2) -> 0.3: s_poke = true //if appears then first turn for pokemon
+    ++0.7: ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 2) && (col == 3) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 2) && (col == 4) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 3) && (col == 0) -> 0.3: s_poke = true //if appears then first turn for pokemon
+    ++0.7: ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 3) && (col == 1) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 3) && (col == 2) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 3) && (col == 3) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 3) && (col == 4) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 4) && (col == 0) -> 0.3: s_poke = true //if appears then first turn for pokemon
+    ++0.7: ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 4) && (col == 1) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 4) && (col == 2) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 4) && (col == 3) -> ctrl = true;
+    [e_appears] !ctrl && !s_poke && (row == 4) && (col == 4) -> ctrl = true;
+    [e_idle] !ctrl && s_poke -> ctrl = true;
+    [e_escape] !ctrl && s_poke && bait == 0 -> ctrl = true, s_poke = false;
+    [e_escape] !ctrl && s_poke && bait == 1 -> 0.75 : ctrl = true, s_poke = false, bait = 0 //if baited, there is less chance of escape
+    ++ 0.25: ctrl = true;
+    [e_escape] !ctrl && s_poke && bait == 2 -> 0.5 : ctrl = true, s_poke = false, bait = 0 //if baited, there is less chance of escape
+    ++ 0.5: ctrl = true;
+    [e_escape] !ctrl && s_poke && bait == 3 -> 0.25 : ctrl = true, s_poke = false, bait = 0 //if baited, there is less chance of escape
+    ++ 0.75: ctrl = true;
+    [e_catched] !ctrl && c_poke -> ctrl=true, bait = 0, c_poke = false;
+
+    // player moves
+
+    [p_l] ctrl && !s_poke && col > 0 -> ctrl = false, col = (col - 1);
+    [p_r] ctrl && !s_poke && col < 4 -> ctrl = false, col = (col + 1);
+    [p_u] ctrl && !s_poke && row > 0 -> ctrl = false, row = (row - 1);
+    [p_d] ctrl && !s_poke && row < 4 -> ctrl = false, row = (row + 1);
+    [p_ball] ctrl && s_poke && balls > 0 -> 0.25 : ctrl = false, c_poke = true, s_poke = false, balls = balls - 1
+    ++ 0.75: ctrl = true, balls = balls - 1;
+    [p_ball] ctrl && s_poke && balls == 0 -> ctrl = false; //END
+    [p_bait] ctrl && s_poke && bait < 3 -> ctrl = false, bait = bait + 1;
+}
+
+Main() {
+    safari : Safari ;
+    run safari() ;
+}
