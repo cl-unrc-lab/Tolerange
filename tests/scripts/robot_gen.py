@@ -19,9 +19,8 @@ def genRndBoard(seed) :
         moves.append([])
         rewards.append([])
         for j in range(width) :
-            moves[i].append(random.randrange(0,3))
+            moves[i].append(random.randrange(0,3))   
             rewards[i].append(math.floor(-math.log(1.0/2.0**(maxReward+1)+random.random()*(1.0-1.0/2.0**(maxReward+1)))/math.log(2.0)))
-
 
 def writePreamble(mFile) :
 
@@ -54,8 +53,9 @@ def writeRobotA(fileName) :
     mFile.write("   Rewards :\n")
     for i in range(length) :
         for j in range(width) :
-            mFile.write("       row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
-    mFile.write("       row == "+str(length)+" : 0 ;\n\n")
+            mFile.write("       !(light == 0) && row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
+    mFile.write("       !(light == 0) && row == "+str(length)+" : 0 ,\n")
+    mFile.write("       light == 0 : 0 ;\n\n")
     mFile.write("   Controller : !(light == 0);\n")
     mFile.write("   Goal : row =="+str(length)+";\n")
 
@@ -112,8 +112,9 @@ def writeRobotB(fileName):
     mFile.write("   Rewards :\n")
     for i in range(length) :
         for j in range(width) :
-            mFile.write("       row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
-    mFile.write("       row == "+str(length)+" : 0 ;\n\n")
+            mFile.write("       !(light == 0) && row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
+    mFile.write("       !(light == 0) && row == "+str(length)+" : 0 ,\n")
+    mFile.write("       light == 0 : 0 ;\n\n")
     mFile.write("   Controller : !(light == 0);\n")
     mFile.write("   Goal : row =="+str(length)+";\n")
 
@@ -170,8 +171,10 @@ def writeRobotC(fileName):
     mFile.write("   Rewards :\n")
     for i in range(length) :
         for j in range(width) :
-            mFile.write("       row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
-    mFile.write("       row == "+str(length)+" : 0 ;\n\n")
+            mFile.write("       !(light == 0) && row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
+    mFile.write("       !(light == 0) && row == "+str(length)+" : 0 ,\n")
+    mFile.write("       light == 0 : 0 ;\n\n")
+
     mFile.write("   Controller : !(light == 0);\n")
     mFile.write("   Goal : row =="+str(length)+";\n")
     
@@ -197,6 +200,69 @@ def writeRobotC(fileName):
         mFile.write("    [r_f] (light == 2 || light == 3) && (row == "+str(i)+") -> "+str(1-probRobot)+" : light = 0, row = "+str(i+1)+" ++ "+str(probRobot)+" : light = 0 ;\n")
 
     mFile.write("    [r_f] (row == "+str(length)+") -> row = "+str(length)+" ;\n")
+
+    mFile.write("}\n\n")
+
+    mFile.write("Main() {\n")
+    mFile.write("    robot : Robot ;\n")
+    mFile.write("    run robot() ;\n")
+    mFile.write("}\n")
+
+    mFile.close()
+
+
+def writeRobotD(fileName) :
+
+    mFile = open(fileName,"w")
+
+    writePreamble(mFile)
+
+    mFile.write("Process Robot {\n")
+    mFile.write("    col : INT ;    // col in [0,width-1] and row  in [0,length-1] indicate\n")
+    mFile.write("    row : INT ;    // the robot's position in the board\n")
+    mFile.write("\n")
+    mFile.write("    light : INT ;  // current light color\n")
+    mFile.write("                   // 0 : red (light's turn)\n")
+    mFile.write("                   // 1 : yellow (robot moves sideways)\n")
+    mFile.write("                   // 2 : green (robot moves forward or backwards)\n")
+    mFile.write("\n")
+
+    mFile.write("   Rewards :\n")
+    for i in range(length) :
+        for j in range(width) :
+            mFile.write("       !(light == 0) && row == "+str(i)+" && col == "+str(j)+" : "+str(int(rewards[i][j]))+" ,\n")
+    mFile.write("       !(light == 0) && row == "+str(length)+" : 0 ,\n")
+    mFile.write("       !(light == 0) && row == -1 : 0 ,\n")
+    mFile.write("       light == 0 : 0 ;\n\n")
+    mFile.write("   Controller : !(light == 0);\n")
+    mFile.write("   Goal : row == "+str(length)+" || row == -1;\n")
+
+    mFile.write("    // Initially the robot is positioned in (0,0) and the light is ready to move\n")
+    mFile.write("    Initial : col==0 && row==0 && light==0 ;\n")
+    mFile.write("\n")
+
+    mFile.write("    // light moves\n")
+    mFile.write("\n")
+    mFile.write("    [l_y] light == 0 -> light = 1 ;\n")
+    mFile.write("    [l_r] light == 0 -> light = 2 ;\n")
+    mFile.write("\n")
+
+    mFile.write("    // lightrobot moves\n")
+    mFile.write("\n")
+
+    for i in range(length) :
+        for j in range(width) :
+            if moves[i][j] <= 1 :
+                mFile.write("    [r_l] (light == 1) && (row == "+str(i)+") && (col == "+str(j)+") -> "+str(1-probRobot)+" : light = 0, col = "+str((j-1)%width)+" ++ "+str(probRobot)+" : light = 0 ;\n")
+            if moves[i][j] >= 1 :
+                mFile.write("    [r_r] (light == 1) && (row == "+str(i)+") && (col == "+str(j)+") -> "+str(1-probRobot)+" : light = 0, col = "+str((j+1)%width)+" ++ "+str(probRobot)+" : light = 0 ;\n")
+        mFile.write("    [r_f] (light == 2) && (row == "+str(i)+") -> "+str(1-probRobot)+" : light = 0, row = "+str(i+1)+" ++ "+str(probRobot)+" : light = 0 ;\n")
+        mFile.write("    [r_b] (light == 2) && (row == "+str(i)+") -> "+str(1-probRobot)+" : light = 0, row = "+str(i-1)+" ++ "+str(probRobot)+" : light = 0 ;\n")
+
+    mFile.write("    [r_f] (row == "+str(length)+") -> row = "+str(length)+" ;\n")
+    mFile.write("    [r_b] (row == "+str(length)+") -> row = "+str(length)+" ;\n")
+    mFile.write("    [r_f] (row == -1) -> row = -1;\n")
+    mFile.write("    [r_b] (row == -1) -> row = -1;\n")
 
     mFile.write("}\n\n")
 
@@ -311,7 +377,6 @@ def main(argv):
     writeRobotA(path+"robotA["+str(seed)+"-"+str(width)+"-"+str(length)+"-"+str(probRobot)+"-"+str(probLight)+("" if includeRewards else "-NR")+"].sgg")
     writeRobotB(path+"robotB["+str(seed)+"-"+str(width)+"-"+str(length)+"-"+str(probRobot)+"-"+str(probLight)+("" if includeRewards else "-NR")+"].sgg")
     writeRobotC(path+"robotC["+str(seed)+"-"+str(width)+"-"+str(length)+"-"+str(probRobot)+"-"+str(probLight)+("" if includeRewards else "-NR")+"].sgg")
-
 
 
 

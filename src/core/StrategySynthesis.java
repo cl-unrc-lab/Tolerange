@@ -1,7 +1,6 @@
 package core;
 
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
 
 import lang.*;
 import model.*;
@@ -10,22 +9,11 @@ import games.*;
 import java.io.*;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Level;
 
-import it.ssc.log.SscLogger;
-import it.ssc.pl.milp.ConsType;
-import it.ssc.pl.milp.Constraint;
-import it.ssc.pl.milp.GoalType;
-import it.ssc.pl.milp.LP;
-import it.ssc.pl.milp.LinearObjectiveFunction;
-import it.ssc.pl.milp.Solution;
-import it.ssc.pl.milp.SolutionType;
 
 public class StrategySynthesis{
 
-	private SimpleGameGraph g; // The masking distance game graph, undefined until buildGraph is called
+	private SimpleGameGraph g;
   private Program p;
   private boolean verbose;
 
@@ -42,7 +30,7 @@ public class StrategySynthesis{
     public void buildGraph() throws InterruptedException{
         Model m;
         System.out.println("Building Model...");
-        m = p.toGraph(true);
+        m = p.toMDP(true);
         if (verbose){
           System.out.println("Model states: "+m.getNumNodes());
           System.out.println("Model edges: "+m.getNumEdges());
@@ -109,8 +97,10 @@ public class StrategySynthesis{
 
             
         }
-        if (verbose)
+        if (true){
           System.out.println("Game graph states: "+g.getNumNodes());
+          System.out.println("Game graph transitions: "+g.getNumTransitions());
+        }
     }
 
 
@@ -385,7 +375,7 @@ public class StrategySynthesis{
                               }
                             } 
                             catch (Exception e){
-                              System.out.println("error en P");
+                              System.out.println("error in P");
                             }
                             break;
                 default: break;

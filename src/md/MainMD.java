@@ -1,6 +1,5 @@
 package md;
 
-import java.io.*;
 
 import lang.*;
 import core.*;
@@ -21,7 +20,6 @@ public class MainMD {
        boolean verbose = false;
        int precision = 10;
        int bound = Integer.MAX_VALUE;
-       int algorithm = 0;
        
        if (args.length < 3){
             if (args.length < 2){
@@ -84,7 +82,6 @@ public class MainMD {
           }
            
            if (args[0].equals("--a2")){
-              algorithm = 1;
               Program test = prog.parseAux(args[args.length - 1]);
               for (int i = 1; i < args.length; i++){
                 if (args[i].equals("-d")){
@@ -119,7 +116,6 @@ public class MainMD {
               }
            }
            if (args[0].equals("--a3")){
-              algorithm = 2;
               for (int i = 1; i < args.length; i++){
                 if (args[i].equals("-d")){
                   toDot = true;

@@ -2,9 +2,8 @@ package games;
 
 import java.util.*;
 import model.*;
-import java.io.*;
 
-public class GameNode implements Comparable{
+public class GameNode implements Comparable<Object>{
 
 	ModelState specState; // Current state of the Specification
 	ModelState impState; // Current state of the Implementation

@@ -4,9 +4,8 @@ import java.util.*;
 import model.*;
 import lang.Proc;
 import lang.Reward;
-import java.io.*;
 
-public class SimpleGameNode implements Comparable{
+public class SimpleGameNode implements Comparable<Object>{
 
 	ModelState state; // Current state of the Specification
 	Action symbol; // The action that lead to this state

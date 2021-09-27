@@ -1,10 +1,8 @@
 package core;
 
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
 import model.*;
 import games.*;
-import java.io.*;
 import lang.*;
 
 public class MaskingDistance{
@@ -41,8 +39,8 @@ public class MaskingDistance{
         t2.start();
         t1.join();
         t2.join();*/
-        spec = pSpec.toGraph(true);
-        imp = pImp.toGraph(false);
+        spec = pSpec.toLTS(true);
+        imp = pImp.toLTS(false);
         //spec = r1.getProg();
         //imp = r2.getProg();
         
@@ -409,44 +407,45 @@ public class MaskingDistance{
         GameNode curr;
         Stack<GameNode> track = new Stack<GameNode>();
         track.push(g.getInitial());
-        Scanner sc = new Scanner(System.in);
-        String c = "";
-        System.out.println("\n·····SIMULATION·····\n");
-        while (!c.equals("X") && !c.equals("x")){
-            curr = track.peek();
-            System.out.println("\n\nCURRENT STATE: ["+curr+"]\nChoose an action... (action : [nextstate])\n");
-            Integer i = 0;
-            for (GameNode succ : g.getSuccessors(curr)){
-                Pair p = new Pair(curr,succ);
-                if (g.getActions().get(p) != null){
-                    for (int j=0; j < g.getActions().get(p).size(); j++){
-                        System.out.println(i+". "+g.getActions().get(p).get(j).getLabel()+": "+"["+succ+"]");
-                        i++;
-                    }
-                }
-            }
-            if (track.size()>1){
-                System.out.println("Z. BACKTRACK");
-            }
-            System.out.println("X. EXIT");
-            c = sc.next();
+        try (Scanner sc = new Scanner(System.in)) {
+			String c = "";
+			System.out.println("\n·····SIMULATION·····\n");
+			while (!c.equals("X") && !c.equals("x")){
+			    curr = track.peek();
+			    System.out.println("\n\nCURRENT STATE: ["+curr+"]\nChoose an action... (action : [nextstate])\n");
+			    Integer i = 0;
+			    for (GameNode succ : g.getSuccessors(curr)){
+			        Pair p = new Pair(curr,succ);
+			        if (g.getActions().get(p) != null){
+			            for (int j=0; j < g.getActions().get(p).size(); j++){
+			                System.out.println(i+". "+g.getActions().get(p).get(j).getLabel()+": "+"["+succ+"]");
+			                i++;
+			            }
+			        }
+			    }
+			    if (track.size()>1){
+			        System.out.println("Z. BACKTRACK");
+			    }
+			    System.out.println("X. EXIT");
+			    c = sc.next();
 
-            i = 0;
-            for (GameNode succ : g.getSuccessors(curr)){
-                Pair p = new Pair(curr,succ);
-                if (g.getActions().get(p) != null){
-                    for (int j=0; j < g.getActions().get(p).size(); j++){
-                        if (c.equals(i.toString()))
-                            track.push(succ);
-                        i++;
-                    }
-                }
-            }
+			    i = 0;
+			    for (GameNode succ : g.getSuccessors(curr)){
+			        Pair p = new Pair(curr,succ);
+			        if (g.getActions().get(p) != null){
+			            for (int j=0; j < g.getActions().get(p).size(); j++){
+			                if (c.equals(i.toString()))
+			                    track.push(succ);
+			                i++;
+			            }
+			        }
+			    }
 
-            if (c.equals("Z") || c.equals("z")){
-                if (track.size()>1)
-                track.pop();
-            }
-        }
+			    if (c.equals("Z") || c.equals("z")){
+			        if (track.size()>1)
+			        track.pop();
+			    }
+			}
+		}
     }
 }

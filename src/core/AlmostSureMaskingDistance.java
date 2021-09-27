@@ -1,17 +1,14 @@
 package core;
 
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
 
 import lang.*;
 import model.*;
 import games.*;
 
-import java.io.*;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 
 import it.ssc.log.SscLogger;
@@ -25,7 +22,7 @@ import it.ssc.pl.milp.SolutionType;
 
 public class AlmostSureMaskingDistance{
 
-	private GameGraph g; // The masking distance game graph, undefined until buildGraph is called
+  private GameGraph g;
   private Program pSpec;
   private Program pImp;
   private boolean verbose;
@@ -44,8 +41,8 @@ public class AlmostSureMaskingDistance{
     public void buildGraph() throws InterruptedException{
         Model spec,imp;
         System.out.println("Building Models...");
-        spec = pSpec.toGraph(true);
-        imp = pImp.toGraph(false);
+        spec = pSpec.toMDP(true);
+        imp = pImp.toMDP(false);
         if (verbose){
           System.out.println("Spec states: "+spec.getNumNodes());
           System.out.println("Spec edges: "+spec.getNumEdges());
@@ -441,7 +438,7 @@ public class AlmostSureMaskingDistance{
     }
     return min;
   }
-
+/*
   private double minValue2(Set<GameNode> vs) throws Exception{
     double min = Double.POSITIVE_INFINITY;
     boolean allZeros = true;
@@ -456,7 +453,7 @@ public class AlmostSureMaskingDistance{
       return 0;
     return min;
   }
-
+*/
   private double maxValue(Set<GameNode> vs) throws Exception{
     double max = Double.NEGATIVE_INFINITY;
     for (GameNode v : vs){

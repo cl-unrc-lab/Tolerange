@@ -225,7 +225,7 @@ public class Model {
 		LinkedList<ModelState> fsts;
 		LinkedList<ModelState> snds;
 		LinkedList<String> lbls;
-		LinkedList<Boolean> isFs;
+		//LinkedList<Boolean> isFs;
 		LinkedList<Boolean> isTaus;
 
 
