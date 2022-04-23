@@ -1,0 +1,1305 @@
+In state: <robotturn,robotcol=2,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_l
+
+
+In state: <robotturn,robotcol=1,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotcol=1,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=1,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_r
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_retrieve
+
+
+In state: <robotturn,robotcol=1,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotcol=1,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=1,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_r
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_r
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_retrieve
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robotturn,robotcol=1,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotcol=1,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=1,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_r
+
+
+In state: <robotturn,robotcol=0,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_r
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_r
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_retrieve
+
+
+In state: <robotturn,robotcol=1,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotcol=1,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=1,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_r
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_r
+
+
+In state: <robotturn,robotcol=2,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_retrieve
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_l
+
+
+In state: <robotturn,robotcol=1,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotcol=1,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=1,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <robotturn,robotcol=2,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotturn,robotcol=0,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotcol=1,robotrow=2,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotcol=1,robotrow=1,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotcol=1,robotrow=0,robotdogs=0,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=0,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=0,robotdogs=0,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=0,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=1,robotdogs=0,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=0,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=0,robotrow=2,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotcol=2,robotrow=0,robotdogs=0,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotcol=2,robotrow=1,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotcol=2,robotrow=2,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=0,>
+
+        move by action : robotr_idle
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=0,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=0,>
+
+        move by action : robotr_u
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_r
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=1,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_retrieve
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_l
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=2,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotcol=2,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_retrieve
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_l
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=3,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_r
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_retrieve
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_l
+
+
+In state: <roboth_dog,robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_d
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=2,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=0,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=0,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=1,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotretrieved,robotcol=1,robotrow=2,robotdogs=4,>
+
+        move by action : robotr_herd
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=1,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=0,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_d
+
+
+In state: <roboth_dog,robotturn,robotcol=2,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_l
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=0,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=1,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=2,robotdogs=5,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=1,robotdogs=5,>
+
+        move by action : robotr_herd
+
+
+In state: <robots_dog,robotturn,robotcol=2,robotrow=0,robotdogs=5,>
+
+        move by action : robotr_herd
+
+

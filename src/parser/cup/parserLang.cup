@@ -431,6 +431,7 @@ branch ::=  label:l actionReward:r faulty:f internal:i  expr:e  RIGHTARROW assig
         ;
 
 label ::= LBRACKET ID:id RBRACKET {: RESULT = id; :}
+          | LBRACKET RBRACKET {: RESULT = new String(""); :}
         ;
 
 faulty ::= FAULTY {: RESULT = true; :}

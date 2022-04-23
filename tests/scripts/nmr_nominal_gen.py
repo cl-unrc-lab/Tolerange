@@ -52,37 +52,10 @@ def writeNMR(fileName) :
 
 
 
-def usage(exitVal) :
-
-    print("\nusage nmr_nominal_gen.py [-h]\n")
-    print("-h :\n")
-    print("  Print this help\n")
-    print("-r :\n")
-    print("  Exclude the rewards setting\n")
-    sys.exit(exitVal)
-
-
-
 def main(argv):
 
-    global modules
-    global includeRewards
-
-    includeRewards = True
     path = "../tests/stochastic/nominal/nmr/"
-
-    try:
-        opts, args = getopt.getopt(argv,"r")
-    except getopt.GetoptError:
-        usage(2)
-    for opt, arg in opts:
-        if opt == '-h':
-            usage(0)
-        elif opt == "-r" :
-            includeRewards = False
-
-
-    writeNMR(path+"nmr["+("" if includeRewards else "-NR")+"].mdp")
+    writeNMR(path+"nmr[].mdp")
 
 
 

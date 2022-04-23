@@ -1,0 +1,6445 @@
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=-1,uavr=0,uavphotos=5,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=8,uavr=0,uavphotos=4,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=0,uavphotos=4,uavstate=8,>
+
+        move by action : uaventer_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=2,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=-1,uavr=0,uavphotos=4,uavstate=8,>
+
+        move by action : uaventer_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=2,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=1,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=2,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=-1,uavr=1,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=2,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=1,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=0,uavphotos=4,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=8,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=7,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=6,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=5,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=4,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=3,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=2,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=1,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=1,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_6
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=-1,uavr=0,uavphotos=0,uavstate=0,>
+
+        move by action : uavfinish
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=-1,uavr=0,uavphotos=0,uavstate=0,>
+
+        move by action : uavfinish
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=-1,uavr=0,uavphotos=0,uavstate=0,>
+
+        move by action : uavfinish
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=-1,uavr=0,uavphotos=0,uavstate=0,>
+
+        move by action : uavfinish
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=-1,uavr=0,uavphotos=0,uavstate=0,>
+
+        move by action : uavfinish
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=-1,uavr=0,uavphotos=0,uavstate=0,>
+
+        move by action : uavfinish
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=3,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=2,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=-1,uavr=1,uavphotos=1,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=-1,uavr=0,uavphotos=1,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=8,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=7,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=6,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=5,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=4,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=3,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=2,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=1,uavr=0,uavphotos=1,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=4,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=1,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=2,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=7,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=8,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=5,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=6,uavr=0,uavphotos=1,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=2,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=1,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=2,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=2,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=1,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=0,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=4,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=1,uavphotos=2,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=5,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=-1,uavr=0,uavphotos=2,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=8,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=7,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=6,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=5,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=4,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=3,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=2,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=3,uava=1,uavr=0,uavphotos=2,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=4,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=5,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=2,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=3,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=8,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=6,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=7,uavr=0,uavphotos=2,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_2_0
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=2,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=3,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=4,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=5,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=6,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=7,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=2,uavwd=-1,uava=8,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=8,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=7,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=6,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=5,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=4,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=3,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=2,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=1,uava=1,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=1,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=2,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=3,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=1,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=0,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=5,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_6
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=4,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_1_0
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=2,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=3,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=4,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=5,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=6,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=7,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=1,uavwd=-1,uava=8,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=-1,uavr=1,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=5,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=4,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=3,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=2,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=1,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=8,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=7,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=5,uava=6,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=6,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_6
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=4,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=5,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=0,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=2,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=5,uavwd=1,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=7,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=8,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=1,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=2,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=3,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=4,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=5,uavwd=-1,uava=5,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=-1,uavr=0,uavphotos=4,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=6,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=5,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=4,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=3,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=2,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=1,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=8,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=4,uava=7,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=7,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=5,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_8
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=3,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=2,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=1,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=0,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_4_0
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=8,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=1,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=2,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=3,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=4,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=5,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=4,uavwd=-1,uava=6,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=1,uavphotos=4,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=-1,uavr=0,uavphotos=4,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=7,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=6,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=5,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=4,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=3,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=2,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=1,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=0,uavwd=3,uava=8,uavr=0,uavphotos=4,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=8,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=1,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=2,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_1
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=1,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=1,uavphotos=3,uavstate=8,>
+
+        move by action : uavonroad
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_2
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=0,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_6
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=4,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=-1,uavr=0,uavphotos=3,uavstate=8,>
+
+        move by action : uaventer_7
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=8,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=7,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=6,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=5,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=4,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=3,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=2,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=2,uava=1,uavr=0,uavphotos=3,uavstate=9,>
+
+        move by action : uavwaypoint
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=4,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=5,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=2,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=3,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=8,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=6,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=7,uavr=0,uavphotos=3,uavstate=6,>
+
+        move by action : uavfly_3_0
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=1,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=2,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=3,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=4,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=5,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=6,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=3,uavwd=-1,uava=7,uavr=0,uavphotos=4,uavstate=0,>
+
+        move by action : uavready
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=6,uavr=0,uavphotos=4,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=7,uavr=0,uavphotos=4,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=1,uavr=0,uavphotos=4,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=4,uavr=0,uavphotos=4,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=5,uavr=0,uavphotos=4,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=2,uavr=0,uavphotos=4,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+
+In state: <uavctrl,uavwc=0,uavwd=-1,uava=3,uavr=0,uavphotos=4,uavstate=6,>
+
+        move by action : uavfly_0_3
+
+

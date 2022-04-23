@@ -1,0 +1,200 @@
+In state: <robotcol=0,robotrow=0,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=0,robotrow=0,robotlight=1,>
+
+        move by action : robotr_l
+
+
+In state: <robotcol=3,robotrow=0,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=3,robotrow=0,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=2,robotrow=0,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=2,robotrow=0,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=1,robotrow=0,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=1,robotrow=0,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=1,robotrow=1,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=1,robotrow=1,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=2,robotrow=1,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=2,robotrow=1,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=3,robotrow=1,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=3,robotrow=1,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=0,robotrow=1,robotlight=1,>
+
+        move by action : robotr_l
+
+
+In state: <robotcol=0,robotrow=1,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=0,robotrow=2,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=0,robotrow=2,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=1,robotrow=2,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=1,robotrow=2,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=2,robotrow=2,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=2,robotrow=2,robotlight=1,>
+
+        move by action : robotr_l
+
+
+In state: <robotcol=3,robotrow=2,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=3,robotrow=2,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=3,robotrow=3,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=3,robotrow=3,robotlight=1,>
+
+        move by action : robotr_r
+
+
+In state: <robotcol=0,robotrow=3,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=0,robotrow=3,robotlight=1,>
+
+        move by action : robotr_l
+
+
+In state: <robotcol=1,robotrow=3,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=1,robotrow=3,robotlight=1,>
+
+        move by action : robotr_l
+
+
+In state: <robotcol=1,robotrow=4,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=1,robotrow=4,robotlight=1,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=0,robotrow=4,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=0,robotrow=4,robotlight=1,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=3,robotrow=4,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=3,robotrow=4,robotlight=1,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=2,robotrow=3,robotlight=1,>
+
+        move by action : robotr_l
+
+
+In state: <robotcol=2,robotrow=3,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=2,robotrow=4,robotlight=2,>
+
+        move by action : robotr_f
+
+
+In state: <robotcol=2,robotrow=4,robotlight=1,>
+
+        move by action : robotr_f
+
+

@@ -1,0 +1,60 @@
+In state: <mv_spec=0,ms_spec=0,mv_imp=0,ms_imp=0,mp=1,ma=3,>
+
+        move by action : mr0_imp
+
+
+In state: <mv_spec=0,ms_spec=0,mv_imp=0,ms_imp=0,mp=1,ma=1,>
+
+        move by action : mw0_imp
+
+
+In state: <mv_spec=1,ms_spec=0,mv_imp=0,ms_imp=0,mp=1,ma=2,>
+
+        move by action : mw1_imp
+
+
+In state: <mv_spec=0,ms_spec=0,mv_imp=0,ms_imp=0,mp=1,ma=7,>
+
+        move by action : mw0_spec
+
+
+In state: <mv_spec=0,ms_spec=0,mv_imp=0,ms_imp=0,mp=1,ma=9,>
+
+        move by action : mr0_spec
+
+
+In state: <mv_spec=0,ms_spec=0,mv_imp=3,ms_imp=0,mp=1,ma=8,>
+
+        move by action : mw1_spec
+
+
+In state: <mv_spec=0,ms_spec=0,mv_imp=3,ms_imp=0,mp=1,ma=1,>
+
+        move by action : mw0_imp
+
+
+In state: <mv_spec=1,ms_spec=0,mv_imp=3,ms_imp=0,mp=1,ma=2,>
+
+        move by action : mw1_imp
+
+
+In state: <mv_spec=1,ms_spec=0,mv_imp=0,ms_imp=0,mp=1,ma=7,>
+
+        move by action : mw0_spec
+
+
+In state: <mv_spec=1,ms_spec=0,mv_imp=3,ms_imp=0,mp=1,ma=4,>
+
+        move by action : mr1_imp
+
+
+In state: <mv_spec=1,ms_spec=0,mv_imp=3,ms_imp=0,mp=1,ma=10,>
+
+        move by action : mr1_spec
+
+
+In state: <mv_spec=1,ms_spec=0,mv_imp=3,ms_imp=0,mp=1,ma=8,>
+
+        move by action : mw1_spec
+
+

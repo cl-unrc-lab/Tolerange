@@ -1,0 +1,16 @@
+digraph model {
+
+    STATEmv0·ms0· -> STATEmv0·ms2· [label = "mtick"];
+    STATEmv0·ms0· -> STATEmv1·ms0· [label = "mw1"];
+    STATEmv0·ms0· -> STATEmv0·ms0· [label = "mw0"];
+    STATEmv0·ms0· -> STATEmv0·ms0· [label = "mr0"];
+    STATEmv0·ms0· -> STATEmv0·ms0· [label = "mtick"];
+    STATEmv1·ms0· -> STATEmv1·ms2· [label = "mtick"];
+    STATEmv1·ms0· -> STATEmv1·ms0· [label = "mw1"];
+    STATEmv1·ms0· -> STATEmv1·ms0· [label = "mr1"];
+    STATEmv1·ms0· -> STATEmv1·ms0· [label = "mtick"];
+    STATEmv1·ms0· -> STATEmv0·ms0· [label = "mw0"];
+    STATEmv0·ms2· -> STATEmv0·ms0· [label = "mrefresh"];
+    STATEmv1·ms2· -> STATEmv1·ms0· [label = "mrefresh"];
+
+}

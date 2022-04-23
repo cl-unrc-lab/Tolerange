@@ -1,0 +1,4790 @@
+In state: <safarictrl,safaricol=0,safarirow=0,safariballs=5,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=1,safariballs=5,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=2,safariballs=5,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=3,safariballs=5,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=1,safarirow=3,safariballs=5,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=1,safarirow=2,safariballs=5,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=2,safarirow=2,safariballs=5,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=2,safarirow=3,safariballs=5,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=3,safariballs=5,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=3,safarirow=2,safariballs=5,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=2,safariballs=5,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=4,safarirow=3,safariballs=5,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=4,safariballs=5,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=3,safarirow=4,safariballs=5,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=4,safariballs=5,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=1,safarirow=4,safariballs=5,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=0,safarirow=4,safariballs=5,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=5,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=5,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=1,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=1,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=2,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=3,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=4,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=3,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=2,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=1,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=2,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=1,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=1,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=2,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=2,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=2,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=0,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=0,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=1,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=1,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=4,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=4,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=1,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=0,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=1,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=3,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=4,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=3,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=2,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=1,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=0,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=2,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=0,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=0,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_bait
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=0,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=0,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=0,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=0,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=0,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=0,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=0,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=0,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=0,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=0,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=0,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=0,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=0,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=0,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=0,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=0,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=0,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=0,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=0,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=0,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=0,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=0,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=1,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=1,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=3,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=4,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=4,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=1,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=0,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=1,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=3,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=4,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=3,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=1,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=1,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=1,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=1,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=1,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=1,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=1,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=1,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=1,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=1,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=1,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=1,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=1,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=1,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=1,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=1,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=1,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=1,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=1,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=1,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=1,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=1,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=1,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=1,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=1,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=1,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=1,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=1,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=1,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=1,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=1,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=3,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=3,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=4,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=4,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=3,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=1,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=4,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=4,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=1,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=0,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=1,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=3,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=2,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=2,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=2,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=2,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=2,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=2,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=2,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=2,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=2,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=2,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=2,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=2,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=2,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=2,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=2,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=2,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=2,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=2,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=2,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=2,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=2,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=2,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=2,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=2,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=2,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=2,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=2,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=1,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=1,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=3,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=3,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=3,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=2,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=1,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=4,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=4,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=4,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=1,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=0,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=1,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=3,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=3,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=3,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=3,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=3,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=3,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=3,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=3,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=3,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=3,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=3,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=3,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=3,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=3,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=3,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=3,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=3,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=3,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=3,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=3,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=3,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=3,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=3,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=3,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=3,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=3,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=3,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=3,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=3,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=3,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=3,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=3,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=3,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=3,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=3,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=3,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=3,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=3,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=3,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=3,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=3,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=4,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=1,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=0,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=1,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=3,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safarictrl,safaricol=0,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=4,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=1,>
+
+        move by action : safarip_l
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=5,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=4,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=4,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=4,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=4,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=4,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=4,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=4,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=4,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=4,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=4,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=4,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=4,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=4,safaribait=2,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=4,safaribait=2,>
+
+        move by action : safarip_r
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=4,safariballs=5,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=4,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=3,safariballs=4,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=2,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=2,safariballs=4,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=3,safariballs=4,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=3,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=4,safariballs=4,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=4,safariballs=4,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=4,safariballs=4,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=3,safariballs=4,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=2,safariballs=4,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=2,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=2,safariballs=4,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=2,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=0,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=1,safariballs=4,safaribait=3,>
+
+        move by action : safarip_u
+
+
+In state: <safaric_poke,safarictrl,safaricol=4,safarirow=0,safariballs=4,safaribait=3,>
+
+        move by action : safarip_d
+
+
+In state: <safaric_poke,safarictrl,safaricol=3,safarirow=3,safariballs=4,safaribait=3,>
+
+        move by action : safarip_l
+
+
+In state: <safaric_poke,safarictrl,safaricol=1,safarirow=4,safariballs=4,safaribait=3,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=4,safarirow=1,safariballs=5,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=4,safarirow=0,safariballs=5,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=3,safarirow=0,safariballs=5,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=2,safarirow=0,safariballs=5,safaribait=0,>
+
+        move by action : safarip_l
+
+
+In state: <safarictrl,safaricol=1,safarirow=0,safariballs=5,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safarictrl,safaricol=1,safarirow=1,safariballs=5,safaribait=0,>
+
+        move by action : safarip_u
+
+
+In state: <safarictrl,safaricol=2,safarirow=1,safariballs=5,safaribait=0,>
+
+        move by action : safarip_r
+
+
+In state: <safarictrl,safaricol=3,safarirow=1,safariballs=5,safaribait=0,>
+
+        move by action : safarip_d
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=5,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=5,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=5,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=1,safariballs=5,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=5,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=5,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=5,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=0,safariballs=5,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=5,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=5,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=5,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=3,safarirow=0,safariballs=5,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=5,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=5,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=5,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=2,safarirow=2,safariballs=5,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=5,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=5,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=5,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=3,safariballs=5,safaribait=3,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=5,safaribait=0,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=5,safaribait=1,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=5,safaribait=2,>
+
+        move by action : safarip_ball
+
+
+In state: <safaris_poke,safarictrl,safaricol=0,safarirow=1,safariballs=5,safaribait=3,>
+
+        move by action : safarip_ball
+
+

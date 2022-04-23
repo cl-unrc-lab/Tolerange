@@ -1,0 +1,309 @@
+digraph model {
+
+    node [style=filled];
+    0 [label="State: uavwc0·uavstate0·
+Symbol: 
+Player: 2",color="pink"];
+    0 -> 1;
+    0 -> 2;
+    1 [label="State: uavwc0·uavstate0·
+Symbol: uavloiter
+Player: 2",color="grey"];
+    1 -> 1;
+    1 -> 2;
+    2 [label="State: uavwc0·uavstate1·
+Symbol: uavokPic
+Player: 2",color="grey"];
+    2 -> 3;
+    3 [label="State: uavctrl·uavwc0·uavstate3·
+Symbol: uavndelegate
+Player: 1",color="lightblue"];
+    3 -> 6;
+    3 -> 5;
+    3 -> 4;
+    3 -> 7;
+    4 [label="State: uavwc1·uavstate0·
+Symbol: uavfly_0_1
+Player: 2",color="grey"];
+    4 -> 87;
+    4 -> 86;
+    5 [label="State: uavwc4·uavstate0·
+Symbol: uavfly_0_4
+Player: 2",color="grey"];
+    5 -> 48;
+    5 -> 47;
+    6 [label="State: uavwc5·uavstate0·
+Symbol: uavfly_0_5
+Player: 2",color="grey"];
+    6 -> 10;
+    6 -> 11;
+    7 [label="State: uavctrl·uavwc0·uavstate4·
+Symbol: uavfly_0_3
+Player: 1",color="lightblue"];
+    7 [label="State: uavctrl·uavwc0·uavstate4·
+Symbol: uavfly_0_3
+Player: 1",color="red"];
+    7 -> 8;
+    8 [label="State: uavctrl·uavwc0·uavstate4·
+Symbol: uavfinish
+Player: 1",color="lightblue"];
+    8 [label="State: uavctrl·uavwc0·uavstate4·
+Symbol: uavfinish
+Player: 1",color="red"];
+    8 -> 8;
+    10 [label="State: uavwc5·uavstate1·
+Symbol: uavokPic
+Player: 2",color="grey"];
+    10 -> 14;
+    11 [label="State: uavwc5·uavstate0·
+Symbol: uavloiter
+Player: 2",color="grey"];
+    11 -> 10;
+    11 -> 11;
+    14 [label="State: uavwc5·uavstate1·
+Symbol: uavdelegate
+Player: 3",color="orange"];
+    14 -> 17;
+    14 -> 16;
+    16 [label="State: uavwc5·uavstate2·
+Symbol: 
+Player: 2",color="grey"];
+    16 -> 19;
+    16 -> 18;
+    16 -> 80;
+    16 -> 79;
+    17 [label="State: uavctrl·uavwc5·uavstate3·
+Symbol: 
+Player: 1",color="lightblue"];
+    17 -> 19;
+    17 -> 18;
+    17 -> 21;
+    17 -> 20;
+    18 [label="State: uavwc4·uavstate0·
+Symbol: uavfly_5_4
+Player: 2",color="grey"];
+    18 -> 48;
+    18 -> 47;
+    19 [label="State: uavwc2·uavstate0·
+Symbol: uavfly_5_2
+Player: 2",color="grey"];
+    19 -> 25;
+    19 -> 26;
+    20 [label="State: uavctrl·uavwc5·uavstate4·
+Symbol: uavfly_5_1
+Player: 1",color="lightblue"];
+    20 [label="State: uavctrl·uavwc5·uavstate4·
+Symbol: uavfly_5_1
+Player: 1",color="red"];
+    20 -> 22;
+    21 [label="State: uavctrl·uavwc5·uavstate4·
+Symbol: uavfly_5_3
+Player: 1",color="lightblue"];
+    21 [label="State: uavctrl·uavwc5·uavstate4·
+Symbol: uavfly_5_3
+Player: 1",color="red"];
+    21 -> 22;
+    22 [label="State: uavctrl·uavwc5·uavstate4·
+Symbol: uavfinish
+Player: 1",color="lightblue"];
+    22 [label="State: uavctrl·uavwc5·uavstate4·
+Symbol: uavfinish
+Player: 1",color="red"];
+    22 -> 22;
+    25 [label="State: uavwc2·uavstate0·
+Symbol: uavloiter
+Player: 2",color="grey"];
+    25 -> 25;
+    25 -> 26;
+    26 [label="State: uavwc2·uavstate1·
+Symbol: uavokPic
+Player: 2",color="grey"];
+    26 -> 27;
+    27 [label="State: uavwc2·uavstate1·
+Symbol: uavdelegate
+Player: 3",color="orange"];
+    27 -> 30;
+    27 -> 29;
+    29 [label="State: uavwc2·uavstate2·
+Symbol: 
+Player: 2",color="grey"];
+    29 -> 41;
+    29 -> 40;
+    29 -> 31;
+    30 [label="State: uavctrl·uavwc2·uavstate3·
+Symbol: 
+Player: 1",color="lightblue"];
+    30 -> 33;
+    30 -> 32;
+    30 -> 31;
+    31 [label="State: uavwc5·uavstate0·
+Symbol: uavfly_2_5
+Player: 2",color="grey"];
+    31 -> 10;
+    31 -> 11;
+    32 [label="State: uavctrl·uavwc2·uavstate4·
+Symbol: uavfly_2_3
+Player: 1",color="lightblue"];
+    32 [label="State: uavctrl·uavwc2·uavstate4·
+Symbol: uavfly_2_3
+Player: 1",color="red"];
+    32 -> 34;
+    33 [label="State: uavctrl·uavwc2·uavstate4·
+Symbol: uavfly_2_4
+Player: 1",color="lightblue"];
+    33 [label="State: uavctrl·uavwc2·uavstate4·
+Symbol: uavfly_2_4
+Player: 1",color="red"];
+    33 -> 34;
+    34 [label="State: uavctrl·uavwc2·uavstate4·
+Symbol: uavfinish
+Player: 1",color="lightblue"];
+    34 [label="State: uavctrl·uavwc2·uavstate4·
+Symbol: uavfinish
+Player: 1",color="red"];
+    34 -> 34;
+    40 [label="State: uavwc2·uavstate4·
+Symbol: uavfly_2_3
+Player: 2",color="grey"];
+    40 [label="State: uavwc2·uavstate4·
+Symbol: uavfly_2_3
+Player: 2",color="red"];
+    40 -> 42;
+    41 [label="State: uavwc2·uavstate4·
+Symbol: uavfly_2_4
+Player: 2",color="grey"];
+    41 [label="State: uavwc2·uavstate4·
+Symbol: uavfly_2_4
+Player: 2",color="red"];
+    41 -> 42;
+    42 [label="State: uavwc2·uavstate4·
+Symbol: uavfinish
+Player: 2",color="grey"];
+    42 [label="State: uavwc2·uavstate4·
+Symbol: uavfinish
+Player: 2",color="red"];
+    42 -> 42;
+    47 [label="State: uavwc4·uavstate0·
+Symbol: uavloiter
+Player: 2",color="grey"];
+    47 -> 48;
+    47 -> 47;
+    48 [label="State: uavwc4·uavstate1·
+Symbol: uavokPic
+Player: 2",color="grey"];
+    48 -> 49;
+    49 [label="State: uavwc4·uavstate1·
+Symbol: uavdelegate
+Player: 3",color="orange"];
+    49 -> 52;
+    49 -> 51;
+    51 [label="State: uavwc4·uavstate2·
+Symbol: 
+Player: 2",color="grey"];
+    51 -> 53;
+    51 -> 54;
+    51 -> 55;
+    52 [label="State: uavctrl·uavwc4·uavstate3·
+Symbol: 
+Player: 1",color="lightblue"];
+    52 -> 53;
+    52 -> 54;
+    52 -> 55;
+    53 [label="State: uavwc0·uavstate0·
+Symbol: uavfly_4_0
+Player: 2",color="grey"];
+    53 -> 1;
+    53 -> 2;
+    54 [label="State: uavwc3·uavstate0·
+Symbol: uavfly_4_3
+Player: 2",color="grey"];
+    54 -> 58;
+    54 -> 59;
+    55 [label="State: uavwc5·uavstate0·
+Symbol: uavfly_4_5
+Player: 2",color="grey"];
+    55 -> 10;
+    55 -> 11;
+    58 [label="State: uavwc3·uavstate0·
+Symbol: uavloiter
+Player: 2",color="grey"];
+    58 -> 58;
+    58 -> 59;
+    59 [label="State: uavwc3·uavstate1·
+Symbol: uavokPic
+Player: 2",color="grey"];
+    59 -> 60;
+    60 [label="State: uavwc3·uavstate1·
+Symbol: uavdelegate
+Player: 3",color="orange"];
+    60 -> 63;
+    60 -> 62;
+    62 [label="State: uavwc3·uavstate2·
+Symbol: 
+Player: 2",color="grey"];
+    62 -> 64;
+    63 [label="State: uavctrl·uavwc3·uavstate3·
+Symbol: 
+Player: 1",color="lightblue"];
+    63 -> 64;
+    64 [label="State: uavwc2·uavstate0·
+Symbol: uavfly_3_2
+Player: 2",color="grey"];
+    64 -> 25;
+    64 -> 26;
+    79 [label="State: uavwc5·uavstate4·
+Symbol: uavfly_5_1
+Player: 2",color="grey"];
+    79 [label="State: uavwc5·uavstate4·
+Symbol: uavfly_5_1
+Player: 2",color="red"];
+    79 -> 81;
+    80 [label="State: uavwc5·uavstate4·
+Symbol: uavfly_5_3
+Player: 2",color="grey"];
+    80 [label="State: uavwc5·uavstate4·
+Symbol: uavfly_5_3
+Player: 2",color="red"];
+    80 -> 81;
+    81 [label="State: uavwc5·uavstate4·
+Symbol: uavfinish
+Player: 2",color="grey"];
+    81 [label="State: uavwc5·uavstate4·
+Symbol: uavfinish
+Player: 2",color="red"];
+    81 -> 81;
+    86 [label="State: uavwc1·uavstate1·
+Symbol: uavokPic
+Player: 2",color="grey"];
+    86 -> 90;
+    87 [label="State: uavwc1·uavstate0·
+Symbol: uavloiter
+Player: 2",color="grey"];
+    87 -> 87;
+    87 -> 86;
+    90 [label="State: uavctrl·uavwc1·uavstate3·
+Symbol: uavndelegate
+Player: 1",color="lightblue"];
+    90 -> 91;
+    90 -> 92;
+    91 [label="State: uavwc4·uavstate0·
+Symbol: uavfly_1_4
+Player: 2",color="grey"];
+    91 -> 48;
+    91 -> 47;
+    92 [label="State: uavctrl·uavwc1·uavstate4·
+Symbol: uavfly_1_5
+Player: 1",color="lightblue"];
+    92 [label="State: uavctrl·uavwc1·uavstate4·
+Symbol: uavfly_1_5
+Player: 1",color="red"];
+    92 -> 93;
+    93 [label="State: uavctrl·uavwc1·uavstate4·
+Symbol: uavfinish
+Player: 1",color="lightblue"];
+    93 [label="State: uavctrl·uavwc1·uavstate4·
+Symbol: uavfinish
+Player: 1",color="red"];
+    93 -> 93;
+
+}
