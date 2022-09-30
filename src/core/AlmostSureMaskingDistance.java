@@ -20,6 +20,8 @@ import it.ssc.pl.milp.LinearObjectiveFunction;
 import it.ssc.pl.milp.Solution;
 import it.ssc.pl.milp.SolutionType;
 
+import gurobi.*;
+
 public class AlmostSureMaskingDistance{
 
   private GameGraph g;
@@ -44,10 +46,10 @@ public class AlmostSureMaskingDistance{
         spec = pSpec.toMDP(true);
         imp = pImp.toMDP(false);
         if (verbose){
-          System.out.println("Spec states: "+spec.getNumNodes());
-          System.out.println("Spec edges: "+spec.getNumEdges());
-          System.out.println("Imp states: "+imp.getNumNodes());
-          System.out.println("Imp edges: "+imp.getNumEdges());
+          System.out.println("Spec states: " + spec.getNumNodes());
+          System.out.println("Spec edges: " + spec.getNumEdges());
+          System.out.println("Imp states: " + imp.getNumNodes());
+          System.out.println("Imp edges: " + imp.getNumEdges());
         }
         spec.createDot(false);
         imp.createDot(true);
@@ -213,7 +215,114 @@ public class AlmostSureMaskingDistance{
           System.out.println("Game graph states: "+g.getNumNodes());
     }
 
-    
+/*
+    // solve with gurobi
+    private double solve(Set<GameNode> vars, GameNode current) throws Exception {
+        Action symSpec = current.getSymbol().cloneForSpec(true);
+        Action symImp = current.getSymbol().cloneForSpec(false);
+        LinkedList<GameNode> vs = new LinkedList<GameNode>(vars);
+        //defining the objective
+        double[] variables = new double[vs.size()];
+        ArrayList<Double> lastColProbs = new ArrayList<Double>();
+        ArrayList<Double> lastColProbs2 = new ArrayList<Double>();
+        for (int i=0;i<variables.length;i++){
+            variables[i] = vs.get(i).getValues()[0];
+        }
+        //defining coupling constraints
+        //initialization
+        int[] markedStates = new int[vs.size()]; //colors based on first component of v 
+        int[] markedStates2 = new int[vs.size()]; //colors based on second component of v
+        for (int i=0;i<vs.size();i++){
+            markedStates[i] = 0;
+            markedStates2[i] = 0;
+        }
+        int colorSpec = 0;
+        int colorImp = 0; 
+        //identify rows
+        for (int i=0;i<vs.size();i++){
+            if (markedStates[i]==0){
+                if (current.getSymbol().isFaulty())
+                    lastColProbs.add(1.0);
+                else
+                    lastColProbs.add(current.getSpecState().getModel().getProb(current.getSpecState(),vs.get(i).getSpecState(),symSpec));
+                colorSpec++;
+                for (int j=0;j<vs.size();j++){
+                    if (vs.get(j).getSpecState().equals(vs.get(i).getSpecState())){
+                        markedStates[j] = colorSpec; //assign same color to every (s,-) for a fixed s
+                    }
+                }
+            }
+            if (markedStates2[i]==0){
+                lastColProbs2.add(current.getImpState().getModel().getProb(current.getImpState(),vs.get(i).getImpState(),symImp));
+                colorImp++;
+                for (int j=0;j<vs.size();j++){
+                    if (vs.get(j).getImpState().equals(vs.get(i).getImpState())){
+                        markedStates2[j] = colorImp; //assign same color to every (-,t) for a fixed t
+                    }
+                }
+            }
+        }
+        boolean matrix[][] = new boolean[colorSpec+colorImp][vs.size()];
+        double[] lastCol = new double[colorSpec+colorImp];
+        //define rows
+        for (int i=0;i<colorSpec;i++){
+            boolean[] row = new boolean[vs.size()];
+            for (int j=0;j<row.length;j++){
+                row[j] = markedStates[j]==(i+1)?true:false;
+            }
+            matrix[i] = row;
+            lastCol[i] = lastColProbs.get(i);
+        }
+        for (int i=colorSpec;i<colorSpec+colorImp;i++){
+            boolean[] row = new boolean[vs.size()];
+            for (int j=0;j<row.length;j++){
+                row[j] = markedStates2[j]==(i-colorSpec+1)?true:false;
+            }
+            matrix[i] = row;
+            lastCol[i] = lastColProbs2.get(i-colorSpec);
+        }
+
+        // Create empty environment , set options , and start
+        GRBEnv env = new GRBEnv(true);
+        env.set(GRB.IntParam.OutputFlag, 0);
+        //env.set("logFile", "mip1 .log");
+        env.start();
+
+        // Create empty model
+        GRBModel model = new GRBModel(env);
+
+        // Create variables
+        GRBVar c[] = new GRBVar[vs.size()]; // probabilities
+        GRBLinExpr obj = new GRBLinExpr(); // objective expression to maximize
+        for (int i=0;i<variables.length;i++){
+          c[i] = model.addVar(0.0, 1.0, 0.0, GRB.CONTINUOUS, "x"+i);
+          obj.addTerm(vs.get(i).getValues()[0],c[i]);
+        }
+
+        // Set objective
+        model.setObjective(obj , GRB.MAXIMIZE);
+
+        // Add constraints
+        ArrayList<GRBLinExpr> constraints = new ArrayList<GRBLinExpr>();
+        for(int i=0; i < matrix.length; i++) {
+            GRBLinExpr constraint = new GRBLinExpr();
+            for (int j=0; j < matrix[i].length; j++){
+                if (matrix[i][j])
+                    constraint.addTerm(1.0, c[j]); // matrix[i,j] es el coeficiente (1 o 0) 
+                //constraint.addTerm(matrix[i][j]?1.0:0.0, c[j]); // matrix[i,j] es el coeficiente (1 o 0) 
+            }
+            model.addConstr(constraint, GRB.EQUAL, lastCol[i], "c"+i);
+        }
+        
+        // Optimize model
+        model.optimize();
+        double result = model.get(GRB.DoubleAttr.ObjVal);
+
+        // Dispose of model and environment
+        model.dispose();
+
+        return result;
+    }*/
 
    
 
@@ -343,6 +452,7 @@ public class AlmostSureMaskingDistance{
       }
       return -1.0;
   }
+  
   private void showMatrix(double[][] a, double[] b, double[] c, int startGE, int startLE) {
         String res ="Maximize: ";
         for (int i=0;i<c.length;i++) {
@@ -363,13 +473,13 @@ public class AlmostSureMaskingDistance{
         System.out.println(res);
   }
 
-  public double valueIteration(int precision, double upperBound) throws Exception{
+  public double valueIteration(int precision, double upperBound, boolean checkAlmostSureFailing) throws Exception{
       GameNode init =  g.getInitial();
       boolean forceExit = false;
       int i = 0;
       for (GameNode v : g.getNodes()) {
           if (v.isErrState()) {
-              v.setValue(1,0);
+              v.setValue(1,checkAlmostSureFailing?1:0);
           }
           else {
               v.setValue(1,upperBound); 
@@ -387,7 +497,7 @@ public class AlmostSureMaskingDistance{
               switch (v.getPlayer()){
                 case "R":  val = minValue(g.getSuccessors(v));
                             break;
-                case "V":  val = v.getSymbol().getReward() + maxValue(g.getSuccessors(v));
+                case "V":  val = (checkAlmostSureFailing?0:v.getSymbol().getReward()) + maxValue(g.getSuccessors(v));
                             break;
                 case "P":  try{
                                 val = solve(g.getSuccessors(v),v);

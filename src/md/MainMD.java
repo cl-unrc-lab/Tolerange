@@ -39,7 +39,7 @@ public class MainMD {
             Program imp = prog.parseAux(args[args.length - 1]);
             try{
               AlmostSureMaskingDistance md = new AlmostSureMaskingDistance(spec,imp,verbose);
-              System.out.println("Almost Sure Failing Masking Distance: "+md.valueIteration(precision,bound));
+              System.out.println("Almost Sure Failing Masking Distance: "+ md.valueIteration(precision,bound,false));
               if (toDot)
                 md.createDot(5000);      
             }
