@@ -12,14 +12,14 @@ public class GameGraph{
 	private LinkedList<GameNode> nodes; // States
 	private int numNodes;
 	private int numEdges;
-	private GameNode errState; // Special error state
+	private GameNode errState; // Distinguished Error State
 
 	public GameGraph() {
 		succList = new HashMap<GameNode, HashSet<GameNode>>();
 		preList = new HashMap<GameNode, HashSet<GameNode>>();
 		numNodes = numEdges = 0;
 		nodes = new LinkedList<GameNode>();
-		errState = new GameNode(null,null,new Action("ERR", false, false, false),"");
+		errState = new GameNode(null,null,new Action("ERR", false, false, false), TPlayer.ERR);
 		addNode(errState);
 
 	}

@@ -28,12 +28,18 @@ public class AlmostSureMaskingDistance{
   private Program pSpec;
   private Program pImp;
   private boolean verbose;
+  private GRBEnv env;
 
-    public AlmostSureMaskingDistance(Program specProgram, Program impProgram, boolean verb) throws InterruptedException{
+    public AlmostSureMaskingDistance(Program specProgram, Program impProgram, boolean verb) throws InterruptedException, GRBException{
         pSpec = specProgram;
         pImp = impProgram;
         verbose = verb;
         buildGraph();
+        // Create empty environment , set options , and start
+        env = new GRBEnv(true);
+        env.set(GRB.IntParam.OutputFlag, 0);
+        //env.set("logFile", "mip1 .log");
+        env.start();
     }
 
     public GameGraph getG(){
@@ -57,7 +63,7 @@ public class AlmostSureMaskingDistance{
         g = new GameGraph();
 
         //calculate initial state
-        GameNode init = new GameNode(spec.getInitial(), imp.getInitial(),new Action("", false, false, false) ,"R");
+        GameNode init = new GameNode(spec.getInitial(), imp.getInitial(),new Action("", false, false, false) , TPlayer.REFUTER);
         g.addNode(init);
         g.setInitial(init);
 
@@ -68,13 +74,13 @@ public class AlmostSureMaskingDistance{
         while(!iterSet.isEmpty()){
             GameNode curr = iterSet.pollFirst();
 
-            if (curr.getPlayer() == "R"){ //if player is refuter we add its possible moves from current state
+            if (curr.isRefuter()){ //if player is refuter we add its possible moves from current state
                 //IMP MOVES
                 for (ModelState succ : imp.getSuccessors(curr.getImpState())){
                     Pair p = new Pair(curr.getImpState(),succ);
                     if (imp.getActions().get(p) != null){
                         for (int i=0; i < imp.getActions().get(p).size(); i++){
-                            GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(),imp.getActions().get(p).get(i), "V");
+                            GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(),imp.getActions().get(p).get(i), TPlayer.VERIFIER);
                             GameNode toOld = g.search(curr_);
                             if (toOld == null){
                                 g.addNode(curr_);
@@ -94,7 +100,7 @@ public class AlmostSureMaskingDistance{
                     Pair p = new Pair(curr.getSpecState(),succ);
                     if (spec.getActions().get(p) != null){
                         for (int i=0; i < spec.getActions().get(p).size(); i++){
-                            GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(),spec.getActions().get(p).get(i), "V");
+                            GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(),spec.getActions().get(p).get(i), TPlayer.VERIFIER);
                             GameNode toOld = g.search(curr_);
                             if (toOld == null){
                                 g.addNode(curr_);
@@ -109,12 +115,12 @@ public class AlmostSureMaskingDistance{
                 }
             }
 
-            if (curr.getPlayer() == "V"){ //if player is verifier we add its matching move from current state or err transition if can't match
+            if (curr.isVerifier()){ //if player is verifier we add its matching move from current state or err transition if can't match
                 boolean foundSucc = false;
                 //SPEC MOVES
                 if (!curr.getSymbol().isFromSpec()){
                     if (curr.getMask()){ //this means the state has to mask a previous fault
-                        GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(),curr.getSymbol(), "P");
+                        GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(),curr.getSymbol(), TPlayer.PROBABILISTIC);
                         GameNode toOld = g.search(curr_);
                         if (toOld == null){
                             g.addNode(curr_);
@@ -134,7 +140,7 @@ public class AlmostSureMaskingDistance{
                                     Action lblImp = curr.getSymbol();
                                     Action lblSpec = spec.getActions().get(p).get(i);
                                     if (lblImp.getLabel().equals(lblSpec.getLabel()) || (lblImp.isTau() && lblSpec.isTau())){
-                                        GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(), curr.getSymbol(), "P");
+                                        GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(), curr.getSymbol(), TPlayer.PROBABILISTIC);
                                         GameNode toOld = g.search(curr_);
                                         if (toOld == null){
                                             g.addNode(curr_);
@@ -160,7 +166,7 @@ public class AlmostSureMaskingDistance{
                                 Action lblSpec = curr.getSymbol();
                                 Action lblImp = imp.getActions().get(p).get(i);
                                 if (lblImp.getLabel().equals(lblSpec.getLabel()) || (lblImp.isTau() && lblSpec.isTau())){
-                                    GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(), curr.getSymbol(), "P");
+                                    GameNode curr_ = new GameNode(curr.getSpecState(),curr.getImpState(), curr.getSymbol(), TPlayer.PROBABILISTIC);
                                     GameNode toOld = g.search(curr_);
                                     if (toOld == null){
                                         g.addNode(curr_);
@@ -183,7 +189,7 @@ public class AlmostSureMaskingDistance{
                 }
             }
 
-            if (curr.getPlayer() == "P"){
+            if (curr.isProbabilistic()){
                 Action symSpec = curr.getSymbol().cloneForSpec(true);
                 Action symImp = curr.getSymbol().cloneForSpec(false);
                 for (ModelState succImp : imp.getSuccessors(curr.getImpState())){
@@ -192,9 +198,9 @@ public class AlmostSureMaskingDistance{
                             if (curr.getImpState().getModel().getProb(curr.getImpState(),succImp,symImp) != null){
                                 GameNode curr_;
                                 if (curr.getSymbol().isFaulty())
-                                    curr_ = new GameNode(curr.getSpecState(),succImp,new Action("", false, false, false), "R");
+                                    curr_ = new GameNode(curr.getSpecState(),succImp,new Action("", false, false, false), TPlayer.REFUTER);
                                 else
-                                    curr_ = new GameNode(succSpec,succImp,new Action("", false, false, false), "R");
+                                    curr_ = new GameNode(succSpec,succImp,new Action("", false, false, false), TPlayer.REFUTER);
                                 GameNode toOld = g.search(curr_);
                                 if (toOld == null){
                                     g.addNode(curr_);
@@ -215,18 +221,21 @@ public class AlmostSureMaskingDistance{
           System.out.println("Game graph states: "+g.getNumNodes());
     }
 
-/*
+
     // solve with gurobi
-    private double solve(Set<GameNode> vars, GameNode current) throws Exception {
+    private double solve(Set<GameNode> vars, GameNode current, Set<GameNode> banned) throws Exception {
         Action symSpec = current.getSymbol().cloneForSpec(true);
         Action symImp = current.getSymbol().cloneForSpec(false);
         LinkedList<GameNode> vs = new LinkedList<GameNode>(vars);
         //defining the objective
-        double[] variables = new double[vs.size()];
         ArrayList<Double> lastColProbs = new ArrayList<Double>();
         ArrayList<Double> lastColProbs2 = new ArrayList<Double>();
-        for (int i=0;i<variables.length;i++){
-            variables[i] = vs.get(i).getValues()[0];
+        //only used if banned != null
+        boolean[] markedBanned = new boolean[vs.size()];
+
+        for (int i=0;i<vs.size();i++){
+            if (banned != null)
+                markedBanned[i] = banned.contains(vs.get(i))?true:false;
         }
         //defining coupling constraints
         //initialization
@@ -262,8 +271,11 @@ public class AlmostSureMaskingDistance{
                 }
             }
         }
-        boolean matrix[][] = new boolean[colorSpec+colorImp][vs.size()];
-        double[] lastCol = new double[colorSpec+colorImp];
+        int rowSize = colorSpec+colorImp;
+        //if (banned != null) // add one last special row
+        //    rowSize++;
+        boolean matrix[][] = new boolean[rowSize][vs.size()];
+        double[] lastCol = new double[rowSize];
         //define rows
         for (int i=0;i<colorSpec;i++){
             boolean[] row = new boolean[vs.size()];
@@ -281,12 +293,10 @@ public class AlmostSureMaskingDistance{
             matrix[i] = row;
             lastCol[i] = lastColProbs2.get(i-colorSpec);
         }
-
-        // Create empty environment , set options , and start
-        GRBEnv env = new GRBEnv(true);
-        env.set(GRB.IntParam.OutputFlag, 0);
-        //env.set("logFile", "mip1 .log");
-        env.start();
+        //if (banned != null){
+        //    matrix[rowSize-1] = markedBanned;
+        //    lastCol[rowSize-1] = 0;
+        //}
 
         // Create empty model
         GRBModel model = new GRBModel(env);
@@ -294,21 +304,29 @@ public class AlmostSureMaskingDistance{
         // Create variables
         GRBVar c[] = new GRBVar[vs.size()]; // probabilities
         GRBLinExpr obj = new GRBLinExpr(); // objective expression to maximize
-        for (int i=0;i<variables.length;i++){
+        for (int i=0;i<vs.size();i++){
           c[i] = model.addVar(0.0, 1.0, 0.0, GRB.CONTINUOUS, "x"+i);
-          obj.addTerm(vs.get(i).getValues()[0],c[i]);
+          if (banned == null)
+            obj.addTerm(vs.get(i).getValues()[0],c[i]);
+          else{
+            if (markedBanned[i])
+                obj.addTerm(1.0,c[i]);
+          }
+
         }
 
         // Set objective
-        model.setObjective(obj , GRB.MAXIMIZE);
-
+        if (banned == null)
+            model.setObjective(obj , GRB.MAXIMIZE);
+        else
+            model.setObjective(obj , GRB.MINIMIZE);
         // Add constraints
         ArrayList<GRBLinExpr> constraints = new ArrayList<GRBLinExpr>();
         for(int i=0; i < matrix.length; i++) {
             GRBLinExpr constraint = new GRBLinExpr();
             for (int j=0; j < matrix[i].length; j++){
                 if (matrix[i][j])
-                    constraint.addTerm(1.0, c[j]); // matrix[i,j] es el coeficiente (1 o 0) 
+                    constraint.addTerm(1.0, c[j]); 
                 //constraint.addTerm(matrix[i][j]?1.0:0.0, c[j]); // matrix[i,j] es el coeficiente (1 o 0) 
             }
             model.addConstr(constraint, GRB.EQUAL, lastCol[i], "c"+i);
@@ -322,11 +340,11 @@ public class AlmostSureMaskingDistance{
         model.dispose();
 
         return result;
-    }*/
+    }
 
    
-
-    private double solve(Set<GameNode> vars, GameNode current) throws Exception {
+    // solve with scc
+    /*private double solve(Set<GameNode> vars, GameNode current) throws Exception {
       Action symSpec = current.getSymbol().cloneForSpec(true);
       Action symImp = current.getSymbol().cloneForSpec(false);
       LinkedList<GameNode> vs = new LinkedList<GameNode>(vars);
@@ -451,7 +469,7 @@ public class AlmostSureMaskingDistance{
           return solution.getOptimumValue();
       }
       return -1.0;
-  }
+  }*/
   
   private void showMatrix(double[][] a, double[] b, double[] c, int startGE, int startLE) {
         String res ="Maximize: ";
@@ -473,13 +491,13 @@ public class AlmostSureMaskingDistance{
         System.out.println(res);
   }
 
-  public double valueIteration(int precision, double upperBound, boolean checkAlmostSureFailing) throws Exception{
+  public double valueIteration(int precision, double upperBound) throws Exception{
       GameNode init =  g.getInitial();
       boolean forceExit = false;
       int i = 0;
       for (GameNode v : g.getNodes()) {
           if (v.isErrState()) {
-              v.setValue(1,checkAlmostSureFailing?1:0);
+              v.setValue(1,0);
           }
           else {
               v.setValue(1,upperBound); 
@@ -495,12 +513,12 @@ public class AlmostSureMaskingDistance{
                     break;
               double val = 0;
               switch (v.getPlayer()){
-                case "R":  val = minValue(g.getSuccessors(v));
+                case REFUTER:  val = minValue(g.getSuccessors(v));
                             break;
-                case "V":  val = (checkAlmostSureFailing?0:v.getSymbol().getReward()) + maxValue(g.getSuccessors(v));
+                case VERIFIER:  val = v.getSymbol().getReward() + maxValue(g.getSuccessors(v));
                             break;
-                case "P":  try{
-                                val = solve(g.getSuccessors(v),v);
+                case PROBABILISTIC:  try{
+                                val = solve(g.getSuccessors(v),v,null);
                             }
                             catch(Exception e){
                                 System.out.println(v);
@@ -551,16 +569,16 @@ public class AlmostSureMaskingDistance{
       return true;
   }
 
-  private double minValue(Set<GameNode> vs) throws Exception{
-    double min = Double.POSITIVE_INFINITY;
-    for (GameNode v : vs){
-      double val = v.getValues()[0];
-      if (val < min){
-        min = val;
-      }
+    private double minValue(Set<GameNode> vs) throws Exception{
+        double min = Double.POSITIVE_INFINITY;
+        for (GameNode v : vs){
+            double val = v.getValues()[0];
+            if (val < min){
+                min = val;
+            }
+        }
+        return min;
     }
-    return min;
-  }
 /*
   private double minValue2(Set<GameNode> vs) throws Exception{
     double min = Double.POSITIVE_INFINITY;
@@ -577,19 +595,33 @@ public class AlmostSureMaskingDistance{
     return min;
   }
 */
-  private double maxValue(Set<GameNode> vs) throws Exception{
-    double max = Double.NEGATIVE_INFINITY;
-    for (GameNode v : vs){
-        double val = v.getValues()[0];
-        if (val > max){
-          max = val;
+    private double maxValue(Set<GameNode> vs) throws Exception{
+        double max = Double.NEGATIVE_INFINITY;
+        for (GameNode v : vs){
+            double val = v.getValues()[0];
+            if (val > max){
+                max = val;
+            }
         }
+        return max;
     }
-    return max;
-  }
+
+    private double randomValue(Set<GameNode> vs) throws Exception{
+        Random random = new Random();
+        int chosen = random.nextInt(vs.size());
+        int i = 0;
+        for (GameNode v : vs){
+            if (chosen == i){
+                return v.getValues()[0];
+            }
+            i++;
+        }
+        assert false;  //should be unreachable
+        return -1;
+      }
 
 
-
+                                               
     public void createDot(int lineLimit){
         g.createDot(lineLimit, (pSpec.getName()+"---"+pImp.getName()),false);
     }
@@ -662,5 +694,109 @@ public class AlmostSureMaskingDistance{
       }
     }
   }*/
+
+  public boolean almostSureFailingUnderFairness(){
+    // compute closure of All Pre (Error)
+    Set<GameNode> s1 = new HashSet<GameNode>();
+    s1.add(g.getErrState());
+    boolean change = true;
+    boolean found;
+    int oldSize;
+    while (change){
+        //System.out.println(s1.size());
+        List<GameNode> added = new ArrayList<GameNode>();
+        change = false;
+        oldSize = s1.size();
+        for (GameNode v : s1){
+            for (GameNode v_ : g.getPredecessors(v)){
+                switch (v_.getPlayer()){
+                    case REFUTER:  added.add(v_);
+                                break;
+                    case VERIFIER:  found = false;
+                                    for (GameNode v_s : g.getSuccessors(v_)){
+                                        if (!s1.contains(v_s)){
+                                            found = true;
+                                            break;
+                                        }
+                                    }
+                                    if (!found)
+                                        added.add(v_);
+                                break;
+                    case PROBABILISTIC: try{
+                                            if (solve(g.getSuccessors(v_),v_,s1) > 0)
+                                                added.add(v_);
+                                        }
+                                        catch(Exception e){
+                                            //added.add(v_);
+                                            System.out.println("Error during almostSureFailingUnderFairness check:" + e);
+                                        }
+                                        /*found = false;
+                                        for (GameNode v_s : g.getSuccessors(v_)){
+                                            Double p1 = v.getSpecState().getModel().getProb(v.getSpecState(),v_s.getSpecState(),v.getSymbol());
+                                            Double p2 = v.getImpState().getModel().getProb(v.getImpState(),v_s.getImpState(),v.getSymbol());
+                                            if (s1.contains(v_s) && p1 == 0 && p2 == 0){
+                                                found = true;
+                                                break;
+                                            }
+                                        }
+                                        if (!found)
+                                            added.add(v_);*/
+                                        break;
+                    default: break;
+                }
+            }      
+        }
+        s1.addAll(added);
+        if (oldSize != s1.size()){
+            change = true;
+        }
+    }
+
+
+    // compute closure of Exist Pre (V / s1)
+    Set<GameNode> s2 = new HashSet<GameNode>();
+    for (GameNode v : g.getNodes()){
+        if (!s1.contains(v))
+            s2.add(v);
+    }
+    change = true;
+    while (change){
+        //System.out.println(s2.size());
+        List<GameNode> added = new ArrayList<GameNode>();
+        change = false;
+        oldSize = s2.size();
+        for (GameNode v : s2){
+            for (GameNode v_ : g.getPredecessors(v)){
+                switch (v_.getPlayer()){
+                    case REFUTER:  added.add(v_);
+                                break;
+                    case VERIFIER:  added.add(v_);
+                                break;
+                    case PROBABILISTIC: found = false;
+                                        for (GameNode v_s : g.getSuccessors(v_)){
+                                            Double p1 = v.getSpecState().getModel().getProb(v.getSpecState(),v_s.getSpecState(),v.getSymbol());
+                                            Double p2 = v.getImpState().getModel().getProb(v.getImpState(),v_s.getImpState(),v.getSymbol());
+                                            if (s2.contains(v_s) && p1 > 0 && p2 > 0){
+                                                found = true;
+                                                break;
+                                            }
+                                        }
+                                        if (found)
+                                            added.add(v_);
+                                        break;
+                    default: break;
+                }
+            }      
+        }
+        s2.addAll(added);
+        if (oldSize != s2.size()){
+            change = true;          
+        }
+    }
+
+
+    return !s2.contains(g.getInitial());
+  }
+
 
 }

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maskD">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar/maskD.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

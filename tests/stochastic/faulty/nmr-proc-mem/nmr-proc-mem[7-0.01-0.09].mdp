@@ -1,0 +1,30 @@
+// N-Modular Redundancy: N Processors, N Voters, 1 Memory Module
+Process ProcMemNMR {
+    v: INT; //0..7amount of faulty voters, a faulty voter outputs a value other than the majority of the input
+    p: INT; //0..7amount of faulty processors, a faulty processor outputs a value other than the correct one
+    s:INT; //0..2    0=normal, 1=faulty processor, 2=faulty voter
+
+    Initial : v==0 && p==0 && s==0;
+
+    // communication
+
+    [pToM] p<=3 && v<=3-> s=s; //good
+
+    // tick
+
+    [tick] <1> s==0 ->0.9: v=v
+                    ++ 0.01: s=1
+                    ++ 0.09: s=2;
+    [tick] <1> !(s==0) -> v=v;
+
+    // faults
+
+    [faultProc] faulty s==1 && p<7-> s=0, p=p+1;
+    [faultVot] faulty s==2 && v<7-> s=0, v=v+1;
+
+}
+
+Main() {
+    m : ProcMemNMR ;
+    run m() ;
+}

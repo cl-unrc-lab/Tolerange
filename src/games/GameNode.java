@@ -8,7 +8,7 @@ public class GameNode implements Comparable<Object>{
 	ModelState specState; // Current state of the Specification
 	ModelState impState; // Current state of the Implementation
 	Action symbol; // The action that lead to this state
-	String player; // The player that has to play from here
+	TPlayer player; // The player that has to play from here
 	boolean mask; // True if the player has to mask this.symbol
 	boolean visited; // Utility for graph traversal algorithms
 	int distanceValue; // Value of the game for this node
@@ -26,7 +26,7 @@ public class GameNode implements Comparable<Object>{
 		id = idCounter++;
 	}
 
-	public GameNode(ModelState s, ModelState i, Action sym, String p){
+	public GameNode(ModelState s, ModelState i, Action sym, TPlayer p){
 		specState = s;
 		impState = i;
 		symbol = sym;
@@ -50,7 +50,7 @@ public class GameNode implements Comparable<Object>{
 		return symbol;
 	}
 
-	public String getPlayer(){
+	public TPlayer getPlayer(){
 		return player;
 	}
 
@@ -91,11 +91,11 @@ public class GameNode implements Comparable<Object>{
 	}
 
 	public boolean isVerifier(){
-		return player.equals("V");
+		return player.equals(TPlayer.VERIFIER);
 	}
 
 	public boolean isRefuter(){
-		return player.equals("R") || isErrState();
+		return player.equals(TPlayer.REFUTER);
 	}
 
 	public boolean isNumbered(){
@@ -108,7 +108,7 @@ public class GameNode implements Comparable<Object>{
 
 	//EXPANSION SET
 	public boolean isProbabilistic(){
-		return player.equals("P");
+		return player.equals(TPlayer.PROBABILISTIC);
 	}
 	//EXPANSION SET
   	public void setValue(int i, double val){
@@ -163,7 +163,7 @@ public class GameNode implements Comparable<Object>{
 	}
 
 	public boolean isErrState(){
-		return symbol.getLabel().equals("ERR");
+		return player.equals(TPlayer.ERR);
 	}
 
 	@Override

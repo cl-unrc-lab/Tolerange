@@ -12,6 +12,7 @@ public class MainMD {
        ProgramParser prog = new ProgramParser();
        boolean toDot = false;
        boolean verbose = false;
+       boolean checkFair = false;
        int precision = 6;
        int bound = Integer.MAX_VALUE;
        
@@ -26,6 +27,9 @@ public class MainMD {
               if (args[i].equals("-d")){
                 toDot = true;
               }
+              if (args[i].equals("-f")){
+                checkFair = true;
+              }
               if (args[i].startsWith("p=")){
                   String[] splits = args[i].split("=");
                   precision = Integer.parseInt(splits[1]);
@@ -39,7 +43,10 @@ public class MainMD {
             Program imp = prog.parseAux(args[args.length - 1]);
             try{
               AlmostSureMaskingDistance md = new AlmostSureMaskingDistance(spec,imp,verbose);
-              System.out.println("Almost Sure Failing Masking Distance: "+ md.valueIteration(precision,bound,false));
+              if (checkFair)
+                System.out.println("Is Almost Sure Failing Under Fairness? : "+ md.almostSureFailingUnderFairness());
+              else
+                System.out.println("Almost Sure Failing Masking Distance: "+ md.valueIteration(precision,bound));
               if (toDot)
                 md.createDot(5000);      
             }

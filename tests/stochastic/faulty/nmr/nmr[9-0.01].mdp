@@ -1,0 +1,36 @@
+// N-Modular Redundancy
+Process NMR {
+    v: INT; //0..9
+    s:INT; //0..1    0=normal, 1=faulty
+
+    Initial : v==0 && s==0;
+
+    // environment input
+
+    [i0] true -> v=0;
+    [i1] true -> v=9;
+
+    // vote
+
+    [v0] v<=4 -> v=v;
+    [v1] v>4 -> v=v;
+
+    // tick
+
+    [tick] <1> s==0 && v<9->0.99: v=v
+                    ++ 0.01: s=1;
+    [tick] <1> s==1 || v==9-> v=v;
+
+    // faults
+
+    [fault1] faulty s==1 && v<9-> s=0, v=v+1;
+    [fault1] faulty s==1 && v>=9-> s=0, v=8;
+    [fault2] faulty s==1 && v>0-> s=0, v=v-1;
+    [fault2] faulty s==1 && v<=0-> s=0, v=1;
+
+}
+
+Main() {
+    m : NMR ;
+    run m() ;
+}
