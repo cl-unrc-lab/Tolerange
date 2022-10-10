@@ -1,35 +1,53 @@
 #script for creation of tests
 
-python3 ../tests/scripts/memory_nominal_gen.py -q 0.05
+python3 ../tests/scripts/memory_nominal_gen.py -q 0.5
 python3 ../tests/scripts/memory_nominal_gen.py -q 0.1
 python3 ../tests/scripts/memory_nominal_gen.py -q 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.5 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.5 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.5 -p 0.5
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.5 -p 0.5
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.5 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.1 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.1 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.1 -p 0.5
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.1 -p 0.5
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.1 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.05 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.05 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.05 -p 0.5
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.05 -p 0.5
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.05 -p 0.5
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.5 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.5 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.5 -p 0.1
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.5 -p 0.1
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.5 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.1 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.1 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.1 -p 0.1
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.1 -p 0.1
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.1 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.05 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.05 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.05 -p 0.1
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.05 -p 0.1
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.05 -p 0.1
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.5 -p 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.5 -p 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.5 -p 0.05
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.5 -p 0.05
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.5 -p 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.1 -p 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.1 -p 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.1 -p 0.05
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.1 -p 0.05
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.1 -p 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 3 -q 0.05 -p 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 5 -q 0.05 -p 0.05
 python3 ../tests/scripts/memory_faulty_gen.py -b 7 -q 0.05 -p 0.05
+python3 ../tests/scripts/memory_faulty_gen.py -b 9 -q 0.05 -p 0.05
+python3 ../tests/scripts/memory_faulty_gen.py -b 11 -q 0.05 -p 0.05
 
 python3 ../tests/scripts/nmr_nominal_gen.py
 python3 ../tests/scripts/nmr_faulty_gen.py -m 3 -p 0.5
