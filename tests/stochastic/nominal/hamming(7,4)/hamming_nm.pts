@@ -1,0 +1,50 @@
+Process Nominal_model {
+
+  state : INT ;
+
+  Initial: state == 16 ;
+
+  // Send message 
+
+  [snd_0] (state == 16) -> state = 0 ;
+  [snd_1] (state == 16) -> state = 1 ;
+  [snd_2] (state == 16) -> state = 2 ;
+  [snd_3] (state == 16) -> state = 3 ;
+  [snd_4] (state == 16) -> state = 4 ;
+  [snd_5] (state == 16) -> state = 5 ;
+  [snd_6] (state == 16) -> state = 6 ;
+  [snd_7] (state == 16) -> state = 7 ;
+  [snd_8] (state == 16) -> state = 8 ;
+  [snd_9] (state == 16) -> state = 9 ;
+  [snd_10] (state == 16) -> state = 10 ;
+  [snd_11] (state == 16) -> state = 11 ;
+  [snd_12] (state == 16) -> state = 12 ;
+  [snd_13] (state == 16) -> state = 13 ;
+  [snd_14] (state == 16) -> state = 14 ;
+  [snd_15] (state == 16) -> state = 15 ;
+
+  // Receive message 
+
+  [rcv_0] <1> (state == 0) -> state = 16 ;
+  [rcv_1] <1> (state == 1) -> state = 16 ;
+  [rcv_2] <1> (state == 2) -> state = 16 ;
+  [rcv_3] <1> (state == 3) -> state = 16 ;
+  [rcv_4] <1> (state == 4) -> state = 16 ;
+  [rcv_5] <1> (state == 5) -> state = 16 ;
+  [rcv_6] <1> (state == 6) -> state = 16 ;
+  [rcv_7] <1> (state == 7) -> state = 16 ;
+  [rcv_8] <1> (state == 8) -> state = 16 ;
+  [rcv_9] <1> (state == 9) -> state = 16 ;
+  [rcv_10] <1> (state == 10) -> state = 16 ;
+  [rcv_11] <1> (state == 11) -> state = 16 ;
+  [rcv_12] <1> (state == 12) -> state = 16 ;
+  [rcv_13] <1> (state == 13) -> state = 16 ;
+  [rcv_14] <1> (state == 14) -> state = 16 ;
+  [rcv_15] <1> (state == 15) -> state = 16 ;
+
+} 
+
+  Main() { 
+    h : Nominal_model ;
+    run h() ; 
+  } 

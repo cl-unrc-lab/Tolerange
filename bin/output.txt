@@ -1,0 +1,1279 @@
+----------------------------Memory Cell test (Refresh Milestone)----------------------------
+3 bits, 0.5 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 3.0000189374562627
+
+real	0m35.867s
+user	0m37.765s
+sys	0m1.755s
+5 bits, 0.5 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 7.000121428106677
+
+real	2m13.004s
+user	2m0.854s
+sys	0m8.293s
+7 bits, 0.5 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 15.000592292524402
+
+real	4m54.564s
+user	4m53.511s
+sys	0m6.404s
+3 bits, 0.5 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 0.44000168472149637
+
+real	0m14.692s
+user	0m17.367s
+sys	0m0.635s
+5 bits, 0.5 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 0.7280062403520446
+
+real	0m35.506s
+user	0m37.207s
+sys	0m1.532s
+7 bits, 0.5 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 1.0736142821166217
+
+real	1m8.817s
+user	1m10.902s
+sys	0m1.730s
+3 bits, 0.5 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 0.21000065436840276
+
+real	0m12.387s
+user	0m14.924s
+sys	0m0.532s
+5 bits, 0.5 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 0.3310017174690605
+
+real	0m27.707s
+user	0m29.934s
+sys	0m1.160s
+7 bits, 0.5 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 0.46410436343582706
+
+real	0m58.828s
+user	0m55.962s
+sys	0m6.643s
+3 bits, 0.1 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 35.005626058189165
+
+real	4m19.835s
+user	4m13.448s
+sys	0m12.411s
+5 bits, 0.1 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 215.2194816945734
+
+real	37m55.681s
+user	33m4.774s
+sys	3m57.332s
+7 bits, 0.1 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 1303.0787165695406
+
+real	199m34.594s
+user	182m40.158s
+sys	14m9.585s
+3 bits, 0.1 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 3.0001314631111615
+
+real	1m31.285s
+user	1m32.662s
+sys	0m2.794s
+5 bits, 0.1 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 7.000754924976529
+
+real	5m58.054s
+user	5m20.736s
+sys	0m41.124s
+7 bits, 0.1 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 15.00367434952985
+
+real	14m24.017s
+user	13m56.785s
+sys	0m23.560s
+3 bits, 0.1 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 1.2500395045990764
+
+real	1m19.280s
+user	1m15.033s
+sys	0m7.808s
+5 bits, 0.1 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 2.3751443325097856
+
+real	3m15.370s
+user	3m13.457s
+sys	0m6.502s
+7 bits, 0.1 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 4.062947981979894
+
+real	8m6.370s
+user	7m27.174s
+sys	0m43.889s
+3 bits, 0.05 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 120.06597708814996
+
+real	15m11.199s
+user	13m4.738s
+sys	0m56.397s
+5 bits, 0.05 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 1338.260066599445
+
+real	163m3.816s
+user	140m29.444s
+sys	16m34.959s
+7 bits, 0.05 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 15709.156548759176
+
+real	713m25.993s
+user	672m55.593s
+sys	41m0.309s
+3 bits, 0.05 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 8.000996258149009
+
+real	3m40.906s
+user	3m41.226s
+sys	0m5.307s
+5 bits, 0.05 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 26.011071997949642
+
+real	16m54.941s
+user	16m10.812s
+sys	0m56.415s
+7 bits, 0.05 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 80.1078310701299
+
+real	63m2.028s
+user	58m45.391s
+sys	4m46.018s
+3 bits, 0.05 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 3.000247159339517
+
+real	2m58.549s
+user	2m47.862s
+sys	0m15.487s
+5 bits, 0.05 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 7.001409448885868
+
+real	8m58.579s
+user	8m45.542s
+sys	0m21.846s
+7 bits, 0.05 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 15.006774431727647
+
+real	24m59.728s
+user	23m58.696s
+sys	1m17.247s
+----------------------------Memory Cell test (Tick Milestone)----------------------------
+3 bits, 0.5 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 6.000035760862782
+
+real	0m30.794s
+user	0m33.366s
+sys	0m1.221s
+5 bits, 0.5 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 14.00023728408359
+
+real	1m43.273s
+user	1m46.108s
+sys	0m2.360s
+7 bits, 0.5 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 30.001193283926156
+
+real	4m48.711s
+user	4m45.233s
+sys	0m10.288s
+3 bits, 0.5 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 4.4000187915480495
+
+real	0m13.602s
+user	0m16.777s
+sys	0m0.603s
+5 bits, 0.5 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 7.280063547130867
+
+real	0m32.648s
+user	0m35.526s
+sys	0m1.321s
+7 bits, 0.5 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 10.736153358536988
+
+real	1m4.518s
+user	1m6.334s
+sys	0m1.636s
+3 bits, 0.5 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 4.200014182126628
+
+real	0m11.375s
+user	0m14.524s
+sys	0m0.553s
+5 bits, 0.5 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 6.620034720281869
+
+real	0m26.085s
+user	0m27.825s
+sys	0m1.815s
+7 bits, 0.5 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 9.282083001199352
+
+real	0m43.901s
+user	0m47.188s
+sys	0m1.237s
+3 bits, 0.1 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 70.01121590223417
+
+real	4m21.603s
+user	4m7.600s
+sys	0m19.436s
+5 bits, 0.1 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 430.43937876226585
+
+real	29m24.360s
+user	28m54.638s
+sys	0m48.010s
+7 bits, 0.1 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 2606.1592071145487
+
+real	162m27.711s
+user	158m55.023s
+sys	3m25.110s
+3 bits, 0.1 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 30.001304533912162
+
+real	1m22.848s
+user	1m23.413s
+sys	0m3.879s
+5 bits, 0.1 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 70.00755272492846
+
+real	4m23.141s
+user	4m21.573s
+sys	0m5.749s
+7 bits, 0.1 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 150.03673906748892
+
+real	13m58.144s
+user	12m31.948s
+sys	1m30.495s
+3 bits, 0.1 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 25.000765094345887
+
+real	1m3.534s
+user	1m4.371s
+sys	0m2.909s
+5 bits, 0.1 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 47.50293680872337
+
+real	2m41.060s
+user	2m40.631s
+sys	0m4.108s
+7 bits, 0.1 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 81.25905331009488
+
+real	6m43.681s
+user	6m15.159s
+sys	0m33.837s
+3 bits, 0.05 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 240.1320836978157
+
+real	12m10.116s
+user	11m35.890s
+sys	0m40.315s
+5 bits, 0.05 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 2676.517099610121
+
+real	128m37.099s
+user	120m54.797s
+sys	5m42.599s
+7 bits, 0.05 probability of fault, 0.5 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 31418.28682768425
+
+real	68m49.888s
+user	59m6.452s
+sys	9m0.404s
+3 bits, 0.05 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 80.0100037737353
+
+real	3m31.285s
+user	3m17.914s
+sys	0m18.309s
+5 bits, 0.05 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 260.1107631894233
+
+real	13m29.827s
+user	13m23.999s
+sys	0m15.704s
+7 bits, 0.05 probability of fault, 0.1 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 801.0786051917207
+
+real	89m20.460s
+user	60m29.389s
+sys	9m15.744s
+3 bits, 0.05 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 12
+Imp edges: 56
+Building Game Graph...
+Game graph states: 505
+Game graph edges: 2364
+Computing value of the game...
+Expected Milestones Achieved: 60.00499950210589
+
+real	2m39.905s
+user	2m28.718s
+sys	0m13.087s
+5 bits, 0.05 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 18
+Imp edges: 84
+Building Game Graph...
+Game graph states: 757
+Game graph edges: 3688
+Computing value of the game...
+Expected Milestones Achieved: 140.0283233791655
+
+real	9m29.216s
+user	8m10.195s
+sys	0m42.011s
+7 bits, 0.05 probability of fault, 0.05 probability of refresh
+Building Models...
+Spec states: 4
+Spec edges: 12
+Imp states: 24
+Imp edges: 112
+Building Game Graph...
+Game graph states: 1009
+Game graph edges: 5012
+Computing value of the game...
+Expected Milestones Achieved: 300.1354307105425
+
+real	23m26.016s
+user	20m51.295s
+sys	2m1.655s
+----------------------------N-Modular Redundancy test (Tick Milestone)----------------------------
+3 modules, 0.5 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 8
+Imp edges: 43
+Building Game Graph...
+Game graph states: 289
+Game graph edges: 1164
+Computing value of the game...
+Expected Milestones Achieved: 4.000002032960765
+
+real	0m5.638s
+user	0m7.907s
+sys	0m0.442s
+5 modules, 0.5 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 12
+Imp edges: 65
+Building Game Graph...
+Game graph states: 433
+Game graph edges: 1852
+Computing value of the game...
+Expected Milestones Achieved: 6.000005110894563
+
+real	0m7.548s
+user	0m10.562s
+sys	0m0.440s
+7 modules, 0.5 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 16
+Imp edges: 87
+Building Game Graph...
+Game graph states: 577
+Game graph edges: 2540
+Computing value of the game...
+Expected Milestones Achieved: 8.000005227473594
+
+real	0m12.714s
+user	0m14.920s
+sys	0m0.901s
+9 modules, 0.5 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 20
+Imp edges: 109
+Building Game Graph...
+Game graph states: 721
+Game graph edges: 3228
+Computing value of the game...
+Expected Milestones Achieved: 10.000008505193136
+
+real	0m15.281s
+user	0m17.802s
+sys	0m0.837s
+3 modules, 0.3 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 8
+Imp edges: 43
+Building Game Graph...
+Game graph states: 289
+Game graph edges: 1164
+Computing value of the game...
+Expected Milestones Achieved: 6.666680190450513
+
+real	0m8.807s
+user	0m12.394s
+sys	0m0.487s
+5 modules, 0.3 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 12
+Imp edges: 65
+Building Game Graph...
+Game graph states: 433
+Game graph edges: 1852
+Computing value of the game...
+Expected Milestones Achieved: 10.00002520488676
+
+real	0m13.085s
+user	0m16.056s
+sys	0m0.775s
+7 modules, 0.3 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 16
+Imp edges: 87
+Building Game Graph...
+Game graph states: 577
+Game graph edges: 2540
+Computing value of the game...
+Expected Milestones Achieved: 13.333369730392
+
+real	0m18.791s
+user	0m21.190s
+sys	0m1.034s
+9 modules, 0.3 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 20
+Imp edges: 109
+Building Game Graph...
+Game graph states: 721
+Game graph edges: 3228
+Computing value of the game...
+Expected Milestones Achieved: 16.666711736068407
+
+real	0m29.800s
+user	0m29.611s
+sys	0m2.106s
+3 modules, 0.1 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 8
+Imp edges: 43
+Building Game Graph...
+Game graph states: 289
+Game graph edges: 1164
+Computing value of the game...
+Expected Milestones Achieved: 20.000242759987007
+
+real	0m25.608s
+user	0m26.423s
+sys	0m2.496s
+5 modules, 0.1 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 12
+Imp edges: 65
+Building Game Graph...
+Game graph states: 433
+Game graph edges: 1852
+Computing value of the game...
+Expected Milestones Achieved: 30.00040310803281
+
+real	0m40.928s
+user	0m39.318s
+sys	0m3.629s
+7 modules, 0.1 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 16
+Imp edges: 87
+Building Game Graph...
+Game graph states: 577
+Game graph edges: 2540
+Computing value of the game...
+Expected Milestones Achieved: 40.000528570696105
+
+real	0m49.791s
+user	0m51.313s
+sys	0m2.236s
+9 modules, 0.1 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 20
+Imp edges: 109
+Building Game Graph...
+Game graph states: 721
+Game graph edges: 3228
+Computing value of the game...
+Expected Milestones Achieved: 50.000719931967474
+
+real	1m11.155s
+user	1m8.246s
+sys	0m4.800s
+3 modules, 0.05 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 8
+Imp edges: 43
+Building Game Graph...
+Game graph states: 289
+Game graph edges: 1164
+Computing value of the game...
+Expected Milestones Achieved: 40.001123839950715
+
+real	0m36.423s
+user	0m39.173s
+sys	0m1.836s
+5 modules, 0.05 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 12
+Imp edges: 65
+Building Game Graph...
+Game graph states: 433
+Game graph edges: 1852
+Computing value of the game...
+Expected Milestones Achieved: 60.00177619601471
+
+real	1m8.263s
+user	1m5.573s
+sys	0m5.338s
+7 modules, 0.05 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 16
+Imp edges: 87
+Building Game Graph...
+Game graph states: 577
+Game graph edges: 2540
+Computing value of the game...
+Expected Milestones Achieved: 80.00244771634475
+
+real	1m29.181s
+user	1m29.179s
+sys	0m3.579s
+9 modules, 0.05 probability of fault
+Building Models...
+Spec states: 2
+Spec edges: 8
+Imp states: 20
+Imp edges: 109
+Building Game Graph...
+Game graph states: 721
+Game graph edges: 3228
+Computing value of the game...
+Expected Milestones Achieved: 100.00320093609385
+
+real	2m1.191s
+user	1m59.550s
+sys	0m5.400s
+----------------------------N-Modular Redundancy: N Processor, N Voter test (Tick Milestone)----------------------------
+N=3, 0.05 probability of processor fault, 0.05 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 48
+Imp edges: 116
+Building Game Graph...
+Game graph states: 373
+Game graph edges: 672
+Computing value of the game...
+Expected Milestones Achieved: 25.000351666055607
+
+real	0m19.888s
+user	0m22.427s
+sys	0m0.881s
+N=3, 0.07 probability of processor fault, 0.03 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 48
+Imp edges: 116
+Building Game Graph...
+Game graph states: 373
+Game graph edges: 672
+Computing value of the game...
+Expected Milestones Achieved: 24.200334577294402
+
+real	0m19.259s
+user	0m22.067s
+sys	0m0.785s
+N=3, 0.09 probability of processor fault, 0.01 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 48
+Imp edges: 116
+Building Game Graph...
+Game graph states: 373
+Game graph edges: 672
+Computing value of the game...
+Expected Milestones Achieved: 21.800316635417232
+
+real	0m18.453s
+user	0m21.254s
+sys	0m0.768s
+N=3, 0.03 probability of processor fault, 0.07 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 48
+Imp edges: 116
+Building Game Graph...
+Game graph states: 373
+Game graph edges: 672
+Computing value of the game...
+Expected Milestones Achieved: 24.200334577294402
+
+real	0m19.073s
+user	0m21.865s
+sys	0m0.837s
+N=3, 0.01 probability of processor fault, 0.09 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 48
+Imp edges: 116
+Building Game Graph...
+Game graph states: 373
+Game graph edges: 672
+Computing value of the game...
+Expected Milestones Achieved: 21.800316635417232
+
+real	0m19.108s
+user	0m21.702s
+sys	0m1.078s
+N=5, 0.05 probability of processor fault, 0.05 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 108
+Imp edges: 267
+Building Game Graph...
+Game graph states: 850
+Game graph edges: 1548
+Computing value of the game...
+Expected Milestones Achieved: 41.25063139316847
+
+real	0m51.566s
+user	0m52.936s
+sys	0m2.250s
+N=5, 0.07 probability of processor fault, 0.03 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 108
+Imp edges: 267
+Building Game Graph...
+Game graph states: 850
+Game graph edges: 1548
+Computing value of the game...
+Expected Milestones Achieved: 38.94661464115781
+
+real	0m51.788s
+user	0m53.145s
+sys	0m2.389s
+N=5, 0.09 probability of processor fault, 0.01 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 108
+Imp edges: 267
+Building Game Graph...
+Game graph states: 850
+Game graph edges: 1548
+Computing value of the game...
+Expected Milestones Achieved: 33.18651733200426
+
+real	1m1.212s
+user	0m56.928s
+sys	0m4.341s
+N=5, 0.03 probability of processor fault, 0.07 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 108
+Imp edges: 267
+Building Game Graph...
+Game graph states: 850
+Game graph edges: 1548
+Computing value of the game...
+Expected Milestones Achieved: 38.94661464115781
+
+real	1m6.021s
+user	0m59.278s
+sys	0m10.326s
+N=5, 0.01 probability of processor fault, 0.09 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 108
+Imp edges: 267
+Building Game Graph...
+Game graph states: 850
+Game graph edges: 1548
+Computing value of the game...
+Expected Milestones Achieved: 33.186517332004264
+
+real	0m49.666s
+user	0m50.812s
+sys	0m2.296s
+N=7, 0.05 probability of processor fault, 0.05 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 192
+Imp edges: 480
+Building Game Graph...
+Game graph states: 1521
+Game graph edges: 2784
+Computing value of the game...
+Expected Milestones Achieved: 58.1259590579457
+
+real	1m57.234s
+user	1m53.716s
+sys	0m4.713s
+N=7, 0.07 probability of processor fault, 0.03 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 192
+Imp edges: 480
+Building Game Graph...
+Game graph states: 1521
+Game graph edges: 2784
+Computing value of the game...
+Expected Milestones Achieved: 53.78106060410898
+
+real	3m14.009s
+user	2m14.620s
+sys	0m18.805s
+N=7, 0.09 probability of processor fault, 0.01 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 192
+Imp edges: 480
+Building Game Graph...
+Game graph states: 1521
+Game graph edges: 2784
+Computing value of the game...
+Expected Milestones Achieved: 44.394539692847076
+
+real	2m6.804s
+user	1m49.823s
+sys	0m7.233s
+N=7, 0.03 probability of processor fault, 0.07 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 192
+Imp edges: 480
+Building Game Graph...
+Game graph states: 1521
+Game graph edges: 2784
+Computing value of the game...
+Expected Milestones Achieved: 53.78106060410897
+
+real	2m3.826s
+user	1m55.751s
+sys	0m7.680s
+N=7, 0.01 probability of processor fault, 0.09 probability of voter fault
+Building Models...
+Spec states: 1
+Spec edges: 2
+Imp states: 192
+Imp edges: 480
+Building Game Graph...
+Game graph states: 1521
+Game graph edges: 2784
+Computing value of the game...
+Expected Milestones Achieved: 44.394539692847076
+
+real	1m47.295s
+user	1m43.420s
+sys	0m5.672s

@@ -55,7 +55,7 @@ def writeNMR(fileName) :
 def main(argv):
 
     path = "../tests/stochastic/nominal/nmr/"
-    writeNMR(path+"nmr[].mdp")
+    writeNMR(path+"nmr[].pts")
 
 
 

@@ -8,7 +8,7 @@
   <property name="lib"     location="lib"     />
   <property name="bin"     location="bin"     />
   <property name="jar.file"       location="${dist}/${ant.project.name}.jar"/>
-  <property name="jar.main.class" value="md.MainMD"/>
+  <property name="jar.main.class" value="main.Main"/>
   <property environment="env" />
 
   <!-- We rely on CUP-11a  JFlex 1.4.1  -->

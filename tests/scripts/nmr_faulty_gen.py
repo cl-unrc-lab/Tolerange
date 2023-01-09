@@ -119,7 +119,7 @@ def main(argv):
             includeRewards = False
 
 
-    writeNMR(path+"nmr["+str(modules)+"-"+str(probFault)+("" if includeRewards else "-NR")+"].mdp")
+    writeNMR(path+"nmr["+str(modules)+"-"+str(probFault)+("" if includeRewards else "-NR")+"].pts")
 
 
 

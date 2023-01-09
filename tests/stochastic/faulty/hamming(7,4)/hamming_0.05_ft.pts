@@ -1,0 +1,85 @@
+Process Faulty_model {
+
+  fstate : INT ;
+
+  Initial : fstate == 32 ;
+
+  // Send message 
+
+  [snd_0] (fstate == 32) -> fstate = 0 ;
+  [snd_1] (fstate == 32) -> fstate = 1 ;
+  [snd_2] (fstate == 32) -> fstate = 2 ;
+  [snd_3] (fstate == 32) -> fstate = 3 ;
+  [snd_4] (fstate == 32) -> fstate = 4 ;
+  [snd_5] (fstate == 32) -> fstate = 5 ;
+  [snd_6] (fstate == 32) -> fstate = 6 ;
+  [snd_7] (fstate == 32) -> fstate = 7 ;
+  [snd_8] (fstate == 32) -> fstate = 8 ;
+  [snd_9] (fstate == 32) -> fstate = 9 ;
+  [snd_10] (fstate == 32) -> fstate = 10 ;
+  [snd_11] (fstate == 32) -> fstate = 11 ;
+  [snd_12] (fstate == 32) -> fstate = 12 ;
+  [snd_13] (fstate == 32) -> fstate = 13 ;
+  [snd_14] (fstate == 32) -> fstate = 14 ;
+  [snd_15] (fstate == 32) -> fstate = 15 ;
+
+  // Fault event 
+
+  [fault] faulty (fstate == 0) -> 0.88231390 : fstate = 16 ++ 0.00061652 : fstate = 17 ++ 0.00592660 : fstate = 18 ++ 0.00592660 : fstate = 19 ++ 0.00978479 : fstate = 20 ++ 0.00591592 : fstate = 21 ++ 0.00041346 : fstate = 22 ++ 0.00041346 : fstate = 23 ++ 0.00592660 : fstate = 24 ++ 0.00592660 : fstate = 25 ++ 0.07371902 : fstate = 26 ++ 0.00021040 : fstate = 27 ++ 0.00041346 : fstate = 28 ++ 0.00041346 : fstate = 29 ++ 0.00206842 : fstate = 30 ++ 0.00001079 : fstate = 31 ;
+  [fault] faulty (fstate == 1) -> 0.00061652 : fstate = 16 ++ 0.88231390 : fstate = 17 ++ 0.00592660 : fstate = 18 ++ 0.00592660 : fstate = 19 ++ 0.00591592 : fstate = 20 ++ 0.00978479 : fstate = 21 ++ 0.00041346 : fstate = 22 ++ 0.00041346 : fstate = 23 ++ 0.00592660 : fstate = 24 ++ 0.00592660 : fstate = 25 ++ 0.00021040 : fstate = 26 ++ 0.07371902 : fstate = 27 ++ 0.00041346 : fstate = 28 ++ 0.00041346 : fstate = 29 ++ 0.00001079 : fstate = 30 ++ 0.00206842 : fstate = 31 ;
+  [fault] faulty (fstate == 2) -> 0.00592660 : fstate = 16 ++ 0.00592660 : fstate = 17 ++ 0.88231390 : fstate = 18 ++ 0.00061652 : fstate = 19 ++ 0.00041346 : fstate = 20 ++ 0.00041346 : fstate = 21 ++ 0.00978479 : fstate = 22 ++ 0.00591592 : fstate = 23 ++ 0.07371902 : fstate = 24 ++ 0.00021040 : fstate = 25 ++ 0.00592660 : fstate = 26 ++ 0.00592660 : fstate = 27 ++ 0.00206842 : fstate = 28 ++ 0.00001079 : fstate = 29 ++ 0.00041346 : fstate = 30 ++ 0.00041346 : fstate = 31 ;
+  [fault] faulty (fstate == 3) -> 0.00592660 : fstate = 16 ++ 0.00592660 : fstate = 17 ++ 0.00061652 : fstate = 18 ++ 0.88231390 : fstate = 19 ++ 0.00041346 : fstate = 20 ++ 0.00041346 : fstate = 21 ++ 0.00591592 : fstate = 22 ++ 0.00978479 : fstate = 23 ++ 0.00021040 : fstate = 24 ++ 0.07371902 : fstate = 25 ++ 0.00592660 : fstate = 26 ++ 0.00592660 : fstate = 27 ++ 0.00001079 : fstate = 28 ++ 0.00206842 : fstate = 29 ++ 0.00041346 : fstate = 30 ++ 0.00041346 : fstate = 31 ;
+  [fault] faulty (fstate == 4) -> 0.00978479 : fstate = 16 ++ 0.00591592 : fstate = 17 ++ 0.00041346 : fstate = 18 ++ 0.00041346 : fstate = 19 ++ 0.88231390 : fstate = 20 ++ 0.00061652 : fstate = 21 ++ 0.00592660 : fstate = 22 ++ 0.00592660 : fstate = 23 ++ 0.00041346 : fstate = 24 ++ 0.00041346 : fstate = 25 ++ 0.00206842 : fstate = 26 ++ 0.00001079 : fstate = 27 ++ 0.00592660 : fstate = 28 ++ 0.00592660 : fstate = 29 ++ 0.07371902 : fstate = 30 ++ 0.00021040 : fstate = 31 ;
+  [fault] faulty (fstate == 5) -> 0.00591592 : fstate = 16 ++ 0.00978479 : fstate = 17 ++ 0.00041346 : fstate = 18 ++ 0.00041346 : fstate = 19 ++ 0.00061652 : fstate = 20 ++ 0.88231390 : fstate = 21 ++ 0.00592660 : fstate = 22 ++ 0.00592660 : fstate = 23 ++ 0.00041346 : fstate = 24 ++ 0.00041346 : fstate = 25 ++ 0.00001079 : fstate = 26 ++ 0.00206842 : fstate = 27 ++ 0.00592660 : fstate = 28 ++ 0.00592660 : fstate = 29 ++ 0.00021040 : fstate = 30 ++ 0.07371902 : fstate = 31 ;
+  [fault] faulty (fstate == 6) -> 0.00041346 : fstate = 16 ++ 0.00041346 : fstate = 17 ++ 0.00978479 : fstate = 18 ++ 0.00591592 : fstate = 19 ++ 0.00592660 : fstate = 20 ++ 0.00592660 : fstate = 21 ++ 0.88231390 : fstate = 22 ++ 0.00061652 : fstate = 23 ++ 0.00206842 : fstate = 24 ++ 0.00001079 : fstate = 25 ++ 0.00041346 : fstate = 26 ++ 0.00041346 : fstate = 27 ++ 0.07371902 : fstate = 28 ++ 0.00021040 : fstate = 29 ++ 0.00592660 : fstate = 30 ++ 0.00592660 : fstate = 31 ;
+  [fault] faulty (fstate == 7) -> 0.00041346 : fstate = 16 ++ 0.00041346 : fstate = 17 ++ 0.00591592 : fstate = 18 ++ 0.00978479 : fstate = 19 ++ 0.00592660 : fstate = 20 ++ 0.00592660 : fstate = 21 ++ 0.00061652 : fstate = 22 ++ 0.88231390 : fstate = 23 ++ 0.00001079 : fstate = 24 ++ 0.00206842 : fstate = 25 ++ 0.00041346 : fstate = 26 ++ 0.00041346 : fstate = 27 ++ 0.00021040 : fstate = 28 ++ 0.07371902 : fstate = 29 ++ 0.00592660 : fstate = 30 ++ 0.00592660 : fstate = 31 ;
+  [fault] faulty (fstate == 8) -> 0.00592660 : fstate = 16 ++ 0.00592660 : fstate = 17 ++ 0.07371902 : fstate = 18 ++ 0.00021040 : fstate = 19 ++ 0.00041346 : fstate = 20 ++ 0.00041346 : fstate = 21 ++ 0.00206842 : fstate = 22 ++ 0.00001079 : fstate = 23 ++ 0.88231390 : fstate = 24 ++ 0.00061652 : fstate = 25 ++ 0.00592660 : fstate = 26 ++ 0.00592660 : fstate = 27 ++ 0.00978479 : fstate = 28 ++ 0.00591592 : fstate = 29 ++ 0.00041346 : fstate = 30 ++ 0.00041346 : fstate = 31 ;
+  [fault] faulty (fstate == 9) -> 0.00592660 : fstate = 16 ++ 0.00592660 : fstate = 17 ++ 0.00021040 : fstate = 18 ++ 0.07371902 : fstate = 19 ++ 0.00041346 : fstate = 20 ++ 0.00041346 : fstate = 21 ++ 0.00001079 : fstate = 22 ++ 0.00206842 : fstate = 23 ++ 0.00061652 : fstate = 24 ++ 0.88231390 : fstate = 25 ++ 0.00592660 : fstate = 26 ++ 0.00592660 : fstate = 27 ++ 0.00591592 : fstate = 28 ++ 0.00978479 : fstate = 29 ++ 0.00041346 : fstate = 30 ++ 0.00041346 : fstate = 31 ;
+  [fault] faulty (fstate == 10) -> 0.07371902 : fstate = 16 ++ 0.00021040 : fstate = 17 ++ 0.00592660 : fstate = 18 ++ 0.00592660 : fstate = 19 ++ 0.00206842 : fstate = 20 ++ 0.00001079 : fstate = 21 ++ 0.00041346 : fstate = 22 ++ 0.00041346 : fstate = 23 ++ 0.00592660 : fstate = 24 ++ 0.00592660 : fstate = 25 ++ 0.88231390 : fstate = 26 ++ 0.00061652 : fstate = 27 ++ 0.00041346 : fstate = 28 ++ 0.00041346 : fstate = 29 ++ 0.00978479 : fstate = 30 ++ 0.00591592 : fstate = 31 ;
+  [fault] faulty (fstate == 11) -> 0.00021040 : fstate = 16 ++ 0.07371902 : fstate = 17 ++ 0.00592660 : fstate = 18 ++ 0.00592660 : fstate = 19 ++ 0.00001079 : fstate = 20 ++ 0.00206842 : fstate = 21 ++ 0.00041346 : fstate = 22 ++ 0.00041346 : fstate = 23 ++ 0.00592660 : fstate = 24 ++ 0.00592660 : fstate = 25 ++ 0.00061652 : fstate = 26 ++ 0.88231390 : fstate = 27 ++ 0.00041346 : fstate = 28 ++ 0.00041346 : fstate = 29 ++ 0.00591592 : fstate = 30 ++ 0.00978479 : fstate = 31 ;
+  [fault] faulty (fstate == 12) -> 0.00041346 : fstate = 16 ++ 0.00041346 : fstate = 17 ++ 0.00206842 : fstate = 18 ++ 0.00001079 : fstate = 19 ++ 0.00592660 : fstate = 20 ++ 0.00592660 : fstate = 21 ++ 0.07371902 : fstate = 22 ++ 0.00021040 : fstate = 23 ++ 0.00978479 : fstate = 24 ++ 0.00591592 : fstate = 25 ++ 0.00041346 : fstate = 26 ++ 0.00041346 : fstate = 27 ++ 0.88231390 : fstate = 28 ++ 0.00061652 : fstate = 29 ++ 0.00592660 : fstate = 30 ++ 0.00592660 : fstate = 31 ;
+  [fault] faulty (fstate == 13) -> 0.00041346 : fstate = 16 ++ 0.00041346 : fstate = 17 ++ 0.00001079 : fstate = 18 ++ 0.00206842 : fstate = 19 ++ 0.00592660 : fstate = 20 ++ 0.00592660 : fstate = 21 ++ 0.00021040 : fstate = 22 ++ 0.07371902 : fstate = 23 ++ 0.00591592 : fstate = 24 ++ 0.00978479 : fstate = 25 ++ 0.00041346 : fstate = 26 ++ 0.00041346 : fstate = 27 ++ 0.00061652 : fstate = 28 ++ 0.88231390 : fstate = 29 ++ 0.00592660 : fstate = 30 ++ 0.00592660 : fstate = 31 ;
+  [fault] faulty (fstate == 14) -> 0.00206842 : fstate = 16 ++ 0.00001079 : fstate = 17 ++ 0.00041346 : fstate = 18 ++ 0.00041346 : fstate = 19 ++ 0.07371902 : fstate = 20 ++ 0.00021040 : fstate = 21 ++ 0.00592660 : fstate = 22 ++ 0.00592660 : fstate = 23 ++ 0.00041346 : fstate = 24 ++ 0.00041346 : fstate = 25 ++ 0.00978479 : fstate = 26 ++ 0.00591592 : fstate = 27 ++ 0.00592660 : fstate = 28 ++ 0.00592660 : fstate = 29 ++ 0.88231390 : fstate = 30 ++ 0.00061652 : fstate = 31 ;
+  [fault] faulty (fstate == 15) -> 0.00001079 : fstate = 16 ++ 0.00206842 : fstate = 17 ++ 0.00041346 : fstate = 18 ++ 0.00041346 : fstate = 19 ++ 0.00021040 : fstate = 20 ++ 0.07371902 : fstate = 21 ++ 0.00592660 : fstate = 22 ++ 0.00592660 : fstate = 23 ++ 0.00041346 : fstate = 24 ++ 0.00041346 : fstate = 25 ++ 0.00591592 : fstate = 26 ++ 0.00978479 : fstate = 27 ++ 0.00592660 : fstate = 28 ++ 0.00592660 : fstate = 29 ++ 0.00061652 : fstate = 30 ++ 0.88231390 : fstate = 31 ;
+
+  // Receive message 
+
+  [rcv_0] <1> (fstate == 16) -> fstate = 32 ;
+  [rcv_1] <1> (fstate == 17) -> fstate = 32 ;
+  [rcv_2] <1> (fstate == 18) -> fstate = 32 ;
+  [rcv_3] <1> (fstate == 19) -> fstate = 32 ;
+  [rcv_4] <1> (fstate == 20) -> fstate = 32 ;
+  [rcv_5] <1> (fstate == 21) -> fstate = 32 ;
+  [rcv_6] <1> (fstate == 22) -> fstate = 32 ;
+  [rcv_7] <1> (fstate == 23) -> fstate = 32 ;
+  [rcv_8] <1> (fstate == 24) -> fstate = 32 ;
+  [rcv_9] <1> (fstate == 25) -> fstate = 32 ;
+  [rcv_10] <1> (fstate == 26) -> fstate = 32 ;
+  [rcv_11] <1> (fstate == 27) -> fstate = 32 ;
+  [rcv_12] <1> (fstate == 28) -> fstate = 32 ;
+  [rcv_13] <1> (fstate == 29) -> fstate = 32 ;
+  [rcv_14] <1> (fstate == 30) -> fstate = 32 ;
+  [rcv_15] <1> (fstate == 31) -> fstate = 32 ;
+  [rcv_0] <1> (fstate == 0) -> fstate = 32 ;
+  [rcv_1] <1> (fstate == 1) -> fstate = 32 ;
+  [rcv_2] <1> (fstate == 2) -> fstate = 32 ;
+  [rcv_3] <1> (fstate == 3) -> fstate = 32 ;
+  [rcv_4] <1> (fstate == 4) -> fstate = 32 ;
+  [rcv_5] <1> (fstate == 5) -> fstate = 32 ;
+  [rcv_6] <1> (fstate == 6) -> fstate = 32 ;
+  [rcv_7] <1> (fstate == 7) -> fstate = 32 ;
+  [rcv_8] <1> (fstate == 8) -> fstate = 32 ;
+  [rcv_9] <1> (fstate == 9) -> fstate = 32 ;
+  [rcv_10] <1> (fstate == 10) -> fstate = 32 ;
+  [rcv_11] <1> (fstate == 11) -> fstate = 32 ;
+  [rcv_12] <1> (fstate == 12) -> fstate = 32 ;
+  [rcv_13] <1> (fstate == 13) -> fstate = 32 ;
+  [rcv_14] <1> (fstate == 14) -> fstate = 32 ;
+  [rcv_15] <1> (fstate == 15) -> fstate = 32 ;
+
+} 
+
+  Main() { 
+    h : Faulty_model ;
+    run h() ; 
+  } 

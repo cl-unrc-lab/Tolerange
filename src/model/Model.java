@@ -156,7 +156,7 @@ public class Model {
 
 	public Double getProb(ModelState from, ModelState to, Action a){
 		Double t = probTransitions.get(new Triple(from,to,a));
-		return t==null?0:probTransitions.get(new Triple(from,to,a));
+		return t==null?0.0:probTransitions.get(new Triple(from,to,a));
 	}
 
 

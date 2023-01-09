@@ -120,7 +120,7 @@ def main(argv):
                 sys.exit(2)
 
 
-    writeNMR(path+"nmr-proc-mem["+str(modules)+"-"+str(probFaultP)+"-"+str(probFaultV)+"].mdp")
+    writeNMR(path+"nmr-proc-mem["+str(modules)+"-"+str(probFaultP)+"-"+str(probFaultV)+"].pts")
 
 
 

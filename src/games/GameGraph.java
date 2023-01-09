@@ -94,7 +94,7 @@ public class GameGraph{
 		return preList.get(v);
 	}
 
-	public String createDot(int lineLimit, String name, boolean debugMode){
+	public String createDot(String name, boolean debugMode){
 		String res = "";
 		LinkedList<GameNode> ns;
 		if (debugMode){
@@ -112,11 +112,7 @@ public class GameGraph{
 		}
 		res = "digraph model {\n\n";
 		res += "    node [style=filled];\n";
-		int lineCount = 0;
 		for (GameNode v : ns){
-			//if (lineCount > lineLimit)
-			//	break;
-			lineCount++;
 			if (v.getPlayer().equals("V"))
 				res += "    "+ v.getId() +" [label=\""+v.toStringDot()+"\",color=\"lightblue\"];\n";
 			if (v.getPlayer().equals("P"))
