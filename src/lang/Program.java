@@ -7,11 +7,8 @@ import model.*;
 
 
 /**
-* This class defines a Faulty program, it provides the basic structures: a list of enumTypes,  
-* a collection of global variables( internally separating in bool and int variables),
-* a collection of channels( internally separating in bool and int channels),
-* and a collection of all processes defined and invocated.
-* @author Ceci
+* This class defines a Tolerange program
+* @author Luciano Putruele
 **/
 
 public class Program extends ProgramNode{
@@ -22,9 +19,8 @@ public class Program extends ProgramNode{
     int maxEnumSize;
     String name;
     
-    /**  GlobalVars
+    /** 
      * @param gVars: Collection of all global variables classified by their type.
-     * @param channels: Collection of all global channels classified by their type.
      * @param process: Collection of all processes defined.
      * @param mainProgram: Collection of all process intances with their respective parameters.
      **/
@@ -36,7 +32,7 @@ public class Program extends ProgramNode{
         this.maxEnumSize = 0;
     }
     
-    /** !EnumTypes & !GlobalVars & !Channels
+    /**
      * @param process: Collection of all processes defined.
      * @param mainProgram: Collection of all process intances with their respective parameters.
      **/
@@ -48,7 +44,7 @@ public class Program extends ProgramNode{
     }
     
     
-    /** EnumTypes + GlobalVars 
+    /**
      * @param enumList: List of EnumTypes
      * @param gVars: Collection of all global variables classified by their type.
      * @param process: Collection of all processes defined.
@@ -71,7 +67,7 @@ public class Program extends ProgramNode{
     }
     
     
-    /** EnumTypes 
+    /** 
      * @param enumList: List of EnumTypes
      * @param process: Collection of all processes defined.
      * @param mainProgram: Collection of all process intances with their respective parameters.
@@ -107,57 +103,13 @@ public class Program extends ProgramNode{
          v.visit(this);         
     }
 
-    
-    public Model toLTS(boolean isSpec){
-        Model m = new Model(globalVars, isSpec);
 
-        //states in m are lists of states (from processes)
-        //calculate initial state
-        ModelState init = new ModelState(m);
-        for (int j=0; j < mainProgram.getProcessDecl().size(); j++){
-            ProcessDecl pDecl = mainProgram.getProcessDecl().get(j);
-            for (int i = 0; i < process.getProcessList().size(); i++){
-                Proc proc = process.getProcessList().get(i);
-                if (pDecl.getType().equals(proc.getName())){
-                    init.getModel().getProcs().add(proc);
-                    init.getModel().getProcDecls().add(pDecl.getName());
-                    init.evalInit(proc.getInitialCond(),j);
-                }
-            }
-        }
-        
-        m.addNode(init);
-        m.setInitial(init);
-
-        TreeSet<ModelState> iterSet = new TreeSet<ModelState>();
-        iterSet.add(m.getInitial());
-        //build the whole model
-        while(!iterSet.isEmpty()){
-            ModelState curr = iterSet.pollFirst();
-            for (int i = 0; i < m.getProcDecls().size(); i++){ // for each process in current global state
-                for (Branch b : m.getProcs().get(i).getBranches()){
-                    if (b.getIsTau())
-                        m.setIsWeak(true);
-                    if (curr.satisfies(b.getGuard(),i)){
-                        //create global successor curr_
-                        ModelState curr_ = curr.createSuccessor(b.getAssignList(),i);
-                        ModelState toOld = m.search(curr_);
-                        Action act = new Action(m.getProcDecls().get(i)+b.getLabel(),b.getIsFaulty(),b.getIsTau(),b.getReward(),isSpec);
-                        if (toOld == null){
-                            m.addNode(curr_);
-                            iterSet.add(curr_);
-                            m.addEdge(curr, curr_, act);
-                        }
-                        else{
-                            m.addEdge(curr, toOld, act);
-                        }
-                    }
-                }
-            }
-        }
-        return m;
-    }
-    
+    /** 
+     * Translates Tolerange program into a Markov Decision Process
+     *
+     * @param isSpec: is this the nominal model?
+     * @return      Markov Decision Process representing the model
+     **/    
     public Model toMDP(boolean isSpec){
         Model m = new Model(globalVars, isSpec);
 

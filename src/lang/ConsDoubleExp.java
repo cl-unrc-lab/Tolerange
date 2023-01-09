@@ -4,7 +4,6 @@ package lang;
 /**
  * A class representing an integer constant
  */
-// Intcons it represents a constant of type Int
 public class ConsDoubleExp extends NumExp{
     
 	Double value;

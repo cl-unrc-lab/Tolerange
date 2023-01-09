@@ -5,7 +5,6 @@ package lang;
 
 /**
  * A class that implements the division between two integers: int1 / int2
- * TO BE IMPLEMENTED, DO NOT USE 
  */
 public class DivIntExp extends NumExp{
 	Expression exp1; // left integer

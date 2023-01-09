@@ -3,8 +3,7 @@ package lang;
 
 
 /**
- * A class that represents a boolean constant, it could be true or false, represented by a 
- * constant BDD
+ * A class that represents a boolean constant
  */
 public class ConsBoolExp extends BoolExp{
 

@@ -27,7 +27,6 @@ import gurobi.*;
 * Core functionality of Tolerange
 *  
 * @author Luciano Putruele
-* @version 1.0
 */
 public class AlmostSureMaskingDistance {
 

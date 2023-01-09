@@ -4,6 +4,11 @@ import java.util.*;
 import model.*;
 import java.io.*;
 
+/**
+* Symbolic Game Graph explicit implementation
+*  
+* @author Luciano Putruele
+*/
 public class GameGraph{
 
 	private HashMap<GameNode, HashSet<GameNode>> succList; // Successors adjacency list

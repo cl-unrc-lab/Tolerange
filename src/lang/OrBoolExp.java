@@ -3,7 +3,7 @@ package lang;
 
 
 
-// OrBoolClass a class to represent and boolean expressions
+//  a class to represent and boolean expressions
 public class OrBoolExp extends BoolExp{
    
     Expression exp1;

@@ -4,7 +4,6 @@ package lang;
 
 /**
  * Class representing the multiplication of two UNSIGNED integers: int1 * int2 
- * TO BE IMPLEMENTED, DO NOT USE
  */
 public class MultIntExp extends NumExp{
 	Expression exp1; // the left int
