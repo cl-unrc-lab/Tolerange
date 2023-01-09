@@ -3,219 +3,241 @@
 echo "----------------------------Memory Cell test (Refresh Milestone)----------------------------"
 
 echo "3 bits, 0.5 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.5].pts
 
 echo "5 bits, 0.5 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.5].pts
 
 echo "7 bits, 0.5 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.5].pts
 
 echo "3 bits, 0.5 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.5].pts
 
 echo "5 bits, 0.5 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.5].pts
 
 echo "7 bits, 0.5 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.5].pts
 
 echo "3 bits, 0.5 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.5].pts
 
 echo "5 bits, 0.5 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.5].pts
 
 echo "7 bits, 0.5 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.5].pts
 
 echo "3 bits, 0.1 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.1].pts
 
 echo "5 bits, 0.1 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.1].pts
 
 echo "7 bits, 0.1 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.1].pts
 
 echo "3 bits, 0.1 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.1].pts
 
 echo "5 bits, 0.1 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.1].pts
 
 echo "7 bits, 0.1 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.1].pts
 
 echo "3 bits, 0.1 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.1].pts
 
 echo "5 bits, 0.1 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.1].pts
 
 echo "7 bits, 0.1 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.1].pts
 
 echo "3 bits, 0.05 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.5-0.05].pts
 
 echo "5 bits, 0.05 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.5-0.05].pts
 
 echo "7 bits, 0.05 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.5-0.05].pts
 
 echo "3 bits, 0.05 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.1-0.05].pts
 
 echo "5 bits, 0.05 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.1-0.05].pts
 
 echo "7 bits, 0.05 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.1-0.05].pts
 
 echo "3 bits, 0.05 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[3-0.05-0.05].pts
 
 echo "5 bits, 0.05 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[5-0.05-0.05].pts
 
 echo "7 bits, 0.05 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone[7-0.05-0.05].pts
 
 echo "----------------------------Memory Cell test (Tick Milestone)----------------------------"
 
 echo "3 bits, 0.5 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.5].pts
 
 echo "5 bits, 0.5 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.5].pts
 
 echo "7 bits, 0.5 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.5].pts
 
 echo "3 bits, 0.5 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.5].pts
 
 echo "5 bits, 0.5 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.5].pts
 
 echo "7 bits, 0.5 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.5].pts
 
 echo "3 bits, 0.5 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.5].pts
 
 echo "5 bits, 0.5 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.5].pts
 
 echo "7 bits, 0.5 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.5].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.5].pts
 
 echo "3 bits, 0.1 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.1].pts
 
 echo "5 bits, 0.1 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.1].pts
 
 echo "7 bits, 0.1 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.1].pts
 
 echo "3 bits, 0.1 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.1].pts
 
 echo "5 bits, 0.1 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.1].pts
 
 echo "7 bits, 0.1 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.1].pts
 
 echo "3 bits, 0.1 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.1].pts
 
 echo "5 bits, 0.1 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.1].pts
 
 echo "7 bits, 0.1 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.1].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.1].pts
 
 echo "3 bits, 0.05 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.5-0.05].pts
 
 echo "5 bits, 0.05 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.5-0.05].pts
 
 echo "7 bits, 0.05 probability of fault, 0.5 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.5].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.5-0.05].pts
 
 echo "3 bits, 0.05 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.1-0.05].pts
 
 echo "5 bits, 0.05 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.1-0.05].pts
 
 echo "7 bits, 0.05 probability of fault, 0.1 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.1].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.1-0.05].pts
 
 echo "3 bits, 0.05 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[3-0.05-0.05].pts
 
 echo "5 bits, 0.05 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[5-0.05-0.05].pts
 
 echo "7 bits, 0.05 probability of fault, 0.05 probability of refresh"
-time ./Tolerange    b=30000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].mdp ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.05].mdp
+time ./Tolerange -v     b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone[0.05].pts ../tests/stochastic/faulty/memory/memoryTickMilestone[7-0.05-0.05].pts
 
 echo "----------------------------N-Modular Redundancy test (Tick Milestone)----------------------------"
 echo "3 modules, 0.5 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[3-0.5].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[3-0.5].pts
 echo "5 modules, 0.5 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[5-0.5].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[5-0.5].pts
 echo "7 modules, 0.5 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[7-0.5].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[7-0.5].pts
+echo "9 modules, 0.5 probability of fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[9-0.5].pts
+
+echo "3 modules, 0.3 probability of fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[3-0.3].pts
+echo "5 modules, 0.3 probability of fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[5-0.3].pts
+echo "7 modules, 0.3 probability of fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[7-0.3].pts
+echo "9 modules, 0.3 probability of fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[9-0.3].pts
 
 echo "3 modules, 0.1 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[3-0.1].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[3-0.1].pts
 echo "5 modules, 0.1 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[5-0.1].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[5-0.1].pts
 echo "7 modules, 0.1 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[7-0.1].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[7-0.1].pts
+echo "9 modules, 0.1 probability of fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[9-0.1].pts
 
 echo "3 modules, 0.05 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[3-0.05].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[3-0.05].pts
 echo "5 modules, 0.05 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[5-0.05].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[5-0.05].pts
 echo "7 modules, 0.05 probability of fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr/nmr[].mdp ../tests/stochastic/faulty/nmr/nmr[7-0.05].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[7-0.05].pts
+echo "9 modules, 0.05 probability of fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr/nmr[].pts ../tests/stochastic/faulty/nmr/nmr[9-0.05].pts
 
 echo "----------------------------N-Modular Redundancy: N Processor, N Voter test (Tick Milestone)----------------------------"
 echo "N=3, 0.05 probability of processor fault, 0.05 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[3-0.05-0.05].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[3-0.05-0.05].pts
 echo "N=3, 0.07 probability of processor fault, 0.03 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[3-0.07-0.03].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[3-0.07-0.03].pts
 echo "N=3, 0.09 probability of processor fault, 0.01 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[3-0.09-0.01].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[3-0.09-0.01].pts
+echo "N=3, 0.03 probability of processor fault, 0.07 probability of voter fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[3-0.03-0.07].pts
+echo "N=3, 0.01 probability of processor fault, 0.09 probability of voter fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[3-0.01-0.09].pts
 
 echo "N=5, 0.05 probability of processor fault, 0.05 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[5-0.05-0.05].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[5-0.05-0.05].pts
 echo "N=5, 0.07 probability of processor fault, 0.03 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[5-0.07-0.03].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[5-0.07-0.03].pts
 echo "N=5, 0.09 probability of processor fault, 0.01 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[5-0.09-0.01].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[5-0.09-0.01].pts
+echo "N=5, 0.03 probability of processor fault, 0.07 probability of voter fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[5-0.03-0.07].pts
+echo "N=5, 0.01 probability of processor fault, 0.09 probability of voter fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[5-0.01-0.09].pts
 
 echo "N=7, 0.05 probability of processor fault, 0.05 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.05-0.05].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.05-0.05].pts
 echo "N=7, 0.07 probability of processor fault, 0.03 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.07-0.03].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.07-0.03].pts
 echo "N=7, 0.09 probability of processor fault, 0.01 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.09-0.01].mdp
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.09-0.01].pts
 
-echo "N=9, 0.05 probability of processor fault, 0.05 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.05-0.05].mdp
-echo "N=9, 0.07 probability of processor fault, 0.03 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.07-0.03].mdp
-echo "N=9, 0.09 probability of processor fault, 0.01 probability of voter fault"
-time ./Tolerange    b=100 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].mdp ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.09-0.01].mdp
+echo "N=7, 0.03 probability of processor fault, 0.07 probability of voter fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.03-0.07].pts
+echo "N=7, 0.01 probability of processor fault, 0.09 probability of voter fault"
+time ./Tolerange -v     b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.01-0.09].pts
+
 
 
 
