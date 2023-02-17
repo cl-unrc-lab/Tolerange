@@ -4,7 +4,11 @@ package main;
 import lang.*;
 import core.*;
 
-
+/**
+* Main class
+*  
+* @author Luciano Putruele
+*/
 public class Main {
 	   
     public static void main(String[] args)
