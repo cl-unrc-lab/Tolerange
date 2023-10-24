@@ -4,6 +4,13 @@ import java.util.*;
 import lang.*;
 import java.io.*;
 
+/**
+ * Represents a model corresponding to a program, it has the basic data for a model, variables, procedures, constants, initial
+ * states, etc. After parsing the source code, the obtained programs are translated to MDPs which are captured by this class
+ * 
+ * @author Luciano Putruele
+ *
+ */
 public class Model {
 	private HashMap<ModelState, HashSet<ModelState>> succList; // Succesors adjacency list
 	private HashMap<ModelState, HashSet<ModelState>> preList; // Predecessors adjacency list
@@ -11,17 +18,22 @@ public class Model {
 	private ModelState initial; // Initial State
 	private LinkedList<Var> sharedVars; // Global variables
 	private LinkedList<ModelState> nodes; // Global states
-	private int numNodes;
-	private int numEdges;
-	private LinkedList<Proc> procs;
-	private LinkedList<String> procDecls;
-	private boolean isWeak;
-	private boolean isSpec;
-	private HashMap<String,Object> constants;
+	private int numNodes;	// the number of nodes
+	private int numEdges;	// the number of edges
+	private LinkedList<Proc> procs;	// the processes in the Model
+	private LinkedList<String> procDecls;	
+	private boolean isWeak;	// if the Model has weak transitions
+	private boolean isSpec;	// if it is a specification or not
+	private HashMap<String,Object> constants;	// the constants in the model
 
 	//EXPANSION SET
 	private HashMap<Triple,Double> probTransitions;
 
+	/**
+	 * 
+	 * @param svs	the collection of global vars
+	 * @param isS	if it is a spec or implementation
+	 */
 	public Model(GlobalVarCollection svs, boolean isS) {
 		sharedVars = svs.getBoolVars();
 		sharedVars.addAll(svs.getEnumVars());
@@ -40,47 +52,90 @@ public class Model {
 		probTransitions = new HashMap<Triple,Double>();
 	}
 
+	/**
+	 * Sets a new initial state
+	 * @param v	the initial state
+	 */
 	public void setInitial(ModelState v){
 		initial = v;
 	}
 
+	/**
+	 * Sets the value for isWeak
+	 * @param b the new value for isWeak
+	 */
 	public void setIsWeak(boolean b){
 		isWeak = b;
 	}
 
+	/**
+	 * 
+	 * @return	the initial state
+	 */
 	public ModelState getInitial(){
 		return initial;
 	}
 
+	/**
+	 * 
+	 * @return	the shared vars
+	 */
 	public LinkedList<Var> getSharedVars(){
 		return sharedVars;
 	}
 
+	/**
+	 * 
+	 * @return the constants in saved in a map
+	 */
 	public HashMap<String,Object> getConstants(){
 		return constants;
 	}
 
+	/**
+	 * 
+	 * @return	the actions between two nodes
+	 */
 	public HashMap<Pair, LinkedList<Action>> getActions(){
 		return actions;
 	}
 
+	/**
+	 * 
+	 * @return the list of procedures
+	 */
 	public LinkedList<Proc> getProcs(){
 		return procs;
 	}
 
+	/**
+	 * 
+	 * @return	the list of the declaration of the procedures
+	 */
 	public LinkedList<String> getProcDecls(){
 		return procDecls;
 	}
 
+	/**
+	 * 
+	 * @return	the number of nodes 
+	 */
 	public int getNumNodes(){
 		return numNodes;
 	}
 
+	/**
+	 * 
+	 * @return	the number of edges
+	 */
 	public int getNumEdges(){
 		return numEdges;
 	}
 
-
+	/**
+	 * Adds one node to the model	
+	 * @param v	the node to be added
+	 */
 	public void addNode(ModelState v) {
 		nodes.add(v);
 		succList.put(v, new HashSet<ModelState>());
@@ -88,6 +143,11 @@ public class Model {
 		numNodes += 1;
 	}
 
+	/**
+	 * Searchs a node in the model
+	 * @param v	the node to be searched
+	 * @return	null if the node there is not in the model, the node otherwise
+	 */
 	public ModelState search(ModelState v) {
 		for (ModelState node : nodes){
 			if (node.equals(v))
@@ -96,11 +156,22 @@ public class Model {
 		return null;
 	}
 
+	/**
+	 * It says if a node belongs to the model
+	 * @param v	the node to be checked
+	 * @return	true iff the node is in the model
+	 */
 	public boolean hasNode(ModelState v) {
 		return nodes.contains(v);
 	}
-
-
+	
+	/**
+	 * Says if there is an edge between two nodes
+	 * @param from	the origin
+	 * @param to	the target
+	 * @param a		the action in the edge
+	 * @return		true iff there is an edge of the corresponding type
+	 */
 	public boolean hasEdge(ModelState from, ModelState to, Action a) {
 
 		if (!hasNode(from) || !hasNode(to))
@@ -123,7 +194,14 @@ public class Model {
 		return actions.get(transition).contains(a);
 	}
 
-
+	
+	/**
+	 * Adds an edge with the provided information
+	 * @param from	the origin
+	 * @param to	the target
+	 * @param a		the action in the edge
+	 * @return	true iff the edegewas added to the graph
+	 */
 	public boolean addEdge(ModelState from, ModelState to, Action a) {
 		if (to != null){
 			if (a.isTau() && a.getLabel().charAt(0)!='&')
@@ -144,6 +222,14 @@ public class Model {
 	}
 
 	//EXPANSION SET
+	/**
+	 * Adds a probability edge in the model (part of a distribution)
+	 * @param from	the origin	
+	 * @param to	the target
+	 * @param a		the action
+	 * @param prob	the probaility of the edge
+	 * @return	true iff the edge was added
+	 */
 	public boolean addProbEdge(ModelState from, ModelState to, Action a, Double prob) {
 		if (addEdge(from,to,a)){
 			Triple t = new Triple(from,to,a);
@@ -153,25 +239,50 @@ public class Model {
 		return false;
 	}
 
-
+	/**
+	 * 
+	 * @param from	 the origin
+	 * @param to	 the target
+	 * @param a		 the action in the edge
+	 * @return	the probability associated to an edge
+	 */
 	public Double getProb(ModelState from, ModelState to, Action a){
 		Double t = probTransitions.get(new Triple(from,to,a));
 		return t==null?0.0:probTransitions.get(new Triple(from,to,a));
 	}
 
 
+	/**
+	 * 
+	 * @return	the nodes in the model
+	 */
 	public LinkedList<ModelState> getNodes(){
 		return nodes;
 	}
 
+	/**
+	 * 
+	 * @param v	a state in the model
+	 * @return	the successor of the state
+	 */
 	public HashSet<ModelState> getSuccessors(ModelState v){
 		return succList.get(v);
 	}
 
+	/**
+	 * 
+	 * @param v	the state
+	 * @return	the predecessors of the state
+	 */
 	public HashSet<ModelState> getPredecessors(ModelState v){
 		return preList.get(v);
 	}
 
+	/**
+	 * 
+	 * @param isImp	if it is an implementation or a specification
+	 * @return	a dot representation of the model
+	 */
 	public String createDot(boolean isImp){
 		String res = "digraph model {\n\n";
 		for (ModelState v : nodes){
@@ -211,7 +322,10 @@ public class Model {
 		return res;
 	}
 
-
+	/**
+	 * Saturates the model using the silent/tau transitions, the obtained model does not have silent transitions and
+	 * can be used to check bisimulation, for example.
+	 */
 	public void saturate(){
 		//Add tau self-loops
 		//if (!isWeak)
@@ -285,8 +399,8 @@ public class Model {
 				addEdge(fsts.get(i), snds.get(i), new Action(lbls.get(i), false, isTaus.get(i), isSpec));
 			}
 		}
-
 	
 	}
+
 	
 }

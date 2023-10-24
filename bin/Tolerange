@@ -1,2 +1,2 @@
 # A simple script for running the Tolerange tool
-java -Xmx2048m -jar ../jar/Tolerange.jar $1 $2 $3 $4 $5 $6 $7 $8
+java  -jar ../jar/Tolerange.jar $1 $2 $3 $4 $5 $6 $7 $8

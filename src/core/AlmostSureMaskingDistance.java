@@ -24,17 +24,17 @@ import it.ssc.pl.milp.util.LPThreadsNumber;
 import gurobi.*;
 
 /**
-* Core functionality of Tolerange
-*  
+* Provides the Core functionality of Tolerange: methods for building the game graph, checking whether a game 
+* is stopping under fairness, and all the machinery for computing the rewards of the games by using Gurobi or SCC.
 * @author Luciano Putruele
 */
 public class AlmostSureMaskingDistance {
 
-    private GameGraph g;
-    private Program pSpec;
-    private Program pImp;
-    private boolean verbose;
-    private boolean useGurobi;
+    private GameGraph g;	// the game graph
+    private Program pSpec;	// the spec
+    private Program pImp;	// the implementation
+    private boolean verbose; // a flag indicating if Tolerange is running in verbose mode
+    private boolean useGurobi; // a flag indicating if Gurobi is used for solving LP problems (much faster)
     private GRBEnv env;
 
     /**
@@ -64,7 +64,7 @@ public class AlmostSureMaskingDistance {
     }
 
     /**
-    * Builds Symbolic Game Graph
+    * Builds Symbolic Game Graph, the main behavior is explained in the paper 
     */
     private void buildGraph() throws InterruptedException {
         Model spec, imp;
@@ -248,10 +248,20 @@ public class AlmostSureMaskingDistance {
         return useGurobi ? solveGurobi(vars, current, banned) : solveSSC(vars, current, banned);
     }
 
+    /**
+     * Solve the equations using gurobi see {@code solve}
+     * @param vars	vars  the successors of current state
+     * @param current	current current state, it is required to be probabilistic
+     * @param banned	 the set of states that reach the error state with >0 probability, if
+     * we are not checking for almost sure stopping under fairness then its null
+     * @return solution to the equations
+     * @throws Exception
+     */
     private double solveGurobi(Set<GameNode> vars, GameNode current, Set<GameNode> banned) throws Exception {
         Action symSpec = current.getSymbol().cloneForSpec(true);
         Action symImp = current.getSymbol().cloneForSpec(false);
         LinkedList<GameNode> vs = new LinkedList<GameNode>(vars);
+        
         //defining the objective
         ArrayList<Double> lastColProbs = new ArrayList<Double>();
         ArrayList<Double> lastColProbs2 = new ArrayList<Double>();
@@ -262,6 +272,7 @@ public class AlmostSureMaskingDistance {
             if (banned != null)
                 markedBanned[i] = banned.contains(vs.get(i));
         }
+        
         //defining coupling constraints
         //initialization
         int[] markedStates = new int[vs.size()]; //colors based on first component of v 
@@ -367,7 +378,14 @@ public class AlmostSureMaskingDistance {
         return result;
     }
 
-
+    /**
+     * Solve the game using SSC
+     * @param vars
+     * @param current
+     * @param banned
+     * @return
+     * @throws Exception
+     */
     private double solveSSC(Set<GameNode> vars, GameNode current, Set<GameNode> banned) throws Exception {
         Action symSpec = current.getSymbol().cloneForSpec(true);
         Action symImp = current.getSymbol().cloneForSpec(false);
@@ -518,6 +536,7 @@ public class AlmostSureMaskingDistance {
     */
     public double expectedMilestones(int precision, double upperBound) throws Exception {
         System.out.println("Computing value of the game...");
+        if (verbose) System.out.println("Upper Bound is:"+upperBound);
         GameNode init = g.getInitial();
         boolean forceExit = false;
         int i = 0;
@@ -539,14 +558,14 @@ public class AlmostSureMaskingDistance {
                 double val = 0;
                 switch (v.getPlayer()) {
                     case REFUTER:
-                        val = minValue(g.getSuccessors(v));
+                        val = Math.min(upperBound, minValue(g.getSuccessors(v)));
                         break;
                     case VERIFIER:
-                        val = v.getSymbol().getReward() + maxValue(g.getSuccessors(v));
+                        val = Math.min(upperBound, v.getSymbol().getReward() + maxValue(g.getSuccessors(v)));
                         break;
                     case PROBABILISTIC:
                         try {
-                            val = solve(g.getSuccessors(v), v, null);
+                            val = Math.min(upperBound, solve(g.getSuccessors(v), v, null));
                         } catch (Exception e) {
                             System.out.println("ERROR: Unexpected problem while solving linear programming");
                             forceExit = true;
@@ -563,6 +582,7 @@ public class AlmostSureMaskingDistance {
         } while (!stopingCriterion(precision) && !forceExit);
         if (useGurobi)
             env.dispose();
+        System.out.println("Total Number of Iterations:"+i);
         return init.getValues()[1];
     }
 
@@ -629,14 +649,14 @@ public class AlmostSureMaskingDistance {
         for (GameNode v : vs) {
             double val = v.getValues()[0];
             if (val > max) {
-                max = val;
+                max = val; // we take into account the bound
             }
         }
         return max;
     }
 
     /**
-    * Generates dot file
+    * Generates a dot file
     */
     public void createDot() {
         g.createDot((pSpec.getName() + "---" + pImp.getName()), false);

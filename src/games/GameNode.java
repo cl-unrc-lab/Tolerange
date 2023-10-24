@@ -4,7 +4,7 @@ import java.util.*;
 import model.*;
 
 /**
-* Symbolic Explicit Game Graph Node/Vertex
+* Explicit Game Graph Node/Vertex, it provides the basic information and behavior corresponding to nodes of a game
 *  
 * @author Luciano Putruele
 */
@@ -19,11 +19,21 @@ public class GameNode implements Comparable<Object>{
 	private static int idCounter = 0;
 	Double[] values; // for value iteration
 
+	/**
+	 * Basic constructor
+	 */
 	public GameNode(){
 		values = new Double[2];
 		id = idCounter++;
 	}
 
+	/**
+	 * Constructor
+	 * @param s	the state corresponding to the spec
+	 * @param i	the state corresponding to the imp
+	 * @param sym	the action played by the las player
+	 * @param p	the player that had played
+	 */
 	public GameNode(ModelState s, ModelState i, Action sym, TPlayer p){
 		specState = s;
 		impState = i;
@@ -32,46 +42,91 @@ public class GameNode implements Comparable<Object>{
 		values = new Double[2];
 		id = idCounter++;
 	}
-
+	/**
+	 * 
+	 * @return	the spec state
+	 */
 	public ModelState getSpecState(){
 		return specState;
 	}
 
+	/**
+	 * 
+	 * @return	the implementations state
+	 */
 	public ModelState getImpState(){
 		return impState;
 	}
 
+	/**
+	 * 
+	 * @return the symbol in the state
+	 */
 	public Action getSymbol(){
 		return symbol;
 	}
 
+	/**
+	 * 
+	 * @return	the player in the state
+	 */
 	public TPlayer getPlayer(){
 		return player;
 	}
 
+	/**
+	 * 
+	 * @return	if a fault has been masked or not
+	 */
 	public boolean getMask(){
 		return mask;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public int getId(){
 		return id;
 	}
 
+	/**
+	 * 
+	 * @param m	new value for mask
+	 */
 	public void setMask(boolean m){
 		mask = m;
 	}
 
+	/**
+	 * 
+	 * @return	true iff the node is a Verifier's node
+	 */
 	public boolean isVerifier(){
 		return player.equals(TPlayer.VERIFIER);
 	}
 
+	/**
+	 * 
+	 * @return	true iff the node is a Refuter's node
+	 */
 	public boolean isRefuter(){
 		return player.equals(TPlayer.REFUTER);
 	}
-
+	
+	/**
+	 * 
+	 * @return	true iff the node is a Probabilistic node.
+	 */
 	public boolean isProbabilistic(){
 		return player.equals(TPlayer.PROBABILISTIC);
 	}
+	
+	/**
+	 * 
+	 * @param i	
+	 * @param val
+	 */
   	public void setValue(int i, double val){
   		values[i] = val;
   	}
@@ -111,6 +166,7 @@ public class GameNode implements Comparable<Object>{
 		return res;
 	}
 
+	
 	public String toStringDot(){
 		String res;
 		if (this.isErrState())
@@ -122,6 +178,10 @@ public class GameNode implements Comparable<Object>{
 		return res;
 	}
 
+	/**
+	 * 
+	 * @return	true iff it is the error state
+	 */
 	public boolean isErrState(){
 		return player.equals(TPlayer.ERR);
 	}

@@ -5,7 +5,10 @@ import lang.*;
 import core.*;
 
 /**
-* Main class
+* This is the main class of Tolerange, a tool for computing the masking tolerance of stochastic systems. The different options
+* are displayed when you execute Tolerange without arguments. 
+* <p>
+* You can find different tests in the folder /tests, also you can find the scripts for generating the tests. 
 *  
 * @author Luciano Putruele
 */
@@ -20,6 +23,7 @@ public class Main {
        boolean useGurobi = false;
        int precision = 6;
        int bound = Integer.MAX_VALUE;
+       int intBound = Integer.MAX_VALUE; // default value for max int
        
        if (args.length < 2){
           printHelp();
@@ -38,14 +42,20 @@ public class Main {
               if (args[i].equals("-gurobi")){
                 useGurobi = true;
               }
-              if (args[i].startsWith("p=")){
+              if (args[i].startsWith("p=") || args[i].startsWith("-p=")){
                   String[] splits = args[i].split("=");
                   precision = Integer.parseInt(splits[1]);
               }
-              if (args[i].startsWith("b=")){
+              if (args[i].startsWith("b=") || args[i].startsWith("-b=")){
                 String[] splits = args[i].split("=");
                 bound = Integer.parseInt(splits[1]);
+                System.out.println("bound is:"+bound);
               }
+              if (args[i].startsWith("-intmax=")){
+                  String[] splits = args[i].split("=");
+                  intBound = Integer.parseInt(splits[1]);
+                  System.out.println("int bound is:"+intBound);
+              } 
            }
             Program spec = prog.parseAux(args[args.length - 2]);
             Program imp = prog.parseAux(args[args.length - 1]);

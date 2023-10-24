@@ -5,9 +5,13 @@ import model.*;
 import java.io.*;
 
 /**
-* Symbolic Game Graph explicit implementation
+* An explicit implementation of the game graph
+* It is an implementation of graph, it uses hashMaps for keeping track of the successors and predecessors of each node,
+* it contains useful extra information as the number of nodes and the number of Edges, also it has a distinguished node:
+* the error node. 
 *  
 * @author Luciano Putruele
+* @author Pablo Castro
 */
 public class GameGraph{
 
@@ -29,27 +33,49 @@ public class GameGraph{
 
 	}
 
-
+	/**
+	 * @return The error state
+	 */
 	public GameNode getErrState(){		
 		return errState;
 	}
-
+	
+	/**
+	 * 
+	 * @return the num of nodes
+	 */
 	public int getNumNodes(){
 		return numNodes;
 	}
 
+	/**
+	 * 
+	 * @return the num of edges
+	 */
 	public int getNumEdges(){
 		return numEdges;
 	}
 
+	/**
+	 * 
+	 * @param v the new initial node for the game
+	 */
 	public void setInitial(GameNode v){
 		initial = v;
 	}
 
+	/**
+	 * 
+	 * @return	the initial node
+	 */
 	public GameNode getInitial(){
 		return initial;
 	}
 
+	/**
+	 * 
+	 * @param v	the node to be added as part of the game
+	 */
 	public void addNode(GameNode v) {
 		nodes.add(v);
 		succList.put(v, new HashSet<GameNode>());
@@ -57,6 +83,11 @@ public class GameGraph{
 		numNodes += 1;
 	}
 
+	/**
+	 * It searches a node in the graph
+	 * @param v	the node to be searched
+	 * @return	if the node does not belong to the graph it return null otherwise it returns a reference to the node
+	 */
 	public GameNode search(GameNode v) {
 		for (GameNode node : nodes){
 			if (node.equals(v))
@@ -65,18 +96,32 @@ public class GameGraph{
 		return null;
 	}
 
+	/**
+	 * It says if a node belongs to a graph
+	 * @param v	the node to be found
+	 * @return	true iff the node belongs to the graph
+	 */	
 	public boolean hasNode(GameNode v) {
 		return nodes.contains(v);
 	}
 
-
+	/**
+	 * 
+	 * @param from	the origin node
+	 * @param to	the source node
+	 * @return	true iff there is an arc between the nodes
+	 */
 	public boolean hasEdge(GameNode from, GameNode to) {
 		if (!hasNode(from) || !hasNode(to))
 			return false;
 		return succList.get(from).contains(to);
 	}
 
-
+	/**
+	 * Creates a new arc between two given nodes
+	 * @param from	the origin of the new node
+	 * @param to	the target of the new node
+	 */
 	public void addEdge(GameNode from, GameNode to) {
 		if (to != null){
 			if (hasEdge(from, to))
@@ -86,19 +131,39 @@ public class GameGraph{
 			preList.get(to).add(from);
 		}
 	}
-
+	
+	/**
+	 * 
+	 * @return	all the node in the graph
+	 */
 	public LinkedList<GameNode> getNodes(){
 		return nodes;
 	}
 
+	/**
+	 * 
+	 * @param v		the node 
+	 * @return	all the successors of v
+	 */
 	public HashSet<GameNode> getSuccessors(GameNode v){
 		return succList.get(v);
 	}
 
+	/**
+	 * 
+	 * @param v	the node
+	 * @return	all the predecessors of v
+	 */
 	public HashSet<GameNode> getPredecessors(GameNode v){
 		return preList.get(v);
 	}
 
+	/**
+	 * 
+	 * @param name	the name fro the dot
+	 * @param debugMode	adds useful information for debugging
+	 * @return	a dot representation of the graph
+	 */
 	public String createDot(String name, boolean debugMode){
 		String res = "";
 		LinkedList<GameNode> ns;

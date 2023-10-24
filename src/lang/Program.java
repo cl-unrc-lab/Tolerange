@@ -130,10 +130,10 @@ public class Program extends ProgramNode{
         
         m.addNode(init);
         m.setInitial(init);
-
         TreeSet<ModelState> iterSet = new TreeSet<ModelState>();
         iterSet.add(m.getInitial());
         //build the whole model
+        int j=0;
         while(!iterSet.isEmpty()){
             ModelState curr = iterSet.pollFirst();
             for (int i = 0; i < m.getProcDecls().size(); i++){ // for each process in current global state
@@ -148,13 +148,14 @@ public class Program extends ProgramNode{
                             act.setIsProbabilistic(true);
                             //System.out.println(act.toString() + b.getReward());
                             //LinkedList<Double> probs = new LinkedList<Double>();
+                            //System.out.println(b.getAssignList().size());
                             for (Code c : b.getAssignList()){ // each prob. of a single action
                                 ProbAssign pa = (ProbAssign)c;
                                 ModelState curr_ = curr.createSuccessor(pa.getAssigns(),i);
                                 ModelState toOld = m.search(curr_);
                                 //probs.add(pa.getProbability());
                                 //System.out.println(b.getLabel()+":"+pa.getProbability());
-                                if (toOld == null){
+                                if (toOld == null){                     
                                     m.addNode(curr_);
                                     iterSet.add(curr_);
 

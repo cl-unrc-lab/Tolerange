@@ -203,15 +203,15 @@ echo "N=7, 0.01 probability of processor fault, 0.09 probability of voter fault"
 time ./Tolerange    -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[7-0.01-0.09].pts
 
 echo "N=9, 0.05 probability of processor fault, 0.05 probability of voter fault"
-time ./Tolerange -v    -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.05-0.05].pts
+time ./Tolerange     -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.05-0.05].pts
 echo "N=9, 0.07 probability of processor fault, 0.03 probability of voter fault"
-time ./Tolerange -v    -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.07-0.03].pts
+time ./Tolerange     -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.07-0.03].pts
 echo "N=9, 0.09 probability of processor fault, 0.01 probability of voter fault"
-time ./Tolerange -v    -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.09-0.01].pts
+time ./Tolerange     -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.09-0.01].pts
 
 echo "N=9, 0.03 probability of processor fault, 0.07 probability of voter fault"
-time ./Tolerange -v    -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.03-0.07].pts
+time ./Tolerange     -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.03-0.07].pts
 echo "N=9, 0.01 probability of processor fault, 0.09 probability of voter fault"
-time ./Tolerange -v    -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.01-0.09].pts
+time ./Tolerange     -gurobi b=1000 ../tests/stochastic/nominal/nmr-proc-mem/nmr-proc-mem[].pts ../tests/stochastic/faulty/nmr-proc-mem/nmr-proc-mem[9-0.01-0.09].pts
 
 
