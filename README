@@ -60,8 +60,8 @@ We provide 5 examples with several configuration each.
 Also, scripts for generating tests are found in tests/scripts. To generate all tests use:
 ./generate-tests in folder bin/
 
-To replicate all experimental results  run the script: ./test in folder bin/
+To replicate all experimental results run the script: ./test in folder bin/, to obtain better running times use the script ./test-gurobi, but you need to have installed gurobi in this case.
 
 # Documentation
-In folder doc/ you can find the documentation of the all tool clases in html format, start from index.html. Also, you can find a .pdf file with the grammar
+In folder doc/ you can find the documentation of  all the tool classes in html, starting from index.html. Also, you can find a .pdf file with the grammar
 of the modeling language. 
