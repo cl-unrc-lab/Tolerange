@@ -1,0 +1,34 @@
+// Memory Cell
+Process Memory {
+    v: INT; //0..1
+    s:INT; //0..1    0=normal, 1=refreshing
+
+    // Initially the cell is in normal state and all bits are set to 0
+    Initial : v==0 && s==0;
+
+    // write
+
+    [w0] !(s==2) -> v=0,s=0;
+    [w1] !(s==2) -> v=1,s=0;
+
+    // read
+
+    [r0] !(s==2) && v==0 -> v=v;
+    [r1] !(s==2) && v==1 -> v=v;
+
+    // tick
+
+    [tick] <1> s==0 -> 0.1 : s=2
+                    ++ 0.9 : v=v;
+
+    // refresh
+
+    [refresh] s==2 && v==0 -> s=0, v=0;
+    [refresh] s==2 && v==1 -> s=0, v=1;
+
+}
+
+Main() {
+    m : Memory ;
+    run m() ;
+}
