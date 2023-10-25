@@ -206,8 +206,8 @@ def main(argv):
             includeRewards = False
 
 
-    writeMemoryTickMilestone(path+"memoryTickMilestone["+str(bits)+"-"+str(probRefresh)+"-"+str(probFault)+("" if includeRewards else "-NR")+"].pts")
-    writeMemoryRefreshMilestone(path+"memoryRefreshMilestone["+str(bits)+"-"+str(probRefresh)+"-"+str(probFault)+("" if includeRewards else "-NR")+"].pts")
+    writeMemoryTickMilestone(path+"memoryTickMilestone_"+str(bits)+"-"+str(probRefresh)+"-"+str(probFault)+("" if includeRewards else "-NR")+".pts")
+    writeMemoryRefreshMilestone(path+"memoryRefreshMilestone_"+str(bits)+"-"+str(probRefresh)+"-"+str(probFault)+("" if includeRewards else "-NR")+".pts")
 
 
 

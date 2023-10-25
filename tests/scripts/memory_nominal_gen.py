@@ -157,8 +157,8 @@ def main(argv):
             includeRewards = False
 
 
-    writeMemoryTickMilestone(path+"memoryTickMilestone["+str(probRefresh)+("" if includeRewards else "-NR")+"].pts")
-    writeMemoryRefreshMilestone(path+"memoryRefreshMilestone["+str(probRefresh)+("" if includeRewards else "-NR")+"].pts")
+    writeMemoryTickMilestone(path+"memoryTickMilestone_"+str(probRefresh)+("" if includeRewards else "-NR")+".pts")
+    writeMemoryRefreshMilestone(path+"memoryRefreshMilestone_"+str(probRefresh)+("" if includeRewards else "-NR")+".pts")
 
 
 
