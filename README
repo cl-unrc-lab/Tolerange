@@ -75,7 +75,7 @@ This compiles the source code and generates the file *jar/Tolerange.jar*
 ## Clean:
 $ ant clean
 
-This cleans all generated the binaries.
+This cleans all the generated  binaries.
 
 # Documentation
 In folder doc/ you can find the documentation of  all the tool classes in html, starting from *index.html*. Also, in this folder you can find a .pdf file with the grammar
