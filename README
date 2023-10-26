@@ -7,7 +7,9 @@ Tolerange is distributed under the the GNU Lesser Public License (see the file L
 Tolerange uses linear programming for solving games and so it uses linear programming libraries, the default library is SSC which is open source. The tool also supports the option of
 using gurobi, for that the user must have [Gurobi](https://gurobi.com) installed. In all our tests Gurobi behaved faster than SSC. 
 
-# The distribution contains the following folders:
+# Folders:
+
+the distribution contains de following folders:
 
 * bin: it contains the scripts and executables for running the tool.
 * src/core: it contains the class that provides the main methods for computing the expected number of faults preserved by the implementation.
@@ -23,7 +25,7 @@ using gurobi, for that the user must have [Gurobi](https://gurobi.com) installed
 * doc/: it contain classes documentations and the grammar for the faulty modelling language.
 
 # Binary Files and Running the Tool
-This distribution comes with binaries, thus you can execute the tool without compiling. If you want to compile the tool follows the step in the next section
+This distribution comes with binaries, thus you can execute the tool without compiling. If you want to compile the tool follows the step in the **Installation** section (see below).
 
 All the scripts needed for running the tool are placed in the folder bin/ the basic script is "Tolerange", for printing a help you can
 proceed as follows:
@@ -39,7 +41,7 @@ You also can find other scripts for running the tool with some options or with s
 * ./test-gurobi-subset: it runs a subset of the tests using gurobi.
 
 # Examples
-We provide 5 examples with several configuration each.
+We provide 5 main examples with several configurations each.
 
 * the memory example, this is our running example in the paper
 * nmr-proc-mem, the NMR example also described in the paper,
@@ -55,22 +57,26 @@ To replicate all experimental results run the script: ./test in folder bin/, to 
 
 
 # Installation:
-This distribution comes with binaries, thus you can execute the tool without compiling, if you want to do so just skip this section.
+This distribution comes with binaries, thus you can execute the tool without compiling, in that case you can skip this section.
 
 ## ant installation
-For compiling the tool you will need tha ant tool, If you have ant already installed you can skip this step, otherwise this distribution provides the package you can install ant (in Ubuntu) *ant_1.10.11-1_all.deb* and you can install it 
+For compiling the tool you will need the ant tool. If you have ant already installed you can skip this step, otherwise this distribution provides the package *ant_1.10.11-1_all.deb* and you can install ant (in Ubuntu) 
 with the following command:
 
 $ sudo dpkg -i ant_1.10.11_all.deb
 
-You can compile the tool using ant, you need java > 1.8 and the tool ant. It will compile in Linux, Windows and MacOs in the same way. We have tested the tool with java 1.8 in several platforms.
+Once installed ant, you can compile the tool, you need java > 1.8. It will compile in Linux, Windows and MacOs in the same way. We have tested the tool with java 1.8 in several platforms.
 
 ## Compile:
 $ ant compile jar
 
+This compiles the source code and generates the file *jar/Tolerange.jar*
+
 ## Clean:
 $ ant clean
 
+This cleans all generated the binaries.
+
 # Documentation
-In folder doc/ you can find the documentation of  all the tool classes in html, starting from [index.html](doc/index.html)). Also, in this folderyou can find a .pdf file with the grammar
+In folder doc/ you can find the documentation of  all the tool classes in html, starting from *index.html*. Also, in this folder you can find a .pdf file with the grammar
 of the modeling language. 
