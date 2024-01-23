@@ -112,5 +112,5 @@ After that Gurobi should be working.  More details for toher architectures can b
 If the Gurobi's license is not correctly installed, the tool may show an error when building the games (if the tool is executed with option -gurobi).
 
 # Documentation
-In folder doc/ you can find the documentation of  all the tool classes in html, starting from *index.html*. Also, in this folder you can find a .pdf file with the grammar
+In folder `doc/` you can find the documentation of  all the tool classes in html, starting from *index.html*. Also, in this folder you can find a .pdf file with the grammar
 of the modeling language. 
