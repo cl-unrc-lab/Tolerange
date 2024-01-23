@@ -83,16 +83,26 @@ This cleans all the generated  binaries.
 # Installing Gurobi
 
 Gurobi is a commercial linear solver thus you need a licence to be able to use the library. Free academic licence are provided by [Gurobi](www.gurobi.com).
-The steps for installing Gurobi are as follows:
+We have tested Tolerange with Gurobi v10.0.3, for running the tool with Gurobi please download this version for your architecture at [Gurobi Download](https://www.gurobi.com/downloads/), you have to be logged into your account for accessing the page.
+
+The steps for installing Gurobi in Ubuntu are as follows:
 
 1. Request a Gurobi license, they provide free academic licenses, the license is a file “gurobi.lic”
-2. Download from the Gurobi site the file “gurobi10.0.3_linux64.tar.gz”, and unzip the file in your home  folder with “tar xzvf gurobi10.0.3_linux.tar.gz”.
+2. Download from the Gurobi site the file “gurobi10.0.3_linux64.tar.gz” (you will find similar files for other operating systems), and unzip the file in your home  folder with “tar xzvf gurobi10.0.3_linux.tar.gz”, this will create a folder gurobi1003 in you home directory.
 3. Place the file “gurobi.lic” in your home folder.
+4. Set the environment variables GUROBI_HOME, PATH, and LD_LIBRARY_PATH, for instance, in Ubuntu you have to exacute ths following commands in a terminal:
+$ export GUROBI_HOME="\<home-dir\>/gurobi1003/linux64"
+$ export PATH="${PATH}:${GUROBI_HOME}/bin"
+$ export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+if you use bash you can add the line above into .bashrc, and the variable will be set for the next sessions. 
+5. Test if gurobi is working by executing $ gurobi.sh. 
 4. Copy the file “\<your home folder\>/gurobi1003/linux64/lib/gurobi.jar” to the “\<tolerange-dir\>/lib '' where \<tolerange-dir\> is the folder where Tolerange is installed.
 5. You need internet connection (Gurobi requests this for validating the license)
-6. Set the environment variables GUROBI_HOME, PATH, and LD_LIBRARY_PATH as explained in [Gurobi environment variables](https://support.gurobi.com/hc/en-us/articles/13443862111761-How-do-I-set-system-environment-variables-for-Gurobi-)
 
-After that, Gurobi should be working. If the Gurobi's license is not correctly installed, the tool may show an error when building the games (if the tool is executed with option -gurobi).
+
+After that Gurobi should be working.  More details for toher architectures can be found at [Gurobi environment variables](https://support.gurobi.com/hc/en-us/articles/13443862111761-How-do-I-set-system-environment-variables-for-Gurobi-)
+
+If the Gurobi's license is not correctly installed, the tool may show an error when building the games (if the tool is executed with option -gurobi).
 
 # Documentation
 In folder doc/ you can find the documentation of  all the tool classes in html, starting from *index.html*. Also, in this folder you can find a .pdf file with the grammar
