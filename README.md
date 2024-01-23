@@ -12,18 +12,18 @@ using Gurobi, for that the user must have [Gurobi](https://gurobi.com) installed
 
 the distribution contains de following folders:
 
-* bin/: it contains the scripts and executables for running the tool.
-* src/core: it contains the class that provides the main methods for computing the expected number of faults preserved by the implementation.
-* src/lang: it contains the AST used by the paser.
-* src/game: it contains classes for the game graph, 
-* src/main: the main file of the tool
-* src/model: classes that allows on to keep track all the information of a program  
-* src/parserL: the grammar for the language in cup and lex syntax
-* tests/: it contains several examples used for testing the tools, since the examples may have several parameters, for instance number of bits of a memory, the corresponding scripts for 
+* `bin/`: it contains the scripts and executables for running the tool.
+* `src/core`: it contains the class that provides the main methods for computing the expected number of faults preserved by the implementation.
+* `src/lang`: it contains the AST used by the paser.
+* `src/game`: it contains classes for the game graph, 
+* `src/main`: the main file of the tool
+* `src/model`: classes that allows on to keep track all the information of a program  
+* `src/parserL`: the grammar for the language in cup and lex syntax
+* `tests/`: it contains several examples used for testing the tools, since the examples may have several parameters, for instance number of bits of a memory, the corresponding scripts for 
 	  generating the files with different parameters can be found in these folders.
-* jar/: when the tool is compiled the corresponding .jar will be placed here. The tool is distribuited with a precompiled .jar.
-* lib/: libs needed by tolerange, it does not include gurobi, if you want to use gurobi you need a license and then you can put the file gurobi.jar here.
-* doc/: it contain classes documentations and the grammar for the faulty modelling language.
+* `jar/`: when the tool is compiled the corresponding .jar will be placed here. The tool is distribuited with a precompiled .jar.
+* `lib/`: libs needed by tolerange, it does not include gurobi, if you want to use gurobi you need a license and then you can put the file gurobi.jar here.
+* `doc/`: it contain classes documentations and the grammar for the faulty modelling language.
 
 # Binary Files and Running the Tool
 This distribution comes with binaries, thus you can execute the tool without compiling. If you want to compile the tool just follow the steps in the [Installation Section](#installation).
@@ -31,32 +31,34 @@ This distribution comes with binaries, thus you can execute the tool without com
 All the scripts needed for running the tool are placed in the folder bin/ the basic script is "Tolerange", for printing the help you can
 proceed as follows:
 
+```console
 $ cd bin
 $ ./Tolerange -h (then follow the help instructions). 
+```
 
 You also can find other scripts for running the tool with additional options or with some specific sets of tests, for instance:
 
-* ./test-ssc-memory: it runs the tool over the memory example with ssc
-* ./test-memory: it runs the tool over the memory example with Gurobi 
-* ./test: it replicates all the tests 
-* ./test-gurobi: it replicates the tests using gurobi instead of SSC
-* ./test-ssc-subset: it runs a subset of the tests
-* ./test-gurobi-subset: it runs a subset of the tests using gurobi.
+* `./test-ssc-memory`: it runs the tool over the memory example with ssc
+* `./test-memory`: it runs the tool over the memory example with Gurobi 
+* `./test`: it replicates all the tests 
+* `./test-gurobi`: it replicates the tests using gurobi instead of SSC
+* `./test-ssc-subset`: it runs a subset of the tests
+* `./test-gurobi-subset`: it runs a subset of the tests using gurobi.
 
 # Examples
 We provide 5 main examples with several configurations each.
 
-* the memory example, this is our running example in the paper
-* nmr-proc-mem, the NMR example also described in the paper,
-* nmr, pretty similar example to the memory with no refreshing,
-* Hamming(7,4), the hamming code for 3 parity bits,
-* Hamming(15,11), the hamming code for 4 parity bits. The tool times out for this example.
+* *the memory example*, this is our running example in the paper
+* *nmr-proc-mem*, the NMR example also described in the paper,
+* *nmr*, pretty similar example to the memory with no refreshing,
+* *Hamming(7,4)*, the hamming code for 3 parity bits,
+* *Hamming(15,11)*, the hamming code for 4 parity bits. The tool times out for this example.
 
 
 Also, scripts for generating tests are found in tests/scripts. To generate all tests use:
-./generate-tests in folder bin/
+`./generate-tests` in folder `bin/`
 
-To replicate all experimental results run the script: ./test in folder bin/, to obtain better running times use the script ./test-gurobi, but you need to have installed gurobi in this case.
+To replicate all experimental results run the script: `./test` in folder `bin/`, to obtain better running times use the script `./test-gurobi`, but you need to have installed gurobi in this case.
 
 
 # Installation:
