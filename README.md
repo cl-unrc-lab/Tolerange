@@ -6,18 +6,18 @@ another stochastic model,  which is an augmented version of the former (aka the 
 Tolerange is distributed under the the GNU Lesser Public License (see the file LICENCE in this distribution). 
 
 Tolerange uses linear programming for solving games and so it uses linear programming libraries, the default library is SSC which is open source. Optionally, the tool supports the use of
-using Gurobi, for that the user must have [Gurobi](https://gurobi.com) installed (see [Installing Gurobi](#installing-gurobi)). In all our tests Gurobi behaved faster than SSC. 
+Gurobi, for that the user must have [Gurobi](https://gurobi.com) installed (see [Installing Gurobi](#installing-gurobi)). In all our tests Gurobi behaved faster than SSC. 
 
 # Folders:
 
-the distribution contains de following folders:
+The distribution contains the following folders:
 
 * `bin/`: it contains the scripts and executables for running the tool.
 * `src/core`: it contains the class that provides the main methods for computing the expected number of faults preserved by the implementation.
 * `src/lang`: it contains the AST used by the paser.
 * `src/game`: it contains classes for the game graph, 
 * `src/main`: the main file of the tool
-* `src/model`: classes that allows on to keep track all the information of a program  
+* `src/model`: classes that allows one to keep track all the information of a program  
 * `src/parserL`: the grammar for the language in cup and lex syntax
 * `tests/`: it contains several examples used for testing the tools, since the examples may have several parameters, for instance number of bits of a memory, the corresponding scripts for 
 	  generating the files with different parameters can be found in these folders.
@@ -26,10 +26,9 @@ the distribution contains de following folders:
 * `doc/`: it contain classes documentations and the grammar for the faulty modelling language.
 
 # Binary Files and Running the Tool
-This distribution comes with binaries, thus you can execute the tool without compiling. If you want to compile the tool just follow the steps in the [Installation Section](#installation).
+This distribution comes with binaries, thus you can execute the tool without compiling it. If you want to compile the tool just follow the steps in the [Installation Section](#installation).
 
-All the scripts needed for running the tool are placed in the folder bin/ the basic script is "Tolerange", for printing the help you can
-proceed as follows:
+All the scripts needed for running the tool are placed in the folder bin/ the basic script is "Tolerange". For instance, For printing the help you have to execute the following commands:
 
 ```console
 $ cd bin
@@ -38,8 +37,8 @@ $ ./Tolerange -h (then follow the help instructions).
 
 You also can find other scripts for running the tool with additional options or with some specific sets of tests, for instance:
 
-* `./test-ssc-memory`: it runs the tool over the memory example with ssc
-* `./test-memory`: it runs the tool over the memory example with Gurobi 
+* `./test-ssc-memory`: it runs the tool over the memory example using ssc
+* `./test-memory`: it runs the tool over the memory example using Gurobi 
 * `./test`: it replicates all the tests 
 * `./test-gurobi`: it replicates the tests using gurobi instead of SSC
 * `./test-ssc-subset`: it runs a subset of the tests
@@ -49,20 +48,20 @@ You also can find other scripts for running the tool with additional options or 
 We provide 5 main examples with several configurations each.
 
 * *the memory example*, this is our running example in the paper
-* *nmr-proc-mem*, the NMR example also described in the paper,
+* *nmr-proc-mem*, the NMR, it consist of several processor and voters, 
 * *nmr*, pretty similar example to the memory with no refreshing,
-* *Hamming(7,4)*, the hamming code for 3 parity bits,
-* *Hamming(15,11)*, the hamming code for 4 parity bits. The tool times out for this example.
+* *Hamming(7,4)*, the Hamming code for 3 parity bits,
+* *Hamming(15,11)*, the Hamming code for 4 parity bits. The tool times out for this example.
 
 
-Also, scripts for generating tests are found in tests/scripts. To generate all tests use:
+The scripts for generating all the tests are found in tests/scripts. To generate the tests use:
 `./generate-tests` in folder `bin/`
 
 To replicate all experimental results run the script: `./test` in folder `bin/`, to obtain better running times use the script `./test-gurobi`, but you need to have installed gurobi in this case.
 
 
 # Installation:
-This distribution comes with binaries, thus you can execute the tool without compiling, in that case you can skip this section.
+This distribution comes with binaries, thus you can execute the tool without compiling it,  you can skip this section unless you want to generate the binaries again.
 
 ## Ant installation
 For compiling the tool you will need the ant tool. If you have ant already installed you can skip this step, otherwise this distribution provides the package *ant_1.10.11-1_all.deb* and you can install ant (in Ubuntu) 
@@ -90,7 +89,7 @@ This cleans all the generated  binaries.
 # Installing Gurobi
 
 Gurobi is a commercial linear solver thus you need a licence to be able to use the library. Free academic licence are provided by [Gurobi](www.gurobi.com).
-We have tested Tolerange with Gurobi v10.0.3, for running the tool with Gurobi please download this version for your architecture at [Gurobi Download](https://www.gurobi.com/downloads/), you have to be logged into your account for accessing the page.
+We have tested Tolerange with **Gurobi v10.0.3**, for running the tool with Gurobi please download this version for your architecture at [Gurobi Download](https://www.gurobi.com/downloads/), you have to be logged into your account for accessing the page.
 
 The steps for installing Gurobi in Ubuntu are as follows:
 
