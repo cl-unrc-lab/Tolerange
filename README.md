@@ -91,9 +91,11 @@ The steps for installing Gurobi in Ubuntu are as follows:
 2. Download from the Gurobi site the file “gurobi10.0.3_linux64.tar.gz” (you will find similar files for other operating systems), and unzip the file in your home  folder with “tar xzvf gurobi10.0.3_linux.tar.gz”, this will create a folder gurobi1003 in you home directory.
 3. Place the file “gurobi.lic” in your home folder.
 4. Set the environment variables GUROBI_HOME, PATH, and LD_LIBRARY_PATH, for instance, in Ubuntu you have to exacute ths following commands in a terminal:
+```console
 $ export GUROBI_HOME="\<home-dir\>/gurobi1003/linux64"
 $ export PATH="${PATH}:${GUROBI_HOME}/bin"
 $ export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+```
 if you use bash you can add the line above into .bashrc, and the variable will be set for the next sessions. 
 5. Test if gurobi is working by executing $ gurobi.sh. 
 4. Copy the file “\<your home folder\>/gurobi1003/linux64/lib/gurobi.jar” to the “\<tolerange-dir\>/lib '' where \<tolerange-dir\> is the folder where Tolerange is installed.
