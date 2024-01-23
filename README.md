@@ -86,9 +86,9 @@ Gurobi is a commercial linear solver thus you need a licence to be able to use t
 The steps for installing Gurobi are as follows:
 
 1. Request a Gurobi license, they provide free academic licenses, the license is a file “gurobi.lic”
-2. Download from the Gurobi site the file “gurobi10.0.3_linux64.tar.gz”, and unzip the file in home  folder with “tar xzvf gurobi10.0.3_linux.tar.gz”.
+2. Download from the Gurobi site the file “gurobi10.0.3_linux64.tar.gz”, and unzip the file in your home  folder with “tar xzvf gurobi10.0.3_linux.tar.gz”.
 3. Place the file “gurobi.lic” in your home folder.
-4. Copy the file “<your home folder>/gurobi1003/linux64/lib/gurobi.jar” to the “<tolerange-dir>/lib '' where <tolerange-dir> is the folder where Tolerange is installed.
+4. Copy the file “\<your home folder\>/gurobi1003/linux64/lib/gurobi.jar” to the “\<tolerange-dir\>/lib '' where \<tolerange-dir\> is the folder where Tolerange is installed.
 5. You need internet connection (Gurobi requests this for validating the license)
 6. Set the environment variables GUROBI_HOME, PATH, and LD_LIBRARY_PATH as explained in [Gurobi environment variables](https://support.gurobi.com/hc/en-us/articles/13443862111761-How-do-I-set-system-environment-variables-for-Gurobi-)
 
