@@ -65,18 +65,23 @@ This distribution comes with binaries, thus you can execute the tool without com
 ## Ant installation
 For compiling the tool you will need the ant tool. If you have ant already installed you can skip this step, otherwise this distribution provides the package *ant_1.10.11-1_all.deb* and you can install ant (in Ubuntu) 
 with the following command:
-
+```console
 $ sudo dpkg -i ant_1.10.11_all.deb
+```
 
 Once you installed Ant, you can compile the tool, you need java > 1.8. It will compile in Linux, Windows and MacOs in the same way. We have tested the tool with java 1.8 in several platforms.
 
 ## Compile:
+```console
 $ ant compile jar
+```
 
 This compiles the source code and generates the file *jar/Tolerange.jar*
 
 ## Clean:
+```console
 $ ant clean
+```
 
 This cleans all the generated  binaries.
 
@@ -90,7 +95,7 @@ The steps for installing Gurobi in Ubuntu are as follows:
 1. Request a Gurobi license, they provide free academic licenses, the license is a file “gurobi.lic”
 2. Download from the Gurobi site the file “gurobi10.0.3_linux64.tar.gz” (you will find similar files for other operating systems), and unzip the file in your home  folder with “tar xzvf gurobi10.0.3_linux.tar.gz”, this will create a folder gurobi1003 in you home directory.
 3. Place the file “gurobi.lic” in your home folder.
-4. Set the environment variables GUROBI_HOME, PATH, and LD_LIBRARY_PATH, for instance, in Ubuntu you have to exacute ths following commands in a terminal:
+4. Set the environment variables GUROBI_HOME, PATH, and LD_LIBRARY_PATH, for instance, in Ubuntu you have to execute the following commands in a terminal:
 ```console
 $ export GUROBI_HOME="\<home-dir\>/gurobi1003/linux64"
 $ export PATH="${PATH}:${GUROBI_HOME}/bin"
