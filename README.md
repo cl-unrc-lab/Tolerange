@@ -1,17 +1,18 @@
-This is the source code and binaries distribution of the Tolerange tool. Tolerange accepts as inputs one stochastic program (the spec) with  no faults, and 
-another program which can be thought of as an implementation containing faults and fault-tolerance mechanisms. Tolerange measures how much tolerance to faults the implementation provides,
-for doing so it uses the spec to evaluate in what extent the implementation deviates from the expected behavior. It uses stochastic bisimulation games for computing such a value. 
+# Intro
+
+This is the source code and binaries distribution of the Tolerange tool. Tolerange accepts as inputs one stochastic model (aka the specification) containing  no faults, together with 
+another stochastic model,  which is an augmented version of the former (aka the implementation)  containing faults and fault-tolerance mechanisms. Tolerange measures how much tolerance to faults the implementation provides, for doing so it uses the spec to evaluate to what extent the implementation deviates from the expected behavior. It uses stochastic bisimulation games for computing such a value. 
 
 Tolerange is distributed under the the GNU Lesser Public License (see the file LICENCE in this distribution). 
 
-Tolerange uses linear programming for solving games and so it uses linear programming libraries, the default library is SSC which is open source. The tool also supports the option of
-using gurobi, for that the user must have [Gurobi](https://gurobi.com) installed. In all our tests Gurobi behaved faster than SSC. 
+Tolerange uses linear programming for solving games and so it uses linear programming libraries, the default library is SSC which is open source. Optionally, the tool supports the use of
+using Gurobi, for that the user must have [Gurobi](https://gurobi.com) installed (see [Installing Gurobi](#installing-gurobi)). In all our tests Gurobi behaved faster than SSC. 
 
 # Folders:
 
 the distribution contains de following folders:
 
-* bin: it contains the scripts and executables for running the tool.
+* bin/: it contains the scripts and executables for running the tool.
 * src/core: it contains the class that provides the main methods for computing the expected number of faults preserved by the implementation.
 * src/lang: it contains the AST used by the paser.
 * src/game: it contains classes for the game graph, 
@@ -20,22 +21,24 @@ the distribution contains de following folders:
 * src/parserL: the grammar for the language in cup and lex syntax
 * tests/: it contains several examples used for testing the tools, since the examples may have several parameters, for instance number of bits of a memory, the corresponding scripts for 
 	  generating the files with different parameters can be found in these folders.
-* jar/: when the tool is compiled the corresponding .jat will be placed here.
+* jar/: when the tool is compiled the corresponding .jar will be placed here. The tool is distribuited with a precompiled .jar.
 * lib/: libs needed by tolerange, it does not include gurobi, if you want to use gurobi you need a license and then you can put the file gurobi.jar here.
 * doc/: it contain classes documentations and the grammar for the faulty modelling language.
 
 # Binary Files and Running the Tool
-This distribution comes with binaries, thus you can execute the tool without compiling. If you want to compile the tool follows the step in the **Installation** section (see below).
+This distribution comes with binaries, thus you can execute the tool without compiling. If you want to compile the tool just follow the steps in the [Installation Section](#installation).
 
-All the scripts needed for running the tool are placed in the folder bin/ the basic script is "Tolerange", for printing a help you can
+All the scripts needed for running the tool are placed in the folder bin/ the basic script is "Tolerange", for printing the help you can
 proceed as follows:
 
 $ cd bin
 $ ./Tolerange -h (then follow the help instructions). 
 
-You also can find other scripts for running the tool with some options or with some specifics sets of tests, for instance:
+You also can find other scripts for running the tool with additional options or with some specific sets of tests, for instance:
 
-* ./test: it replicates the tests reported in the paper
+* ./test-ssc-memory: it runs the tool over the memory example with ssc
+* ./test-memory: it runs the tool over the memory example with Gurobi 
+* ./test: it replicates all the tests 
 * ./test-gurobi: it replicates the tests using gurobi instead of SSC
 * ./test-ssc-subset: it runs a subset of the tests
 * ./test-gurobi-subset: it runs a subset of the tests using gurobi.
@@ -59,13 +62,13 @@ To replicate all experimental results run the script: ./test in folder bin/, to 
 # Installation:
 This distribution comes with binaries, thus you can execute the tool without compiling, in that case you can skip this section.
 
-## ant installation
+## Ant installation
 For compiling the tool you will need the ant tool. If you have ant already installed you can skip this step, otherwise this distribution provides the package *ant_1.10.11-1_all.deb* and you can install ant (in Ubuntu) 
 with the following command:
 
 $ sudo dpkg -i ant_1.10.11_all.deb
 
-Once installed ant, you can compile the tool, you need java > 1.8. It will compile in Linux, Windows and MacOs in the same way. We have tested the tool with java 1.8 in several platforms.
+Once you installed Ant, you can compile the tool, you need java > 1.8. It will compile in Linux, Windows and MacOs in the same way. We have tested the tool with java 1.8 in several platforms.
 
 ## Compile:
 $ ant compile jar
@@ -76,6 +79,20 @@ This compiles the source code and generates the file *jar/Tolerange.jar*
 $ ant clean
 
 This cleans all the generated  binaries.
+
+# Installing Gurobi
+
+Gurobi is a commercial linear solver thus you need a licence to be able to use the library. Free academic licence are provided by [Gurobi](www.gurobi.com).
+The steps for installing Gurobi are as follows:
+
+1. Request a Gurobi license, they provide free academic licenses, the license is a file “gurobi.lic”
+2. Download from the Gurobi site the file “gurobi10.0.3_linux64.tar.gz”, and unzip the file in home  folder with “tar xzvf gurobi10.0.3_linux.tar.gz”.
+3. Place the file “gurobi.lic” in your home folder.
+4. Copy the file “<your home folder>/gurobi1003/linux64/lib/gurobi.jar” to the “<tolerange-dir>/lib '' where <tolerange-dir> is the folder where Tolerange is installed.
+5. You need internet connection (Gurobi requests this for validating the license)
+6. Set the environment variables GUROBI_HOME, PATH, and LD_LIBRARY_PATH as explained in [Gurobi environment variables](https://support.gurobi.com/hc/en-us/articles/13443862111761-How-do-I-set-system-environment-variables-for-Gurobi-)
+
+After that, Gurobi should be working. If the Gurobi's license is not correctly installed, the tool may show an error when building the games (if the tool is executed with option -gurobi).
 
 # Documentation
 In folder doc/ you can find the documentation of  all the tool classes in html, starting from *index.html*. Also, in this folder you can find a .pdf file with the grammar
