@@ -1,0 +1,132 @@
+#script for replicating experimental evaluation results
+
+echo "----------------------------Memory Cell test (Refresh Milestone)----------------------------"
+
+echo "3 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.5-0.5.pts
+
+echo "5 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_5-0.5-0.5.pts
+
+echo "7 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_7-0.5-0.5.pts
+
+echo "3 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.1-0.5.pts
+
+echo "5 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_5-0.1-0.5.pts
+
+echo "7 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_7-0.1-0.5.pts
+
+echo "3 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.05-0.5.pts
+
+echo "5 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_5-0.05-0.5.pts
+
+echo "7 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_7-0.05-0.5.pts
+
+echo "3 bits, 0.1 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.5-0.1.pts
+
+echo "3 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.1-0.1.pts
+
+echo "5 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_5-0.1-0.1.pts
+
+echo "7 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_7-0.1-0.1.pts
+
+echo "3 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.05-0.1.pts
+
+echo "5 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_5-0.05-0.1.pts
+
+echo "7 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_7-0.05-0.1.pts
+
+echo "3 bits, 0.05 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.5-0.05.pts
+
+echo "3 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.1-0.05.pts
+
+echo "5 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_5-0.1-0.05.pts
+
+echo "3 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_3-0.05-0.05.pts
+
+echo "5 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryRefreshMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryRefreshMilestone_5-0.05-0.05.pts
+
+echo "----------------------------Memory Cell test (Tick Milestone)----------------------------"
+
+echo "3 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.5-0.5.pts
+
+echo "5 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_5-0.5-0.5.pts
+
+echo "7 bits, 0.5 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_7-0.5-0.5.pts
+
+echo "3 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.1-0.5.pts
+
+echo "5 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_5-0.1-0.5.pts
+
+echo "7 bits, 0.5 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_7-0.1-0.5.pts
+
+echo "3 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.05-0.5.pts
+
+echo "5 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_5-0.05-0.5.pts
+
+echo "7 bits, 0.5 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_7-0.05-0.5.pts
+
+echo "3 bits, 0.1 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.5-0.1.pts
+
+echo "3 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.1-0.1.pts
+
+echo "5 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_5-0.1-0.1.pts
+
+echo "7 bits, 0.1 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_7-0.1-0.1.pts
+
+echo "3 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.05-0.1.pts
+
+echo "5 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_5-0.05-0.1.pts
+
+echo "7 bits, 0.1 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_7-0.05-0.1.pts
+
+echo "3 bits, 0.05 probability of fault, 0.5 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.5.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.5-0.05.pts
+
+echo "3 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.1-0.05.pts
+
+echo "5 bits, 0.05 probability of fault, 0.1 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.1.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_5-0.1-0.05.pts
+
+echo "3 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_3-0.05-0.05.pts
+
+echo "5 bits, 0.05 probability of fault, 0.05 probability of refresh"
+time ./Tolerange    -gurobi b=32000 ../tests/stochastic/nominal/memory/memoryTickMilestone_0.05.pts ../tests/stochastic/faulty/memory/memoryTickMilestone_5-0.05-0.05.pts
+
